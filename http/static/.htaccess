@@ -1,7 +1,9 @@
-# I could... but... I'm too curious about their spam
-# I got bored
+# Spam blocking
 Deny from 45.143.201.87
 Deny from 37.139.53.82
+
+RewriteCond %{HTTP_USER_AGENT} ^curl/ [NC]
+RewriteRule ^(cgi-bin/submit_comment\.py|subscribe.php)$ - [R=429]
 
 RewriteEngine On
 
@@ -9,6 +11,9 @@ RewriteEngine On
 RewriteRule ^pgp$ https://tim.clifford.lol/tim_clifford.asc [L,R=301]
 RewriteRule ^gpg$ https://tim.clifford.lol/tim_clifford.asc [L,R=301]
 RewriteRule ^tim_clifford.gpg$ https://tim.clifford.lol/tim_clifford.asc [L,R=301]
+
+## This was the url in my email footer for a bit
+RewriteRule ^why_pgp$ https://tim.clifford.lol/why-pgp [L,R=301]
 
 # Ughhhhhhhhh
 RewriteRule blog/why-foss                                      https://tim.clifford.lol/blog/0000-why-foss [L,R=301]
