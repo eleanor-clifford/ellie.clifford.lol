@@ -9,9 +9,13 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 	$output = null;
 	$retval = null;
 	// hardcode paths and stuff for extra security
-	exec("echo '".$email."' | /usr/bin/ssh shell.srcf.net /usr/local/bin/srcf-mailman-add tc565-blog >> /home/tc565/logs/web-mailman 2>&1", $output, $retval);
-	if ($retval != 0)
-		$error = "Failed to add email address. Please email me so I can fix it :) Exit code: ".$retval;
+	//exec("echo '".$email."' | /usr/bin/ssh shell.srcf.net /usr/local/bin/srcf-mailman-add tc565-blog >> /home/tc565/logs/web-mailman 2>&1", $output, $retval);
+	//if ($retval != 0)
+		//$error = "Failed to add email address. Please email me so I can fix it :) Exit code: ".$retval;
+	//
+	// logging
+	//$logfile = fopen("/home/tc565/logs/blog_subscribe_POST", "a");
+	//$fwrite(
 }
 ?>
 <html lang="en">
@@ -46,7 +50,8 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
           <p/>
           <p/>
 <?php
-if (strlen($error) == 0) {
+//if (strlen($error) == 0) {
+if (false) {
 ?>
     <span>Successfully subscribed <?php echo $email?></span>
     <p/>
@@ -57,8 +62,8 @@ if (strlen($error) == 0) {
     </p>
 <?php
 } else {
-	echo '<span style="color: #ff5555; font-weight: bold;">'.$error.'</span>';
-	http_response_code(400);
+	echo '<span style="color: #ff5555; font-weight: bold;">Down for maintenance due to spam. For now, contact me through an alternate channel to be subscribed.</span>';
+	http_response_code(503);
 }
 ?>
         </div></div>

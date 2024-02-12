@@ -2,9 +2,9 @@
 title: "Tim Clifford"
 ---
 
-Part-time musician, full-time procrastinator, supposedly full-time engineering
-student. Also a [cypherpunk](/documents/cypherpunks-manifesto.html) and free
-(libre) / open source advocate.
+Part-time musician, full-time procrastinator, supposedly full-time PhD student.
+Also a [cypherpunk](/documents/cypherpunks-manifesto.html) and free (libre) /
+open source advocate.
 
 <div class="blog-updates-small">
   <form method="post" action="/subscribe.php" class="form">
@@ -14,13 +14,6 @@ student. Also a [cypherpunk](/documents/cypherpunks-manifesto.html) and free
 </div>
 
 <a href="/blog/rss.xml">Or subscribe via RSS <img style="height: 18px" src="/_icons/rss.svg" alt="RSS feed icon"/></a>
-
-If you like what I make, please consider giving me a tip, I'm still a poor student (:
-
-<a class="nounderline" href="https://liberapay.com/tim-clifford/donate">
-	<img alt="Tip me using Liberapay"
-	     src="/_icons/liberapay.svg"/>
-</a>
 
 ## Links
 
