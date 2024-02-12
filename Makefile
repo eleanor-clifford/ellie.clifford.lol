@@ -7,15 +7,15 @@ blog_alts:
 gemini:
 	rm out/bliz/* -rf
 	./scripts/build.sh --bliz && \
-	./scripts/deploy.sh --bliz
+	test -f upload.lock || ./scripts/deploy.sh --bliz
 https:
 	rm out/http/* -rf
 	./scripts/build.sh --http && \
-	./scripts/deploy.sh --http
+	test -f upload.lock || ./scripts/deploy.sh --http
 build:
 	./scripts/build.sh --all
 deploy:
-	./scripts/deploy.sh --all
+	test -f upload.lock || ./scripts/deploy.sh --all
 clean:
 	rm -rf out/http/*
 	rm -rf out/bliz/*
