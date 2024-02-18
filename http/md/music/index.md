@@ -8,7 +8,7 @@ banner: "/banner.jpg: Tim playing guitar for a crowd at a Student Windsurfing As
 
 I make music :]
 
-If you like it, please consider giving me a tip, I'm still a poor student (:
+The music I make is free (libre) and pay-what-you-want. If you do want to, donate here:
 
 <a class="nounderline" href="https://liberapay.com/tim-clifford/donate">
 	<img alt="Tip me using Liberapay"
