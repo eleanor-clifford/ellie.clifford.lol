@@ -8,33 +8,33 @@ RewriteRule ^(cgi-bin/submit_comment\.py|subscribe.php)$ - [R=429]
 RewriteEngine On
 
 # Some alternate urls
-RewriteRule ^pgp$ https://tim.clifford.lol/tim_clifford.asc [L,R=301]
-RewriteRule ^gpg$ https://tim.clifford.lol/tim_clifford.asc [L,R=301]
-RewriteRule ^tim_clifford.gpg$ https://tim.clifford.lol/tim_clifford.asc [L,R=301]
+RewriteRule ^pgp$ https://ellie.clifford.lol/ellie_clifford.asc [L,R=301]
+RewriteRule ^gpg$ https://ellie.clifford.lol/ellie_clifford.asc [L,R=301]
+RewriteRule ^ellie_clifford.gpg$ https://ellie.clifford.lol/ellie_clifford.asc [L,R=301]
 
 ## This was the url in my email footer for a bit
-RewriteRule ^why_pgp$ https://tim.clifford.lol/why-pgp [L,R=301]
+RewriteRule ^why_pgp$ https://ellie.clifford.lol/why-pgp [L,R=301]
 
 # Ughhhhhhhhh
-RewriteRule blog/why-foss                                      https://tim.clifford.lol/blog/0000-why-foss [L,R=301]
-RewriteRule blog/dracula-for-solidworks                        https://tim.clifford.lol/blog/0001-dracula-for-solidworks [L,R=301]
-RewriteRule blog/the-uk-government-is-dangerously-incompetent  https://tim.clifford.lol/blog/0002-the-uk-government-is-dangerously-incompetent [L,R=301]
-RewriteRule blog/taking-back-control-1                         https://tim.clifford.lol/blog/0003-taking-back-control-1 [L,R=301]
-RewriteRule blog/taking-back-control-2                         https://tim.clifford.lol/blog/0004-taking-back-control-2 [L,R=301]
-RewriteRule blog/music                                         https://tim.clifford.lol/blog/0005-music [L,R=301]
-RewriteRule blog/what-we-leave-behind                          https://tim.clifford.lol/blog/0006-what-we-leave-behind [L,R=301]
-RewriteRule blog/taking-back-control-3                         https://tim.clifford.lol/blog/0007-taking-back-control-3 [L,R=301]
-RewriteRule blog/taking-back-control-4                         https://tim.clifford.lol/blog/0008-taking-back-control-4 [L,R=301]
-RewriteRule blog/entropy-bingo                                 https://tim.clifford.lol/blog/0009-entropy-bingo [L,R=301]
-RewriteRule blog/original-music                                https://tim.clifford.lol/blog/0010-original-music [L,R=301]
-RewriteRule blog/paralyzed-by-analytics                        https://tim.clifford.lol/blog/0011-paralyzed-by-analytics [L,R=301]
-RewriteRule blog/perpetually-on-the-verge-of-a-breakdown       https://tim.clifford.lol/blog/0012-perpetually-on-the-verge-of-a-breakdown [L,R=301]
+RewriteRule blog/why-foss                                      https://ellie.clifford.lol/blog/0000-why-foss [L,R=301]
+RewriteRule blog/dracula-for-solidworks                        https://ellie.clifford.lol/blog/0001-dracula-for-solidworks [L,R=301]
+RewriteRule blog/the-uk-government-is-dangerously-incompetent  https://ellie.clifford.lol/blog/0002-the-uk-government-is-dangerously-incompetent [L,R=301]
+RewriteRule blog/taking-back-control-1                         https://ellie.clifford.lol/blog/0003-taking-back-control-1 [L,R=301]
+RewriteRule blog/taking-back-control-2                         https://ellie.clifford.lol/blog/0004-taking-back-control-2 [L,R=301]
+RewriteRule blog/music                                         https://ellie.clifford.lol/blog/0005-music [L,R=301]
+RewriteRule blog/what-we-leave-behind                          https://ellie.clifford.lol/blog/0006-what-we-leave-behind [L,R=301]
+RewriteRule blog/taking-back-control-3                         https://ellie.clifford.lol/blog/0007-taking-back-control-3 [L,R=301]
+RewriteRule blog/taking-back-control-4                         https://ellie.clifford.lol/blog/0008-taking-back-control-4 [L,R=301]
+RewriteRule blog/entropy-bingo                                 https://ellie.clifford.lol/blog/0009-entropy-bingo [L,R=301]
+RewriteRule blog/original-music                                https://ellie.clifford.lol/blog/0010-original-music [L,R=301]
+RewriteRule blog/paralyzed-by-analytics                        https://ellie.clifford.lol/blog/0011-paralyzed-by-analytics [L,R=301]
+RewriteRule blog/perpetually-on-the-verge-of-a-breakdown       https://ellie.clifford.lol/blog/0012-perpetually-on-the-verge-of-a-breakdown [L,R=301]
 
 RewriteRule ^music/rss.xml /cgi-bin/proxy_rss.py [L]
 
 # Force HTTPS
-RewriteCond %{HTTP_HOST} !^tim\.clifford\.lol$ [NC]
-RewriteRule ^(.*)$ https://tim.clifford.lol%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} !^ellie\.clifford\.lol$ [NC]
+RewriteRule ^(.*)$ https://ellie.clifford.lol%{REQUEST_URI} [L,R=301]
 
 ErrorDocument 404 /404.html
 

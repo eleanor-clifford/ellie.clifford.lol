@@ -4,7 +4,7 @@ cd "$dir"
 cp ../side_a/*.flac .
 perl-rename 's/^/A/g' *
 cp ../side_b/*.flac .
-sh ~/sftp/music/scripts/rename.sh
+sh /home/shared/sftp/music/scripts/rename.sh
 rm -r originals
 ls *.flac > '[0:00] Noodles Vol. 0: reflections and phantoms.m3u'
 ls '[1:'*.flac > '[1:00] Noodles Vol. 0: reflections.m3u'

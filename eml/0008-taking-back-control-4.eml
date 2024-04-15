@@ -8,10 +8,10 @@ Content-Type: multipart/alternative; boundary=proprietarysoftwareismalware
 Content-Type: text/html; charset=utf-8
 
 <p>
-  <a href="https://tim.clifford.lol/blog/taking-back-control-4">View in a browser</a>
+  <a href="https://ellie.clifford.lol/blog/taking-back-control-4">View in a browser</a>
 </p>
 <p>
-  <a href="gemini://tim.clifford.lol/blog/taking-back-control-4">Or on Gemini</a>
+  <a href="gemini://ellie.clifford.lol/blog/taking-back-control-4">Or on Gemini</a>
 </p>
 
 <p>There are (approximately) two types of people who will read this
@@ -115,7 +115,7 @@ ultimatum game</h2>
 being completely out of touch with the real world, and yet here I am
 playing a modified version, namely:</p>
 <blockquote>
-<p>Tim (the proposer) is tasked with proposing a set of acceptable
+<p>Ellie (the proposer) is tasked with proposing a set of acceptable
 messaging systems to the responder. The responder can either accept, in
 which case the pair continue to message, or reject, in which the pair
 cannot message.</p>
@@ -269,8 +269,7 @@ for groups</h3>
 --proprietarysoftwareismalware
 Content-Type: text/plain; charset=utf-8
 
-View in a browser: https://tim.clifford.lol/blog/taking-back-control-4
-Or on Gemini: gemini://tim.clifford.lol/blog/taking-back-control-4
+View in a browser: https://ellie.clifford.lol/blog/taking-back-control-4 Or on Gemini: gemini://ellie.clifford.lol/blog/taking-back-control-4
 
 There are (approximately) two types of people who will read this post: my regular readers (hi!) and people who I've sent this link to, presumably after refusing to continue messaging them on their favourite messaging system. This is on grounds of privacy, security, and freedom.
 
@@ -296,9 +295,15 @@ So, what do we need from a messaging system in order to fight our adversaries?
 
 ## The classic ultimatum game
 
-A bit of a (relevant) aside: the ultimatum game is a classic economic/philosophical thought experiment, in which there are two players, the proposer, and the responder. (And an optional third, the arbiter, who manages the game).
+A bit of a (relevant) aside: the ultimatum game is a classic
+economic/philosophical thought experiment, in which there are two players, the
+proposer, and the responder. (And an optional third, the arbiter, who manages
+the game).
 
-> The proposer is tasked with proposing a percentage split of a sum of money to the responder. The responder can either accept (in which case the money is split as proposed) or reject (in which case neither of them get any money).
+> The proposer is tasked with proposing a percentage split of a sum of money
+> to the responder. The responder can either accept (in which case the money
+> is split as proposed) or reject (in which case neither of them get any
+> money).
 
 What is the optimal strategy for both the proposer and the responder? The (absurdly oversimplified) "Homo economicus" model of humanity suggests that the responder, who maximises the money they get, should accept any split in which they receive more than zero. Naturally the proposer knows this, and hence proposes the most unfair split possible.
 
@@ -306,7 +311,8 @@ This is absurdly silly (and yet the "Homo economicus" model is used widely). Ano
 
 There are other potential solutions (e.g. involving randomness), but really the only way to understand real human responses is with real data. Wikipedia says:
 
-> When carried out between members of a shared social group [...] people offer "fair" (i.e., 50:50) splits, and offers of less than 30% are often rejected.
+> When carried out between members of a shared social group [...] people offer
+> "fair" (i.e., 50:50) splits, and offers of less than 30% are often rejected.
 
 This fits with my intuition. Yay.
 
@@ -314,7 +320,9 @@ This fits with my intuition. Yay.
 
 I have in the past been a critic of the classic ultimatum game as being completely out of touch with the real world, and yet here I am playing a modified version, namely:
 
-> Tim (the proposer) is tasked with proposing a set of acceptable messaging systems to the responder. The responder can either accept, in which case the pair continue to message, or reject, in which the pair cannot message.
+> Ellie (the proposer) is tasked with proposing a set of acceptable messaging
+> systems to the responder. The responder can either accept, in which case the
+> pair continue to message, or reject, in which the pair cannot message.
 
 This is pretty much identical to the classical ultimatum game, where I am the proposer, you are the responder, and "money" is some function of the messaging system we use. I want it to be secure and private, and you don't want to be inconvenienced. What should be my strategy? Well, firstly, I should clarify my objectives in this ultimatum game, which are (in no particular order):
 
@@ -347,11 +355,7 @@ In the classic ultimatum game, there is an objective idea of fairness, namely, "
 
 Then again, I could order them like this if I was feeling mean:
 
-1. Very likely to be secure, been around a long time (XMPP, IRC)
-2. Younger and more featureful but still reasonably secure (Matrix in ideal situations)
-3. Likely to be okay, but metadata is potentially vulnerable (Matrix in ordinary situations)
-4. Possibly an NSA metadata honeypot but at least the ordinary data is secure (Signal)
-5. Very likely to be at least stealing your metadata (Telegram, Whatsapp, Discord, Facebook Messenger, etc)
+1. Very likely to be secure, been around a long time (XMPP, IRC) 2. Younger and more featureful but still reasonably secure (Matrix in ideal situations) 3. Likely to be okay, but metadata is potentially vulnerable (Matrix in ordinary situations) 4. Possibly an NSA metadata honeypot but at least the ordinary data is secure (Signal) 5. Very likely to be at least stealing your metadata (Telegram, Whatsapp, Discord, Facebook Messenger, etc)
 
 Using either of these changes perception of a "fair" ultimatum quite a lot, and there's no neat resolution. I think my original categorisation is reasonable, but we can argue about it if you like.
 
@@ -407,14 +411,11 @@ Whatsapp
 
 Facebook Messenger, Discord, Telegram, SMS, Snapchat, Instagram DMs, ...
 
-1: https://en.wikipedia.org/wiki/Chekhov%27s_gun: https://en.wikipedia.org/wiki/Chekhov%27s_gun
-2: https://www.gnu.org/philosophy/free-sw.html: https://www.gnu.org/philosophy/free-sw.html
+1: https://en.wikipedia.org/wiki/Chekhov%27s_gun: https://en.wikipedia.org/wiki/Chekhov%27s_gun 2: https://www.gnu.org/philosophy/free-sw.html: https://www.gnu.org/philosophy/free-sw.html
 
 ---
 
-You are recieving this email because you opted in via tim.clifford.lol.
-To unsubscribe, email tc565-blog-request@srcf.net with subject line
-"unsubscribe"
+You are recieving this email because you opted in via ellie.clifford.lol. To unsubscribe, email tc565-blog-request@srcf.net with subject line "unsubscribe"
 
 --proprietarysoftwareismalware--
 

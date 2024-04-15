@@ -7,7 +7,7 @@ from email.utils import formatdate, formataddr, make_msgid
 # all this is borrowed but tweaked from /usr/lib/python3/dist-packages/srcf/mail/__init__.py
 
 def send_mail(recipient, subject, body,
-              sender=('Tim Clifford', 'tc565@srcf.net'),
+              sender=('Ellie Clifford', 'tc565@srcf.net'),
               reply_to=None,
               dkim_keyfile="/home/tc565/.config/secrets/dkim/clifford.lol.key",
               dkim_selector="srcf",

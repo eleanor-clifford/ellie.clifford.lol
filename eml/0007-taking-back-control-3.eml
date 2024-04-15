@@ -8,14 +8,14 @@ Content-Type: multipart/alternative; boundary=proprietarysoftwareismalware
 Content-Type: text/html; charset=utf-8
 
 <p>
-  <a href="https://tim.clifford.lol/blog/taking-back-control-3">View in a browser</a>
+  <a href="https://ellie.clifford.lol/blog/taking-back-control-3">View in a browser</a>
 </p>
 <p>
-  <a href="gemini://tim.clifford.lol/blog/taking-back-control-3">Or on Gemini</a>
+  <a href="gemini://ellie.clifford.lol/blog/taking-back-control-3">Or on Gemini</a>
 </p>
 
 <p>PS: this blog is now also accessible over RSS <a
-href="https://tim.clifford.lol/blog/rss.xml">here</a>.</p>
+href="https://ellie.clifford.lol/blog/rss.xml">here</a>.</p>
 <p>From my manifesto:</p>
 <blockquote>
 <p>2.0) I will not depend on any proprietary software.</p>
@@ -50,21 +50,21 @@ result:</p>
 <table class="noborder" style="border: none">
 <tr>
 <td style="width: 50%">
-<a href="https://tim.clifford.lol/blog/taking-back-control-3/flumph-anim.mp4">
+<a href="https://ellie.clifford.lol/blog/taking-back-control-3/flumph-anim.mp4">
   Flumph's boot animation (video)
 </a>
 </td>
 <td style="width: 50%">
-<img style="width:100%" src="https://tim.clifford.lol/blog/taking-back-control-3/flumph-unlock.png"
+<img style="width:100%" src="https://ellie.clifford.lol/blog/taking-back-control-3/flumph-unlock.png"
           alt="flumph's full disk encryption unlock screen">
 </td>
 <tr>
 <td style="width: 50%">
-<img style="width:100%" src="https://tim.clifford.lol/blog/taking-back-control-3/flumph-incorrect.png"
+<img style="width:100%" src="https://ellie.clifford.lol/blog/taking-back-control-3/flumph-incorrect.png"
              alt="flumph after a failed password">
 </td>
 <td style="width: 50%">
-<img style="width:100%" src="https://tim.clifford.lol/blog/taking-back-control-3/flumph-unlocking.png"
+<img style="width:100%" src="https://ellie.clifford.lol/blog/taking-back-control-3/flumph-unlocking.png"
             alt="flumph during encryption unlock">
 </td>
 </tr>
@@ -90,10 +90,9 @@ closer to fully following my manifesto…</p>
 --proprietarysoftwareismalware
 Content-Type: text/plain; charset=utf-8
 
-View in a browser: https://tim.clifford.lol/blog/taking-back-control-3
-Or on Gemini: gemini://tim.clifford.lol/blog/taking-back-control-3
+View in a browser: https://ellie.clifford.lol/blog/taking-back-control-3 Or on Gemini: gemini://ellie.clifford.lol/blog/taking-back-control-3
 
-PS: this blog is now also accessible over RSS here: https://tim.clifford.lol/blog/rss.xml
+PS: this blog is now also accessible over RSS here: https://ellie.clifford.lol/blog/rss.xml
 
 From my manifesto:
 
@@ -113,10 +112,7 @@ Having silly naming schemes for things is fun, so I've decided to call my new Pi
 
 Naturally, on buying any new device, one must spend least 15 hours "ricing" it (aka making it look good without improving usability). I focused my ricing on the bootloader, since it's the perfect place to put flumph-themed artwork etc etc. Here are some pictures of the final result:
 
-flumph's boot animation: https://tim.clifford.lol/blog/taking-back-control-3/flumph-anim.mp4
-flumph's full disk encryption unlock screen: https://tim.clifford.lol/blog/taking-back-control-3/flumph-unlock.png
-flumph after a failed password: https://tim.clifford.lol/blog/taking-back-control-3/flumph-incorrect.png
-flumph during encryption unlock: https://tim.clifford.lol/blog/taking-back-control-3/flumph-unlocking.png
+flumph's boot animation: https://ellie.clifford.lol/blog/taking-back-control-3/flumph-anim.mp4 flumph's full disk encryption unlock screen: https://ellie.clifford.lol/blog/taking-back-control-3/flumph-unlock.png flumph after a failed password: https://ellie.clifford.lol/blog/taking-back-control-3/flumph-incorrect.png flumph during encryption unlock: https://ellie.clifford.lol/blog/taking-back-control-3/flumph-unlocking.png
 
 I haven't yet riced sxmo, the desktop environment I'm using, but it's basically sway, which is basically i3, which I've riced a ton on on my desktop, so it shouldn't be too much work...
 
@@ -130,7 +126,7 @@ So I'll admit it took me a while to get everything set up, and there are are sti
 
 ---
 
-You are recieving this email because you opted in via tim.clifford.lol. To unsubscribe, email tc565-blog-request@srcf.net with subject line "unsubscribe"
+You are recieving this email because you opted in via ellie.clifford.lol. To unsubscribe, email tc565-blog-request@srcf.net with subject line "unsubscribe"
 
 --proprietarysoftwareismalware--
 

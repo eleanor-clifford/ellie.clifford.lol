@@ -24,9 +24,9 @@ won't do, and will help me maintain privacy, ensure sovereignty over software I
 depend on, reject mass data gathering, and make a statement about the
 importance of FOSS.
 
-[The manifesto can be found here](https://tim.clifford.lol/documents/technology-usage-manifesto.html)
+[The manifesto can be found here](https://ellie.clifford.lol/documents/technology-usage-manifesto.html)
 
-[Or on Gemini here](gemini://tim.clifford.lol/technology-usage-manifesto.gmi)
+[Or on Gemini here](gemini://ellie.clifford.lol/technology-usage-manifesto.gmi)
 
 I'm expecting to start following it around summertime (northern hemisphere),
 and I'll definitely be making changes to the manifesto before then, so I'd
