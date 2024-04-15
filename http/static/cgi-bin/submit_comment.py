@@ -14,90 +14,106 @@ path.append("/home/tc565/python-lib")
 import blog_gen_comments
 import blog_send_mail
 
+http_blog_upper_dir = "/public/home/tc565/public_html/ellie.clifford.lol/blog"
+blog_comments_upper_dir = "/home/tc565/blog_comments"
+logfile = "/home/tc565/logs/blog_comment_POST"
+
 now = datetime.now()
 
-def get_inner_html(): # side effects!
+def get_inner_html():  # side effects!
+	def error(text):
+		return f'<div style="color: #ff5555;">{text}</div>'
 
 	ip_address = environ["REMOTE_ADDR"]
 	# we don't have a lock but it doesn't matter that much
-	rate_limits = [x.split("\t") for x in open("/home/tc565/blog_comments/rate_limit").read().split("\n")]
-	for i,r in enumerate(rate_limits):
+	rate_limits = [
+		x.split("\t")
+		for x in open(f"{blog_comments_upper_dir}/rate_limit").read().split("\n")
+	]
+	for i, r in enumerate(rate_limits):
 		if r[0] == ip_address:
-			timestamps = [x for x in r[1:] if float(x) > now.timestamp() - 10*60]
+			timestamps = [x for x in r[1:] if float(x) > now.timestamp() - 10 * 60]
 			if len(timestamps) > 5:
-				return (429, '<div style="color: #ff5555;">Sorry, you\'ve been ratelimited. Try again later.</div>')
+				return (429, error("Sorry, you've been ratelimited. Try again later."))
 			else:
 				rate_limits[i] = [rate_limits[i][0]] + timestamps + [str(now.timestamp())]
 			break
 	else:
 		rate_limits.append([ip_address, str(now.timestamp())])
 
-	open("/home/tc565/blog_comments/rate_limit", "w").write("\n".join(("\t".join(x) for x in rate_limits)))
+	open(f"{blog_comments_upper_dir}/rate_limit", "w").write(
+		"\n".join(("\t".join(x) for x in rate_limits))
+	)
 
 	raw_data = stdin.read()
 
-	open("/home/tc565/logs/blog_comment_POST", "a").write(f"[{now.isoformat()}] " + raw_data + "\n")
+	open(logfile, "a").write(f"[{now.isoformat()}] " + raw_data + "\n")
 
 	post_data = {}
 
 	for x in raw_data.split("&"):
 		s = x.split("=")
 		if len(s) != 2:
-			return (400, '<div style="color: #ff5555;">Invalid input (0)</div>')
+			return (400, error("Invalid input (0)</div>"))
 
-		post_data[s[0]] = url_unquote(s[1].replace("+", " ")) # why
+		post_data[s[0]] = url_unquote(s[1].replace("+", " "))  # why
 
 	if not sorted(post_data.keys()) == ['antispam', 'comment', 'email', 'name', 'post']:
-		return (400, '<div style="color: #ff5555;">Invalid input (1)</div>')
+		return (400, error("Invalid input (1)"))
 
-	if post_data["antispam"] == open("/home/tc565/blog_comments/secret_antispam").read():
-		is_tim = True
+	if post_data["antispam"] == open(f"{blog_comments_upper_dir}/secret_antispam").read():
+		is_me = True
 	else:
-		is_tim = False
+		is_me = False
 		if post_data["antispam"] != "lethologica":
-			return (401, '<div style="color: #ff5555;">Possible spam detected. Did you type the antispam word wrong?</div>')
+			return (401, error('Possible spam detected. Did you type the antispam word wrong?'))
 
 	if "." in post_data['post'] or "/" in post_data['post']:
-		return (403, '<div style="color: #ff5555;">Invalid input (2). Stop pentesting, you do not have consent.</div>')
+		return (403, error("Invalid input (2). Stop pentesting, you do not have consent."))
 
-	blog_dir=f"/public/home/tc565/public_html/tim.clifford.lol/blog/{post_data['post']}"
+	blog_dir = f"{http_blog_upper_dir}/{post_data['post']}"
 
-	blog_comments_dir=f"/home/tc565/blog_comments/{post_data['post']}"
+	post_comments_dir = f"{blog_comments_upper_dir}/{post_data['post']}"
 
 	if not isdir(blog_dir):
-		return (400, '<div style="color: #ff5555;">Invalid input (3)</div>')
+		return (400, error("Invalid input (3)"))
 
 	# now we should be happy {post_data['post']} is safe
 
 	if "\n" in post_data['name'] or "\t" in post_data['name']:
-		return (400, '<div style="color: #ff5555;">Invalid name (4)</div>')
+		return (400, error("Invalid name (4)"))
 
 	if post_data["name"] == "":
 		post_data["name"] = "Anonymous"
 
-	if not is_tim and (post_data["name"].lower() == "tim" or (
-			"tim" in post_data["name"].lower() and
+	if not is_me and (
+		post_data["name"].lower() == "ellie" or
+		post_data["name"].lower() == "el" or
+		post_data["name"].lower() == "eleanor" or
+		(
+			"el" in post_data["name"].lower() and
 			"clifford" in post_data["name"].lower()
-			)):
-		return (401, '<div style="color: #ff5555;">Please don\'t impersonate me</div>')
+		)
+	):
+		return (401, error("Please don\'t impersonate me"))
 
 	if post_data["comment"] == "":
-		return (400, '<div style="color: #ff5555;">Comment cannot be blank</div>')
+		return (400, error("Comment cannot be blank"))
 
 	if post_data['email'] != "":
 		try:
 			v = validate_email(post_data['email'], check_deliverability=False)
 			post_data['email'] = v['email']
 		except EmailNotValidError:
-			return (400, '<div style="color: #ff5555;">Invalid input (5)</div>')
+			return (400, error("Invalid input (5)"))
 
-	blog_comment_dir=f"{blog_comments_dir}/{now.timestamp()}"
+	post_comment_dir = f"{post_comments_dir}/{now.timestamp()}"
 
-	makedirs(blog_comment_dir)
+	makedirs(post_comment_dir)
 
-	open(f"{blog_comment_dir}/post", "w").write(post_data["post"])
-	open(f"{blog_comment_dir}/name", "w").write(post_data["name"])
-	open(f"{blog_comment_dir}/comment", "w").write(post_data["comment"])
+	open(f"{post_comment_dir}/post", "w").write(post_data["post"])
+	open(f"{post_comment_dir}/name", "w").write(post_data["name"])
+	open(f"{post_comment_dir}/comment", "w").write(post_data["comment"])
 
 	# now regenerate comments for that post
 
@@ -106,17 +122,21 @@ def get_inner_html(): # side effects!
 
 	# and email
 
-	blog_send_mail.send_mail(blog_comment_dir)
+	blog_send_mail.send_mail(post_comment_dir)
 
 	if post_data['email'] != "":
-		open(f"{blog_comments_dir}/subscribers.tsv", "a").write(f"{post_data['name']}\t{post_data['email']}\n")
+		open(f"{post_comments_dir}/subscribers.tsv", "a").write(
+			f"{post_data['name']}\t{post_data['email']}\n"
+		)
 
 	return (200, "Successfully added your comment")
 
+
 try:
 	inner = get_inner_html()
-except:
+except Exception:
 	inner = (500, f"An internal error occured\n{traceback.format_exc()}")
+
 
 print("Content-Type: text/html")
 print(f"Status: {inner[0]}")
@@ -125,18 +145,17 @@ print(r"""
 <html lang="en">
   <head>
     <title>Email subscription</title>
-    <link rel="icon" type="image/png" href="/avatar_48.png"/>
+    <link rel="icon" type="image/jpeg" href="/avatar_48.jpg"/>
     <meta charSet="utf-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <link rel="stylesheet" href="/main.css"/>
-    <link rel="me" href="https://mastodon.lol/@timclifford"/>
   </head>
   <body>
     <div class="purple">
       <div class="Topbar_div">
         <nav class="Topbar_nav">
           <a class="topbar-title" href="/">
-            <img class="topbar-img" src="/avatar_128.png"/>
+            <img class="topbar-img" src="/avatar_128.jpg"/>
           </a>
           <ul>
             <li><a href="/about/">About</a></li>

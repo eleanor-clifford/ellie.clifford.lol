@@ -39,7 +39,7 @@ convert_to_email() { # args -> stdout
 	gemurl="$(echo "$5" | sed 's/^https\?/gemini/')"
 
 	echo "\
-From: Tim's blog <blog@clifford.lol>
+From: Ellie's blog <blog@clifford.lol>
 To: $recipient
 Subject: $subject
 MIME-Version: 1.0
@@ -66,7 +66,7 @@ $(cat "$txtfile")
 
 ---
 
-You are recieving this email because you opted in via tim.clifford.lol.
+You are recieving this email because you opted in via ellie.clifford.lol.
 To unsubscribe, email tc565-blog-request@srcf.net with subject line
 \"unsubscribe\"
 
@@ -86,7 +86,7 @@ convert_blog_to_bliz_txt_eml() { # $1: filename, writes to files
 
 	# yaml-derived
 	name="$(echo $1 | perl -pe 's|.*/([^/]*)/index.md$|\1|')"
-	httpurl="https://tim.clifford.lol/blog/$name"
+	httpurl="https://ellie.clifford.lol/blog/$name"
 
 	# filenames
 	f_bliz="bliz/blog/$name/index.bliz"

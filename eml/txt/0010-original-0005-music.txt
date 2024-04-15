@@ -4,11 +4,11 @@ I wrote and produced my first original song! Well, the first that is going to se
 Have a listen:
 
 "Autumn Wind" (Video): https://dalek.zone/w/8QbJLp7iW5BDuBESC99xZV
-"Autumn Wind" (Audio): https://tim.clifford.lol/music/autumn_wind.flac
+"Autumn Wind" (Audio): https://ellie.clifford.lol/music/autumn_wind.flac
 
 I won't be making a blog post for every new piece of music, so if you want to
 keep getting musical updates, the best way is to subscribe to this RSS feed[1]
-or just keep an eye on https://tim.clifford.lol/music[2].
+or just keep an eye on https://ellie.clifford.lol/music[2].
 
 ## Producing music is harder than I thought
 
@@ -44,7 +44,7 @@ Until quite recently I didn't even understand what mastering was. Apparently, th
 
 You'll notice that my recording is a little quieter than other music if you listen to them side by side. That's because I'm bad at mastering :P
 
-1: https://tim.clifford.lol/music/rss.xml
-2: https://tim.clifford.lol/music/
+1: https://ellie.clifford.lol/music/rss.xml
+2: https://ellie.clifford.lol/music/
 3: noodle, noodled, noodling (verb): to improvise on an instrument in an informal or desultory manner: https://www.merriam-webster.com/dictionary/noodle
 4: Which isn't really anything to do with Linux, it's more to do with companies like Adobe managing to gain a stranglehold.

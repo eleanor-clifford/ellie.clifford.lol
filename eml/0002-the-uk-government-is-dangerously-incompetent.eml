@@ -7,7 +7,7 @@ Content-Type: multipart/alternative; boundary=proprietarysoftwareismalware
 Content-Type: text/html; charset=utf-8
 
 <p>
-  <a href="https://tim.clifford.lol/blog/the-uk-government-is-dangerously-incompetent">View in a browser</a>
+  <a href="https://ellie.clifford.lol/blog/the-uk-government-is-dangerously-incompetent">View in a browser</a>
 </p>
 
 <p>Recently the UK government launched the <a
@@ -52,7 +52,7 @@ stupid is that Facebook’s proprietary nature makes it untrustable
 <em>anyway</em>, <em>regardless</em> of whether they claim to provide
 E2E, and any criminal who is stupid enough to think Facebook Messenger
 is secure is certainly stupid enough to be caught in 5 other ways. (See
-also <a href="https://tim.clifford.lol/blog/why-foss">Why
+also <a href="https://ellie.clifford.lol/blog/why-foss">Why
 FOSS?</a>).</p>
 <h2 id="literally-just-do-your-jobs-please">Literally just do your jobs
 please</h2>
@@ -97,7 +97,8 @@ with this data.</p>
 --proprietarysoftwareismalware
 Content-Type: text/plain; charset=utf-8
 
-View in a browser: https://tim.clifford.lol/blog/the-uk-government-is-dangerously-incompetent
+View in a browser:
+https://ellie.clifford.lol/blog/the-uk-government-is-dangerously-incompetent
 
 Recently the UK government launched the "No place to hide"[1] propaganda campaign, which seeks to maintain their unfettered access to Facebook Messenger data by preventing the addition of end to end encryption. What's going on? And why would they choose such an evil-sounding name??
 
@@ -146,16 +147,11 @@ Regardless of the actual conversation about privacy and protecting children, the
 
 There is a very clear ulterior motive: the government wants to spy on their own citizens. They will go far further than protecting children with this data.
 
-1: https://www.noplacetohide.org.uk: https://www.noplacetohide.org.uk
-2: https://en.wikipedia.org/wiki/End-to-end_encryption: https://en.wikipedia.org/wiki/End-to-end_encryption
-3: https://tim.clifford.lol/blog/why-foss: https://tim.clifford.lol/blog/why-foss
-4: https://www.bbc.co.uk/news/uk-england-lincolnshire-58397088: https://www.bbc.co.uk/news/uk-england-lincolnshire-58397088
+1: https://www.noplacetohide.org.uk: https://www.noplacetohide.org.uk 2: https://en.wikipedia.org/wiki/End-to-end_encryption: https://en.wikipedia.org/wiki/End-to-end_encryption 3: https://ellie.clifford.lol/blog/why-foss: https://ellie.clifford.lol/blog/why-foss 4: https://www.bbc.co.uk/news/uk-england-lincolnshire-58397088: https://www.bbc.co.uk/news/uk-england-lincolnshire-58397088
 
 ---
 
-You are recieving this email because you opted in via tim.clifford.lol.
-To unsubscribe, email tc565-blog-request@srcf.net with subject line
-"unsubscribe"
+You are recieving this email because you opted in via ellie.clifford.lol. To unsubscribe, email tc565-blog-request@srcf.net with subject line "unsubscribe"
 
 --proprietarysoftwareismalware--
 

@@ -15,7 +15,7 @@ chance. I even edited a DLL with vim.
 ## Why?
 
 Despite my comments in [this blog
-post](https://tim.clifford.lol/blog/why-foss), there are a few proprietary
+post](https://ellie.clifford.lol/blog/why-foss), there are a few proprietary
 programs which I am tied to, with no hope of escape. One of these is
 SolidWorks, a 3D Computer Aided Design program used extensively in many
 engineering teams.

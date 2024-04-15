@@ -21,18 +21,17 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 <html lang="en">
   <head>
     <title>Email subscription</title>
-    <link rel="icon" type="image/png" href="/avatar_48.png"/>
+    <link rel="icon" type="image/jpeg" href="/avatar_48.jpg"/>
     <meta charSet="utf-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <link rel="stylesheet" href="/main.css"/>
-    <link rel="me" href="https://mastodon.lol/@timclifford"/>
   </head>
   <body>
     <div class="purple">
       <div class="Topbar_div">
         <nav class="Topbar_nav">
           <a class="topbar-title" href="/">
-            <img class="topbar-img" src="/avatar_128.png"/>
+            <img class="topbar-img" src="/avatar_128.jpg"/>
           </a>
           <ul>
             <li><a href="/about/">About</a></li>

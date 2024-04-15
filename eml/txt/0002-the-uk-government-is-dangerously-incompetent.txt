@@ -39,5 +39,5 @@ There is a very clear ulterior motive: the government wants to spy on their own 
 
 1: https://www.noplacetohide.org.uk: https://www.noplacetohide.org.uk
 2: https://en.wikipedia.org/wiki/End-to-end_encryption: https://en.wikipedia.org/wiki/End-to-end_encryption
-3: https://tim.clifford.lol/blog/why-foss: gemini://tim.clifford.lol/blog/why-foss/
+3: https://ellie.clifford.lol/blog/why-foss: gemini://ellie.clifford.lol/blog/why-foss/
 4: https://www.bbc.co.uk/news/uk-england-lincolnshire-58397088: https://www.bbc.co.uk/news/uk-england-lincolnshire-58397088
