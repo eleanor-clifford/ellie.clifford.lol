@@ -4,7 +4,7 @@ excerpt: "I can't go on having a spyware device in my pocket, can I?? (I use arc
 createdAt: "2022-10-22"
 ---
 
-PS: this blog is now also accessible over RSS [here](https://tim.clifford.lol/blog/rss.xml).
+PS: this blog is now also accessible over RSS [here](https://ellie.clifford.lol/blog/rss.xml).
 
 From my [manifesto](/documents/technology-usage-manifesto.html):
 

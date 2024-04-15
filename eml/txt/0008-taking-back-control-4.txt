@@ -41,7 +41,7 @@ This fits with my intuition. Yay.
 
 I have in the past been a critic of the classic ultimatum game as being completely out of touch with the real world, and yet here I am playing a modified version, namely:
 
-> Tim (the proposer) is tasked with proposing a set of acceptable messaging systems to the responder. The responder can either accept, in which case the pair continue to message, or reject, in which the pair cannot message.
+> Ellie (the proposer) is tasked with proposing a set of acceptable messaging systems to the responder. The responder can either accept, in which case the pair continue to message, or reject, in which the pair cannot message.
 
 This is pretty much identical to the classical ultimatum game, where I am the proposer, you are the responder, and "money" is some function of the messaging system we use. I want it to be secure and private, and you don't want to be inconvenienced. What should be my strategy? Well, firstly, I should clarify my objectives in this ultimatum game, which are (in no particular order):
 

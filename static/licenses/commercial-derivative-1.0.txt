@@ -34,7 +34,7 @@ Section 1 -- Definitions.
      accordance with the terms and conditions of this Public License.
 
   c. Commercial-Derivative Compatible License means a license listed at
-     tim.clifford.lol/licenses/commercial-derivative-compatible,
+     ellie.clifford.lol/licenses/commercial-derivative-compatible,
      approved by the Licensor as essentially acceptible to use with
      this Public License.
 

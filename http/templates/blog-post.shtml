@@ -4,8 +4,8 @@
     <div class="wrap"><div class="blog">
       <h1>${TITLE}</h1>
       <div class="blog-metadata">
-        <img class="blog-author-avatar" src="https://tim.clifford.lol/avatar_48.png" alt="Tim Clifford">
-        <span class="blog-author-name">Tim Clifford</span>
+        <img class="blog-author-avatar" src="/avatar_48.jpg" alt="Ellie Clifford">
+        <span class="blog-author-name">Ellie Clifford</span>
         <span class="blog-author-separator">/</span>
         <time datetime="${DATE}">${DATE}</time>
       </div>

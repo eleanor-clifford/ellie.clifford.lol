@@ -2,3 +2,5 @@
 #
 set serve_index index.gmi index.bliz
 
+set serve_host ellie.clifford.lol
+set redirect_hosts tim.clifford.lol clifford.lol

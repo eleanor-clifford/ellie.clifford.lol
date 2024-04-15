@@ -102,7 +102,7 @@ I have in the past been a critic of the classic ultimatum game as being
 completely out of touch with the real world, and yet here I am playing a
 modified version, namely:
 
-> Tim (the proposer) is tasked with proposing a set of acceptable messaging
+> Ellie (the proposer) is tasked with proposing a set of acceptable messaging
 > systems to the responder. The responder can either accept, in which case the
 > pair continue to message, or reject, in which the pair cannot message.
 
@@ -243,7 +243,7 @@ causing you, but I must hold true to my values.
 
 So then, the (possibly incomplete) list:
 
-*(You may find [these diagrams](https://tim.clifford.lol/documents/chat-systems.html) useful for technical explanations)*
+*(You may find [these diagrams](https://ellie.clifford.lol/documents/chat-systems.html) useful for technical explanations)*
 
 ### I will use (please suggest others if appropriate)
 

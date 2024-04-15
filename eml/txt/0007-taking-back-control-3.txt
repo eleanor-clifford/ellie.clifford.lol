@@ -1,5 +1,5 @@
 
-PS: this blog is now also accessible over RSS here: https://tim.clifford.lol/blog/rss.xml
+PS: this blog is now also accessible over RSS here: https://ellie.clifford.lol/blog/rss.xml
 
 From my manifesto:
 
@@ -19,10 +19,10 @@ Having silly naming schemes for things is fun, so I've decided to call my new Pi
 
 Naturally, on buying any new device, one must spend least 15 hours "ricing" it (aka making it look good without improving usability). I focused my ricing on the bootloader, since it's the perfect place to put flumph-themed artwork etc etc. Here are some pictures of the final result:
 
-flumph's boot animation: https://tim.clifford.lol/blog/taking-back-control-3/flumph-anim.mp4
-flumph's full disk encryption unlock screen: https://tim.clifford.lol/blog/taking-back-control-3/flumph-unlock.png
-flumph after a failed password: https://tim.clifford.lol/blog/taking-back-control-3/flumph-incorrect.png
-flumph during encryption unlock: https://tim.clifford.lol/blog/taking-back-control-3/flumph-unlocking.png
+flumph's boot animation: https://ellie.clifford.lol/blog/taking-back-control-3/flumph-anim.mp4
+flumph's full disk encryption unlock screen: https://ellie.clifford.lol/blog/taking-back-control-3/flumph-unlock.png
+flumph after a failed password: https://ellie.clifford.lol/blog/taking-back-control-3/flumph-incorrect.png
+flumph during encryption unlock: https://ellie.clifford.lol/blog/taking-back-control-3/flumph-unlocking.png
 
 I haven't yet riced sxmo, the desktop environment I'm using, but it's basically sway, which is basically i3, which I've riced a ton on on my desktop, so it shouldn't be too much work...
 

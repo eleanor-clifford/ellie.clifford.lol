@@ -8,10 +8,10 @@ Content-Type: multipart/alternative; boundary=proprietarysoftwareismalware
 Content-Type: text/html; charset=utf-8
 
 <p>
-  <a href="https://tim.clifford.lol/blog/entropy-bingo">View in a browser</a>
+  <a href="https://ellie.clifford.lol/blog/entropy-bingo">View in a browser</a>
 </p>
 <p>
-  <a href="gemini://tim.clifford.lol/blog/entropy-bingo">Or on Gemini</a>
+  <a href="gemini://ellie.clifford.lol/blog/entropy-bingo">Or on Gemini</a>
 </p>
 
 <p>Let me introduce you to a little game I like to call Entropy
@@ -211,8 +211,7 @@ role="doc-backlink">↩︎</a></p></li>
 --proprietarysoftwareismalware
 Content-Type: text/plain; charset=utf-8
 
-View in a browser: https://tim.clifford.lol/blog/entropy-bingo
-Or on Gemini: gemini://tim.clifford.lol/blog/entropy-bingo
+View in a browser: https://ellie.clifford.lol/blog/entropy-bingo Or on Gemini: gemini://ellie.clifford.lol/blog/entropy-bingo
 
 Let me introduce you to a little game I like to call Entropy Bingo.
 
@@ -268,35 +267,17 @@ Further, false information goes a long way. Put on a convincing wig. Wear fake g
 
 To conclude, here's a bingo card with some sources of information I thought of that an attacker might use to remove your entropy. If you get a bingo, they've probably got you. It's highly approximate, though I've been careful to keep incompatible or highly correlated sources of information from being in the same row/column/diagonal, as much as possible.
 
-┌─────────────────┬────────────────────┬────────────────┬──────────────────┐
-│ Travel by bike  │ Nearest cell tower │ Use of Matrix  │ Travel by train  │
-│ (~5 bits)       │ (~19 bits)         │ (6 to 8 bits)  │ (~6 bits)        │
-├─────────────────┼────────────────────┼────────────────┼──────────────────┤
-│ IP address      │ Specific Job title │ Age, gender,   │ Use of Linux     │
-│                 │                    │ height         │                  │
-│ (20 to 30 bits) │ (~10 bits?)        │ (5 bits)       │ (5 to 7 bits)    │
-├─────────────────┼────────────────────┼────────────────┼──────────────────┤
-│ Paying in cash  │ Knowledge of 1     │ Use of Tor     │ City you're in   │
-│                 │ person you know    │                │                  │
-│ (~3 bits)       │ (20 bits)          │ (6 to 10 bits) │ (9 to 12 bits)   │
-├─────────────────┼────────────────────┼────────────────┼──────────────────┤
-│ Not carrying a  │ Simple facial      │ Town you're in │ Uncommon hobby   │
-│ a phone         │ features           │                │                  │
-│ (3 to 5 bits)   │ (4 to 6 bits)      │ (16 to 20)     │ (8 to 10 bits)   │
-└─────────────────┴────────────────────┴────────────────┴──────────────────┘
+┌─────────────────┬────────────────────┬────────────────┬──────────────────┐ │ Travel by bike  │ Nearest cell tower │ Use of Matrix  │ Travel by train  │ │ (~5 bits)       │ (~19 bits)         │ (6 to 8 bits)  │ (~6 bits)        │ ├─────────────────┼────────────────────┼────────────────┼──────────────────┤ │ IP address      │ Specific Job title │ Age, gender,   │ Use of Linux     │ │                 │                    │ height         │                  │ │ (20 to 30 bits) │ (~10 bits?)        │ (5 bits)       │ (5 to 7 bits)    │ ├─────────────────┼────────────────────┼────────────────┼──────────────────┤ │ Paying in cash  │ Knowledge of 1     │ Use of Tor     │ City you're in   │ │                 │ person you know    │                │                  │ │ (~3 bits)       │ (20 bits)          │ (6 to 10 bits) │ (9 to 12 bits)   │ ├─────────────────┼────────────────────┼────────────────┼──────────────────┤ │ Not carrying a  │ Simple facial      │ Town you're in │ Uncommon hobby   │ │ a phone         │ features           │                │                  │ │ (3 to 5 bits)   │ (4 to 6 bits)      │ (16 to 20)     │ (8 to 10 bits)   │ └─────────────────┴────────────────────┴────────────────┴──────────────────┘
 
 Ironically, many of the things on the bingo board, like Matrix, Tor, and Linux, are things which protect your privacy. But because not enough people use them, knowledge that you're using them provides a fair bit of deanonymisation power. The solution: get more people to use them, to protect those that need anonymity.
 
 Disclaimer 2: I think I need to say that my fascination with anonymity doesn't stem from a propensity to perform illegal acts. Though, I would probably say that even if it weren't true. Regardless, I've gotta already be on some watchlists, right? Hello there NSA agent. Think about your life choices. Be more like Snowden.
 
-1: Horrifyingly, here's one example: https://www.nytimes.com/2022/12/22/nyregion/madison-square-garden-facial-recognition.html
-2: Terence Tao talks about this: https://terrytao.wordpress.com/about/anonymity-and-the-internet/
+1: Horrifyingly, here's one example: https://www.nytimes.com/2022/12/22/nyregion/madison-square-garden-facial-recognition.html 2: Terence Tao talks about this: https://terrytao.wordpress.com/about/anonymity-and-the-internet/
 
 ---
 
-You are recieving this email because you opted in via tim.clifford.lol.
-To unsubscribe, email tc565-blog-request@srcf.net with subject line
-"unsubscribe"
+You are recieving this email because you opted in via ellie.clifford.lol. To unsubscribe, email tc565-blog-request@srcf.net with subject line "unsubscribe"
 
 --proprietarysoftwareismalware--
 

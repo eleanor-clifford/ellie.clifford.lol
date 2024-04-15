@@ -103,14 +103,14 @@ title: "Chat systems explained"
 ## Matrix (current situation, with most people on matrix.org)
 
 ```
-+-------------+                    +--------------+           +---------------+           +-------------+
-|   Tim's     | E2E Encrypted msg  | Tim's server |           |   Alice's     |           |   Alice's   |
-|   client    | -----------------> |  (trusted*)  | --------> |   server      | --------> |   client    |
-|  (trusted)  |                    |              |           | (untrusted**) |           |  (trusted)  |
-+-------------+                    +--------------+           +---------------+           +-------------+
++-------------+                    +----------------+           +---------------+           +-------------+
+|   Ellie's   | E2E Encrypted msg  | Ellie's server |           |   Alice's     |           |   Alice's   |
+|   client    | -----------------> |   (trusted*)   | --------> |   server      | --------> |   client    |
+|  (trusted)  |                    |                |           | (untrusted**) |           |  (trusted)  |
++-------------+                    +----------------+           +---------------+           +-------------+
                                                                      |
                                                                      | Metadata only
-                                                                     | (i.e. "Tim
+                                                                     | (i.e. "Ellie
                                                                      | just sent Alice
                                                                      | a message")
                                                                      | (probably)
@@ -122,9 +122,9 @@ title: "Chat systems explained"
                                                                |  probably)  |
                                                                +-------------+
 
-* Because Tim is running his own server, and can verify its code. But is Tim's server backdoored in a way he can't detect? Who knows.
+* Because Ellie is running his own server, and can verify its code. But is Ellie's server backdoored in a way he can't detect? Who knows.
 
-** Because neither Tim nor Alice can verify the code that is running on the matrix.org server.
+** Because neither Ellie nor Alice can verify the code that is running on the matrix.org server.
 ```
 
 Despite this currently being functionally identical to the Signal threat model,

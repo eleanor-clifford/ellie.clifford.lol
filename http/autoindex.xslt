@@ -6,10 +6,10 @@
     <html lang="en">
       <head>
         <title>files.clifford.lol</title>
-        <link rel="icon" type="image/png" href="https://tim.clifford.lol/avatar_48.png"/>
+        <link rel="icon" type="image/jpeg" href="/avatar_48.jpg"/>
         <meta charSet="utf-8"/>
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
-        <link rel="stylesheet" href="https://tim.clifford.lol/main.css"/>
+        <link rel="stylesheet" href="https://ellie.clifford.lol/main.css"/>
       </head>
       <body>
         <div class="purple outer-flex">
@@ -17,7 +17,7 @@
             <nav class="Topbar_nav">
               <div class="topbar-title" style="display:flex; flex-direction: row">
                 <a href="/">
-                  <img class="topbar-img" src="https://tim.clifford.lol/avatar_128.png"/>
+                  <img class="topbar-img" src="/avatar_128.jpg"/>
                 </a>
                 <div style="font-size: 18px; margin: 12px; align-self: center;">
                   files.clifford.lol
@@ -25,7 +25,7 @@
               </div>
               <ul>
                 <li>
-                  <a href="https://tim.clifford.lol/"
+                  <a href="https://ellie.clifford.lol/"
                      class="Topbar_bigbutton">Main site
                   </a>
                 </li>

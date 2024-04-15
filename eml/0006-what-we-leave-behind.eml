@@ -8,10 +8,10 @@ Content-Type: multipart/alternative; boundary=proprietarysoftwareismalware
 Content-Type: text/html; charset=utf-8
 
 <p>
-  <a href="https://tim.clifford.lol/blog/what-we-leave-behind">View in a browser</a>
+  <a href="https://ellie.clifford.lol/blog/what-we-leave-behind">View in a browser</a>
 </p>
 <p>
-  <a href="gemini://tim.clifford.lol/blog/what-we-leave-behind">Or on Gemini</a>
+  <a href="gemini://ellie.clifford.lol/blog/what-we-leave-behind">Or on Gemini</a>
 </p>
 
 <p>One day, we will all die. What can we hope for as consolation? Where
@@ -39,8 +39,7 @@ with you, grab some coffee, and chat.</p>
 --proprietarysoftwareismalware
 Content-Type: text/plain; charset=utf-8
 
-View in a browser: https://tim.clifford.lol/blog/what-we-leave-behind
-Or on Gemini: gemini://tim.clifford.lol/blog/what-we-leave-behind
+View in a browser: https://ellie.clifford.lol/blog/what-we-leave-behind Or on Gemini: gemini://ellie.clifford.lol/blog/what-we-leave-behind
 
 One day, we will all die. What can we hope for as consolation? Where is our meaning in the face of our inevitable doom? Our lives are fleeting, and, in a way, that makes them ever more beautiful. But our finiteness is heart-wrenching too.
 
@@ -54,9 +53,7 @@ Is coffee still around?
 
 ---
 
-You are recieving this email because you opted in via tim.clifford.lol.
-To unsubscribe, email tc565-blog-request@srcf.net with subject line
-"unsubscribe"
+You are recieving this email because you opted in via ellie.clifford.lol. To unsubscribe, email tc565-blog-request@srcf.net with subject line "unsubscribe"
 
 --proprietarysoftwareismalware--
 

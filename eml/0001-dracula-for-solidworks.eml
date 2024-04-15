@@ -7,7 +7,7 @@ Content-Type: multipart/alternative; boundary=proprietarysoftwareismalware
 Content-Type: text/html; charset=utf-8
 
 <p>
-  <a href="https://tim.clifford.lol/blog/dracula-for-solidworks">View in a browser</a>
+  <a href="https://ellie.clifford.lol/blog/dracula-for-solidworks">View in a browser</a>
 </p>
 
 <p>Hah! Who says proprietary programs can’t be themed?? SolidWorks never
@@ -21,7 +21,7 @@ alt="Dracula for SolidWorks" />
 href="https://draculatheme.com/solidworks">here</a>.</em></p>
 <h2 id="why">Why?</h2>
 <p>Despite my comments in <a
-href="https://tim.clifford.lol/blog/why-foss">this blog post</a>, there
+href="https://ellie.clifford.lol/blog/why-foss">this blog post</a>, there
 are a few proprietary programs which I am tied to, with no hope of
 escape. One of these is SolidWorks, a 3D Computer Aided Design program
 used extensively in many engineering teams.</p>
@@ -83,7 +83,7 @@ refused to start.</p>
 --proprietarysoftwareismalware
 Content-Type: text/plain; charset=utf-8
 
-View in a browser: https://tim.clifford.lol/blog/dracula-for-solidworks
+View in a browser: https://ellie.clifford.lol/blog/dracula-for-solidworks
 
 Hah! Who says proprietary programs can't be themed?? SolidWorks never stood a chance. I even edited a DLL with vim.
 
@@ -107,7 +107,8 @@ grep: swStyleBlueu.dll: binary file matches
 
 Now, the appropriate response here is probably to think "Ok, let me find a program designed for dealing with DLLs" (or, alternatively, to give up). But naturally the only thing I was thinking was "Can I open it in vim".  And what I found was a veritable goldmine...
 
-Some color codes I found embedded in a DLL: /blog/dracula-for-solidworks/vim-dll-comments.png
+Some color codes I found embedded in a DLL:
+/blog/dracula-for-solidworks/vim-dll-comments.png
 
 Yep, that's some sort of style description *embedded in plaintext in a DLL*. And even better, there are comments! Comments which they thought nobody would see...
 
@@ -147,14 +148,11 @@ done
 
 Anyway, naturally, I then wrote a script to change the colors and voilà, Dracula for Solidworks. But the story's not over. Have you been wondering why there are still ugly grey bits in the screenshot? Yeah. I found the variables for that, and tried to change them. SolidWorks refused to start.
 
-1: https://draculatheme.com/solidworks: https://draculatheme.com/solidworks
-2: https://tim.clifford.lol/blog/why-foss: https://tim.clifford.lol/blog/why-foss
+1: https://draculatheme.com/solidworks: https://draculatheme.com/solidworks 2: https://ellie.clifford.lol/blog/why-foss: https://ellie.clifford.lol/blog/why-foss
 
 ---
 
-You are recieving this email because you opted in via tim.clifford.lol.
-To unsubscribe, email tc565-blog-request@srcf.net with subject line
-"unsubscribe"
+You are recieving this email because you opted in via ellie.clifford.lol. To unsubscribe, email tc565-blog-request@srcf.net with subject line "unsubscribe"
 
 --proprietarysoftwareismalware--
 

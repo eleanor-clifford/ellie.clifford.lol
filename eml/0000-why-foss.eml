@@ -7,7 +7,7 @@ Content-Type: multipart/alternative; boundary=proprietarysoftwareismalware
 Content-Type: text/html; charset=utf-8
 
 <p>
-  <a href="https://tim.clifford.lol/blog/why-foss">View in a browser</a>
+  <a href="https://ellie.clifford.lol/blog/why-foss">View in a browser</a>
 </p>
 
 <p>Free and Open Source Software is about more than ideology. There are
@@ -57,7 +57,7 @@ profits). Not their users.</p>
 <p>And what about adaptability? I regularly come across things that I
 wish were different in software. I want my drawing program to default to
 drawing circles from the centre? <a
-href="https://github.com/tim-clifford/xournalpp">Sure!</a> Want to use
+href="https://github.com/eleanor-clifford/xournalpp">Sure!</a> Want to use
 different keybindings in my terminal? <a
 href="https://github.com/jeffreytse/zsh-vi-mode/pull/89">Absolutely!</a>
 Want to make Zoom stop going into fullscreen for no reason when I
@@ -107,7 +107,7 @@ verify that you’re running that exact same code, you can trust it.</p>
 --proprietarysoftwareismalware
 Content-Type: text/plain; charset=utf-8
 
-View in a browser: https://tim.clifford.lol/blog/why-foss
+View in a browser: https://ellie.clifford.lol/blog/why-foss
 
 Free and Open Source Software is about more than ideology. There are several *practical* reasons why FOSS software is much better than proprietary alternatives. Here are the reasons that are the most important to me.
 
@@ -143,23 +143,22 @@ This one is fairly self explanatory. Too much developer time is wasted reimpleme
 
 FOSS software is much more trustworthy than proprietary software. There are two important components to this:
 
-* When the source code is freely available, far more people are able to notice security holes.
-* You can be sure that the code you are actually running is the same as what has been audited.
+* When the source code is freely available, far more people are able to notice * security holes. * You can be sure that the code you are actually running is * the same as what has been audited.
 
 What's important to note here too is that you simply cannot trust a company not to have been forced (by governments or otherwise) to distribute software with backdoors added. You don't have to read and understand the code yourself, but if several independent auditors across different countries concur that there are no backdoors, and you can verify that you're running that exact same code, you can trust it.
 
 That's all from me! More blog posts to come.
 
-1: https://github.com/neovim/neovim: https://github.com/neovim/neovim
-2: https://github.com/tim-clifford/xournalpp: https://github.com/tim-clifford/xournalpp
-3: https://github.com/jeffreytse/zsh-vi-mode/pull/89: https://github.com/jeffreytse/zsh-vi-mode/pull/89
-4: https://zenorocha.com: https://zenorocha.com
+1: https://github.com/neovim/neovim: https://github.com/neovim/neovim 2:
+https://github.com/eleanor-clifford/xournalpp:
+https://github.com/eleanor-clifford/xournalpp 3:
+https://github.com/jeffreytse/zsh-vi-mode/pull/89:
+https://github.com/jeffreytse/zsh-vi-mode/pull/89 4: https://zenorocha.com:
+https://zenorocha.com
 
 ---
 
-You are recieving this email because you opted in via tim.clifford.lol.
-To unsubscribe, email tc565-blog-request@srcf.net with subject line
-"unsubscribe"
+You are recieving this email because you opted in via ellie.clifford.lol. To unsubscribe, email tc565-blog-request@srcf.net with subject line "unsubscribe"
 
 --proprietarysoftwareismalware--
 

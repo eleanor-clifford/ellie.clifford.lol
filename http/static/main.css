@@ -4,8 +4,8 @@
 }
 
 body {
-  background: #20222b;
-  color: #f2f2f2;
+  background: #282a36;
+  color: #f8f8f2;
   font-family: "Source Sans Pro";
   font-weight: 300;
   min-height: 100vh;
@@ -79,12 +79,12 @@ body {
   font-family: "Source Sans Pro";
   font-weight: 700;
   display: inline-block;
-  color: #f2f2f2;
+  color: #f8f8f2;
   font-size: 24px;
   width: 10%;
 }
 
-.topbar-img {
+.topbar img {
   margin-top: 8px;
   width: 48px;
 }
@@ -118,7 +118,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #f2f2f2;
+  color: #f8f8f2;
   font-size: 20px;
   font-weight: 400;
   border-bottom: 2px solid transparent;
@@ -229,7 +229,7 @@ nav ul li a {
 }
 
 .app-views {
-  color: #f2f2f2;
+  color: #f8f8f2;
   text-align: center;
 }
 
@@ -651,12 +651,12 @@ th, td {
    ========================================================================== */
 
 .single .wrap {
-  background: #20222b;
-  padding: 80px 0 60px 0;
+  background: #282a36;
+  padding: 20px 0 40px 0;
 }
 
 .footer {
-  background: #20222b;
+  background: #282a36;
   width: 840px;
   max-width: 90vw;
   margin: 0 auto;
@@ -813,8 +813,8 @@ th, td {
 }
 
 .blog a {
-  color: #f2f2f2;
-  border-bottom: 2px solid #f2f2f2;
+  color: #f8f8f2;
+  border-bottom: 2px solid #f8f8f2;
 }
 
 .blog ol,
@@ -998,7 +998,7 @@ blockquote p {
 }
 
 .blog-item a {
-  color: #f2f2f2;
+  color: #f8f8f2;
 }
 
 .blog-item-header {
@@ -1169,8 +1169,8 @@ blockquote p {
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('https://tim.clifford.lol/fonts/SourceSansPro-Light.woff2') format('woff2'),
-       url('https://tim.clifford.lol/fonts/SourceSansPro-Light.woff') format('woff');
+  src: url('https://ellie.clifford.lol/fonts/SourceSansPro-Light.woff2') format('woff2'),
+       url('https://ellie.clifford.lol/fonts/SourceSansPro-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -1178,8 +1178,8 @@ blockquote p {
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('https://tim.clifford.lol/fonts/SourceSansPro-Regular.woff2') format('woff2'),
-       url('https://tim.clifford.lol/fonts/SourceSansPro-Regular.woff') format('woff');
+  src: url('https://ellie.clifford.lol/fonts/SourceSansPro-Regular.woff2') format('woff2'),
+       url('https://ellie.clifford.lol/fonts/SourceSansPro-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -1187,8 +1187,8 @@ blockquote p {
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('https://tim.clifford.lol/fonts/SourceSansPro-Bold.woff2') format('woff2'),
-       url('https://tim.clifford.lol/fonts/SourceSansPro-Bold.woff') format('woff');
+  src: url('https://ellie.clifford.lol/fonts/SourceSansPro-Bold.woff2') format('woff2'),
+       url('https://ellie.clifford.lol/fonts/SourceSansPro-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1196,8 +1196,8 @@ blockquote p {
 
 @font-face {
   font-family: 'Fira Code';
-  src: url('https://tim.clifford.lol/fonts/FiraCode-Regular.woff2') format('woff2'),
-       url('https://tim.clifford.lol/fonts/FiraCode-Regular.woff') format('woff');
+  src: url('https://ellie.clifford.lol/fonts/FiraCode-Regular.woff2') format('woff2'),
+       url('https://ellie.clifford.lol/fonts/FiraCode-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -1205,8 +1205,8 @@ blockquote p {
 
 @font-face {
   font-family: 'Fira Code';
-  src: url('https://tim.clifford.lol/fonts/FiraCode-Medium.woff2') format('woff2'),
-       url('https://tim.clifford.lol/fonts/FiraCode-Medium.woff') format('woff');
+  src: url('https://ellie.clifford.lol/fonts/FiraCode-Medium.woff2') format('woff2'),
+       url('https://ellie.clifford.lol/fonts/FiraCode-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1214,46 +1214,36 @@ blockquote p {
 
 @font-face {
   font-family: 'Fira Code';
-  src: url('https://tim.clifford.lol/fonts/FiraCode-Bold.woff2') format('woff2'),
-       url('https://tim.clifford.lol/fonts/FiraCode-Bold.woff') format('woff');
+  src: url('https://ellie.clifford.lol/fonts/FiraCode-Bold.woff2') format('woff2'),
+       url('https://ellie.clifford.lol/fonts/FiraCode-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
-.Topbar_nav {
-  background: #20222b;
-  background-color: rgb(32, 34, 43);
-  background-image: none;
+.topbar nav {
+  background-color: #44475a;
   height: 50px;
   padding: 5px;
   display: flex;
   align-items: center;
   box-shadow: 0 5px 10px 0 rgba(0,0,0,.15);
   justify-content: space-between;
+  border-radius: 5px;
+  margin: 5px;
 }
 
-.Topbar_div {
+.topbar div {
 	position:fixed;
 	width:100%;
 	z-index:1
 }
-.Topbar_button{
-	background:#20222b;
-	height:50px;
-	padding:5px;
-	display:flex;
-	align-items:center;
-	box-shadow:0 5px 10px 0 rgba(0,0,0,.15);
-	justify-content:space-between
-}
 
-.Topbar_bigbutton{
+.topbar-button {
 	transition:all .3s ease-in-out;
-	margin-left:20px;
-	margin-right:20px;
+	margin-left:5px;
+	margin-right:5px;
 	display:inline-block;
-	background:#50fa7b;
 	border-radius:4px;
 	text-align:center;
 	color:#000;
@@ -1263,21 +1253,42 @@ blockquote p {
 	border:0
 }
 
+.topbar-button.left {
+	background: #8be9fd;
+}
+
+.topbar-button.middle {
+	background: #ff79c6;
+}
+
+.topbar-button.right {
+	background: #f8f8f2;
+}
+
 @media screen and (max-width: 420px) {
-	.Topbar_bigbutton {
-		margin-right: 5px;
-		margin-left: 15px;
+	.topbar-button {
+		margin-right: 2px;
+		margin-left: 2px;
 		padding: 8px 10px;
 	}
 }
 
 
-.Topbar_bigbutton:focus,.Topbar_bigbutton:hover{
-	border:0;
-	color:#000 !important;
-	background: rgba(80,250,123,.8)
+.topbar-button:focus,.topbar-button:hover{
+	color: #000 !important;
 }
 
+.topbar-button.left:focus,.topbar-button.left:hover{
+	background: rgba(139, 233, 253, .8);
+}
+
+.topbar-button.middle:focus,.topbar-button.middle:hover{
+	background: rgba(255, 121, 198, .8);
+}
+
+.topbar-button.right:focus,.topbar-button.right:hover{
+	background: rgba(248, 248, 242, .8);
+}
 
 .music-item {
   display: flex;

@@ -13,7 +13,7 @@ All this is to say that I know in excruciating detail exactly how well my creati
 
 People speak a lot about how social media is toxic, but the core of this toxicity, or at least a major component of it, is analytics. Whether it's an Instagram post or a blog post on my own site, the mental pattern is the same: there's a rush of excitement when I release something new and the numbers fly up, and then a slow drain as I keep watching but the numbers stop going up.
 
-A meme: https://tim.clifford.lol/blog/paralyzed-by-analytics/meme.jpg
+A meme: https://ellie.clifford.lol/blog/paralyzed-by-analytics/meme.jpg
 
 ## Paralyzed by analytics
 
@@ -23,4 +23,4 @@ I hope that over time the part of my brain that wants to look at analytics will 
 
 Until that time comes, I suppose all I can do is practice my mental discipline.
 
-1: Entropy Bingo: https://tim.clifford.lol/blog/entropy-bingo/
+1: Entropy Bingo: https://ellie.clifford.lol/blog/entropy-bingo/

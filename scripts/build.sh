@@ -21,7 +21,7 @@ build_rss() {
 	export CONTENT="$(echo "$posts" | while read post
 		do
 			export TITLE="$(md_get_metadata "$post" title)"
-			export URL="https://tim.clifford.lol/$(echo "$post" | sed -E 's/\.md$/.html/;s/index.html$//')"
+			export URL="https://ellie.clifford.lol/$(echo "$post" | sed -E 's/\.md$/.html/;s/index.html$//')"
 			export DESCRIPTION="$(md_strip_yaml <$post | pandoc -f markdown -t html \
 				| perl -pe "$(cat << 'EOF'
 BEGIN{undef $/;}

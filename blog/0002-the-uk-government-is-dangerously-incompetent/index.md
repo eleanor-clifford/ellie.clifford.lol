@@ -55,7 +55,7 @@ will flock to. What makes this situation especially stupid is that Facebook's
 proprietary nature makes it untrustable *anyway*, *regardless* of whether they
 claim to provide E2E, and any criminal who is stupid enough to think Facebook
 Messenger is secure is certainly stupid enough to be caught in 5 other ways.
-(See also [Why FOSS?](https://tim.clifford.lol/blog/why-foss)).
+(See also [Why FOSS?](https://ellie.clifford.lol/blog/why-foss)).
 
 ## Literally just do your jobs please
 

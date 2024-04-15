@@ -3,29 +3,30 @@
 <html lang="en">
   <head>
     <title>${TITLE}</title>
-    <link rel="icon" type="image/png" href="/avatar_48.png"/>
+    <link rel="icon" type="image/jpeg" href="/avatar_48.jpg"/>
     <meta charSet="utf-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <link rel="stylesheet" href="/main.css"/>
-    <link rel="me" href="https://mastodon.lol/@timclifford"/>
     <style type="text/css">
       ${CSS}
     </style>
   </head>
   <body>
     <div class="${COLOR}">
-      <div class="Topbar_div">
-        <nav class="Topbar_nav">
+      <div class="topbar">
+        <nav>
           <a class="topbar-title" href="/">
-            <img class="topbar-img" src="/avatar_128.png"/>
+            <img src="/avatar_transparent_256.png"/>
           </a>
           <ul>
-            <li><a href="/about/">About</a></li>
-            <li><a href="/music/">Music</a></li>
             <li>
-              <a href="/blog/"
-                 class="Topbar_bigbutton">Blog
-              </a>
+              <a href="/about/" class="topbar-button left">About</a>
+            </li>
+            <li>
+              <a href="/music/" class="topbar-button middle">Music</a>
+            </li>
+            <li>
+              <a href="/blog/" class="topbar-button right">Blog</a>
             </li>
           </ul>
         </nav>

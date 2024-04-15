@@ -55,7 +55,7 @@ they can present themselves (and in turn, their profits). Not their users.
 
 And what about adaptability? I regularly come across things that I wish were
 different in software. I want my drawing program to default to drawing circles
-from the centre? [Sure!](https://github.com/tim-clifford/xournalpp) Want to use
+from the centre? [Sure!](https://github.com/eleanor-clifford/xournalpp) Want to use
 different keybindings in my terminal?
 [Absolutely!](https://github.com/jeffreytse/zsh-vi-mode/pull/89) Want to make
 Zoom stop going into fullscreen for no reason when I already have it arranged

@@ -3,14 +3,14 @@
 
 ---
 title: "Music"
-banner: "/banner.jpg: Tim playing guitar for a crowd at a Student Windsurfing Association event"
+banner: "/banner.jpg: Ellie playing guitar for a crowd at a Student Windsurfing Association event"
 ---
 
 I make music :]
 
 The music I make is free (libre) and pay-what-you-want. If you do want to, donate here:
 
-<a class="nounderline" href="https://liberapay.com/tim-clifford/donate">
+<a class="nounderline" href="https://liberapay.com/ellie-clifford/donate">
 	<img alt="Tip me using Liberapay"
 	     src="/_icons/liberapay.svg"/>
 </a>
@@ -33,7 +33,7 @@ manner_&nbsp; [[link]](https://www.merriam-webster.com/dictionary/noodle)
    <img src="/_icons/stream.svg" alt="Stream icon" />
    <p>M3U Stream</p>
   </a>
-  <a href="https://tim-clifford.bandcamp.com/album/noodles-vol-0-reflections-and-phantoms">
+  <a href="https://ellie-clifford.bandcamp.com/album/noodles-vol-0-reflections-and-phantoms">
    <img src="/_icons/bandcamp.png" alt="Bandcamp logo" />
    <p>Bandcamp</p>
   </a>
@@ -72,7 +72,7 @@ manner_&nbsp; [[link]](https://www.merriam-webster.com/dictionary/noodle)
    <img src="/_icons/download.svg" alt="Download icon" />
    <p>Download</p>
   </a>
-  <a href="https://tim-clifford.bandcamp.com/track/autumn-wind/">
+  <a href="https://ellie-clifford.bandcamp.com/track/autumn-wind/">
    <img src="/_icons/bandcamp.png" alt="Bandcamp logo" />
    <p>Bandcamp</p>
   </a>
@@ -144,7 +144,7 @@ _"Never Knew" by Ludovique_
 All original musical content is dual-licensed under [CC BY-NC-SA
 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) and the
 [Commercial-Derivative 1.0 Public
-Licence](https://tim.clifford.lol/licenses/commercial-derivative-1.0.txt).
+Licence](https://ellie.clifford.lol/licenses/commercial-derivative-1.0.txt).
 
 Basically, you can use/distribute/etc the works non-commercially, and if you
 make a derivative work (remix, cover, etc) you can use that for whatever

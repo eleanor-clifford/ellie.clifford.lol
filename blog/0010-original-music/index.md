@@ -18,8 +18,8 @@ Have a listen:
 
 I won't be making a blog post for every new piece of music, so if you want to
 keep getting musical updates, the best way is to [subscribe to this RSS
-feed](https://tim.clifford.lol/music/rss.xml) or just keep an eye on
-[https://tim.clifford.lol/music](https://tim.clifford.lol/music/).
+feed](https://ellie.clifford.lol/music/rss.xml) or just keep an eye on
+[https://ellie.clifford.lol/music](https://ellie.clifford.lol/music/).
 
 ## Producing music is harder than I thought
 

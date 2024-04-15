@@ -1,19 +1,19 @@
 image: archlinux
 sources:
   - https://git.sr.ht/~tcarrio/git-mirror
-  - https://git.sr.ht/~tim-clifford/tim.clifford.lol
+  - https://git.sr.ht/~tim-clifford/ellie.clifford.lol
 environment:
-  GIT_TARGET_REPO: git@github.com:tim-clifford/tim.clifford.lol.git
+  GIT_TARGET_REPO: git@github.com:eleanor-clifford/ellie.clifford.lol.git
 secrets:
   - 9ee7c8f6-f330-46d7-8339-574c3d774548
 tasks:
   - add-warning: |
-      cd tim.clifford.lol
+      cd ellie.clifford.lol
       git checkout master
       # fuck all this so much
       warning="
 
-      | :exclamation:  | This is a mirror of [https://git.sr.ht/~tim-clifford/tim.clifford.lol](https://git.sr.ht/~tim-clifford/tim.clifford.lol). Please refrain from using GitHub's issue and PR system.  |
+      | :exclamation:  | This is a mirror of [https://git.sr.ht/~tim-clifford/ellie.clifford.lol](https://git.sr.ht/~tim-clifford/ellie.clifford.lol). Please refrain from using GitHub's issue and PR system.  |
       |----------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------|
 
       "
@@ -27,4 +27,4 @@ tasks:
       git add README.md
       git commit -m "[builds.sr.ht] Add mirror warning to README.md"
 
-  - mirror: git-mirror/git-mirror.sh tim.clifford.lol
+  - mirror: git-mirror/git-mirror.sh ellie.clifford.lol

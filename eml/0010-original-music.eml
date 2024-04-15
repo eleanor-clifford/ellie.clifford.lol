@@ -8,10 +8,10 @@ Content-Type: multipart/alternative; boundary=proprietarysoftwareismalware
 Content-Type: text/html; charset=utf-8
 
 <p>
-  <a href="https://tim.clifford.lol/blog/original-music">View in a browser</a>
+  <a href="https://ellie.clifford.lol/blog/original-music">View in a browser</a>
 </p>
 <p>
-  <a href="gemini://tim.clifford.lol/blog/original-music">Or on Gemini</a>
+  <a href="gemini://ellie.clifford.lol/blog/original-music">Or on Gemini</a>
 </p>
 
 <p>I wrote and produced my first original song! Well, the first that is
@@ -22,9 +22,9 @@ going to see the light of day, anyway.</p>
 </a></p>
 <p>I won’t be making a blog post for every new piece of music, so if you
 want to keep getting musical updates, the best way is to <a
-href="https://tim.clifford.lol/music/rss.xml">subscribe to this RSS
+href="https://ellie.clifford.lol/music/rss.xml">subscribe to this RSS
 feed</a> or just keep an eye on <a
-href="https://tim.clifford.lol/music/">https://tim.clifford.lol/music</a>.</p>
+href="https://ellie.clifford.lol/music/">https://ellie.clifford.lol/music</a>.</p>
 <h2 id="producing-music-is-harder-than-i-thought">Producing music is
 harder than I thought</h2>
 <p>Trying to make music on your own requires doing several jobs, and I’m
@@ -63,7 +63,7 @@ setup</h2>
 <tr>
 <td style="width: 69%">
 <figure>
-<img src="https://tim.clifford.lol/blog/original-music/mic_stand.jpg" style="width: 80%"
+<img src="https://ellie.clifford.lol/blog/original-music/mic_stand.jpg" style="width: 80%"
       alt="A mic stand attached unstably to a guitar stand"
  />
 <figcaption aria-hidden="true" style="width: 80%; margin: auto">
@@ -74,7 +74,7 @@ entire cantilever is clamped onto a squishy guitar holder)
 </td>
 <td>
 <figure style="float: right;">
-<img src="https://tim.clifford.lol/blog/original-music/camera_stand.jpg" style="width: 80%"
+<img src="https://ellie.clifford.lol/blog/original-music/camera_stand.jpg" style="width: 80%"
       alt="A phone, being used as a camera, sitting on a fully extended sheet
            music stand, sitting on a small chair/table"
  />
@@ -158,19 +158,15 @@ href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 --proprietarysoftwareismalware
 Content-Type: text/plain; charset=utf-8
 
-View in a browser: https://tim.clifford.lol/blog/original-music
-Or on Gemini: gemini://tim.clifford.lol/blog/original-music
+View in a browser: https://ellie.clifford.lol/blog/original-music Or on Gemini: gemini://ellie.clifford.lol/blog/original-music
 
 I wrote and produced my first original song! Well, the first that is going to see the light of day, anyway.
 
 Have a listen:
 
-"Autumn Wind" (Video): https://dalek.zone/w/8QbJLp7iW5BDuBESC99xZV
-"Autumn Wind" (Audio): https://tim.clifford.lol/music/autumn_wind.flac
+"Autumn Wind" (Video): https://dalek.zone/w/8QbJLp7iW5BDuBESC99xZV "Autumn Wind" (Audio): https://ellie.clifford.lol/music/autumn_wind.flac
 
-I won't be making a blog post for every new piece of music, so if you want to
-keep getting musical updates, the best way is to subscribe to this RSS feed[1]
-or just keep an eye on https://tim.clifford.lol/music[2].
+I won't be making a blog post for every new piece of music, so if you want to keep getting musical updates, the best way is to subscribe to this RSS feed[1] or just keep an eye on https://ellie.clifford.lol/music[2].
 
 ## Producing music is harder than I thought
 
@@ -206,16 +202,14 @@ Until quite recently I didn't even understand what mastering was. Apparently, th
 
 You'll notice that my recording is a little quieter than other music if you listen to them side by side. That's because I'm bad at mastering :P
 
-1: https://tim.clifford.lol/music/rss.xml
-2: https://tim.clifford.lol/music/
+1: https://ellie.clifford.lol/music/rss.xml
+2: https://ellie.clifford.lol/music/
 3: noodle, noodled, noodling (verb): to improvise on an instrument in an informal or desultory manner: https://www.merriam-webster.com/dictionary/noodle
 4: Which isn't really anything to do with Linux, it's more to do with companies like Adobe managing to gain a stranglehold.
 
 ---
 
-You are recieving this email because you opted in via tim.clifford.lol.
-To unsubscribe, email tc565-blog-request@srcf.net with subject line
-"unsubscribe"
+You are recieving this email because you opted in via ellie.clifford.lol. To unsubscribe, email ecc73-blog-request@srcf.net with subject line "unsubscribe"
 
 --proprietarysoftwareismalware--
 
