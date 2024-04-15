@@ -28,18 +28,20 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   </head>
   <body>
     <div class="purple">
-      <div class="Topbar_div">
-        <nav class="Topbar_nav">
+      <div class="topbar">
+        <nav>
           <a class="topbar-title" href="/">
-            <img class="topbar-img" src="/avatar_128.jpg"/>
+            <img src="/avatar_transparent_256.png"/>
           </a>
           <ul>
-            <li><a href="/about/">About</a></li>
-            <li><a href="/music/">Music</a></li>
             <li>
-              <a href="/blog/"
-                 class="Topbar_bigbutton">Blog
-              </a>
+              <a href="/about/" class="topbar-button left">About</a>
+            </li>
+            <li>
+              <a href="/music/" class="topbar-button middle">Music</a>
+            </li>
+            <li>
+              <a href="/blog/" class="topbar-button right">Blog</a>
             </li>
           </ul>
         </nav>
@@ -61,7 +63,7 @@ if (false) {
     </p>
 <?php
 } else {
-	echo '<span style="color: #ff5555; font-weight: bold;">Down for maintenance due to spam. For now, contact me through an alternate channel to be subscribed.</span>';
+	echo '<span style="color: #ff5555; font-weight: bold;">Down for maintenance due to spam. For now, please subscribe via <a href="gemini://ellie.clifford.lol/blog/">gemini://ellie.clifford.lol/blog/</a> or contact me through an alternate channel.</span>';
 	http_response_code(503);
 }
 ?>

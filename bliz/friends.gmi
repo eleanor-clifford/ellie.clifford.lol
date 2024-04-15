@@ -4,3 +4,8 @@ Message me if you want to be added!
 
 => gemini://ori.clifford.lol Ori
 => gemini://cadence.moe Cadence
+
+Other interesting blogs and stuff from people I have never met:
+
+=> gemini://drewdevault.com Drew DeVault
+=> gemini://commie.space lel (commie.space)
