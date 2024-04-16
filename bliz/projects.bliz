@@ -5,24 +5,24 @@
 
 ## Cool things you might want to use
 
-=> https://sr.ht/~tim-clifford/vim-venus Venus, a vim plugin for executing code and making documents
-=> https://git.sr.ht/~tim-clifford/vim-qalc vim-qalc, a vim plugin for evaluating maths expressions
-=> https://git.sr.ht/~tim-clifford/polybar-power polybar-power, a battery time widget and notifier for polybar
+=> https://sr.ht/~ecc/vim-venus Venus, a vim plugin for executing code and making documents
+=> https://git.sr.ht/~ecc/vim-qalc vim-qalc, a vim plugin for evaluating maths expressions
+=> https://git.sr.ht/~ecc/polybar-power polybar-power, a battery time widget and notifier for polybar
 => https://github.com/windows-bad/polybar-player polybar-player, an audio metadata and control interface for polybar
 
 ## Other cool things
 
-=> https://git.sr.ht/~tim-clifford/ErgoDash-R ErgoDash-R, a custom keyboard with thumb scroll wheels
+=> https://git.sr.ht/~ecc/ErgoDash-R ErgoDash-R, a custom keyboard with thumb scroll wheels
 => https://github.com/smh-my-head/hades Hades, a minimal VM for running SolidWorks on Linux
 => https://github.com/smh-my-head/charon Charon, a git integration for SolidWorks
-=> https://git.sr.ht/~tim-clifford/.config Personal config files, (rad and overengineered meta-config scripts!)
-=> https://git.sr.ht/~tim-clifford/nvimrc Personal neovim config, (rad and undertested regexes!)
+=> https://git.sr.ht/~ecc/.config Personal config files, (rad and overengineered meta-config scripts!)
+=> https://git.sr.ht/~ecc/nvimrc Personal neovim config, (rad and undertested regexes!)
 
 ## Silly things
 
-=> https://git.sr.ht/~tim-clifford/pixel-prime Pixel Prime, a program which renders an image as a prime number
-=> https://git.sr.ht/~tim-clifford/RedditGarlicRobot u/garlicbot, a reddit bot from 2017 which gave people virtual garlic bread
-=> https://git.sr.ht/~tim-clifford/casio-cpong PONG written for the fx9860gII calculator
+=> https://git.sr.ht/~ecc/pixel-prime Pixel Prime, a program which renders an image as a prime number
+=> https://git.sr.ht/~ecc/RedditGarlicRobot u/garlicbot, a reddit bot from 2017 which gave people virtual garlic bread
+=> https://git.sr.ht/~ecc/casio-cpong PONG written for the fx9860gII calculator
 
 ## Unfinished or Future projects
 
