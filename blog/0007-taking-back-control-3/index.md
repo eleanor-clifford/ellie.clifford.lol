@@ -43,17 +43,17 @@ etc. Here are some pictures of the final result:
   <tr>
     <td style="width: 50%">
       <video style="width:100%" controls loop>
-        <source src="/blog/taking-back-control-3/flumph-anim.mp4" type="video/mp4">
+        <source src="./flumph-anim.mp4" type="video/mp4">
       </video>
     </td>
-    <td style="width: 50%"><img style="width:100%" src="/blog/taking-back-control-3/flumph-unlock.png"
+    <td style="width: 50%"><img style="width:100%" src="./flumph-unlock.png"
           alt="flumph's full disk encryption unlock screen">
     </td>
   <tr>
-    <td style="width: 50%"><img style="width:100%" src="/blog/taking-back-control-3/flumph-incorrect.png"
+    <td style="width: 50%"><img style="width:100%" src="./flumph-incorrect.png"
              alt="flumph after a failed password">
     </td>
-    <td style="width: 50%"><img style="width:100%" src="/blog/taking-back-control-3/flumph-unlocking.png"
+    <td style="width: 50%"><img style="width:100%" src="./flumph-unlocking.png"
             alt="flumph during encryption unlock">
     </td>
   </tr>

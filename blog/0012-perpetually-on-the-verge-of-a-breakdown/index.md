@@ -10,5 +10,5 @@ sweet.
 
 This is the daily life of a Cambridge undergrad. No I will not elaborate.
 
-_["What we leave behind"](https://ellie.clifford.lol/blog/what-we-leave-behind/)
+_["What we leave behind"](/blog/0006-what-we-leave-behind/)
 is why I posted this._

@@ -7,17 +7,16 @@ createdAt: "2021-04-12"
 Hah! Who says proprietary programs can't be themed?? SolidWorks never stood a
 chance. I even edited a DLL with vim.
 
-![Dracula for SolidWorks](/blog/dracula-for-solidworks/screenshot.png)
+![Dracula for SolidWorks](./screenshot.png)
 
 *You can find the theme with full install instructions
 [here](https://draculatheme.com/solidworks).*
 
 ## Why?
 
-Despite my comments in [this blog
-post](https://ellie.clifford.lol/blog/why-foss), there are a few proprietary
-programs which I am tied to, with no hope of escape. One of these is
-SolidWorks, a 3D Computer Aided Design program used extensively in many
+Despite my comments in [this blog post](/blog/0000-why-foss), there are a few
+proprietary programs which I am tied to, with no hope of escape. One of these
+is SolidWorks, a 3D Computer Aided Design program used extensively in many
 engineering teams.
 
 I have spent many hours late at night using SolidWorks, and having a dark theme
@@ -39,7 +38,7 @@ program designed for dealing with DLLs" (or, alternatively, to give up). But
 naturally the only thing I was thinking was "Can I open it in vim".  And what I
 found was a veritable goldmine...
 
-![Some color codes I found embedded in a DLL](/blog/dracula-for-solidworks/vim-dll-comments.png)
+![Some color codes I found embedded in a DLL](./vim-dll-comments.png)
 
 Yep, that's some sort of style description *embedded in plaintext in a DLL*.
 And even better, there are comments! Comments which they thought nobody would

@@ -26,7 +26,7 @@ grep: swStyleBlueu.dll: binary file matches
 
 Now, the appropriate response here is probably to think "Ok, let me find a program designed for dealing with DLLs" (or, alternatively, to give up). But naturally the only thing I was thinking was "Can I open it in vim".  And what I found was a veritable goldmine...
 
-=> /blog/dracula-for-solidworks/vim-dll-comments.png Some color codes I found embedded in a DLL
+=> ./vim-dll-comments.png Some color codes I found embedded in a DLL
 
 Yep, that's some sort of style description *embedded in plaintext in a DLL*. And even better, there are comments! Comments which they thought nobody would see...
 
@@ -64,4 +64,4 @@ done
 
 Anyway, naturally, I then wrote a script to change the colors and voilà, Dracula for Solidworks. But the story's not over. Have you been wondering why there are still ugly grey bits in the screenshot? Yeah. I found the variables for that, and tried to change them. SolidWorks refused to start.
 
-=> gemini://ellie.clifford.lol/blog/why-foss/ 3: https://ellie.clifford.lol/blog/why-foss
+=> gemini://ellie.clifford.lol/blog/0000-why-foss/ 3: https://ellie.clifford.lol/blog/0000-why-foss/

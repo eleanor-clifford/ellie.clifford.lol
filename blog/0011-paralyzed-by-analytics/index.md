@@ -17,7 +17,7 @@ it.
 It's pretty easy for me to get analytics in a variety of ways. Website
 operators (like me) can easily tell how many people look at each page, their
 paths through the site, and occasionally a visitor's identity, when they fail
-[entropy bingo](https://ellie.clifford.lol/blog/entropy-bingo). This is all
+[entropy bingo](/blog/0009-entropy-bingo). This is all
 before you add things like Google Analytics into the mix, which I don't use.
 
 As well as my own site, I have access to lots of analytics that are collected
