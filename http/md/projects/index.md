@@ -5,13 +5,13 @@ title: "Ellie's projects"
 ## Software you might like to use
 
 <div>
-  <a class="nounderline" href="https://sr.ht/~tim-clifford/vim-venus">
+  <a class="nounderline" href="https://sr.ht/~ecc/vim-venus">
     <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=ellie-clifford&amp;repo=vim-venus&amp;theme=dracula&amp;hide_border=true"/>
   </a>
-  <a class="nounderline" href="https://git.sr.ht/~tim-clifford/vim-qalc">
+  <a class="nounderline" href="https://git.sr.ht/~ecc/vim-qalc">
     <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=ellie-clifford&amp;repo=vim-qalc&amp;theme=dracula&amp;hide_border=true"/>
   </a>
-  <a class="nounderline" href="https://git.sr.ht/~tim-clifford/polybar-power">
+  <a class="nounderline" href="https://git.sr.ht/~ecc/polybar-power">
     <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=ellie-clifford&amp;repo=polybar-power&amp;theme=dracula&amp;hide_border=true"/>
   </a>
   <a class="nounderline" href="https://github.com/windows-bad/polybar-player">
