@@ -616,7 +616,7 @@ th, td {
   font-smoothing: antialiased;
   -webkit-appearance: none;
   -moz-appearance: caret;
-  width: 65% !important;
+  max-width: 65%;
   height: 40px !important;
 }
 
@@ -965,10 +965,11 @@ blockquote p {
 
 .blog-updates-small form {
   display: flex;
+  margin-top: 0px;
 }
 
 .blog-updates-small {
-  margin: 30px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
 }
 
 .blog-updates-small .form input[type="submit"] {
