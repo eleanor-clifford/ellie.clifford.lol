@@ -46,3 +46,5 @@ Header merge  Vary "Origin"
 Options +Includes
 AddType text/html .shtml
 AddOutputFilter INCLUDES .shtml
+
+Header set X-Clacks-Overhead "GNU Ross Anderson"
