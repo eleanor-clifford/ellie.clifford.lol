@@ -6,13 +6,13 @@ title: "Ellie's projects"
 
 <div>
   <a class="nounderline" href="https://sr.ht/~ecc/vim-venus">
-    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=ellie-clifford&amp;repo=vim-venus&amp;theme=dracula&amp;hide_border=true"/>
+    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=eleanor-clifford&amp;repo=vim-venus&amp;theme=dracula&amp;hide_border=true"/>
   </a>
   <a class="nounderline" href="https://git.sr.ht/~ecc/vim-qalc">
-    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=ellie-clifford&amp;repo=vim-qalc&amp;theme=dracula&amp;hide_border=true"/>
+    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=eleanor-clifford&amp;repo=vim-qalc&amp;theme=dracula&amp;hide_border=true"/>
   </a>
   <a class="nounderline" href="https://git.sr.ht/~ecc/polybar-power">
-    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=ellie-clifford&amp;repo=polybar-power&amp;theme=dracula&amp;hide_border=true"/>
+    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=eleanor-clifford&amp;repo=polybar-power&amp;theme=dracula&amp;hide_border=true"/>
   </a>
   <a class="nounderline" href="https://github.com/windows-bad/polybar-player">
     <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=windows-bad&amp;repo=polybar-player&amp;theme=dracula&amp;hide_border=true"/>
@@ -27,10 +27,10 @@ possible. Here are some projects that help me do that.
 
 <div>
   <a class="nounderline" href="https://github.com/eleanor-clifford/.config">
-    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=ellie-clifford&amp;repo=.config&amp;theme=dracula&amp;hide_border=true"/>
+    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=eleanor-clifford&amp;repo=.config&amp;theme=dracula&amp;hide_border=true"/>
   </a>
   <a class="nounderline" href="https://github.com/eleanor-clifford/nvimrc">
-    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=ellie-clifford&amp;repo=nvimrc&amp;theme=dracula&amp;hide_border=true"/>
+    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=eleanor-clifford&amp;repo=nvimrc&amp;theme=dracula&amp;hide_border=true"/>
   </a>
   <a class="nounderline" href="https://github.com/smh-my-head/charon">
     <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=smh-my-head&amp;repo=charon&amp;theme=dracula&amp;hide_border=true"/>
@@ -39,7 +39,7 @@ possible. Here are some projects that help me do that.
     <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=smh-my-head&amp;repo=hades&amp;theme=dracula&amp;hide_border=true"/>
   </a>
   <a class="nounderline" href="https://github.com/eleanor-clifford/ErgoDash-R">
-    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=ellie-clifford&amp;repo=ErgoDash-R&amp;theme=dracula&amp;hide_border=true"/>
+    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=eleanor-clifford&amp;repo=ErgoDash-R&amp;theme=dracula&amp;hide_border=true"/>
   </a>
 </div>
 
@@ -49,13 +49,13 @@ Fun things I've worked on in the past
 
 <div>
   <a class="nounderline" href="https://github.com/eleanor-clifford/pixel-prime">
-    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=ellie-clifford&amp;repo=pixel-prime&amp;theme=dracula&amp;hide_border=true"/>
+    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=eleanor-clifford&amp;repo=pixel-prime&amp;theme=dracula&amp;hide_border=true"/>
   </a>
   <a class="nounderline" href="https://github.com/eleanor-clifford/casio-cpong">
-    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=ellie-clifford&amp;repo=casio-cpong&amp;theme=dracula&amp;hide_border=true"/>
+    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=eleanor-clifford&amp;repo=casio-cpong&amp;theme=dracula&amp;hide_border=true"/>
   </a>
   <a class="nounderline" href="https://github.com/eleanor-clifford/astrodynamics-sim">
-    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=ellie-clifford&amp;repo=astrodynamics-sim&amp;theme=dracula&amp;hide_border=true"/>
+    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=eleanor-clifford&amp;repo=astrodynamics-sim&amp;theme=dracula&amp;hide_border=true"/>
   </a>
 </div>
 
