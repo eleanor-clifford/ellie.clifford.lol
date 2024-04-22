@@ -81,12 +81,30 @@ body {
   display: inline-block;
   color: #f8f8f2;
   font-size: 24px;
-  width: 10%;
 }
 
-.topbar img {
-  margin-top: 8px;
+.topbar-toggle {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0px 0px 10px;
+}
+
+.topbar-title img {
   width: 48px;
+  margin-top: 8px;
+}
+
+.topbar-toggle img {
+  width: 48px;
+  margin: 0 auto;
+}
+
+.topbar-toggle p {
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 4px 0px 0px 0px;
+  color: #ff79c6;
 }
 
 .cyan .topbar-title:hover { color: rgba(139, 233, 253, 1); }
@@ -660,7 +678,7 @@ th, td {
   width: 840px;
   max-width: 90vw;
   margin: 0 auto;
-  padding: 0 0 80px 0;
+  padding: 0;
 }
 
 .single .page {
@@ -1266,7 +1284,7 @@ blockquote p {
 	background: #f8f8f2;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 480px) {
 	.topbar-button {
 		margin-right: 2px;
 		margin-left: 2px;
