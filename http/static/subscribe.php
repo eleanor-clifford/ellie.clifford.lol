@@ -24,7 +24,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     <link rel="icon" type="image/jpeg" href="/avatar_48.jpg"/>
     <meta charSet="utf-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <link rel="stylesheet" href="/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/main.css?v4"/>
   </head>
   <body>
     <div class="purple">
@@ -32,6 +32,10 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         <nav>
           <a class="topbar-title" href="/">
             <img src="/avatar_transparent_256.png"/>
+          </a>
+          <a class="topbar-toggle" href="https://eleanor.clifford.lol">
+            <img src="/toggle.svg"/>
+            <p>Toggle silliness</p>
           </a>
           <ul>
             <li>
