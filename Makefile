@@ -16,6 +16,8 @@ build:
 	./scripts/build.sh --all
 deploy:
 	test -f upload.lock || ./scripts/deploy.sh --all
+check:
+	./scripts/check.sh
 clean:
 	rm -rf out/http/*
 	rm -rf out/bliz/*
