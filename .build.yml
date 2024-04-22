@@ -1,7 +1,7 @@
 image: archlinux
 sources:
   - https://git.sr.ht/~tcarrio/git-mirror
-  - https://git.sr.ht/~tim-clifford/ellie.clifford.lol
+  - https://git.sr.ht/~ecc/ellie.clifford.lol
 environment:
   GIT_TARGET_REPO: git@github.com:eleanor-clifford/ellie.clifford.lol.git
 secrets:
@@ -13,7 +13,7 @@ tasks:
       # fuck all this so much
       warning="
 
-      | :exclamation:  | This is a mirror of [https://git.sr.ht/~tim-clifford/ellie.clifford.lol](https://git.sr.ht/~tim-clifford/ellie.clifford.lol). Please refrain from using GitHub's issue and PR system.  |
+      | :exclamation:  | This is a mirror of [https://git.sr.ht/~ecc/ellie.clifford.lol](https://git.sr.ht/~ecc/ellie.clifford.lol). Please refrain from using GitHub's issue and PR system.  |
       |----------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------|
 
       "
