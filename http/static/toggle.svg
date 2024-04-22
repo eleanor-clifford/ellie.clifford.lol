@@ -1,0 +1,24 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xml:space="preserve"
+	version="1.1"
+	x="0px" y="0px"
+	viewBox="0 0 85 43.700001"
+>
+	<g transform="translate(-7.5,-28.15)">
+		<g>
+			<path fill="#ff79c6" d="
+				M 29.35, 28.15
+				h 41.3
+				c 12.05, 0, 21.85, 9.8, 21.85, 21.85
+				s -9.8, 21.85-21.85, 21.85
+				h -41.3
+				C 17.3, 71.85, 7.5, 62.05, 7.5, 50
+				S 17.3, 28.15, 29.35, 28.15
+				z
+			"/>
+		</g>
+		<circle fill="#f8f8f2" cx="70.08" cy="50" r="14.77"/>
+	</g>
+</svg>
