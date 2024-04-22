@@ -32,6 +32,8 @@ RewriteRule blog/perpetually-on-the-verge-of-a-breakdown       https://ellie.cli
 
 RewriteRule ^music/rss.xml /cgi-bin/proxy_rss.py [L]
 
+RewriteRule ^.well-known(.*)$ https://clifford.lol%{REQUEST_URI} [L,R=301]
+
 # Force HTTPS
 RewriteCond %{HTTP_HOST} !^ellie\.clifford\.lol$ [NC]
 RewriteRule ^(.*)$ https://ellie.clifford.lol%{REQUEST_URI} [L,R=301]
