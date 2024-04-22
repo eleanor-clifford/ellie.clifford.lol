@@ -20,6 +20,14 @@ logfile = "/home/tc565/logs/blog_comment_POST"
 
 now = datetime.now()
 
+
+def tryfloat(s, default=0):
+	try:
+		return float(s)
+	except ValueError:
+		return default
+
+
 def get_inner_html():  # side effects!
 	def error(text):
 		return f'<div style="color: #ff5555;">{text}</div>'
@@ -32,7 +40,7 @@ def get_inner_html():  # side effects!
 	]
 	for i, r in enumerate(rate_limits):
 		if r[0] == ip_address:
-			timestamps = [x for x in r[1:] if float(x) > now.timestamp() - 10 * 60]
+			timestamps = [x for x in r[1:] if tryfloat(x) > now.timestamp() - 10 * 60]
 			if len(timestamps) > 5:
 				return (429, error("Sorry, you've been ratelimited. Try again later."))
 			else:
@@ -42,7 +50,7 @@ def get_inner_html():  # side effects!
 		rate_limits.append([ip_address, str(now.timestamp())])
 
 	open(f"{blog_comments_upper_dir}/rate_limit", "w").write(
-		"\n".join(("\t".join(x) for x in rate_limits))
+		"\n".join(("\t".join(x) for x in rate_limits)) + "\n"
 	)
 
 	raw_data = stdin.read()
@@ -148,30 +156,34 @@ print(r"""
     <link rel="icon" type="image/jpeg" href="/avatar_48.jpg"/>
     <meta charSet="utf-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <link rel="stylesheet" href="/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/main.css?v4"/>
   </head>
   <body>
     <div class="purple">
-      <div class="Topbar_div">
-        <nav class="Topbar_nav">
+      <div class="topbar">
+        <nav>
           <a class="topbar-title" href="/">
-            <img class="topbar-img" src="/avatar_128.jpg"/>
+            <img src="/avatar_transparent_256.png"/>
+          </a>
+          <a class="topbar-toggle" href="https://eleanor.clifford.lol">
+            <img src="/toggle.svg"/>
+            <p>Toggle silliness</p>
           </a>
           <ul>
-            <li><a href="/about/">About</a></li>
-            <li><a href="/music/">Music</a></li>
             <li>
-              <a href="/blog/"
-                 class="Topbar_bigbutton">Blog
-              </a>
+              <a href="/about/" class="topbar-button left">About</a>
+            </li>
+            <li>
+              <a href="/music/" class="topbar-button middle">Music</a>
+            </li>
+            <li>
+              <a href="/blog/" class="topbar-button right">Blog</a>
             </li>
           </ul>
         </nav>
       </div>
       <div class="single">
         <div class="wrap"><div class="page">
-          <p/>
-          <p/>
 """)
 
 print(inner[1])
