@@ -4,9 +4,9 @@ from datetime import datetime
 from os import listdir
 from os.path import isdir
 
-http_blog_upper_dir = "/public/home/tc565/public_html/ellie.clifford.lol/blog"
-gem_blog_upper_dir = "/home/tc565/bliz/serve/blog"
-blog_comments_upper_dir = "/home/tc565/blog_comments"
+http_blog_upper_dir = "/public/home/ecc73/public_html/ellie.clifford.lol/blog"
+gem_blog_upper_dir = "/home/ecc73/bliz/serve/blog"
+blog_comments_upper_dir = "/home/ecc73/blog_comments"
 
 
 def http_update(post):
