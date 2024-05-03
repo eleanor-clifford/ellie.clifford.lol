@@ -1,0 +1,8 @@
+
+A month or two ago a friend of mine ran a silly little event with a bunch of people where we each drank about six or seven shots of alcohol, and then tried to deliver a presentation using slides we had never seen before, which one of the other attendees had made beforehand.
+
+At the time I had just been dealing with a major outage of my main server, which contained a lot of quite important data that wasn't properly backed up anywhere (I *did* have a backup system, but I turned it off in 2022 when I ran out of storage, and then forgot to actually deal with the problem, thanks ADHD).
+
+Anyway, I had fun making this silly little presentation, and I figure you might have fun reading it:
+
+[ Continue reading this post here: https://ellie.clifford.lol/blog/0014-cloud-service-shenanigans ]

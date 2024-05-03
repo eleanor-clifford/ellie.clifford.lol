@@ -67,7 +67,7 @@ $(cat "$txtfile")
 ---
 
 You are recieving this email because you opted in via ellie.clifford.lol.
-To unsubscribe, email tc565-blog-request@srcf.net with subject line
+To unsubscribe, email ecc73-blog-request@srcf.net with subject line
 \"unsubscribe\"
 
 --proprietarysoftwareismalware--
@@ -107,7 +107,7 @@ convert_blog_to_bliz_txt_eml() { # $1: filename, writes to files
 
 	if ! test -f $f_eml; then
 		mkdir -p "$(dirname $f_eml)"
-		echo "$stripped_md" | convert_to_email tc565-blog@srcf.net \
+		echo "$stripped_md" | convert_to_email ecc73-blog@srcf.net \
 			"Blog | $title" /dev/stdin $f_txt $httpurl >$f_eml
 	fi
 }

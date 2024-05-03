@@ -3,7 +3,7 @@
 import requests
 import re
 
-rss = requests.get("https://dalek.zone/feeds/videos.xml?videoChannelId=18406").text
+rss = requests.get("https://tube.clifford.lol/feeds/videos.xml?videoChannelId=2").text
 
 rss = re.sub("<link>.*?</link>", "<link>https://ellie.clifford.lol/music/</link>", rss, count=1, flags=re.DOTALL)
 rss = re.sub("<description>.*?</description>", "<description>Ellie makes music :]</description>", rss, count=1, flags=re.DOTALL)

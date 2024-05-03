@@ -1,5 +1,5 @@
 from sys import path, argv
-path.append("/home/tc565/python-lib")
+path.append("/home/ecc73/python-lib")
 
 import srcf_tweaked.mail as mail
 

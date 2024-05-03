@@ -4,18 +4,17 @@ $error = "";
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 	$error.="Invalid email address. If you're trying to hack me I'll be mad 😠";
 } else {
+	$logfile = fopen("/home/ecc73/logs/blog_subscribe_POST", "a");
+	fwrite($logfile, $email . "\n");
+
 	// fix ' to outwit the hackers
 	$email = str_replace("'", "'\"'\"'", $email);
 	$output = null;
 	$retval = null;
 	// hardcode paths and stuff for extra security
-	//exec("echo '".$email."' | /usr/bin/ssh shell.srcf.net /usr/local/bin/srcf-mailman-add tc565-blog >> /home/tc565/logs/web-mailman 2>&1", $output, $retval);
-	//if ($retval != 0)
-		//$error = "Failed to add email address. Please email me so I can fix it :) Exit code: ".$retval;
-	//
-	// logging
-	//$logfile = fopen("/home/tc565/logs/blog_subscribe_POST", "a");
-	//$fwrite(
+	exec("echo '".$email."' | /usr/bin/ssh shell.srcf.net /usr/local/bin/srcf-mailman-add ecc73-blog >> /home/ecc73/logs/web-mailman 2>&1", $output, $retval);
+	if ($retval != 0)
+		$error = "Failed to add email address. Please email me so I can fix it :) Exit code: ".$retval;
 }
 ?>
 <html lang="en">
@@ -55,20 +54,21 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
           <p/>
           <p/>
 <?php
-//if (strlen($error) == 0) {
-if (false) {
+//if (false) {
+if (strlen($error) == 0) {
 ?>
     <span>Successfully subscribed <?php echo $email?></span>
     <p/>
     <p>
       Thanks for the support! You should receive email confirmation. To
-      unsubscribe, email tc565-blog-request@srcf.net with subject line
+      unsubscribe, email ecc73-blog-request@srcf.net with subject line
       "unsubscribe"
     </p>
 <?php
 } else {
-	echo '<span style="color: #ff5555; font-weight: bold;">Down for maintenance due to spam. For now, please subscribe via <a href="gemini://ellie.clifford.lol/blog/">gemini://ellie.clifford.lol/blog/</a> or contact me through an alternate channel.</span>';
-	http_response_code(503);
+	//echo '<span style="color: #ff5555; font-weight: bold;">Down for maintenance due to spam. For now, please subscribe via <a href="gemini://ellie.clifford.lol/blog/">gemini://ellie.clifford.lol/blog/</a> or contact me through an alternate channel.</span>';
+	echo '<span style="color: #ff5555; font-weight: bold;">'.$error.'</span>';
+	http_response_code(500);
 }
 ?>
         </div></div>

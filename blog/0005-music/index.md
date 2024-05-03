@@ -12,13 +12,6 @@ I'm not trying to become an influencer or a professional musician or anything,
 I just want my music-making to feel more purposeful than when I'm playing to
 myself :]
 
-If you're interested, check out my first upload:
-
-<br>
-<iframe
-  title="Cover | &quot;Never Knew&quot; by Ludovique"
-  src="https://dalek.zone/videos/embed/7ab62c76-df1a-4eff-8535-b6260514adb0"
-  allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"
-  frameborder="0" style="min-width: 100%; max-width: 100%; aspect-ratio: 16/9"></iframe>
+If you're interested, [check out my first upload](/music/never_knew.flac)!
 
 <!-- vi: set sts=2 sw=2 et :-->

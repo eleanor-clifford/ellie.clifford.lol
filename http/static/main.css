@@ -325,7 +325,7 @@ h4 {
 }
 
 code {
-  font-family: "Monospace";
+  font-family: "Monospace", monospace;
   font-size: 0.7em;
 }
 
@@ -1337,7 +1337,7 @@ blockquote p {
 }
 
 .music-links .predatory-services a {
-  width: 15%;
+  width: 14%;
   min-width: 32px;
 }
 
