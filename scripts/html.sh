@@ -120,11 +120,18 @@ html_build_blog_post() { # reads tsv color, date, file
 	test -z "$tsv" && return
 	file="$(echo "$tsv" | cut -f 3)"
 	basename_noext="$(basename "$(dirname "$file")")"
+	echo "$basename_noext"
 
 	export COLOR="$(echo "$tsv" | cut -f 1)"
 	export DATE="$(echo "$tsv" | cut -f 2)"
 	export TITLE="$(md_get_metadata $file title)"
 	export URL_PART="$basename_noext"
+
+	css="$(md_get_metadata "$file" css)"
+
+	if [ "$css" != "null" ]; then
+		export CSS="$css"
+	fi
 
 	mkdir -p out/http/blog/$basename_noext
 	out_file="out/http/blog/$basename_noext/index.shtml"

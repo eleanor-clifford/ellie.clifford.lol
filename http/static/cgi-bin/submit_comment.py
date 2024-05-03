@@ -9,14 +9,14 @@ from os import makedirs, environ
 from os.path import isdir
 from email_validator import validate_email, EmailNotValidError
 
-path.append("/home/tc565/python-lib")
+path.append("/home/ecc73/python-lib")
 
 import blog_gen_comments
 import blog_send_mail
 
-http_blog_upper_dir = "/public/home/tc565/public_html/ellie.clifford.lol/blog"
-blog_comments_upper_dir = "/home/tc565/blog_comments"
-logfile = "/home/tc565/logs/blog_comment_POST"
+http_blog_upper_dir = "/public/home/ecc73/public_html/ellie.clifford.lol/blog"
+blog_comments_upper_dir = "/home/ecc73/blog_comments"
+logfile = "/home/ecc73/logs/blog_comment_POST"
 
 now = datetime.now()
 

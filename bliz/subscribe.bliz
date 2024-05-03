@@ -5,10 +5,10 @@ else
 	gem_header 20 'text/gemini'
 	# fish handles dangerous chars fine
 	string unescape --style=url -- $req_query \
-		| ssh pip srcf-mailman-add tc565-blog \
+		| ssh pip srcf-mailman-add ecc73-blog \
 		|| echo "Failed to add email address to list"
 end
 %%%
 
 Thanks for the support! You should receive email confirmation. To unsubscribe,
-email tc565-blog-request@srcf.net with subject line "unsubscribe"
+email ecc73-blog-request@srcf.net with subject line "unsubscribe"

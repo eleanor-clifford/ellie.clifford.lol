@@ -11,7 +11,7 @@ set b_words (bliz_word_count)
 
 %%%dash
 # I like writing in POSIX sh, I just like the speed and it makes me ~feel cool~
-cd /home/tc565/bliz/serve/blog
+cd /home/ecc73/bliz/serve/blog
 find . -mindepth 1 -maxdepth 1 ! -name 'index.*' | while read post; do
 	# why do I feel like this is one of those "too complicated" scripts
 	if test -f "$post"; then

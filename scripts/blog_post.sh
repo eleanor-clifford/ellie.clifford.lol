@@ -25,11 +25,14 @@ elif ! test -f $f_eml; then
 	exit 1
 fi
 
+echo "Press enter to build and deploy"
+read foo
+make all
 echo "Built and deployed for gemini and http"
 
-recipients="$(ssh pip srcf-mailman-list tc565-blog | sed -z 's/\n$//;s/\n/ /g')"
+recipients="$(ssh pip srcf-mailman-list ecc73-blog | sed -z 's/\n$//;s/\n/ /g')"
 
-<$f_eml msmtp-dkim -a blog -- tc565@cam.ac.uk
+<$f_eml msmtp-dkim -- ecc73@srcf.net
 
 echo -n "Sent test email. "
 echo "Press enter to send to: "
@@ -38,4 +41,4 @@ echo "or ctrl-c to cancel"
 
 read foo
 
-<$f_eml msmtp-dkim -a blog -- $recipients
+<$f_eml msmtp-dkim -- $recipients

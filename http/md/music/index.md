@@ -27,18 +27,21 @@ manner_&nbsp; [[link]](https://www.merriam-webster.com/dictionary/noodle)
  <div class="music-links">
   <a href="/music/noodles/vol_0.zip">
    <img src="/_icons/download.svg" alt="Download icon" />
-   <p>Download</p>
+   <p>Direct Download</p>
   </a>
   <a href="/music/noodles/vol_0.m3u">
    <img src="/_icons/stream.svg" alt="Stream icon" />
-   <p>M3U Stream</p>
+   <p>Stream (M3U)</p>
   </a>
-  <a href="https://ellie-clifford.bandcamp.com/album/noodles-vol-0-reflections-and-phantoms">
-   <img src="/_icons/bandcamp.png" alt="Bandcamp logo" />
-   <p>Bandcamp</p>
+  <a href="https://tube.clifford.lol/w/p/6KJepmLw95EcRuKECvJYSV?playlistPosition=1">
+   <img src="/_icons/peertube.svg" alt="PeerTube logo" />
+   <p>Stream (PeerTube)</p>
   </a>
-  <h2>Unethical proprietary platforms</h2>
+  <h2>Proprietary platforms</h2>
   <div class="predatory-services">
+   <a href="https://ellie-clifford.bandcamp.com/album/noodles-vol-0-reflections-and-phantoms">
+    <img src="/_icons/bandcamp.png" alt="Bandcamp logo" />
+   </a>
    <a href="https://open.spotify.com/album/1ArKeSH95I7ORlcrQUliU2">
     <img src="/_icons/spotify.svg" alt="Spotify logo" />
    </a>
@@ -70,18 +73,17 @@ manner_&nbsp; [[link]](https://www.merriam-webster.com/dictionary/noodle)
  <div class="music-links">
   <a href="/music/autumn_wind.flac">
    <img src="/_icons/download.svg" alt="Download icon" />
-   <p>Download</p>
+   <p>Direct Download/Stream</p>
   </a>
-  <a href="https://ellie-clifford.bandcamp.com/track/autumn-wind/">
-   <img src="/_icons/bandcamp.png" alt="Bandcamp logo" />
-   <p>Bandcamp</p>
-  </a>
-  <a href="https://dalek.zone/w/8QbJLp7iW5BDuBESC99xZV">
+  <a href="https://tube.clifford.lol/w/amffnnQAkGZPvJZyzKVzDS">
    <img src="/_icons/peertube.svg" alt="PeerTube logo" />
-   <p>Video</p>
+   <p>Stream (PeerTube)</p>
   </a>
-  <h2>Unethical proprietary platforms</h2>
+  <h2>Proprietary platforms</h2>
   <div class="predatory-services">
+   <a href="https://ellie-clifford.bandcamp.com/track/autumn-wind/">
+    <img src="/_icons/bandcamp.png" alt="Bandcamp logo" />
+   </a>
    <a href="https://open.spotify.com/track/0oxEe0wXlONZyN725XJGk6">
     <img src="/_icons/spotify.svg" alt="Spotify logo" />
    </a>
@@ -115,27 +117,28 @@ _"Never Knew" by Ludovique_
  <div class="music-links">
   <a href="/music/never_knew.flac">
    <img src="/_icons/download.svg" alt="Download icon" />
-   <p>Download</p>
-  </a>
-  <a href="https://dalek.zone/w/g9Sx4wZkweWS5C61ATVo2E">
-   <img src="/_icons/peertube.svg" alt="PeerTube logo" />
-   <p>Video</p>
-  </a>
-  <h2>Ludovique's Versions</h2>
-  <a href="https://open.spotify.com/track/6cHwWjZHAFxvj7FIZZFoq0">
-   <img src="/_icons/spotify.svg" alt="Spotify logo" />
-   <p>Spotify</p>
-  </a>
-  <a href="https://youtube.com/watch?v=QP8SJMKEWio">
-   <img src="/_icons/youtube.svg" alt="YouTube logo" />
-   <p>YouTube</p>
+   <p>Direct Download/Stream</p>
   </a>
   <!--
-  <a href="https://youtube.com/watch?v=er6E8_7Ni2E">
-   <img src="/_icons/youtube.svg" alt="YouTube logo" />
-   <p>YouTube (alternate)</p>
-  -->
+  <a href="https://dalek.zone/w/g9Sx4wZkweWS5C61ATVo2E">
+   <img src="/_icons/peertube.svg" alt="PeerTube logo" />
+   <p>Stream (PeerTube)</p>
   </a>
+  -->
+  <h2>Ludovique's Versions</h2>
+  <div class="predatory-services">
+   <a href="https://open.spotify.com/track/6cHwWjZHAFxvj7FIZZFoq0">
+    <img src="/_icons/spotify.svg" alt="Spotify logo" />
+   </a>
+   <a href="https://youtube.com/watch?v=QP8SJMKEWio">
+    <img src="/_icons/youtube.svg" alt="YouTube logo" />
+   </a>
+   <!--
+   <a href="https://youtube.com/watch?v=er6E8_7Ni2E">
+    <img src="/_icons/youtube.svg" alt="YouTube logo" />
+   </a>
+   -->
+  </div>
  </div>
 </div>
 

@@ -87,7 +87,6 @@ build_bliz() {
 	cp -r static/* out/bliz/
 
 	ls out/bliz/blog/*/index.bliz | while read -r file; do
-		echo "$file"
 		cat >> "$file" << 'EOF'
 
 %%%
