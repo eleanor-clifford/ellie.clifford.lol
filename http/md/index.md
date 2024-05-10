@@ -16,7 +16,7 @@ Part-time musician, full-time procrastinator, armchair philosopher, [cypherpunk]
 
 <a href="/blog/rss.xml">Or subscribe via RSS <img style="height: 18px" src="/_icons/rss.svg" alt="RSS feed icon"/></a>
 
-## Links
+## Other Links
 
 <p><a style="color: #ff5555; border-bottom: 2px solid #ff5555" href="/documents/technology-usage-manifesto.html">My Technology Usage Manifesto</a></p>
 <p><a style="color: #f1fa8c; border-bottom: 2px solid #f1fa8c" href="/projects/">Some of my projects</a></p>
