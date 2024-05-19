@@ -11,11 +11,9 @@ if you want to send me something cool! No ads though of course.
 
 **Matrix**: @ellie:clifford.lol
 
-**Email**: ellie(@)clifford.lol (I get a lot of spam, it might take me a while to
-reply). [If you send something signed and encrypted I'll reply
-quicker!](https://ellie.clifford.lol/ellie_clifford.asc).
+**Signal**: @ecc.73 (matrix is much preferred, note this is bridged there (with E2EE intact)
 
-**Anything proprietary**: Don't even think about it
+**Email**: ellie [at] clifford [dot] lol ([PGP key](https://ellie.clifford.lol/ellie_clifford.asc)).
 
 ## SRCF
 
