@@ -34,6 +34,15 @@ Part-time musician, full-time procrastinator, armchair philosopher, [cypherpunk]
  </a>
 </div>
 
+::: webring
+## 🏳️‍🌈 Be crime do gay webring 🏳️‍⚧️
+
+::: webring-links
+<!--#include virtual="/cgi-bin/webrings/be_crime_do_gay.py?left=%E2%86%90%20Go%20left&right=Go%20right%20%E2%86%92%0A" -->
+:::
+:::
+
+
 ## Other Links
 
 <p><a style="color: #ff5555; border-bottom: 2px solid #ff5555" href="/documents/technology-usage-manifesto.html">My Technology Usage Manifesto</a></p>
