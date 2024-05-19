@@ -656,12 +656,9 @@ th, td {
   width: 35% !important;
 }
 
-.rss {
-  margin-top: 50px;
-}
-
-.rss a {
-  color: rgba(241, 250, 140, 1);
+img.rss {
+	margin: 0px 8px;
+	height: 40px;
 }
 
 /* ==========================================================================
@@ -760,39 +757,61 @@ th, td {
 	margin-right: 10px;
 }
 
-.green .blog-item-title,
-.green h1 {
-  color: rgba(80, 250, 123, 1) /* no !important because it's on the blog index */
+.green-override {
+  color: rgba(80, 250, 123, 1) !important;
 }
 
-.cyan .blog-item-title,
-.cyan h1 {
+.cyan-override {
   color: rgba(139, 233, 253, 1) !important;
 }
 
-.purple .blog-item-title,
-.purple h1 {
+.purple-override {
   color: rgba(189, 147, 249, 1) !important;
 }
 
-.pink .blog-item-title,
-.pink h1 {
+.pink-override {
   color: rgba(255, 121, 198, 1) !important;
 }
 
-.orange .blog-item-title,
-.orange h1 {
+.orange-override {
   color: rgba(255, 184, 108, 1) !important;
 }
 
-.red .blog-item-title,
-.red h1 {
+.red-override {
   color: #ff5555 !important;
 }
 
-.yellow .blog-item-title,
-.yellow h1 {
+.yellow-override {
   color: rgba(241, 250, 140, 1) !important;
+}
+
+
+.green h1 {
+  color: rgba(80, 250, 123, 1)
+}
+
+.cyan h1 {
+  color: rgba(139, 233, 253, 1)
+}
+
+.purple h1 {
+  color: rgba(189, 147, 249, 1)
+}
+
+.pink h1 {
+  color: rgba(255, 121, 198, 1)
+}
+
+.orange h1 {
+  color: rgba(255, 184, 108, 1)
+}
+
+.red h1 {
+  color: #ff5555;
+}
+
+.yellow h1 {
+  color: rgba(241, 250, 140, 1);
 }
 
 
@@ -960,34 +979,20 @@ blockquote p {
 }
 
 .blog-updates {
-  max-width: 640px;
-  padding: 0 2rem;
-  margin: 20px auto;
+	justify-content: center;
+	align-items: center;
 }
 
-.journey-updates h3,
-.journey-updates p,
-.blog-updates h3,
-.blog-updates p {
-  text-align: center;
-}
-
-.blog-updates h3 {
-  font-size: 3em;
-}
-
-.blog-updates form {
-  margin-left: auto;
-  margin-right: auto;
-}
-
+.blog-updates form,
 .blog-updates-small form {
   display: flex;
   margin-top: 0px;
 }
 
+.blog-updates,
 .blog-updates-small {
   margin: 0px 0px 20px 0px;
+  display: flex;
 }
 
 .blog-updates-small .form input[type="submit"] {
@@ -1407,4 +1412,18 @@ blockquote p {
 .blog-category h2 {
 	margin: 25px;
 	display: inline-block;
+}
+
+.webring {
+	display: table;
+	margin-top: -40px;
+	margin-bottom: 30px;
+}
+
+.webring-links {
+	text-align: center
+}
+
+.webring-links a {
+	margin: 0px 20px;
 }

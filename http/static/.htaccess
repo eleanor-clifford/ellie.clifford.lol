@@ -34,7 +34,11 @@ RewriteRule ^music/rss.xml /cgi-bin/proxy_rss.py [L]
 
 RewriteRule ^.well-known(.*)$ https://clifford.lol%{REQUEST_URI} [L,R=301]
 
-# Force HTTPS
+# Force https
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Ensure correct domain
 RewriteCond %{HTTP_HOST} !^ellie\.clifford\.lol$ [NC]
 RewriteRule ^(.*)$ https://ellie.clifford.lol%{REQUEST_URI} [L,R=301]
 

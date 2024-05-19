@@ -1,5 +1,5 @@
 default:
-	make build
+	make test
 all:
 	make clean && make build && make deploy
 blog_alts:
@@ -14,6 +14,9 @@ https:
 	test -f upload.lock || ./scripts/deploy.sh --http
 build:
 	./scripts/build.sh --all
+test:
+	./scripts/build.sh --http && \
+	test -f upload.lock || ./scripts/deploy.sh --test
 deploy:
 	test -f upload.lock || ./scripts/deploy.sh --all
 check:

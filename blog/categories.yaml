@@ -1,5 +1,6 @@
 - name: Existential
   shortname: existential
+  color: purple
   posts:
     - 0006-what-we-leave-behind
     - 0011-paralyzed-by-analytics
@@ -8,6 +9,7 @@
 
 - name: Security and Privacy
   shortname: security-privacy
+  color: orange
   posts:
     - 0000-why-foss
     - 0002-the-uk-government-is-dangerously-incompetent
@@ -19,6 +21,7 @@
 
 - name: Projects
   shortname: projects
+  color: pink
   posts:
     - 0001-dracula-for-solidworks
     - 0005-music

@@ -43,15 +43,6 @@
         </div>
       </form>
     </div></div>
-    <div class="blog-updates">
-      <h3>Stay up to date</h3>
-      <p>All the rants, straight to your inbox</p>
-      <form method="post" action="/subscribe.php" class="form">
-        <input type="email" name="email" placeholder="Your email address"/>
-        <input type="hidden" name="return-path" value="/blog"/>
-        <input type="submit" name="email-button" value="Subscribe"/>
-      </form>
-    </div>
   </div>
 </div>
 
