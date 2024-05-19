@@ -36,11 +36,23 @@ html_build_md_page() { # $1: filename, writes to out/http/
 			&& dirname "$file" \
 			|| echo "$file" \
 		) | perl -pe 's|.*?md/?|/|;s|[/.-]|_|g;')"
-	echo "$escaped_name"
 
-	out_file="$(echo "$file" | sed 's|^http/md/|out/http/|; s|.md$|.html|')"
+	export SSI="$(md_get_metadata "$file" ssi)"
+	[ "$SSI" = null ] && SSI=false
+
+	$SSI && ext=shtml || ext=html
+	out_file="$(echo "$file" | sed 's|^http/md/|out/http/|; s|.md$|.'$ext'|')"
 	mkdir -p "$(dirname "$out_file")"
 
+	h="$(md5sum "$file")"
+	if test -e "$out_file" && grep -q "$h" "$out_file"; then
+		echo "skipping $file..."
+		return
+	else
+		echo "regenerating $file..."
+	fi
+
+	export HASH="$h"
 	export COLOR="$(<config.yaml yq -rc ".page_colors.$escaped_name")"
 	export TITLE="$(md_get_metadata "$file" title)"
 
@@ -88,26 +100,45 @@ html_build_blog_indices() {
 	categories="$(yq -rc '.[]' <blog/categories.yaml)"
 	sorted_colored_blogs="$(blog_sort_color)"
 
-	export COLOR="$(yq -r .page_colors._blog <config.yaml)"
-
 	echo "$categories" | while read -r category; do
 		name="$(echo "$category" | yq -r .name)"
 		shortname="$(echo "$category" | yq -r .shortname)"
-		mkdir -p out/http/blog/$shortname
+		export COLOR="$(echo "$category" | yq -r .color)"
 
-		posts="$(echo "$category" | yq -rc '.posts[]')"
-		echo "$posts" \
-			| sed 's|^|blog/|;s|$|/index.md|' `# jank` \
-			| blog_apply_color_to \
-			| html_build_blog_from \
-			| activate_double_template http/templates/blog-listing.html \
-				> out/http/blog/$shortname/index.html
+		mkdir -p out/http/blog/$shortname
+		out_file="out/http/blog/$shortname/index.html"
+
+		files="$(echo "$category" | yq -rc '.posts[]' | sed 's|^|blog/|;s|$|/index.md|')" # jank
+		export HASH="$(md5sum $files)"
+
+		if test -e "$out_file" && grep -q "$HASH" "$out_file"; then
+			echo "skipping $name blog index..." > /dev/stderr
+		else
+			echo "regenerating $name blog index..." > /dev/stderr
+			echo "$files" \
+				| blog_apply_color_to \
+				| html_build_blog_from \
+				| activate_double_template http/templates/blog-listing.html \
+					> "$out_file"
+		fi
 	done
 
 	mkdir -p out/http/blog/all
 
+	export COLOR="$(yq -r .page_colors._blog <config.yaml)"
+
+	files="$(find blog/ -mindepth 2 -type f -name '*.md' | sort)"
+	export HASH="$(md5sum $files)"
+	out_file="out/http/blog/all/index.html"
+
+	if test -e "$out_file" && grep -q "$HASH" "$out_file"; then
+		echo "skipping full blog index..." > /dev/stderr
+	else
+		echo "regenerating full blog index..." > /dev/stderr
+	fi
 	html_build_blog_all \
-		| activate_double_template http/templates/blog-listing.html > out/http/blog/all/index.html
+		| activate_double_template http/templates/blog-listing.html > "$out_file"
+	export HASH=
 
 	<blog/index.md \
 		  pandoc --from markdown --to html \
@@ -120,8 +151,19 @@ html_build_blog_post() { # reads tsv color, date, file
 	test -z "$tsv" && return
 	file="$(echo "$tsv" | cut -f 3)"
 	basename_noext="$(basename "$(dirname "$file")")"
-	echo "$basename_noext"
 
+	mkdir -p out/http/blog/$basename_noext
+	out_file="out/http/blog/$basename_noext/index.shtml"
+
+	h="$(md5sum "$file")"
+	if test -e "$out_file" && grep -q "$h" "$out_file"; then
+		echo "skipping $file..."
+		return
+	else
+		echo "regenerating $file..."
+	fi
+
+	export HASH="$h"
 	export COLOR="$(echo "$tsv" | cut -f 1)"
 	export DATE="$(echo "$tsv" | cut -f 2)"
 	export TITLE="$(md_get_metadata $file title)"
