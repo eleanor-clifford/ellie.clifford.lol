@@ -66,6 +66,8 @@ build_http() {
 	done
 
 	html_build_blog_indices
+
+	echo "Building RSS..." >/dev/stderr
 	build_rss
 
 	blog_sort_color | while read line; do
