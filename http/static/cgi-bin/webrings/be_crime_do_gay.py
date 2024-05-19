@@ -18,7 +18,7 @@ except Exception:
 
 left = q.get("left", "left")
 right = q.get("right", "right")
-site = q.get("site", "https://ellie.clifford.lol/")
+site = q.get("site", "https://ellie.clifford.lol")
 
 try:
 	r = requests.get("https://artemislena.eu/services/downloads/beCrimeDoGay.json")
