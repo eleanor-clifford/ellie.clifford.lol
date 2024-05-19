@@ -1,7 +1,9 @@
 <?php
 $email = $_POST["email"];
 $error = "";
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+if ($email == "") {
+	$error.="You have to actually type your email in the box before pressing the button! :3";
+} elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 	$error.="Invalid email address. If you're trying to hack me I'll be mad 😠";
 } else {
 	$logfile = fopen("/home/ecc73/logs/blog_subscribe_POST", "a");
