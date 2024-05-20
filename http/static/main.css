@@ -636,6 +636,7 @@ th, td {
   -moz-appearance: caret;
   max-width: 65%;
   height: 40px !important;
+  overflow: auto;
 }
 
 .form input[type="submit"] {
@@ -987,12 +988,14 @@ blockquote p {
 .blog-updates-small form {
   display: flex;
   margin-top: 0px;
+  overflow: auto;
 }
 
 .blog-updates,
 .blog-updates-small {
   margin: 0px 0px 20px 0px;
   display: flex;
+  max-width: 100%;
 }
 
 .blog-updates-small .form input[type="submit"] {

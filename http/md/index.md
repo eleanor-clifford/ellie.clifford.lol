@@ -7,15 +7,29 @@ css: |
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    max-width: 100%;
   }
 
   .column-left {
     padding-right: 20px;
     width: 420px;
+    max-width: 100%;
   }
   .column-right {
     display: flex; justify-content: center
+    max-width: 100%;
   }
+
+  .webring h2 {
+    display: flex;
+  }
+
+  .webring span {
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+
 
 ---
 
@@ -35,7 +49,8 @@ Part-time musician, full-time procrastinator, armchair philosopher, [cypherpunk]
 </div>
 
 ::: webring
-## 🏳️‍🌈 Be crime do gay webring 🏳️‍⚧️
+
+## <span>🏳️‍🌈</span><span style="margin: 0 0.5em">Be crime do gay webring</span><span>🏳️‍⚧️</span>
 
 ::: webring-links
 <!--#include virtual="/cgi-bin/webrings/be_crime_do_gay.py?left=%E2%86%90%20Go%20left&right=Go%20right%20%E2%86%92%0A" -->
