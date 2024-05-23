@@ -16,7 +16,7 @@ color_cycle:
 
 page_colors:
   _: purple
-  _about: green
+  _contact: green
   _dracula: pink
   _music: cyan
   _blog: green
