@@ -12,12 +12,10 @@ noodle (verb): to improvise on an instrument in an informal or desultory manner
 ## Songs
 
 => /music/autumn_wind.flac "Autumn Wind"
-=> https://dalek.zone/w/8QbJLp7iW5BDuBESC99xZV "Autumn Wind" (video)
 
 ## Covers
 
 => /music/never_knew.flac Cover | "Never Knew" by Ludovique
-=> https://dalek.zone/w/g9Sx4wZkweWS5C61ATVo2E Cover | "Never Knew" by Ludovique (video)
 
 ## Licensing
 
