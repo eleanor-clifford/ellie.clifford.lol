@@ -122,7 +122,7 @@ title: "Chat systems explained"
                                                                |  probably)  |
                                                                +-------------+
 
-* Because Ellie is running his own server, and can verify its code. But is Ellie's server backdoored in a way he can't detect? Who knows.
+* Because Ellie is running her own server, and can verify its code. But is Ellie's server backdoored in a way she can't detect? Who knows.
 
 ** Because neither Ellie nor Alice can verify the code that is running on the matrix.org server.
 ```
