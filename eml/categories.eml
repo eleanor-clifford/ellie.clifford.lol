@@ -1,0 +1,94 @@
+From: Ellie's blog <blog@clifford.lol>
+To: ecc73-blog@srcf.net
+Subject: Blog | 
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary=proprietarysoftwareismalware
+
+--proprietarysoftwareismalware
+Content-Type: text/html; charset=utf-8
+
+<p>
+  <a href="https://ellie.clifford.lol/blog/categories">View in a browser</a>
+</p>
+<p>
+  <a href="gemini://ellie.clifford.lol/blog/categories">Or on Gemini</a>
+</p>
+
+<div class="blog-categories">
+<a href="/blog/" class="nounderline">
+<div class="blog-category">
+<h2 style="color: #50fa7b">
+All posts
+</h2>
+</div>
+</a> <a href="/blog/existential" class="nounderline">
+<div class="blog-category">
+<h2 style="color: #bd93f9">
+Existential
+</h2>
+</div>
+</a> <a href="/blog/security-privacy" class="nounderline">
+<div class="blog-category">
+<h2 style="color: #ffb86c">
+Security and Privacy
+</h2>
+</div>
+</a> <a href="/blog/projects" class="nounderline">
+<div class="blog-category">
+<h2 style="color: #ff79c6">
+Projects
+</h2>
+</div>
+</a> <a href="/blog/quickies" class="nounderline">
+<div class="blog-category">
+<h2 style="color: #f1fa8c">
+Quickies
+</h2>
+</div>
+<p></a></p>
+</div>
+
+--proprietarysoftwareismalware
+Content-Type: text/plain; charset=utf-8
+
+View in a browser: https://ellie.clifford.lol/blog/categories
+Or on Gemini: gemini://ellie.clifford.lol/blog/categories
+
+```html
+<div class="blog-categories">
+ <a href="/blog/" class="nounderline">
+  <div class="blog-category">
+   <h2 style="color: #50fa7b">All posts</h2>
+  </div>
+ </a>
+ <a href="/blog/existential" class="nounderline">
+  <div class="blog-category">
+   <h2 style="color: #bd93f9">Existential</h2>
+  </div>
+ </a>
+ <a href="/blog/security-privacy" class="nounderline">
+  <div class="blog-category">
+   <h2 style="color: #ffb86c">Security and Privacy</h2>
+  </div>
+ </a>
+ <a href="/blog/projects" class="nounderline">
+  <div class="blog-category">
+   <h2 style="color: #ff79c6">Projects</h2>
+  </div>
+ </a>
+ <a href="/blog/quickies" class="nounderline">
+  <div class="blog-category">
+   <h2 style="color: #f1fa8c">Quickies</h2>
+  </div>
+ </a>
+</div>
+```
+
+---
+
+You are recieving this email because you opted in via ellie.clifford.lol.
+To unsubscribe, email ecc73-blog-request@srcf.net with subject line
+"unsubscribe"
+
+--proprietarysoftwareismalware--
+
