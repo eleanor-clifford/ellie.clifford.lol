@@ -42,6 +42,31 @@ convert_to_email() { # args -> stdout
 From: Ellie's blog <blog@clifford.lol>
 To: $recipient
 Subject: $subject
+
+View in a browser: $url
+Or on Gemini: $gemurl
+$(cat "$txtfile")
+
+---
+
+You are recieving this email because you opted in via ellie.clifford.lol.
+To unsubscribe, email ecc73-blog-request@srcf.net with subject line
+\"unsubscribe\"
+"
+}
+
+convert_to_html_email() { # args -> stdout
+	recipient="$1"
+	subject="$2"
+	mdfile="$3"
+	txtfile="$4"
+	url="$5"
+	gemurl="$(echo "$5" | sed 's/^https\?/gemini/')"
+
+	echo "\
+From: Ellie's blog <blog@clifford.lol>
+To: $recipient
+Subject: $subject
 MIME-Version: 1.0
 Content-Type: multipart/alternative; boundary=proprietarysoftwareismalware
 
@@ -107,7 +132,7 @@ convert_blog_to_bliz_txt_eml() { # $1: filename, writes to files
 
 	if ! test -f $f_eml; then
 		mkdir -p "$(dirname $f_eml)"
-		echo "$stripped_md" | convert_to_email ecc73-blog@srcf.net \
+		echo "$stripped_md" | convert_to_html_email ecc73-blog@srcf.net \
 			"Blog | $title" /dev/stdin $f_txt $httpurl >$f_eml
 	fi
 }

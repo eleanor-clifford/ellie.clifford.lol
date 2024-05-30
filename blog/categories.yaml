@@ -28,3 +28,9 @@
     - 0010-original-music
     - 0013-new-name-who-dis
     - 0014-cloud-service-shenanigans
+
+- name: Quickies
+  shortname: quickies
+  color: yellow
+  posts:
+    - 0015-quickies-1
