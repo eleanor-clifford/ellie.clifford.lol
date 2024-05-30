@@ -123,13 +123,13 @@ html_build_blog_indices() {
 		fi
 	done
 
-	mkdir -p out/http/blog/all
+	#mkdir -p out/http/blog/all
 
 	export COLOR="$(yq -r .page_colors._blog <config.yaml)"
 
 	files="$(find blog/ -mindepth 2 -type f -name '*.md' | sort)"
 	export HASH="$(md5sum $files)"
-	out_file="out/http/blog/all/index.html"
+	out_file="out/http/blog/index.html"
 
 	if test -e "$out_file" && grep -q "$HASH" "$out_file"; then
 		echo "skipping full blog index..." > /dev/stderr
@@ -140,9 +140,10 @@ html_build_blog_indices() {
 		| activate_double_template http/templates/blog-listing.html > "$out_file"
 	export HASH=
 
-	<blog/index.md \
+	mkdir -p out/http/blog/categories
+	<blog/categories.md \
 		  pandoc --from markdown --to html \
-		| activate_double_template http/templates/blog-index.html > out/http/blog/index.html
+		| activate_double_template http/templates/blog-index.html > out/http/blog/categories/index.html
 
 }
 

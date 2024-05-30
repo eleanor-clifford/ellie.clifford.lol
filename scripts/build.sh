@@ -61,18 +61,18 @@ build_blog_alts() {
 build_http() {
 	mkdir -p out/http
 
-	find http/md/ -type f | while read file; do
-		html_build_md_page "$file"
+	blog_sort_color | while read line; do
+		echo "$line" | html_build_blog_post
 	done
 
 	html_build_blog_indices
 
+	find http/md/ -type f | while read file; do
+		html_build_md_page "$file"
+	done
+
 	echo "Building RSS..." >/dev/stderr
 	build_rss
-
-	blog_sort_color | while read line; do
-		echo "$line" | html_build_blog_post
-	done
 
 	cp -r static/* out/http/
 	cp -r http/static/* out/http/

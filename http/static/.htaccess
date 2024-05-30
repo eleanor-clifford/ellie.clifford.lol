@@ -29,6 +29,7 @@ RewriteRule blog/entropy-bingo                                 https://ellie.cli
 RewriteRule blog/original-music                                https://ellie.clifford.lol/blog/0010-original-music [L,R=301]
 RewriteRule blog/paralyzed-by-analytics                        https://ellie.clifford.lol/blog/0011-paralyzed-by-analytics [L,R=301]
 RewriteRule blog/perpetually-on-the-verge-of-a-breakdown       https://ellie.clifford.lol/blog/0012-perpetually-on-the-verge-of-a-breakdown [L,R=301]
+RewriteRule blog/all                                           https://ellie.clifford.lol/blog [L,R=302]
 
 RewriteRule ^music/rss.xml /cgi-bin/proxy_rss.py [L]
 
