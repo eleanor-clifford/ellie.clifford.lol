@@ -1,6 +1,12 @@
 # Spam blocking
 Deny from 45.143.201.87
 Deny from 37.139.53.82
+Deny from 103.155.65.12
+Deny from 45.62.167.206
+Deny from 27.77.237.130
+Deny from 188.165.230.167
+Deny from 178.20.187.107
+Deny from 154.159.243.146
 
 RewriteCond %{HTTP_USER_AGENT} ^curl/ [NC]
 RewriteRule ^(cgi-bin/submit_comment\.py|subscribe.php)$ - [R=429]

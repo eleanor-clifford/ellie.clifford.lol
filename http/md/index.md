@@ -39,9 +39,10 @@ Part-time musician, full-time procrastinator, armchair philosopher, [cypherpunk]
 ::: column-left
 
 <div class="blog-updates-small">
- <form method="post" action="/subscribe.php" class="form">
-  <input type="email" name="email" placeholder="Your email address"/>
-  <input type="submit" name="email-button" value="Subscribe to my blog"/>
+ <form method="post" action="/cgi-bin/subscribe.py" class="form">
+  <input type="email" name="email" placeholder="Your email"/>
+  <input type="text"  name="antispam" placeholder="'ataraxia' (antispam)"/>
+  <input type="submit" value="Subscribe"/>
  </form>
  <a class="nounderline" href="/blog/rss.xml">
   <img class="rss" src="/_icons/rss.svg" alt="RSS feed icon"/>

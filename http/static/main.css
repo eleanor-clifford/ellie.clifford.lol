@@ -417,7 +417,7 @@ th, td {
 .orange .title,
 .orange .subtitle a,
 .orange .page a,
-.orange .form input[type="email"] {
+.orange .form input {
   color: rgba(255, 184, 108, 1);
 }
 
@@ -438,7 +438,7 @@ th, td {
 .red .title,
 .red .subtitle a,
 .red .page a,
-.red .form input[type="email"] {
+.red .form input {
   color: rgba(255, 85, 85, 1);
 }
 
@@ -459,7 +459,7 @@ th, td {
 .pink .title,
 .pink .subtitle a,
 .pink .page a,
-.pink .form input[type="email"] {
+.pink .form input {
   color: rgba(255, 121, 198, 1);
 }
 
@@ -480,7 +480,7 @@ th, td {
 .cyan .title,
 .cyan .subtitle a,
 .cyan .page a,
-.cyan .form input[type="email"] {
+.cyan .form input {
   color: rgba(139, 233, 253, 1);
 }
 
@@ -501,7 +501,7 @@ th, td {
 .purple .title,
 .purple .subtitle a,
 .purple .page a,
-.purple .form input[type="email"] {
+.purple .form input {
   color: rgba(189, 147, 249, 1);
 }
 
@@ -522,7 +522,7 @@ th, td {
 .yellow .title,
 .yellow .subtitle a,
 .yellow .page a,
-.yellow .form input[type="email"] {
+.yellow .form input {
   color: rgba(241, 250, 140, 1);
 }
 
@@ -547,7 +547,7 @@ th, td {
 .green .title,
 .green .subtitle a,
 .green .page a,
-.green .form input[type="email"] {
+.green .form input {
   color: rgba(80, 250, 123, 1);
 }
 
@@ -617,7 +617,7 @@ th, td {
   float: left !important;
 }
 
-.form input[type="email"] {
+.form input {
   border-radius: 4px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -634,7 +634,6 @@ th, td {
   font-smoothing: antialiased;
   -webkit-appearance: none;
   -moz-appearance: caret;
-  max-width: 65%;
   height: 40px !important;
   overflow: auto;
 }
@@ -998,8 +997,23 @@ blockquote p {
   max-width: 100%;
 }
 
+.blog-updates-small input {
+	border: 2px solid #bd93f9;
+	border-collapse: collapse;
+}
+
+
+.blog-updates-small input[type="text"] {
+	border-radius: 0px;
+	border-left: 0px;
+}
+
+.blog-updates-small .form input[type="email"] {
+  width: 120px;
+}
+
 .blog-updates-small .form input[type="submit"] {
-  min-width: 160px !important;
+  min-width: 100px !important;
 }
 
 .blog-metadata {
