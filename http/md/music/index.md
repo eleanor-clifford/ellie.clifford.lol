@@ -15,10 +15,32 @@ The music I make is free (libre) and pay-what-you-want. If you do want to, donat
 	     src="/_icons/liberapay.svg"/>
 </a>
 
-## Noodles
+_"The Foxes" by merrikat (cover)_
 
-_noodle (verb): to improvise on an instrument in an informal or desultory
-manner_&nbsp; [[link]](https://www.merriam-webster.com/dictionary/noodle)
+<div class="music-item">
+ <div class="music-art">
+   <img src="/music/art/the_foxes.jpg"
+        alt="Cover art for The Foxes by merrikat" />
+   <p class="music-art-caption">
+art by merrikat
+   </p>
+ </div>
+ <div class="music-links">
+  <a href="https://tube.transgirl.fr/w/bUSC7trBQDEgiXkBKkndAu">
+   <img src="/_icons/peertube.svg" alt="PeerTube logo" />
+   <p>Stream</p>
+  </a>
+  <a href="https://youtube.com/watch?v=PYi9onkZJXY">
+   <img src="/_icons/youtube.svg" alt="Youtube logo" />
+   <p>merrikat's version</p>
+  </a>
+ </div>
+</div>
+
+_Noodles Vol. 0: reflections and phantoms_[^1]
+
+[^1]: _[noodle (verb)](https://www.merriam-webster.com/dictionary/noodle): to
+improvise on an instrument in an informal or desultory manner_
 
 <div class="music-item">
  <img class="music-art"
@@ -27,15 +49,15 @@ manner_&nbsp; [[link]](https://www.merriam-webster.com/dictionary/noodle)
  <div class="music-links">
   <a href="/music/noodles/vol_0.zip">
    <img src="/_icons/download.svg" alt="Download icon" />
-   <p>Direct Download</p>
+   <p>Download</p>
   </a>
   <a href="/music/noodles/vol_0.m3u">
    <img src="/_icons/stream.svg" alt="Stream icon" />
-   <p>Stream (M3U)</p>
+   <p>Stream</p>
   </a>
   <a href="https://tube.clifford.lol/w/p/6KJepmLw95EcRuKECvJYSV?playlistPosition=1">
    <img src="/_icons/peertube.svg" alt="PeerTube logo" />
-   <p>Stream (PeerTube)</p>
+   <p>Stream</p>
   </a>
   <h2>Proprietary platforms</h2>
   <div class="predatory-services">
@@ -64,7 +86,7 @@ manner_&nbsp; [[link]](https://www.merriam-webster.com/dictionary/noodle)
  </div>
 </div>
 
-## Songs
+_Autumn Wind_
 
 <div class="music-item">
  <img class="music-art"
@@ -73,11 +95,11 @@ manner_&nbsp; [[link]](https://www.merriam-webster.com/dictionary/noodle)
  <div class="music-links">
   <a href="/music/autumn_wind.flac">
    <img src="/_icons/download.svg" alt="Download icon" />
-   <p>Direct Download/Stream</p>
+   <p>Download</p>
   </a>
   <a href="https://tube.clifford.lol/w/amffnnQAkGZPvJZyzKVzDS">
    <img src="/_icons/peertube.svg" alt="PeerTube logo" />
-   <p>Stream (PeerTube)</p>
+   <p>Stream</p>
   </a>
   <h2>Proprietary platforms</h2>
   <div class="predatory-services">
@@ -106,39 +128,29 @@ manner_&nbsp; [[link]](https://www.merriam-webster.com/dictionary/noodle)
  </div>
 </div>
 
-## Covers
-
-_"Never Knew" by Ludovique_
+_"Never Knew" by Ludovique (cover)_
 
 <div class="music-item">
- <img class="music-art"
-       src="/music/art/never_knew_512.jpg"
-       alt="Cover art for Never Knew by Ludovique" />
+ <div class="music-art">
+   <img src="/music/art/never_knew_512.jpg"
+        alt="Cover art for Never Knew by Ludovique" />
+   <p class="music-art-caption">
+art by Ludovique
+   </p>
+ </div>
  <div class="music-links">
   <a href="/music/never_knew.flac">
    <img src="/_icons/download.svg" alt="Download icon" />
-   <p>Direct Download/Stream</p>
+   <p>Stream</p>
   </a>
-  <!--
-  <a href="https://dalek.zone/w/g9Sx4wZkweWS5C61ATVo2E">
-   <img src="/_icons/peertube.svg" alt="PeerTube logo" />
-   <p>Stream (PeerTube)</p>
+  <a href="https://open.spotify.com/track/6cHwWjZHAFxvj7FIZZFoq0">
+   <img src="/_icons/spotify.svg" alt="Spotify logo" />
+   <p>Ludovique's version</p>
   </a>
-  -->
-  <h2>Ludovique's Versions</h2>
-  <div class="predatory-services">
-   <a href="https://open.spotify.com/track/6cHwWjZHAFxvj7FIZZFoq0">
-    <img src="/_icons/spotify.svg" alt="Spotify logo" />
-   </a>
-   <a href="https://youtube.com/watch?v=QP8SJMKEWio">
-    <img src="/_icons/youtube.svg" alt="YouTube logo" />
-   </a>
-   <!--
-   <a href="https://youtube.com/watch?v=er6E8_7Ni2E">
-    <img src="/_icons/youtube.svg" alt="YouTube logo" />
-   </a>
-   -->
-  </div>
+  <a href="https://youtube.com/watch?v=QP8SJMKEWio">
+   <img src="/_icons/youtube.svg" alt="Youtube logo" />
+   <p>Ludovique's version</p>
+  </a>
  </div>
 </div>
 
