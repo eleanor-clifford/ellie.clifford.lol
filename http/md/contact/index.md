@@ -2,10 +2,8 @@
 title: "Contact"
 ---
 
-I'm always happy to hear people's ideas and opinions about my stuff. Also just
-if you want to send me something cool! No ads though.
-
-(I'm often too shy to contact ppl who have cool blogs, don't be like me :3)
+I'm often too shy and/or self-conscious to contact ppl who have cool blogs,
+don't be like me :3
 
 **Matrix**: @ellie:clifford.lol
 
@@ -13,4 +11,4 @@ if you want to send me something cool! No ads though.
 
 **Email**: ellie [at] clifford [dot] lol ([pgp key](https://ellie.clifford.lol/ellie_clifford.asc)).
 
-You can also find me on [gemini](https://geminiprotocol.net/) at gemini://ellie.clifford.lol
+You can also find me on [gemini](https://geminiprotocol.net/) at [gemini://ellie.clifford.lol](gemini://ellie.clifford.lol/)
