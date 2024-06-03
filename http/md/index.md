@@ -31,6 +31,20 @@ css: |
   }
 
 
+  .webring {
+    display: table;
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+
+  .webring-links {
+    text-align: center
+  }
+
+  .webring-links a {
+    margin: 0px 20px;
+  }
+
 ---
 
 Part-time musician, full-time procrastinator, armchair philosopher, [cypherpunk](/documents/cypherpunks-manifesto.html).
@@ -48,6 +62,8 @@ Part-time musician, full-time procrastinator, armchair philosopher, [cypherpunk]
   <img class="rss" src="/_icons/rss.svg" alt="RSS feed icon"/>
  </a>
 </div>
+
+I also run some free services over at [transgirl.fr](https://transgirl.fr) :3
 
 ::: webring
 
@@ -67,16 +83,15 @@ Part-time musician, full-time procrastinator, armchair philosopher, [cypherpunk]
 
 :::
 ::: column-right
-  <p style="margin: auto">
-    <a href="https://echo--chamber.neocities.org" class="nounderline" >
-      <img style="width: 300px; max-width: 100%; padding: 20px;"
-           alt="cute kitty from https://echo--chamber.neocities.org with the caption: put him on your site immediately"
-           title="do it or die trying"
-           src="/him.png">
-    </a>
-  </p>
+<figure style="margin: auto; padding: 20px;">
+  <figcaption aria-hidden="true">Meme of the month:</figcaption>
+  <img style="width: 300px; max-width: 100%;"
+       alt="In a mass surveillance state, we are all cam girls"
+       src="https://transgirl.fr/media/cam_girls.jpg">
+</figure>
 :::
 :::
+
 
 
 ## Dracula Themes
