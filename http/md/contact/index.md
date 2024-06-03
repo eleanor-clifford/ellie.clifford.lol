@@ -7,7 +7,7 @@ don't be like me :3
 
 **Matrix**: @ellie:clifford.lol
 
-**Signal**: @ecc.73 (matrix is much preferred, this is bridged there (with E2EE intact))
+**Signal**: @ecc.73 (matrix is much preferred, this is bridged there with E2EE intact)
 
 **Email**: ellie [at] clifford [dot] lol ([pgp key](https://ellie.clifford.lol/ellie_clifford.asc)).
 
