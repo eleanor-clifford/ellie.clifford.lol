@@ -47,10 +47,10 @@ css: |
 
 ---
 
-Part-time musician, full-time procrastinator, armchair philosopher, [cypherpunk](/documents/cypherpunks-manifesto.html).
-
 ::: columns
 ::: column-left
+
+Part-time musician, full-time procrastinator, armchair philosopher, [cypherpunk](/documents/cypherpunks-manifesto.html).
 
 <div class="blog-updates-small">
  <form method="post" action="/cgi-bin/subscribe.py" class="form">
@@ -72,8 +72,6 @@ I also run some free services over at [transgirl.fr](https://transgirl.fr) :3
 ::: webring-links
 <!--#include virtual="/cgi-bin/webrings/be_crime_do_gay.py?left=%E2%86%90%20Go%20left&right=Go%20right%20%E2%86%92%0A" -->
 :::
-
-## Dracula Themes
 :::
 
 
@@ -104,6 +102,8 @@ I also run some free services over at [transgirl.fr](https://transgirl.fr) :3
 </figure>
 :::
 :::
+
+## Dracula Themes
 
 Dracula is unequivocally the best theme. Dark themes are a no brainer -
 I like my eyeballs intact, thank you very much. And Dracula's
