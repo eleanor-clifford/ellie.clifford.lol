@@ -77,8 +77,7 @@ I also run some free services over at [transgirl.fr](https://transgirl.fr) :3
 
 ## Other Links
 
-<p><a style="color: #ff5555; border-bottom: 2px solid #ff5555" href="/documents/technology-usage-manifesto.html">My Technology Usage Manifesto</a></p>
-<p><a style="color: #f1fa8c; border-bottom: 2px solid #f1fa8c" href="/projects/">Some of my projects</a></p>
+<p><a style="color: #f1fa8c; border-bottom: 2px solid #f1fa8c" href="/documents/technology-usage-manifesto.html">My Technology Usage Manifesto</a></p>
 <p><a style="color: #8be9fd; border-bottom: 2px solid #8be9fd" href="https://files.clifford.lol/">Some funny stuff and random other files</a></p>
 
 :::
