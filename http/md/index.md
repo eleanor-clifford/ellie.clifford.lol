@@ -84,10 +84,21 @@ I also run some free services over at [transgirl.fr](https://transgirl.fr) :3
 :::
 ::: column-right
 <figure style="margin: auto; padding: 20px;">
-  <figcaption aria-hidden="true">Meme of the month:</figcaption>
-  <img style="width: 300px; max-width: 100%;"
-       alt="In a mass surveillance state, we are all cam girls"
-       src="https://transgirl.fr/media/cam_girls.jpg">
+  <figcaption aria-hidden="true">Meme of the now:</figcaption>
+  <a class="nounderline" href="/memes/01_cam_girls.jpg">
+    <img style="width: 300px; max-width: 100%;"
+         alt="In a mass surveillance state, we are all cam girls"
+         src="/memes/01_cam_girls.jpg">
+  </a>
+  <figcaption aria-hidden="true">Historical:</figcaption>
+  <div style="display: flex;">
+  <a class="nounderline" style="max-width: 20%;" href="/memes/00_him.jpg">
+    <img style="width: 60px;"
+         alt="cute kitty with the caption 'put him on your site immediately'"
+         title="Do it or die trying"
+         src="/memes/thumbs/00_him.jpg">
+  </a>
+  </div>
 </figure>
 :::
 :::
