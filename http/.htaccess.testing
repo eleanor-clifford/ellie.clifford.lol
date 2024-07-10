@@ -1,0 +1,19 @@
+AuthType Ucam-WebAuth
+Require user ecc73 jrb239
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+ErrorDocument 404 /404.html
+
+SetEnvIf Origin "http(s)?://(.+\.)?(clifford\.lol|ecc73\.user\.srcf\.net)(:\d{1,5})?$" CORS=$0
+
+Header set Access-Control-Allow-Origin "%{CORS}e" env=CORS
+Header merge  Vary "Origin"
+
+Options +Includes
+AddType text/html .shtml
+AddOutputFilter INCLUDES .shtml
+
+Header set X-Clacks-Overhead "GNU Ross Anderson"
