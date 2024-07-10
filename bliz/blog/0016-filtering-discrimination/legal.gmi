@@ -1,0 +1,7 @@
+But I really didn't think that it would be this bad. As is, there is a strong argument that this filtering is actually illegal in the UK -- the filter has no evidence that transgirl.fr should be blocked other than the reference to a trans person, and "Gender reassignment" is a protected characteristic under the Equality Act 2010.
+
+Even the argument that these filters are just statistical systems, and in the real world "trans girl" is a phrase commonly associated with porn (and the further stretch that this somehow absolves the designers of the system) falls flat -- the Equality Act 2010 further protects against "indirect discrimination", i.e. discrimination caused by systems that are applied equally but put some people at a disadvantage based on a protected characteristic.
+
+I'm not a lawyer, but any potential litigation would probably hinge on 2010 c.15 s.19 2.d: whether the web filtering designers can show their discriminatory system to be "a proportionate means of achieving a legitimate aim."
+
+It's not.
