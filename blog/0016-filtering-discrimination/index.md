@@ -1,11 +1,15 @@
 ---
-title: "Discrimination in web filtering"
-excerpt: "Probably illegal discrimination, even."
+title: "Web filtering"
+excerpt: "Can't a girl just host a site?"
 createdAt: "2024-07-10"
 cw: "Content Warning: mentions of transphobia"
 css: |
   .small {
     font-size: 12px;
+  }
+
+  .force_left {
+    text-align: left !important;
   }
 ---
 
@@ -33,6 +37,10 @@ transgirl.fr sounded like a porn site, she quite rightly responded that it
 didn't matter, because not registering it on that basis would be *letting those
 captitalising on fetishisation win*.
 
+<details class="dropdown">
+<summary>Incorrect legal analysis (because I was missing information)</summary>
+<div class="content">
+
 But I really didn't think that it would be this bad. As is, there is a strong
 argument that this filtering is actually illegal in the UK -- the filter has no
 evidence that transgirl.fr should be blocked other than the reference to a
@@ -52,6 +60,20 @@ discriminatory system to be "a proportionate means of achieving a legitimate
 aim."
 
 It's not.
+
+</div>
+</details>
+
+EDIT: [Cadence](https://cadence.moe) swiftly pointed out that according to the
+Internet Archive, the previous owner of the domain did actually host porn on
+it, and that's probably why it's been blocked. Which makes this a somewhat less
+interesting post than I had hoped. Oops. Well, not the first or last time I've
+been wrong on the internet.
+
+Does this mean the world is less fucked up, because content filters aren't
+quite as discriminatory, or more fucked up, because a trans girl can't register
+a cool domain name without worrying about whether it used to have fetish porn
+on it? You decide.
 
 <section class="footnotes footnotes-end-of-document" role="doc-endnotes">
 	<hr>
