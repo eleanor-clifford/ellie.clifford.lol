@@ -1,5 +1,5 @@
-AuthType Ucam-WebAuth
-Require user ecc73 jrb239
+#AuthType Ucam-WebAuth
+#Require user ecc73 jrb239
 
 # Force HTTPS
 RewriteCond %{HTTPS} off
