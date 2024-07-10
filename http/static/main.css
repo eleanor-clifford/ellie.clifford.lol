@@ -723,6 +723,15 @@ img.rss {
   border-bottom: none !important;
 }
 
+.single a.footnote-ref { border-bottom: none; }
+.cyan .single sup { color: #8be9fd; }
+.green .single sup { color: #50fa7b; }
+.orange .single sup { color: #ffb86c; }
+.red .single sup { color: #ff5555; }
+.pink .single sup { color: #ff79c6; }
+.purple .single sup { color: #bd93f9; }
+.yellow .single sup { color: #f1fa8c; }
+
 .single figure {
   margin-Bottom: 20px;
   text-align: center
@@ -870,7 +879,7 @@ img.rss {
 }
 
 blockquote {
-  padding: 20px;
+  padding: 5px 20px;
   margin-bottom: 12px;
   border-left: 3px solid #44475a;
 }
@@ -1457,4 +1466,17 @@ p.music-art-caption {
 .blog-category h2 {
 	margin: 25px;
 	display: inline-block;
+}
+
+.content_warning {
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	color: #ffb86c;
+	border: 2px solid #ffb86c;
+}
+
+.content_warning p {
+	margin: 0px;
+	text-align: center;
 }

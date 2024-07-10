@@ -147,6 +147,10 @@ html_build_blog_indices() {
 
 }
 
+md_strip_venus_hidden() {
+	perl -0777 -pe 's/```[ \w]*hidden.*?```//gs'
+}
+
 html_build_blog_post() { # reads tsv color, date, file
 	read tsv
 	test -z "$tsv" && return
@@ -170,6 +174,17 @@ html_build_blog_post() { # reads tsv color, date, file
 	export TITLE="$(md_get_metadata $file title)"
 	export URL_PART="$basename_noext"
 
+	cw="$(md_get_metadata $file cw)"
+
+	if [ "$cw" != "null" ]; then
+		export CW="<div class=\"content_warning\"><p>$cw</p></div>"
+	fi
+
+	pandoc_options="$(md_get_metadata $file pandoc_options)"
+	[ "$pandoc_options" = null ] && pandoc_options=
+
+	echo "$pandoc_options"
+
 	css="$(md_get_metadata "$file" css)"
 
 	if [ "$css" != "null" ]; then
@@ -179,8 +194,8 @@ html_build_blog_post() { # reads tsv color, date, file
 	mkdir -p out/http/blog/$basename_noext
 	out_file="out/http/blog/$basename_noext/index.shtml"
 
-	<$file md_strip_yaml | md_color_headings $COLOR \
-		| pandoc --from markdown --to html \
+	<$file md_strip_yaml | md_strip_venus_hidden | md_color_headings $COLOR \
+		| pandoc --from markdown --to html $pandoc_options \
 		| activate_double_template http/templates/blog-post.shtml >$out_file
 
 	find "$(dirname "$file")" -mindepth 1 ! -name index.md \

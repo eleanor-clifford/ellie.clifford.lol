@@ -15,8 +15,8 @@ https:
 build:
 	./scripts/build.sh --all
 test:
-	./scripts/build.sh --http && \
-	test -f upload.lock || ./scripts/deploy.sh --test
+	./scripts/build.sh --http
+	./scripts/deploy.sh --test
 deploy:
 	test -f upload.lock || ./scripts/deploy.sh --all
 check:
