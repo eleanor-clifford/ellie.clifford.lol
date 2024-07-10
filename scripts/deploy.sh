@@ -12,10 +12,8 @@ if [ $# -eq 0 ] || [ "$1" = "--all" ] || [ "$1" = "--http" ]; then
 fi
 
 if [ "$1" = "--test" ]; then
-	rsync -a --delete out/http/index.shtml ecc73@pip:/public/home/ecc73/public_html/testing/
-	rsync -a --delete out/http/blog ecc73@pip:/public/home/ecc73/public_html/testing/
-	rsync -a --delete out/http/cgi-bin ecc73@pip:/public/home/ecc73/public_html/testing/
-	rsync -a --delete out/http/main.css ecc73@pip:/public/home/ecc73/public_html/testing/
+	rsync -a --delete out/http/ ecc73@pip:/public/home/ecc73/public_html/testing/ --exclude music --exclude '.htaccess'
+	rsync http/.htaccess.testing ecc73@pip:/public/home/ecc73/public_html/testing/.htaccess
 else
 	rsync -a --delete python-lib/ ecc73@pip:python-lib/
 	ssh ecc73@pip python3 python-lib/blog_gen_comments.py

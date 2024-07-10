@@ -1,0 +1,21 @@
+
+A little while ago I registered the domain transgirl.fr[1], mostly for fun but also because I wanted a separate domain to host some public services on, in the vein of catgirl.cloud, private.coffee, projectsegfau.lt and many others.
+
+A sizable fraction of web content filtering systems have classified transgirl.fr as porn and blocked it.
+
+Oops, my bad, I forgot, us trans women can't have nice things, all we're good for is being degradingly fetishized -- oh except of course when we're to blame for *checks notes* everything from misogyny to child abuse[2]. ~~Scapegoating is straight out of the fascist playbook, but that's a conversation for another day.~~
+
+I did actually wonder before registering the domain if something like this would be an issue. But when I asked one of my trans friends whether she thought transgirl.fr sounded like a porn site, she quite rightly responded that it didn't matter, because not registering it on that basis would be *letting those captitalising on fetishisation win*.
+
+But I really didn't think that it would be this bad. As is, there is a strong argument that this filtering is actually illegal in the UK -- the filter has no evidence that transgirl.fr should be blocked other than the reference to a trans person, and "Gender reassignment" is a protected characteristic under the Equality Act 2010.
+
+Even the argument that these filters are just statistical systems, and in the real world "trans girl" is a phrase commonly associated with porn (and the further stretch that this somehow absolves the designers of the system) falls flat -- the Equality Act 2010 further protects against "indirect discrimination", i.e. discrimination caused by systems that are applied equally but put some people at a disadvantage based on a protected characteristic.
+
+I'm not a lawyer, but any potential litigation would probably hinge on 2010 c.15 s.19 2.d: whether the web filtering designers can show their discriminatory system to be "a proportionate means of achieving a legitimate aim."
+
+It's not.
+
+1: .fr is technically for France, but in this context should be read as "for real" (something something english person erasing the french)
+2: this is SARCASM. I have never done anything wrong and I never will 😇 [3]
+3: this is ALSO SARCASM, but I do limit myself to victimless crimes 😇 [4]
+4: this is plausibly sarcasm and should not be used against me in court

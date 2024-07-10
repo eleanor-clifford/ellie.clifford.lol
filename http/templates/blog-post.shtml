@@ -9,6 +9,7 @@
         <span class="blog-author-separator">/</span>
         <time datetime="${DATE}">${DATE}</time>
       </div>
+      ${CW}
       <div>
         ${CONTENT}
       </div>
