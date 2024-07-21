@@ -1,11 +1,15 @@
-- name: Existential
-  shortname: existential
+- name: Philosophy and Politics
+  shortname: phil-pol
   color: purple
   posts:
+    - 0000-why-foss
+    - 0002-the-uk-government-is-dangerously-incompetent
     - 0006-what-we-leave-behind
     - 0011-paralyzed-by-analytics
     - 0012-perpetually-on-the-verge-of-a-breakdown
     - 0013-new-name-who-dis
+    - 0016-filtering-discrimination
+    - 0017-civil-liberties-science
 
 - name: Security and Privacy
   shortname: security-privacy
