@@ -30,7 +30,6 @@ css: |
     text-align: center;
   }
 
-
   .webring {
     display: table;
     margin-top: -20px;
@@ -108,13 +107,17 @@ I also run some free services over at [transgirl.fr](https://transgirl.fr) :3
 ::: column-right
 <figure class="motd">
   <figcaption aria-hidden="true">Meme of the now:</figcaption>
-  <a class="nounderline" href="/memes/02_calculations.jpg">
+  <a class="nounderline" href="/memes/03_hrt.jpg">
     <img class="main-img"
-         alt="According to my calculations, you're trans."
-         src="/memes/02_calculations.jpg">
+         alt="Get in the tank comrade, we are going to seize the means of hormone production"
+         src="/memes/03_hrt.jpg">
   </a>
   <figcaption aria-hidden="true">Historical:</figcaption>
   <div class="thumbs">
+   <a class="nounderline" href="/memes/02_calculations.jpg">
+     <img alt="According to my calculations, you're trans"
+          src="/memes/thumbs/02_calculations.jpg">
+   </a>
    <a class="nounderline" href="/memes/01_cam_girls.jpg">
      <img alt="In a mass surveillance state, we are all cam girls"
           src="/memes/thumbs/01_cam_girls.jpg">
