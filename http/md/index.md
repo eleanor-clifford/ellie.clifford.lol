@@ -16,7 +16,8 @@ css: |
     max-width: 100%;
   }
   .column-right {
-    display: flex; justify-content: center
+    display: flex;
+    justify-content: center
     max-width: 100%;
   }
 
@@ -72,7 +73,7 @@ css: |
 ::: columns
 ::: column-left
 
-Part-time musician, full-time procrastinator, armchair philosopher, [cypherpunk](/documents/cypherpunks-manifesto.html).
+_~killed by the woke mind virus~_
 
 <div class="blog-updates-small">
  <form method="post" action="/cgi-bin/subscribe.py" class="form">
@@ -84,6 +85,8 @@ Part-time musician, full-time procrastinator, armchair philosopher, [cypherpunk]
   <img class="rss" src="/_icons/rss.svg" alt="RSS feed icon"/>
  </a>
 </div>
+
+Armchair philosopher, musician, [cypherpunk](/documents/cypherpunks-manifesto.html).
 
 I also run some free services over at [transgirl.fr](https://transgirl.fr) :3
 
