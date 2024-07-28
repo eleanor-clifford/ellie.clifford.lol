@@ -1,9 +1,18 @@
 default:
-	make build
+	make test
+clean:
+	rm -rf out/http/*
+	rm -rf out/bliz/*
+build:
+	./scripts/build.sh --all
+deploy:
+	test -f upload.lock || ./scripts/deploy.sh --all
 all:
 	make clean && make build && make deploy
-blog_alts:
-	./scripts/build.sh --blog
+
+check:
+	./scripts/check.sh
+
 gemini:
 	rm out/bliz/* -rf
 	./scripts/build.sh --bliz && \
@@ -12,15 +21,13 @@ https:
 	#rm out/http/* -rf
 	./scripts/build.sh --http && \
 	test -f upload.lock || ./scripts/deploy.sh --http
-build:
-	./scripts/build.sh --all
+
 test:
-	./scripts/build.sh --http
+	./scripts/build.sh --test
+
+test_remote:
+	./scripts/build.sh --test
 	./scripts/deploy.sh --test
-deploy:
-	test -f upload.lock || ./scripts/deploy.sh --all
-check:
-	./scripts/check.sh
-clean:
-	rm -rf out/http/*
-	rm -rf out/bliz/*
+
+blog_alts:
+	./scripts/build.sh --blog
