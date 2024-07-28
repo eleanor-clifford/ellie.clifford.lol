@@ -8,7 +8,7 @@ if [ $# -eq 0 ] || [ "$1" = "--all" ] || [ "$1" = "--bliz" ]; then
 fi
 
 if [ $# -eq 0 ] || [ "$1" = "--all" ] || [ "$1" = "--http" ]; then
-	rsync -a --delete out/http/ ecc73@pip:/public/home/ecc73/public_html/ellie.clifford.lol/
+	rsync -a --delete out/http/ ecc73@pip:/public/home/ecc73/public_html/ellie.clifford.lol/ --exclude blog/staging
 fi
 
 if [ "$1" = "--test" ]; then

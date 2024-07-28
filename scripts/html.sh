@@ -58,6 +58,15 @@ html_build_md_page() { # $1: filename, writes to out/http/
 
 	banner="$(md_get_metadata "$file" banner)"
 
+	vars="$(md_get_metadata "$file" 'vars | to_entries[] | "\(.key)\t\(.value)"')"
+	IFS="
+"
+	for line in $vars; do
+		var="$(echo "$line" | cut -f1)"
+		value="$(echo "$line" | cut -f2-)"
+		export $var="$(eval "$value")"
+	done
+
 	if [ "$banner" != "null" ]; then
 		src="$(echo "$banner" | cut -d':' -f1)"
 		alt="$(echo "$banner" | cut -d':' -f2- | sed 's/^ *//')"
@@ -70,7 +79,7 @@ html_build_md_page() { # $1: filename, writes to out/http/
 		export CSS="$css"
 	fi
 
-	<$file md_color_headings $COLOR | pandoc --from markdown --to html \
+	<$file md_color_headings $COLOR | envsubst | pandoc --from markdown --to html \
 		| activate_double_template http/templates/default.html >$out_file
 }
 
