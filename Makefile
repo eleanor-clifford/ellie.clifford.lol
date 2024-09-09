@@ -11,6 +11,8 @@ all:
 	make clean && make build && make deploy
 
 check:
+	make clean
+	./scripts/build.sh --http
 	./scripts/check.sh
 
 gemini:
@@ -18,7 +20,7 @@ gemini:
 	./scripts/build.sh --bliz && \
 	test -f upload.lock || ./scripts/deploy.sh --bliz
 https:
-	#rm out/http/* -rf
+	rm out/http/* -rf
 	./scripts/build.sh --http && \
 	test -f upload.lock || ./scripts/deploy.sh --http
 
