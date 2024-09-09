@@ -58,7 +58,7 @@ html_build_md_page() { # $1: filename, writes to out/http/
 
 	banner="$(md_get_metadata "$file" banner)"
 
-	vars="$(md_get_metadata "$file" 'vars | to_entries[] | "\(.key)\t\(.value)"')"
+	vars="$(md_get_metadata "$file" 'vars | to_entries[] | "\(.key)\t\(.value)"' 2>/dev/null)"
 	IFS="
 "
 	for line in $vars; do
