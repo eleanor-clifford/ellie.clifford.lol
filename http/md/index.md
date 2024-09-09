@@ -110,13 +110,17 @@ I also run some free services over at [transgirl.fr](https://transgirl.fr) :3
 ::: column-right
 <figure class="motd">
   <figcaption aria-hidden="true">Meme of the now:</figcaption>
-  <a class="nounderline" href="/memes/03_hrt.jpg">
+  <a class="nounderline" href="/memes/04_skellie.jpg">
     <img class="main-img"
-         alt="Get in the tank comrade, we are going to seize the means of hormone production"
-         src="/memes/03_hrt.jpg">
+         alt="state of the world? bad. mental health? also bad. but still, we charge forward"
+         src="/memes/04_skellie.jpg">
   </a>
   <figcaption aria-hidden="true">Historical:</figcaption>
   <div class="thumbs">
+   <a class="nounderline" href="/memes/03_hrt.jpg">
+     <img alt="Get in the tank comrade, we are going to seize the means of hormone production"
+          src="/memes/thumbs/03_hrt.jpg">
+   </a>
    <a class="nounderline" href="/memes/02_calculations.jpg">
      <img alt="According to my calculations, you're trans"
           src="/memes/thumbs/02_calculations.jpg">
