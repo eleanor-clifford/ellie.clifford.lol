@@ -955,6 +955,7 @@ blockquote p {
 
 .comment-content {
   margin-left: 20px;
+  white-space: pre-wrap;
 }
 
 .comment-date {

@@ -106,6 +106,7 @@ EOF
 	cp -r static/.[!.]* out/bliz/
 }
 
+rm -rf blog/staging
 if [ $# -eq 0 ] || [ "$1" = "--all" ]; then
 	build_blog_alts
 	build_http
@@ -117,10 +118,8 @@ elif [ "$1" = "--bliz" ]; then
 elif [ "$1" = "--http" ]; then
 	build_http
 elif [ "$1" = "--test" ]; then
-	rm -rf blog/staging
 	cp -a blog_staging blog/staging
 	build_http
-	rm -rf blog/staging
 fi
 
 cd - >/dev/null

@@ -37,16 +37,14 @@ def http_update(post):
 			<h4>{date_hr}</h4>
 		</div>
 	</div>
-	<div class="comment-content">
-		{comment}
-	</div>
+	<div class="comment-content">{comment.strip()}</div>
 </div>
 <hr>
 """
 	if comment_html == "<hr>":
 		comment_html = """
 <div style="margin-left: 20px; margin-top: 10px;">
-	No comments yet! Tell me what you think!
+No comments yet! Tell me what you think!
 </div>
 """
 
