@@ -18,7 +18,7 @@ try:
 	if not side:
 		raise TypeError
 
-	r = requests.get("https://artemislena.eu/services/downloads/beCrimeDoGay.json", timeout=1)
+	r = requests.get("https://artemislena.eu/services/downloads/beCrimeDoGay.json", timeout=5)
 	r.raise_for_status
 	ring = r.json()
 
@@ -41,7 +41,7 @@ except ValueError:
 	print()
 	print(f"{site} is not (yet?) in the webring")
 except requests.exceptions.Timeout:
-	print("Status: 500 Internal Error")
+	print("Status: 503 Service Unavailable")
 	print()
 	print("Webring load timed out")
 except Exception:
