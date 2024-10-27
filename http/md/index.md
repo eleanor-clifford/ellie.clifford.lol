@@ -1,7 +1,7 @@
 ---
 # vi: set et ts=2 sw=2 sts=2 :
 title: "Ellie Clifford"
-ssi: true
+ssi: false
 css: |
   .columns {
     display: flex;
@@ -95,7 +95,8 @@ I also run some free services over at [transgirl.fr](https://transgirl.fr) :3
 ## <span>🏳️‍🌈</span><span style="margin: 0 0.5em">Be crime do gay webring</span><span>🏳️‍⚧️</span>
 
 ::: webring-links
-<!--#include virtual="/cgi-bin/webrings/be_crime_do_gay.py?left=%E2%86%90%20Go%20left&right=Go%20right%20%E2%86%92%0A" -->
+<a href="/cgi-bin/webrings/be_crime_do_gay.py?side=left">← Go left</a>
+<a href="/cgi-bin/webrings/be_crime_do_gay.py?side=right">Go right →</a>
 :::
 :::
 
