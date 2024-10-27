@@ -21,7 +21,7 @@ right = q.get("right", "right")
 site = q.get("site", "https://ellie.clifford.lol")
 
 try:
-	r = requests.get("https://artemislena.eu/services/downloads/beCrimeDoGay.json")
+	r = requests.get("https://artemislena.eu/services/downloads/beCrimeDoGay.json", timeout=1)
 	r.raise_for_status
 	ring = r.json()
 
@@ -40,6 +40,11 @@ try:
 		print()
 		print("This site is not (yet?) in the webring")
 		exit(0)
+
+except requests.exceptions.Timeout:
+	print("Status: 500 Internal Error")
+	print()
+	print("Webring load timed out")
 
 except Exception:
 	print("Status: 500 Internal Error")
