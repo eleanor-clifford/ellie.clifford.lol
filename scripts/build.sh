@@ -118,7 +118,7 @@ elif [ "$1" = "--bliz" ]; then
 elif [ "$1" = "--http" ]; then
 	build_http
 elif [ "$1" = "--test" ]; then
-	cp -a blog_staging blog/staging
+	cp -a blog_staging/staging blog/staging
 	build_http
 	rm -rf blog/staging
 fi
