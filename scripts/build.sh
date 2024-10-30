@@ -120,6 +120,8 @@ elif [ "$1" = "--http" ]; then
 elif [ "$1" = "--test" ]; then
 	cp -a blog_staging blog/staging
 	build_http
+	rm -rf blog/staging
 fi
+rm -rf blog/staging
 
 cd - >/dev/null

@@ -192,8 +192,6 @@ html_build_blog_post() { # reads tsv color, date, file
 	pandoc_options="$(md_get_metadata $file pandoc_options)"
 	[ "$pandoc_options" = null ] && pandoc_options=
 
-	echo "$pandoc_options"
-
 	css="$(md_get_metadata "$file" css)"
 
 	if [ "$css" != "null" ]; then
@@ -203,9 +201,15 @@ html_build_blog_post() { # reads tsv color, date, file
 	mkdir -p out/http/blog/$basename_noext
 	out_file="out/http/blog/$basename_noext/index.shtml"
 
-	<$file md_strip_yaml | md_strip_venus_hidden | md_color_headings $COLOR \
-		| pandoc --from markdown --to html $pandoc_options \
-		| activate_double_template http/templates/blog-post.shtml >$out_file
+	if [ "$(md_get_metadata $file nocolor)" = "true" ]; then
+		<$file md_strip_yaml | md_strip_venus_hidden \
+			| pandoc --from markdown --to html $pandoc_options \
+			| activate_double_template http/templates/blog-post.shtml >$out_file
+	else
+		<$file md_strip_yaml | md_strip_venus_hidden | md_color_headings $COLOR \
+			| pandoc --from markdown --to html $pandoc_options \
+			| activate_double_template http/templates/blog-post.shtml >$out_file
+	fi
 
 	find "$(dirname "$file")" -mindepth 1 ! -name index.md \
 		| xargs -I% cp -r % "$(dirname $out_file)"
