@@ -888,44 +888,37 @@ blockquote p {
   display: inline;
 }
 
-.cyan .comments h2,
-.cyan .comment-submit h2,
+.cyan h2,
 .cyan .comment-submit input[type="text"],
 .cyan .comment-submit input[type="email"],
 .cyan .comment-submit textarea
 	{ color: #8be9fd; }
-.green .comments h2,
-.green .comment-submit h2,
+.green h2,
 .green .comment-submit input[type="text"],
 .green .comment-submit input[type="email"],
 .green .comment-submit textarea
 	{ color: #50fa7b; }
-.orange .comments h2,
-.orange .comment-submit h2,
+.orange h2,
 .orange .comment-submit input[type="text"],
 .orange .comment-submit input[type="email"],
 .orange .comment-submit textarea
 	{ color: #ffb86c; }
-.red .comments h2,
-.red .comment-submit h2,
+.red h2,
 .red .comment-submit input[type="text"],
 .red .comment-submit input[type="email"],
 .red .comment-submit textarea
 	{ color: #ff5555; }
-.pink .comments h2,
-.pink .comment-submit h2,
+.pink h2,
 .pink .comment-submit input[type="text"],
 .pink .comment-submit input[type="email"],
 .pink .comment-submit textarea
 	{ color: #ff79c6; }
-.purple .comments h2,
-.purple .comment-submit h2,
+.purple h2,
 .purple .comment-submit input[type="text"],
 .purple .comment-submit input[type="email"],
 .purple .comment-submit textarea
 	{ color: #bd93f9; }
-.yellow .comments h2,
-.yellow .comment-submit h2,
+.yellow h2,
 .yellow .comment-submit input[type="text"],
 .yellow .comment-submit input[type="email"],
 .yellow .comment-submit textarea
