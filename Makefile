@@ -8,7 +8,7 @@ build:
 deploy:
 	test -f upload.lock || ./scripts/deploy.sh --all
 all:
-	make clean && make build && make deploy
+	make build && make deploy
 
 check:
 	make clean

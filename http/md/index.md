@@ -68,6 +68,12 @@ css: |
     object-fit: contain;
   }
 
+  .webring-disclaimer p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
 ---
 
 ::: columns
@@ -97,6 +103,10 @@ I also run some free services over at [transgirl.fr](https://transgirl.fr) :3
 ::: webring-links
 <a href="/cgi-bin/webrings/be_crime_do_gay.py?side=left">← Go left</a>
 <a href="/cgi-bin/webrings/be_crime_do_gay.py?side=right">Go right →</a>
+:::
+
+::: webring-disclaimer
+Membership of the webring does not imply my endorsement
 :::
 :::
 
