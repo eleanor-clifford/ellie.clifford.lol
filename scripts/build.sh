@@ -18,8 +18,9 @@ build_rss() {
 		done | sort | cut -f2)"
 
 	export DATE="$(date --rfc-email)"
-	export CONTENT="$(echo "$posts" | while read post
-		do
+	{
+		envsubst <http/templates/rss-outer-start.xml
+		echo "$posts" | while read -r post; do # too big to use variables
 			export TITLE="$(md_get_metadata "$post" title)"
 			export URL="https://ellie.clifford.lol/$(echo "$post" | sed -E 's/\.md$/.html/;s/index.html$//')"
 			export DESCRIPTION="$(md_strip_yaml <$post | pandoc -f markdown -t html \
@@ -47,8 +48,8 @@ EOF
 			export DATE="$(date --rfc-email --date="$(md_get_metadata "$post" createdAt)")"
 			envsubst <http/templates/rss-item.xml
 		done
-	)"
-	envsubst <http/templates/rss-outer.xml > out/http/blog/rss.xml
+		envsubst <http/templates/rss-outer-end.xml
+	} > out/http/blog/rss.xml
 }
 
 build_blog_alts() {
@@ -118,7 +119,7 @@ elif [ "$1" = "--bliz" ]; then
 elif [ "$1" = "--http" ]; then
 	build_http
 elif [ "$1" = "--test" ]; then
-	cp -a blog_staging/staging blog/staging
+	rsync -a blog_staging/staging/ blog/staging/
 	build_http
 	rm -rf blog/staging
 fi

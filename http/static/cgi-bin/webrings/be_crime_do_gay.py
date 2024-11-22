@@ -14,6 +14,7 @@ try:
 
 	site = q.get("site") or "https://ellie.clifford.lol"
 	side = q.get("side")
+	output_type = q.get("type") or "redirect"
 
 	if not side:
 		raise TypeError
