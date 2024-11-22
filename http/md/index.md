@@ -53,10 +53,17 @@ css: |
   .motd img.main-img {
      width: 300px;
      max-width: 100%;
+     margin: 0px;
+  }
+
+  .motd figcaption {
+    margin: 8px;
   }
 
   .motd div.thumbs {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
   }
 
   .motd .thumbs a {
@@ -64,8 +71,9 @@ css: |
   }
 
   .motd .thumbs img {
-    height: 60px;
+    height: 56px;
     object-fit: contain;
+    margin: 0px;
   }
 
   .webring-disclaimer p {
@@ -121,13 +129,17 @@ Membership of the webring does not imply my endorsement
 ::: column-right
 <figure class="motd">
   <figcaption aria-hidden="true">Meme of the now:</figcaption>
-  <a class="nounderline" href="/memes/05_sysadmin_cat.jpg">
+  <a class="nounderline" href="/memes/06_stem.jpg">
     <img class="main-img"
-         alt="[picture of a cat inside a server cabinet]. Her ass is NOT sysadmin certified!!"
-         src="/memes/05_sysadmin_cat.jpg">
+         alt="YEAH I'm a STEM girl. Stopped friendship with Testosterone, now Estrogen is My best friend!!1!"
+         src="/memes/06_stem.jpg">
   </a>
   <figcaption aria-hidden="true">Historical:</figcaption>
   <div class="thumbs">
+   <a class="nounderline" href="/memes/05_sysadmin_cat.jpg">
+     <img alt="[picture of a cat inside a server cabinet]. Her ass is NOT sysadmin certified!!"
+          src="/memes/thumbs/05_sysadmin_cat.jpg">
+   </a>
    <a class="nounderline" href="/memes/04_skellie.jpg">
      <img alt="state of the world? bad. mental health? also bad. but still, we charge forward"
           src="/memes/thumbs/04_skellie.jpg">
