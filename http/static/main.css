@@ -794,6 +794,40 @@ img.rss {
   color: rgba(241, 250, 140, 1) !important;
 }
 
+.green-override a {
+  color: rgba(80, 250, 123, 1) !important;
+  border-bottom: 2px solid rgba(80, 250, 123, 1) !important;
+}
+
+.cyan-override a {
+  color: rgba(139, 233, 253, 1) !important;
+  border-bottom: 2px solid rgba(139, 233, 253, 1) !important;
+}
+
+.purple-override a {
+  color: rgba(189, 147, 249, 1) !important;
+  border-bottom: 2px solid rgba(189, 147, 249, 1) !important;
+}
+
+.pink-override a {
+  color: rgba(255, 121, 198, 1) !important;
+  border-bottom: 2px solid rgba(255, 121, 198, 1) !important;
+}
+
+.orange-override a {
+  color: rgba(255, 184, 108, 1) !important;
+  border-bottom: 2px solid rgba(255, 184, 108, 1) !important;
+}
+
+.red-override a {
+  color: #ff5555 !important;
+  border-bottom: 2px solid #ff5555 !important;
+}
+
+.yellow-override a {
+  color: rgba(241, 250, 140, 1) !important;
+  border-bottom: 2px solid rgba(241, 250, 140, 1) !important;
+}
 
 .green h1 {
   color: rgba(80, 250, 123, 1)
