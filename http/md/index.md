@@ -82,7 +82,35 @@ css: |
     margin-bottom: 0px;
   }
 
+  .overlay {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    padding: 10px;
+    color: #8be9fd;
+    transform: rotate(10deg);
+  }
+
+  .overlay p {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  @media screen and (max-width: 600px) {
+    .overlay {
+      top: 90px;
+      right: 10px;
+    }
+    .overlay p {
+      font-size: 20px;
+    }
+  }
+
 ---
+
+::: {.overlay .orange-override}
+[Now shitposting on Bluesky](https://app.bsky.transgirl.fr/profile/ellie.clifford.lol)
+:::
 
 ::: columns
 ::: column-left
