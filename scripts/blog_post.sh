@@ -27,7 +27,7 @@ fi
 
 echo "Press enter to build and deploy"
 read foo
-make all
+#make all
 echo "Built and deployed for gemini and http"
 
 recipients="$(ssh pip srcf-mailman-list ecc73-blog | sed -z 's/\n$//;s/\n/ /g')"
