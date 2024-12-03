@@ -102,7 +102,7 @@ To unsubscribe, email ecc73-blog-request@srcf.net with subject line
 convert_blog_to_bliz_txt_eml() { # $1: filename, writes to files
 
 	# get header yaml
-	stripped_md="$(<$1 md_strip_yaml)"
+	stripped_md="$(<$1 md_strip_yaml | md_strip_venus_hidden)"
 
 	# yaml vars
 	title="$(md_get_metadata $1 title)"
