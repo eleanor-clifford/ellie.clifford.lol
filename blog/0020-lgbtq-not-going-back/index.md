@@ -20,7 +20,7 @@ css: |
 
 ---
 
-_[This post is part of a coordinated action started by Julia
+_[This post is part of a collective action started by Julia
 Serano.](https://juliaserano.substack.com/p/lgbtq-people-are-not-going-back)_
 
 The tides really are turning against us queer people, huh? Across the world,
