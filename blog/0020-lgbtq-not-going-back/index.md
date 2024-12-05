@@ -41,11 +41,11 @@ MP](https://www.parliament.uk/get-involved/contact-an-mp-or-lord/contact-your-mp
 vote Liberal Democrat if they continue their transphobic policies, such as
 Labour's upholding of the puberty blocker ban.
 
-There are a lot of things I could contribute to this coordinated action
+There are a lot of things I could contribute to this action
 explaining exactly what the Democrats and Labour are doing wrong, what rights
 are being threatened, what you should say to them, and so on, but since I
 expect a lot of other people are going to be doing that better than me (I
-encourage you to read many of the other posts in this coordinated action!), I
+encourage you to read many of the other posts in this action!), I
 want to instead focus on the loudest argument I hear against third party voting
 specifically, namely "splitting the vote".
 
