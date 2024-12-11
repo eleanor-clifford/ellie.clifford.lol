@@ -116,3 +116,10 @@ A very different but complementary angle on similar underlying problems.
 ::: {.indent}
 An inward look at bicycle racing culture and its relations with trans people.
 :::
+
+[Trans People and Sports: Everything You Need to
+Know](https://juliaserano.substack.com/p/trans-people-and-sports-everything)
+
+::: {.indent}
+The biology (and sociology) of it all
+:::
