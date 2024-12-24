@@ -121,5 +121,5 @@ An inward look at bicycle racing culture and its relations with trans people.
 Know](https://juliaserano.substack.com/p/trans-people-and-sports-everything)
 
 ::: {.indent}
-The biology (and sociology) of it all
+The biology (and sociology) of it all.
 :::

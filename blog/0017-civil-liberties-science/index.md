@@ -2,6 +2,10 @@
 title: "Civil liberties that rest on science are fragile"
 excerpt: "They're called liberties for a reason."
 createdAt: "2024-07-21"
+css: |
+  .indent {
+    margin-left: 20px
+  }
 ---
 
 The gay liberation movement that started in the 60s and the subsequent legal
@@ -60,3 +64,11 @@ not (just) because the science says so, but because (most) trans people don't
 _want_ to be turned cis, and any attempt to do so, no matter how
 well-intentioned or successful, would be psychological violence -- worse even
 than physical violence; it would necessarily destroy the subject to build someone else.
+
+## Further Reading
+
+[My Doctor Emailed Me Back](https://transwrites.world/my-doctor-emailed-me-back/)
+
+::: {.indent}
+The current state of NHS ideology on trans people
+:::
