@@ -2,6 +2,9 @@
 title: "Segregating sports by sex was always a flawed idea"
 excerpt: "Society says men are better at sports. I say popular sports were merely designed by men, for men."
 createdAt: "2024-11-22"
+tags:
+  - queer
+  - phil-pol
 cw: >
   Please don't harrass me just because I had a sociopolitically complicated thought, kthxbye.
 nocolor: true

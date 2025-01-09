@@ -9,6 +9,9 @@
         <span class="blog-author-separator">/</span>
         <time datetime="${DATE}">${DATE}</time>
       </div>
+      <div class="tags">
+        ${TAGS}
+      </div>
       ${CW}
       <div>
         ${CONTENT}

@@ -766,33 +766,29 @@ img.rss {
 	margin-right: 10px;
 }
 
-.green-override {
-  color: rgba(80, 250, 123, 1) !important;
-}
+.cyan-override    { color: #8be9fd !important;}
+.green-override   { color: #50fa7b !important;}
+.orange-override  { color: #ffb86c !important;}
+.red-override     { color: #ff5555 !important;}
+.pink-override    { color: #ff79c6 !important;}
+.purple-override  { color: #bd93f9 !important;}
+.yellow-override  { color: #f1fa8c !important;}
 
-.cyan-override {
-  color: rgba(139, 233, 253, 1) !important;
-}
+.cyan-override    svg text { fill: #8be9fd !important;}
+.green-override   svg text { fill: #50fa7b !important;}
+.orange-override  svg text { fill: #ffb86c !important;}
+.red-override     svg text { fill: #ff5555 !important;}
+.pink-override    svg text { fill: #ff79c6 !important;}
+.purple-override  svg text { fill: #bd93f9 !important;}
+.yellow-override  svg text { fill: #f1fa8c !important;}
 
-.purple-override {
-  color: rgba(189, 147, 249, 1) !important;
-}
-
-.pink-override {
-  color: rgba(255, 121, 198, 1) !important;
-}
-
-.orange-override {
-  color: rgba(255, 184, 108, 1) !important;
-}
-
-.red-override {
-  color: #ff5555 !important;
-}
-
-.yellow-override {
-  color: rgba(241, 250, 140, 1) !important;
-}
+.cyan-override    svg polygon { stroke: #8be9fd !important;}
+.green-override   svg polygon { stroke: #50fa7b !important;}
+.orange-override  svg polygon { stroke: #ffb86c !important;}
+.red-override     svg polygon { stroke: #ff5555 !important;}
+.pink-override    svg polygon { stroke: #ff79c6 !important;}
+.purple-override  svg polygon { stroke: #bd93f9 !important;}
+.yellow-override  svg polygon { stroke: #f1fa8c !important;}
 
 .green-override a {
   color: rgba(80, 250, 123, 1) !important;
@@ -1527,4 +1523,10 @@ details.dropdown {
 .dropdown .content {
 	padding: 10px;
 	margin-bottom: -20px;
+}
+
+.tags {
+	display: flex;
+	gap: 10px;
+	margin: 10px 0px;
 }

@@ -2,6 +2,8 @@
 title: "Music!"
 excerpt: "Today's post is about something completely different from the usual..."
 createdAt: "2022-08-06"
+tags:
+  - projects
 ---
 
 Today's post is about something completely different from the usual (if there

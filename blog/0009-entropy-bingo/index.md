@@ -2,6 +2,8 @@
 title: "Entropy Bingo"
 excerpt: "Let me introduce you to a little game I like to call Entropy Bingo."
 createdAt: "2023-01-01"
+tags:
+  - tech
 ---
 
 Let me introduce you to a little game I like to call Entropy Bingo.

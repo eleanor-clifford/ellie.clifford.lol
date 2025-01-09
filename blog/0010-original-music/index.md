@@ -2,6 +2,8 @@
 title: "Original Music!"
 excerpt: "I wrote and produced my first original song!"
 createdAt: "2023-01-08"
+tags:
+  - projects
 ---
 
 I wrote and produced my first original song! Well, the first that is going to

@@ -2,6 +2,9 @@
 title: "The UK government is dangerously incompetent"
 excerpt: "(in regards to the \"No place to hide\" propaganda campaign)"
 createdAt: "2022-02-04"
+tags:
+  - phil-pol
+  - tech
 ---
 
 ## Preface, 2022-10-22

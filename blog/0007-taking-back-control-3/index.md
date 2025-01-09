@@ -2,6 +2,9 @@
 title: "Taking back control (part 3): the PinePhone Pro"
 excerpt: "I can't go on having a spyware device in my pocket, can I?? (I use arch btw)"
 createdAt: "2022-10-22"
+tags:
+  - tech
+  - projects
 ---
 
 PS: this blog is now also accessible over RSS [here](https://ellie.clifford.lol/blog/rss.xml).

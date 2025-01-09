@@ -2,6 +2,9 @@
 title: "Cloud Service Shenanigans"
 excerpt: "Free (as in beer), but at what cost?"
 createdAt: "2024-05-03"
+tags:
+  - tech
+  - queer
 css: |
   img {
     width: 100%;

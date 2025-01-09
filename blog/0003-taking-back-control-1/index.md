@@ -2,6 +2,9 @@
 title: "Taking back control (part 1): a manifesto"
 excerpt: "It's time to stop putting trust in megacorporations et al. I'm taking back control."
 createdAt: "2022-03-07"
+tags:
+  - tech
+  - projects
 ---
 
 Like many young people, I've been around technology my entire life. But until

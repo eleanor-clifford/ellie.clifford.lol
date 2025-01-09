@@ -2,6 +2,9 @@
 title: "LGBTQ+ people are not going back"
 excerpt: "In response to the centre-left abandoning trans people."
 createdAt: "2024-12-03"
+tags:
+  - queer
+  - phil-pol
 css: |
   .emphasis {
     padding: 10px;

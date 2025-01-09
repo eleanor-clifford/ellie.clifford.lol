@@ -2,6 +2,11 @@
 title: "Quickies #1: keyboards, least privilege, and linguistic warfare"
 excerpt: "My \"I should write a blog post about this\" list is getting far too long..."
 createdAt: "2024-05-30"
+tags:
+  - quickies
+  - projects
+  - tech
+  - phil-pol
 ---
 
 Ok so my "I should write a blog post about this" list is getting far too long

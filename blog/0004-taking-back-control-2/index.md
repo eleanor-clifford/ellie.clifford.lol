@@ -2,6 +2,9 @@
 title: "Taking back control (part 2): futility and obscurity"
 excerpt: "My manifesto currently implies I would have to consider every message I send to absolutely anyone public. Is this reasonable?"
 createdAt: "2022-03-30"
+tags:
+  - tech
+  - projects
 ---
 
 Currently in my manifesto it says:

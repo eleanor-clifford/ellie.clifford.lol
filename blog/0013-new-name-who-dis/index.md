@@ -2,6 +2,8 @@
 title: "New name who dis?"
 excerpt: "The neurodivergent security researcher is transfem? How shocking."
 createdAt: "2024-04-14"
+tags:
+  - queer
 ---
 
 Wow, it's been over a year since I last posted here!

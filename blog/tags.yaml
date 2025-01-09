@@ -1,0 +1,19 @@
+"phil-pol":
+  name: Philosophy and Politics
+  color: purple
+
+tech:
+  name: Tech-related posts
+  color: orange
+
+queer:
+  name: Queer and queer-adjacent posts
+  color: pink
+
+projects:
+  name: Projects
+  color: cyan
+
+quickies:
+  name: Quickies
+  color: yellow

@@ -3,6 +3,9 @@ title: "Web filtering"
 excerpt: "Can't a girl just host a site?"
 createdAt: "2024-07-10"
 cw: "Content Warning: mentions of transphobia"
+tags:
+  - queer
+  - tech
 css: |
   .small {
     font-size: 12px;

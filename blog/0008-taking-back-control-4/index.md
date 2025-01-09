@@ -2,6 +2,9 @@
 title: "Taking back control (part 4): ultimatum games"
 excerpt: "This is the hill I have chosen to die on, and I will die on it if necessary."
 createdAt: "2022-11-20"
+tags:
+  - tech
+  - projects
 ---
 
 There are (approximately) two types of people who will read this post: my

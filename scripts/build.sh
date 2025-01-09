@@ -75,6 +75,9 @@ build_http() {
 	echo "Building RSS..." >/dev/stderr
 	build_rss
 
+	echo "Building tagdata..." >/dev/stderr
+	python3 scripts/build_tagdata.py
+
 	cp -r static/* out/http/
 	cp -r http/static/* out/http/
 

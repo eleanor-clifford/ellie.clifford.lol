@@ -83,77 +83,10 @@ html_build_md_page() { # $1: filename, writes to out/http/
 		| activate_double_template http/templates/default.html >$out_file
 }
 
-html_build_blog_all() {
-	# put data into templates and output
-	blog_sort_color | html_build_blog_from
-}
-
-html_build_blog_from() { # stdin is blog_sort_color equivalent
-	while read post; do
-		test -z "$post" && continue
-		color="$(echo "$post" | cut -f 1)"
-		date="$(echo "$post" | cut -f 2)"
-		file="$(echo "$post" | cut -f 3)"
-		basename_noext="$(basename "$(dirname "$file")")"
-
-		export TITLE="$(md_get_metadata $file title)"
-		export DATE="$date"
-		export EXCERPT="$(md_get_metadata $file excerpt)"
-		export REF="/blog/$basename_noext/"
-		export COLOR="$color"
-		envsubst <http/templates/blog-item.html
-	done
-}
-
 html_build_blog_indices() {
-	categories="$(yq -rc '.[]' <blog/categories.yaml)"
-	sorted_colored_blogs="$(blog_sort_color)"
-
-	echo "$categories" | while read -r category; do
-		name="$(echo "$category" | yq -r .name)"
-		shortname="$(echo "$category" | yq -r .shortname)"
-		export COLOR="$(echo "$category" | yq -r .color)"
-
-		mkdir -p out/http/blog/$shortname
-		out_file="out/http/blog/$shortname/index.html"
-
-		files="$(echo "$category" | yq -rc '.posts[]' | sed 's|^|blog/|;s|$|/index.md|')" # jank
-		export HASH="$(md5sum $files)"
-
-		if test -e "$out_file" && grep -q "$HASH" "$out_file"; then
-			echo "skipping $name blog index..." > /dev/stderr
-		else
-			echo "regenerating $name blog index..." > /dev/stderr
-			echo "$files" \
-				| blog_apply_color_to \
-				| html_build_blog_from \
-				| activate_double_template http/templates/blog-listing.html \
-					> "$out_file"
-		fi
-	done
-
-	#mkdir -p out/http/blog/all
-
-	export COLOR="$(yq -r .page_colors._blog <config.yaml)"
-
-	files="$(find blog/ -mindepth 2 -type f -name '*.md' | sort)"
-	export HASH="$(md5sum $files)"
-	out_file="out/http/blog/index.html"
-
-	if test -e "$out_file" && grep -q "$HASH" "$out_file"; then
-		echo "skipping full blog index..." > /dev/stderr
-	else
-		echo "regenerating full blog index..." > /dev/stderr
-	fi
-	html_build_blog_all \
-		| activate_double_template http/templates/blog-listing.html > "$out_file"
-	export HASH=
-
-	mkdir -p out/http/blog/categories
-	<blog/categories.md \
-		  pandoc --from markdown --to html \
-		| activate_double_template http/templates/blog-index.html > out/http/blog/categories/index.html
-
+	export COLOR=green
+	cat http/blog.shtml \
+		| activate_double_template http/templates/blog-index.html > "out/http/blog/index.shtml"
 }
 
 md_strip_venus_hidden() {
@@ -177,6 +110,17 @@ html_build_blog_post() { # reads tsv color, date, file
 		echo "regenerating $file..."
 	fi
 
+	export TAGS="$({
+		md_get_metadata $file 'tags[]' | while read -r tag; do
+			export TAG="$tag"
+			export COLOR="$(<blog/tags.yaml yq -cr '.["'"$tag"'"].color')"
+			tw=$((9*$(echo "$tag" | wc -c)))
+			export W=$((15 + $tw))
+			export Wm1=$(($W-1))
+			export mid="$(echo "scale=1; 12 + $tw/2" | bc -l)"
+			<http/templates/tag.html envsubst
+		done
+	})"
 	export HASH="$h"
 	export COLOR="$(echo "$tsv" | cut -f 1)"
 	export DATE="$(echo "$tsv" | cut -f 2)"

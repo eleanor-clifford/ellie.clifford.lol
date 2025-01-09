@@ -2,6 +2,9 @@
 title: "Why FOSS?"
 excerpt: "Free and Open Source Software is about more than ideology. There are several practical reasons why FOSS software is much better than proprietary alternatives."
 createdAt: "2021-04-10"
+tags:
+  - phil-pol
+  - tech
 ---
 
 Free and Open Source Software is about more than ideology. There are several
