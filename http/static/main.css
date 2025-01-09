@@ -592,7 +592,7 @@ th, td {
    ========================================================================== */
 
 .form {
-  max-width: 400px;
+  /*max-width: 400px;*/
   margin-top: 1em;
   margin-bottom: .5em;
 }
@@ -1529,4 +1529,8 @@ details.dropdown {
 	display: flex;
 	gap: 10px;
 	margin: 10px 0px;
+}
+
+.blog-tag-return {
+	margin: 20px 0px;
 }

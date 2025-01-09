@@ -2,15 +2,15 @@ import json
 import yaml
 
 from os import listdir, chdir
-from os.path import dirname, abspath, isdir
+from os.path import dirname, abspath, isdir, isfile
 
 chdir(dirname(dirname(abspath(__file__))) + "/blog/")
-posts = [x for x in reversed(sorted(listdir())) if isdir(x)]
+posts = [x for x in reversed(sorted(listdir())) if isdir(x) and isfile(x + "/index.md")]
 
 tag_data = yaml.safe_load(open("tags.yaml").read())
 
 for p in posts:
-    y = yaml.safe_load(open(p+"/index.md").read().split("---\n")[1])
+    y = yaml.safe_load(open(p + "/index.md").read().split("---\n")[1])
     for t in y['tags']:
         tag_data[t] = tag_data.get(t) or {}
         tag_data[t]["posts"] = (tag_data[t].get("posts") or {}) | {p: {
