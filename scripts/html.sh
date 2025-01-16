@@ -28,6 +28,18 @@ md_color_headings() { # $1: start color
 	done
 }
 
+check_hash_change() {
+	file="$1"
+	test -e "$file" || (echo true && return)
+
+	while read -r h; do
+		if ! grep -q "$h" "$file"; then
+			echo true
+			return
+		fi
+	done
+	echo false
+}
 
 html_build_md_page() { # $1: filename, writes to out/http/
 	file="$1"
@@ -44,15 +56,17 @@ html_build_md_page() { # $1: filename, writes to out/http/
 	out_file="$(echo "$file" | sed 's|^http/md/|out/http/|; s|.md$|.'$ext'|')"
 	mkdir -p "$(dirname "$out_file")"
 
-	h="$(md5sum "$file")"
-	if test -e "$out_file" && grep -q "$h" "$out_file"; then
+	hs="$(md5sum "$file" "http/templates/default.html" "http/templates/outer.html" "scripts/html.sh")"
+	regen="$(echo "$hs" | check_hash_change "$out_file")"
+
+	if $regen; then
+		echo "regenerating $file..."
+	else
 		echo "skipping $file..."
 		return
-	else
-		echo "regenerating $file..."
 	fi
 
-	export HASH="$h"
+	export HASH="$hs"
 	export COLOR="$(<config.yaml yq -rc ".page_colors.$escaped_name")"
 	export TITLE="$(md_get_metadata "$file" title)"
 
@@ -97,17 +111,19 @@ html_build_blog_post() { # reads tsv color, date, file
 	read tsv
 	test -z "$tsv" && return
 	file="$(echo "$tsv" | cut -f 3)"
+
 	basename_noext="$(basename "$(dirname "$file")")"
+	out_file="$(echo "$file" | sed 's|^|out/http/|; s|.md$|.shtml|')"
+	mkdir -p "$(dirname "$out_file")"
 
-	mkdir -p out/http/blog/$basename_noext
-	out_file="out/http/blog/$basename_noext/index.shtml"
+	hs="$(md5sum "$file" "http/templates/blog-index.html" "http/templates/tag.html" "http/templates/outer.html" "scripts/html.sh")"
+	regen="$(echo "$hs" | check_hash_change "$out_file")"
 
-	h="$(md5sum "$file")"
-	if test -e "$out_file" && grep -q "$h" "$out_file"; then
+	if $regen; then
+		echo "regenerating $file..."
+	else
 		echo "skipping $file..."
 		return
-	else
-		echo "regenerating $file..."
 	fi
 
 	export TAGS="$({
@@ -121,7 +137,7 @@ html_build_blog_post() { # reads tsv color, date, file
 			<http/templates/tag.html envsubst
 		done
 	})"
-	export HASH="$h"
+	export HASH="$hs"
 	export COLOR="$(echo "$tsv" | cut -f 1)"
 	export DATE="$(echo "$tsv" | cut -f 2)"
 	export TITLE="$(md_get_metadata $file title)"
@@ -130,7 +146,7 @@ html_build_blog_post() { # reads tsv color, date, file
 	cw="$(md_get_metadata $file cw)"
 
 	if [ "$cw" != "null" ]; then
-		export CW="<div class=\"content_warning\"><p>$cw</p></div>"
+		export CW="<div class=\"content-warning\"><p>$cw</p></div>"
 	fi
 
 	pandoc_options="$(md_get_metadata $file pandoc_options)"
@@ -141,9 +157,6 @@ html_build_blog_post() { # reads tsv color, date, file
 	if [ "$css" != "null" ]; then
 		export CSS="$css"
 	fi
-
-	mkdir -p out/http/blog/$basename_noext
-	out_file="out/http/blog/$basename_noext/index.shtml"
 
 	if [ "$(md_get_metadata $file nocolor)" = "true" ]; then
 		<$file md_strip_yaml | md_strip_venus_hidden \

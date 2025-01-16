@@ -774,21 +774,21 @@ img.rss {
 .purple-override  { color: #bd93f9 !important;}
 .yellow-override  { color: #f1fa8c !important;}
 
-.cyan-override    svg text { fill: #8be9fd !important;}
-.green-override   svg text { fill: #50fa7b !important;}
-.orange-override  svg text { fill: #ffb86c !important;}
-.red-override     svg text { fill: #ff5555 !important;}
-.pink-override    svg text { fill: #ff79c6 !important;}
-.purple-override  svg text { fill: #bd93f9 !important;}
-.yellow-override  svg text { fill: #f1fa8c !important;}
+svg.cyan-override     text, .cyan-override    svg text { fill: #8be9fd !important;}
+svg.green-override    text, .green-override   svg text { fill: #50fa7b !important;}
+svg.orange-override   text, .orange-override  svg text { fill: #ffb86c !important;}
+svg.red-override      text, .red-override     svg text { fill: #ff5555 !important;}
+svg.pink-override     text, .pink-override    svg text { fill: #ff79c6 !important;}
+svg.purple-override   text, .purple-override  svg text { fill: #bd93f9 !important;}
+svg.yellow-override   text, .yellow-override  svg text { fill: #f1fa8c !important;}
 
-.cyan-override    svg polygon { stroke: #8be9fd !important;}
-.green-override   svg polygon { stroke: #50fa7b !important;}
-.orange-override  svg polygon { stroke: #ffb86c !important;}
-.red-override     svg polygon { stroke: #ff5555 !important;}
-.pink-override    svg polygon { stroke: #ff79c6 !important;}
-.purple-override  svg polygon { stroke: #bd93f9 !important;}
-.yellow-override  svg polygon { stroke: #f1fa8c !important;}
+svg.cyan-override     polygon, .cyan-override    svg polygon { stroke: #8be9fd !important;}
+svg.green-override    polygon, .green-override   svg polygon { stroke: #50fa7b !important;}
+svg.orange-override   polygon, .orange-override  svg polygon { stroke: #ffb86c !important;}
+svg.red-override      polygon, .red-override     svg polygon { stroke: #ff5555 !important;}
+svg.pink-override     polygon, .pink-override    svg polygon { stroke: #ff79c6 !important;}
+svg.purple-override   polygon, .purple-override  svg polygon { stroke: #bd93f9 !important;}
+svg.yellow-override   polygon, .yellow-override  svg polygon { stroke: #f1fa8c !important;}
 
 .green-override a {
   color: rgba(80, 250, 123, 1) !important;
@@ -1059,7 +1059,14 @@ blockquote p {
 .blog-metadata {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 20px 0;
+}
+
+.blog-metadata-left {
+  display: flex;
+  align-items: center;
+  font-size: 14pt;
 }
 
 .blog-author-avatar {
@@ -1492,15 +1499,15 @@ p.music-art-caption {
 	display: inline-block;
 }
 
-.content_warning {
+.content-warning {
 	padding: 10px;
-	margin: 10px;
+	margin: 10px 0px;
 	border-radius: 10px;
 	color: #ffb86c;
 	border: 2px solid #ffb86c;
 }
 
-.content_warning p {
+.content-warning p {
 	margin: 0px;
 	text-align: center;
 }
@@ -1528,7 +1535,7 @@ details.dropdown {
 .tags {
 	display: flex;
 	gap: 10px;
-	margin: 10px 0px;
+	/*margin: 10px 0px;*/
 }
 
 .blog-tag-return {

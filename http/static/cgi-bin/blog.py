@@ -8,8 +8,9 @@ from os import environ
 from urllib.parse import parse_qs
 from string import Template
 
+from os.path import dirname, realpath
 
-webroot = "/public/home/ecc73/public_html/ellie.clifford.lol"
+webroot = dirname(dirname(realpath(__file__)))
 color_order = ["cyan", "purple", "pink", "yellow", "green"]
 
 try:

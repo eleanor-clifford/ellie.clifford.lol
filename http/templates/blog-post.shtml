@@ -4,13 +4,15 @@
     <div class="wrap"><div class="blog">
       <h1>${TITLE}</h1>
       <div class="blog-metadata">
-        <img class="blog-author-avatar" src="/avatar_48.jpg" alt="Ellie Clifford">
-        <span class="blog-author-name">Ellie Clifford</span>
-        <span class="blog-author-separator">/</span>
-        <time datetime="${DATE}">${DATE}</time>
-      </div>
-      <div class="tags">
-        ${TAGS}
+        <div class="blog-metadata-left">
+          <img class="blog-author-avatar" src="/avatar_48.jpg" alt="Ellie Clifford">
+          <span class="blog-author-name">Ellie Clifford</span>
+          <span class="blog-author-separator">/</span>
+          <time datetime="${DATE}">${DATE}</time>
+        </div>
+        <div class="tags">
+          ${TAGS}
+        </div>
       </div>
       ${CW}
       <div>
