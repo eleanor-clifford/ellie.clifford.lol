@@ -1,4 +1,6 @@
 AuthType Ucam-WebAuth
+AAAuthService https://auth.srcf.net/wls/authenticate
+AALogoutService https://auth.srcf.net/logout
 AARequiredPtags none
 Require user ecc73 jrb239 iv277 atp45
 
