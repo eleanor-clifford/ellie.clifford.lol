@@ -7,6 +7,8 @@ tags:
   - projects
 ---
 
+*This post was minorly edited on 2025-01-29*
+
 There are (approximately) two types of people who will read this post: my
 regular readers (hi!) and people who I've sent this link to, presumably after
 refusing to continue messaging them on their favourite messaging system. This
@@ -89,10 +91,16 @@ Another potential solution is for the responder to reject anything other than a
 50/50 split: knowing that knowledge of this would force the proposer to offer a
 50/50 split, since the proposer is also trying to maximise the amount of money
 they get. But in reality, the responder would surely also accept 51/49 splits.
-What about 52/48? 53/47? Clearly this solution isn't quite stable.
+What about 52/48? 53/47? Clearly this solution isn't quite stable.[^random]
 
-There are other potential solutions (e.g. involving randomness), but really the
-only way to understand real human responses is with real data. Wikipedia says:
+There are other potential solutions (e.g. involving randomness), but
+really the only way to understand real human responses is with real data.
+Wikipedia says:
+
+[^random]: 2025-01-29: The solution to this instability is the following
+optimal strategy: accept a 50/50 split with 100% probability, and accept with
+decreasing probability as the proposal becomes more unfair, such that the
+expected value to the proposer is maximised at the fair split.
 
 > When carried out between members of a shared social group [...] people offer
 > "fair" (i.e., 50:50) splits, and offers of less than 30% are often rejected.
@@ -126,7 +134,14 @@ security, and freedom
 The research suggests I'll do reasonably well with somewhere between 50/50 and
 70/30 splits, whatever we define those to be.
 
-Let me rank messaging systems then into a few categories of privacy/security:
+Let me rank messaging systems then into a few categories of
+privacy/security[^categories]:
+
+[^categories]: 2025-01-29: Arguably, Signal's data security is stronger than
+Matrix's (it forgoes some features and is more mature), and whether its
+metadata security is better than Matrix's depends heavily on your threat model.
+This doesn't change the conclusions of the post, and I still strongly prefer
+Matrix.
 
 _[More technical explanation](/documents/chat-systems.html)_
 
@@ -166,9 +181,9 @@ reasonable, but we can argue about it if you like.
 ## Complicating factor 2: Social dynamics
 
 Ultimatums don't exist in a vacuum. You might be thinking to yourself "Wow,
-this guy's an asshole. Nobody else cares about this and he wants to dictate how
-we message?" Not only that, but people don't like caving to ultimatums, lest
-other person take advantage and make even more ultimatums.
+this girl's an asshole. Nobody else cares about this and she wants to dictate
+how we message?" Not only that, but people don't like caving to ultimatums,
+lest other person take advantage and make even more ultimatums.
 
 Honestly, I can relate to that. All I can say is that I'm okay with you being
 annoyed at me, because I truly believe that this is a cause worth championing,
@@ -214,7 +229,18 @@ choice. I'll certainly be careful to watch what I say, at least.
 Ok so like, there's no way if someone I don't know tries to message me on
 Whatsapp or something I can just reply with "Install this other app and then
 I'll reply". They'd just think I'm weird and then ignore me probably. Or it
-would at least be awkward.
+would at least be awkward. As the [old
+adage](https://files.clifford.lol/copypastas/free-virgin.txt) goes:
+
+> I can't ever seem to get girls to come over to my place and I can't text them
+> either. Once I get their numbers since I've added customs roms to my phone
+> and refuse to use sms since it's a security concern I require all of my
+> friends to download a free and open source messaging app and I share with
+> them my public gpg key so that we can verify that our conversations are
+> secure. None of my friends are willing to do this. And I can't use sites like
+> tinder since it's not only proprietary software but a major privacy
+> vulnerability. How come it is so hard to find a girl concerned about software
+> freedom. I feel like I'm going to be a virgin forever.
 
 I think what I'll do is finish the initial conversation (watching what I say)
 and then tell them I don't actually use Whatsapp, and ask them to select from a

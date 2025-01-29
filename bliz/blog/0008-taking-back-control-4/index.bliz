@@ -5,6 +5,10 @@
 
 % gemlog_intro_meta_p 2022-11-20
 
+---
+This post was minorly edited on 2025-01-29
+---
+
 There are (approximately) two types of people who will read this post: my regular readers (hi!) and people who I've sent this link to, presumably after refusing to continue messaging them on their favourite messaging system. This is on grounds of privacy, security, and freedom.
 
 Usually, I would consider the act of giving such strong ultimatums to be unreasonable and unfair: surely the other person should be given a say? Surely I should attempt to reason with them and come to an fair compromise? But I find myself somewhat backed into a corner. Make no mistake, I don't take this lightly. I apologise for the inconvenience, but this is the hill I have chosen to die on, and I will die on it if necessary.
@@ -15,7 +19,7 @@ We should start by talking about our adversaries. Get the idea out of your head 
 
 1. Profit-motivated entities: this includes Facebook, Google, etc. They passively harvest all the data they can slurp up and use it to train a sophisticated model of you: your likes, your dislikes, your triggers, your guilty pleasures, your political opinions, and so on. So far, this is mostly used for advertising, but don't think of this in terms of tailoring ads for you, or you'll fool yourself into thinking that you're smart enough to resist. No, the other, more worrying, side of this, is that they try to make you waste as much time as possible interacting with their services (and hence viewing *more* ads). They will happily trick your brain into a certain dopamine response which keeps you watching YouTube videos or browsing TikTok even after you should rightfully be bored. This is obviously dystopian. Don't let it carry on. (This is not even to mention political nudging, which certain companies have also engaged in).
 
-2. Government agencies: entities like the NSA or GCHQ undergo mass surveillance, slurping up all this information too. Ostensibly, they sift though all of this traffic to detect terrorism and other security threats, but do we really trust that this is and will always be the only reason? This is a Chekhov's gun[1], and it must go off by Act III. By letting the government see our private messages, we are enabling a future government to use them as evidence against us. Is that something you want to risk?
+2. Government agencies: entities like the NSA or GCHQ undergo mass surveillance, slurping up all this information too. Ostensibly, they sift though all of this traffic to detect terrorism and other security threats, but do we really trust that this is and will always be the only reason? This is a Chekhov's gun, and it must go off by Act III. By letting the government see our private messages, we are enabling a future government to use them as evidence against us. Is that something you want to risk?
 
 ## What makes a good messaging system?
 
@@ -25,7 +29,7 @@ So, what do we need from a messaging system in order to fight our adversaries?
 
 2. Security: In order for privacy to be possible, security is required. We shouldn't just take a company's word for it, we should be able to verify that they *cannot* access our information under reasonable threat models.
 
-3. Freedom: Privacy and Security cannot be practically achieved in a zero-trust setting, some other parties must occasionally be trusted (e.g. server operators). Users of a messaging system should have the freedom to decide who to trust, and should not be locked in to trusting any specific party. Additionally, ordinary software freedoms[2] are necessary.
+3. Freedom: Privacy and Security cannot be practically achieved in a zero-trust setting, some other parties must occasionally be trusted (e.g. server operators). Users of a messaging system should have the freedom to decide who to trust, and should not be locked in to trusting any specific party. Additionally, ordinary software freedoms are necessary.
 
 ## The classic ultimatum game
 
@@ -35,7 +39,7 @@ A bit of a (relevant) aside: the ultimatum game is a classic economic/philosophi
 
 What is the optimal strategy for both the proposer and the responder? The (absurdly oversimplified) "Homo economicus" model of humanity suggests that the responder, who maximises the money they get, should accept any split in which they receive more than zero. Naturally the proposer knows this, and hence proposes the most unfair split possible.
 
-This is absurdly silly (and yet the "Homo economicus" model is used widely). Another potential solution is for the responder to reject anything other than a 50/50 split: knowing that knowledge of this would force the proposer to offer a 50/50 split, since the proposer is also trying to maximise the amount of money they get. But in reality, the responder would surely also accept 51/49 splits. What about 52/48? 53/47? Clearly this solution isn't quite stable.
+This is absurdly silly (and yet the "Homo economicus" model is used widely). Another potential solution is for the responder to reject anything other than a 50/50 split: knowing that knowledge of this would force the proposer to offer a 50/50 split, since the proposer is also trying to maximise the amount of money they get. But in reality, the responder would surely also accept 51/49 splits. What about 52/48? 53/47? Clearly this solution isn't quite stable.[1]
 
 There are other potential solutions (e.g. involving randomness), but really the only way to understand real human responses is with real data. Wikipedia says:
 
@@ -59,7 +63,7 @@ This is pretty much identical to the classical ultimatum game, where I am the pr
 
 The research suggests I'll do reasonably well with somewhere between 50/50 and 70/30 splits, whatever we define those to be.
 
-Let me rank messaging systems then into a few categories of privacy/security:
+Let me rank messaging systems then into a few categories of privacy/security[2]:
 
 1. Data secure, metadata secure (Matrix, XMPP, IRC; each in ideal circumstances)
 2. Data secure, metadata unknown (Matrix in ordinary circumstances, Signal)
@@ -114,6 +118,10 @@ An even harder problem is large organisational entities (e.g., companies I work 
 
 Ok so like, there's no way if someone I don't know tries to message me on Whatsapp or something I can just reply with "Install this other app and then I'll reply". They'd just think I'm weird and then ignore me probably. Or it would at least be awkward.
 
+=> https://files.clifford.lol/copypastas/free-virgin.txt As the old adage goes:
+
+> I can't ever seem to get girls to come over to my place and I can't text them either. Once I get their numbers since I've added customs roms to my phone and refuse to use sms since it's a security concern I require all of my friends to download a free and open source messaging app and I share with them my public gpg key so that we can verify that our conversations are secure. None of my friends are willing to do this. And I can't use sites like tinder since it's not only proprietary software but a major privacy vulnerability. How come it is so hard to find a girl concerned about software freedom. I feel like I'm going to be a virgin forever.
+
 I think what I'll do is finish the initial conversation (watching what I say) and then tell them I don't actually use Whatsapp, and ask them to select from a list of secure apps. That seems reasonable, but it's subject to change.
 
 ## Complicating factor 6: Edge cases
@@ -140,5 +148,8 @@ Whatsapp
 
 Facebook Messenger, Discord, Telegram, SMS, Snapchat, Instagram DMs, ...
 
-=> https://en.wikipedia.org/wiki/Chekhov%27s_gun 1: https://en.wikipedia.org/wiki/Chekhov%27s_gun
-=> https://www.gnu.org/philosophy/free-sw.html 2: https://www.gnu.org/philosophy/free-sw.html
+---
+
+[1]: 2025-01-29: The solution to this instability is the following optimal strategy: accept a 50/50 split with 100% probability, and accept with decreasing probability as the proposal becomes more unfair, such that the expected value to the proposer is maximised at the fair split.
+
+[2]: 2025-01-29: Arguably, Signal's data security is stronger than Matrix's (it forgoes some features and is more mature), and whether its metadata security is better than Matrix's depends heavily on your threat model. This doesn't change the conclusions of the post, and I still strongly prefer Matrix.
