@@ -3,6 +3,7 @@ title: "Paralyzed by analytics"
 excerpt: "People speak a lot about how social media is toxic, but the core of this toxicity, or at least a major component of it, is analytics."
 createdAt: "2023-02-25"
 tags:
+  - favourites
   - phil-pol
   - tech
 ---

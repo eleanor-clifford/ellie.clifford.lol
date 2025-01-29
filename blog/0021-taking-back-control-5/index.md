@@ -4,6 +4,7 @@ excerpt: "Was control ever mine to take?"
 createdAt: "2025-01-16"
 cw: "Content Warning: addiction"
 tags:
+  - favourites
   - tech
   - projects
 ---

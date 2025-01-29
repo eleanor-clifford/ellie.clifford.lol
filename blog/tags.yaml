@@ -17,3 +17,7 @@ projects:
 quickies:
   name: Quickies
   color: yellow
+
+favourites:
+  name: Favourite posts
+  color: green

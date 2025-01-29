@@ -3,6 +3,7 @@ title: "Dracula for SolidWorks?!?!?"
 excerpt: "Hah! Who says proprietary programs can't be themed?? SolidWorks never stood a chance. I even edited a DLL with vim."
 createdAt: "2021-04-12"
 tags:
+  - favourites
   - projects
   - tech
 ---

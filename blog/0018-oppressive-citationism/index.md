@@ -3,6 +3,7 @@ title: "Oppressive Citationism"
 excerpt: "We must not wait until we are done reading to write."
 createdAt: "2024-07-28"
 tags:
+  - favourites
   - phil-pol
   - queer
 ---

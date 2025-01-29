@@ -3,6 +3,7 @@ title: "Civil liberties that rest on science are fragile"
 excerpt: "They're called liberties for a reason."
 createdAt: "2024-07-21"
 tags:
+  - favourites
   - queer
   - phil-pol
 css: |

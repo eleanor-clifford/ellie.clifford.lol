@@ -3,6 +3,7 @@ title: "What we leave behind"
 excerpt: "One day, we will all die. What can we hope for as consolation?"
 createdAt: "2022-08-18"
 tags:
+  - favourites
   - phil-pol
   - queer
 ---

@@ -3,6 +3,7 @@ title: "Cloud Service Shenanigans"
 excerpt: "Free (as in beer), but at what cost?"
 createdAt: "2024-05-03"
 tags:
+  - favourites
   - tech
   - queer
 css: |
