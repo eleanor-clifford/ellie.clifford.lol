@@ -78,12 +78,17 @@ build_http() {
 	echo "Building tagdata..." >/dev/stderr
 	python3 scripts/build_tagdata.py
 
+	echo "Copying static files..." >/dev/stderr
+
 	cp -r static/* out/http/
 	cp -r http/static/* out/http/
 
 	# dotfiles too
 	cp -r static/.[!.]* out/http/
 	cp -r http/static/.[!.]* out/http/
+
+	echo "Handling joemode..." >/dev/stderr
+	./scripts/joemode.sh
 }
 
 build_bliz() {

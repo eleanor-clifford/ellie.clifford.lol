@@ -18,8 +18,8 @@ md_color_headings() { # $1: start color
 				color_current="$color_cycle"
 			fi
 			color_single="$(echo "$color_current" | head -n1)"
-			color_code="$(yq -r .colors.$color_single <config.yaml)"
-			echo "<h2 style=\"color: $color_code\">"
+			#color_code="$(yq -r .colors.$color_single <config.yaml)"
+			echo "<h2 class="$color_single-override">"
 			echo "$line" | sed 's|^##[[:space:]]*||'
 			echo "</h2>"
 		else

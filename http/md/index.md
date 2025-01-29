@@ -153,9 +153,9 @@ don't understand you, but here's your PSA: click them! For instance, "Blog" or
 
 Anyway here are some other miscellaneous links:
 
-<p><a style="color: #ff5555; border-bottom: 2px solid #ff5555" href="/documents/technology-usage-manifesto.html">My Technology Usage Manifesto</a></p>
-<p><a style="color: #f1fa8c; border-bottom: 2px solid #f1fa8c" href="https://sr.ht/~ecc/">Some of my projects</a></p>
-<p><a style="color: #8be9fd; border-bottom: 2px solid #8be9fd" href="https://files.clifford.lol/">Some funny stuff and random other files</a></p>
+<p><a class="red-override" href="/documents/technology-usage-manifesto.html">My Technology Usage Manifesto</a></p>
+<p><a class="yellow-override" href="https://sr.ht/~ecc/">Some of my projects</a></p>
+<p><a class="cyan-override" href="https://files.clifford.lol/">Some funny stuff and random other files</a></p>
 
 :::
 ::: column-right
