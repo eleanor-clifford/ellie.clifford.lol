@@ -2,19 +2,21 @@
 
 import traceback
 
-from sys import stdin
-from urllib.parse import unquote as url_unquote
+from collections import defaultdict
 from datetime import datetime
 from email_validator import validate_email, EmailNotValidError
-
+from string import Template
 from subprocess import check_output, CalledProcessError
+from sys import stdin
+from urllib.parse import unquote as url_unquote
 
+webroot = "/public/home/ecc73/public_html/ellie.clifford.lol"
 logfile = "/home/ecc73/logs/blog_subscribe_POST"
 now = datetime.now()
 
 
 def error(text):
-    return f'<div style="color: #ff5555;">{text}</div>'
+    return f'<div class="red-override">{text}</div>'
 
 
 def get_inner_html():  # side effects!
@@ -68,67 +70,11 @@ except Exception:
 
 print("Content-Type: text/html")
 print(f"Status: {inner[0]}")
+print()
 
-print(r"""
-<html lang="en">
-  <head>
-    <title>Email subscription</title>
-    <link rel="icon" type="image/jpeg" href="/avatar_48.jpg"/>
-    <meta charSet="utf-8"/>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <link rel="stylesheet" type="text/css" href="/main.css?v4"/>
-  </head>
-  <body>
-    <div class="purple">
-      <div class="topbar">
-        <nav>
-          <a class="topbar-title" href="/">
-            <img src="/avatar_transparent_256.png"/>
-          </a>
-          <a class="topbar-toggle" href="https://eleanor.clifford.lol">
-            <img src="/toggle.svg"/>
-            <p>Toggle silliness</p>
-          </a>
-          <ul>
-            <li>
-              <a href="/about/" class="topbar-button left">About</a>
-            </li>
-            <li>
-              <a href="/music/" class="topbar-button middle">Music</a>
-            </li>
-            <li>
-              <a href="/blog/" class="topbar-button right">Blog</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="single">
-        <div class="wrap"><div class="page">
-""")
-
-print(inner[1])
-
-print(r"""
-        </div></div>
-      </div>
-      <div class="footer">
-        <table class="noborder" style="border: 0px solid; width: 100%"><tr>
-          <td><a href="https://www.srcf.net" class="nounderline">
-            <img style="min-height: 48pt; padding-right:10pt"
-                 src="/srcf.svg" alt="The logo of the SRCF"></img>
-          </a></td>
-          <td style="text-align: center"><i>
-            This site is hosted by the Student Run Computing Facility, and
-            uses a Dracula theme
-          </i></td>
-          <td><a href="https://draculatheme.com" class="nounderline">
-            <img style="min-height: 48pt; padding-left:10pt"
-                 src="/dracula.svg" alt="The logo of the Dracula theme">
-            </img>
-          </a></td>
-        </tr></table>
-      </div>
-    </div>
-  </body>
-</html>
-""")
+template = Template(open(webroot + "/_templates/outer.html").read())
+print(template.substitute(defaultdict(str, dict(
+    CONTENT=f"""<div class="wrap"><div class="page">{inner[1]}</div></div>""",
+    COLOR="purple",
+    TITLE="Email subscription",
+))))
