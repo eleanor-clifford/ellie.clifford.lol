@@ -146,8 +146,12 @@ Membership of the webring does not imply my endorsement
 :::
 :::
 
+Apparently some people who visit this site don't notice that there are buttons
+in the top right that take you to other parts of the site. If that's you, I
+don't understand you, but here's your PSA: click them! For instance, "Blog" or
+"Music". They will take you to cool places!!!
 
-## Other Links
+Anyway here are some other miscellaneous links:
 
 <p><a style="color: #ff5555; border-bottom: 2px solid #ff5555" href="/documents/technology-usage-manifesto.html">My Technology Usage Manifesto</a></p>
 <p><a style="color: #f1fa8c; border-bottom: 2px solid #f1fa8c" href="https://sr.ht/~ecc/">Some of my projects</a></p>
@@ -198,7 +202,5 @@ Membership of the webring does not imply my endorsement
 
 Dracula is unequivocally the best theme. Dark themes are a no brainer -
 I like my eyeballs intact, thank you very much. And Dracula's
-colorscheme is simply gorgeous. With that in mind, I've contributed
-several implementations of the theme...
-
-[Go to the theme gallery](/dracula/)
+colorscheme is simply gorgeous. With that in mind, [I've contributed
+several implementations of the theme...](/dracula/)
