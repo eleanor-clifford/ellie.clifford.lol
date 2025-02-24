@@ -1054,10 +1054,11 @@ blockquote p {
 .blog-updates-small input[type="text"] {
 	border-radius: 0px;
 	border-left: 0px;
+	width: 160px
 }
 
 .blog-updates-small .form input[type="email"] {
-  width: 120px;
+  width: 100px;
 }
 
 .blog-updates-small .form input[type="submit"] {

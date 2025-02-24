@@ -14,6 +14,7 @@ css: |
     padding-right: 20px;
     width: 420px;
     max-width: 100%;
+    margin-bottom: -20px;
   }
   .column-right {
     display: flex;
@@ -130,8 +131,6 @@ _~killed by the woke mind virus~_
 
 Armchair philosopher, musician, [cypherpunk](/documents/cypherpunks-manifesto.html).
 
-I also run some free services over at [transgirl.fr](https://transgirl.fr) :3
-
 ::: webring
 
 ## <span>🏳️‍🌈</span><span style="margin: 0 0.5em">Be crime do gay webring</span><span>🏳️‍⚧️</span>
@@ -147,15 +146,18 @@ Membership of the webring does not imply my endorsement
 :::
 
 Apparently some people who visit this site don't notice that there are buttons
-in the top right that take you to other parts of the site. If that's you, I
-don't understand you, but here's your PSA: click them! For instance, "Blog" or
-"Music". They will take you to cool places!!!
+in the top right that take you to other parts of the site. If that's you,
+here's your PSA: click them and be taken to cool places!!!
 
-Anyway here are some other miscellaneous links:
+Here are some other miscellaneous links:
 
 <p><a class="red-override" href="/documents/technology-usage-manifesto.html">My Technology Usage Manifesto</a></p>
 <p><a class="yellow-override" href="https://sr.ht/~ecc/">Some of my projects</a></p>
 <p><a class="cyan-override" href="https://files.clifford.lol/">Some funny stuff and random other files</a></p>
+
+I also run some free services over at [transgirl.fr](https://transgirl.fr) and
+help run some other ones for members of the University of Cambridge over at
+[srcf.net](https://www.srcf.net) :3
 
 :::
 ::: column-right
