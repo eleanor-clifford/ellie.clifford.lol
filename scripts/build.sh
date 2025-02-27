@@ -14,14 +14,14 @@ html_escape() {
 build_rss() {
 	posts="$(find blog/ -mindepth 2 -type f -name 'index.md' | while read post
 		do
-			echo "$(md_get_metadata "$post" createdAt)	$post"
+			echo "$(md_get_metadata "$post" .createdAt)	$post"
 		done | sort | cut -f2)"
 
 	export DATE="$(date --rfc-email)"
 	{
 		envsubst <http/templates/rss-outer-start.xml
 		echo "$posts" | while read -r post; do # too big to use variables
-			export TITLE="$(md_get_metadata "$post" title)"
+			export TITLE="$(md_get_metadata "$post" .title)"
 			export URL="https://ellie.clifford.lol/$(echo "$post" | sed -E 's/\.md$/.html/;s/index.html$//')"
 			export DESCRIPTION="$(md_strip_yaml <$post | md_strip_venus_hidden | pandoc -f markdown -t html \
 				| perl -pe "$(cat << 'EOF'
@@ -45,7 +45,7 @@ sub get_a {
 s/(<iframe.*?(\/>|<\/iframe>))/get_a($1)/smge;
 EOF
 			)" | html_escape)"
-			export DATE="$(date --rfc-email --date="$(md_get_metadata "$post" createdAt)")"
+			export DATE="$(date --rfc-email --date="$(md_get_metadata "$post" .createdAt)")"
 			envsubst <http/templates/rss-item.xml
 		done
 		envsubst <http/templates/rss-outer-end.xml
@@ -60,6 +60,7 @@ build_blog_alts() {
 }
 
 build_http() {
+	echo "Building blog pages..." >/dev/stderr
 	mkdir -p out/http
 
 	blog_sort_color | while read line; do
@@ -68,6 +69,7 @@ build_http() {
 
 	html_build_blog_indices
 
+	echo "Building main pages..." >/dev/stderr
 	find http/md/ -type f | while read file; do
 		html_build_md_page "$file"
 	done

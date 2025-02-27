@@ -30,7 +30,10 @@ md_color_headings() { # $1: start color
 
 check_hash_change() {
 	file="$1"
-	test -e "$file" || (echo true && return)
+	if ! test -e "$file"; then
+		echo true
+		return
+	fi
 
 	while read -r h; do
 		if ! grep -q "$h" "$file"; then
@@ -49,7 +52,7 @@ html_build_md_page() { # $1: filename, writes to out/http/
 			|| echo "$file" \
 		) | perl -pe 's|.*?md/?|/|;s|[/.-]|_|g;')"
 
-	export SSI="$(md_get_metadata "$file" ssi)"
+	export SSI="$(md_get_metadata "$file" .ssi)"
 	[ "$SSI" = null ] && SSI=false
 
 	$SSI && ext=shtml || ext=html
@@ -68,11 +71,11 @@ html_build_md_page() { # $1: filename, writes to out/http/
 
 	export HASH="$hs"
 	export COLOR="$(<config.yaml yq -rc ".page_colors.$escaped_name")"
-	export TITLE="$(md_get_metadata "$file" title)"
+	export TITLE="$(md_get_metadata "$file" .title)"
 
-	banner="$(md_get_metadata "$file" banner)"
+	banner="$(md_get_metadata "$file" .banner)"
 
-	vars="$(md_get_metadata "$file" 'vars | to_entries[] | "\(.key)\t\(.value)"' 2>/dev/null)"
+	vars="$(md_get_metadata "$file" '.vars | to_entries[] | "\(.key)\t\(.value)"' 2>/dev/null)"
 	IFS="
 "
 	for line in $vars; do
@@ -87,7 +90,7 @@ html_build_md_page() { # $1: filename, writes to out/http/
 		export BANNER="<div class=\"banner\"><img src=\"$src\" alt=\"$alt\"/></div>"
 	fi
 
-	css="$(md_get_metadata "$file" css)"
+	css="$(md_get_metadata "$file" .css)"
 
 	if [ "$css" != "null" ]; then
 		export CSS="$css"
@@ -127,7 +130,7 @@ html_build_blog_post() { # reads tsv color, date, file
 	fi
 
 	export TAGS="$({
-		md_get_metadata $file 'tags[]' | while read -r tag; do
+		md_get_metadata $file '.tags[]?' | while read -r tag; do
 			export TAG="$tag"
 			export COLOR="$(<blog/tags.yaml yq -cr '.["'"$tag"'"].color')"
 			tw=$((9*$(echo "$tag" | wc -c)))
@@ -140,25 +143,25 @@ html_build_blog_post() { # reads tsv color, date, file
 	export HASH="$hs"
 	export COLOR="$(echo "$tsv" | cut -f 1)"
 	export DATE="$(echo "$tsv" | cut -f 2)"
-	export TITLE="$(md_get_metadata $file title)"
+	export TITLE="$(md_get_metadata $file .title)"
 	export URL_PART="$basename_noext"
 
-	cw="$(md_get_metadata $file cw)"
+	cw="$(md_get_metadata $file .cw)"
 
 	if [ "$cw" != "null" ]; then
 		export CW="<div class=\"content-warning\"><p>$cw</p></div>"
 	fi
 
-	pandoc_options="$(md_get_metadata $file pandoc_options)"
+	pandoc_options="$(md_get_metadata $file .pandoc_options)"
 	[ "$pandoc_options" = null ] && pandoc_options=
 
-	css="$(md_get_metadata "$file" css)"
+	css="$(md_get_metadata "$file" .css)"
 
 	if [ "$css" != "null" ]; then
 		export CSS="$css"
 	fi
 
-	if [ "$(md_get_metadata $file nocolor)" = "true" ]; then
+	if [ "$(md_get_metadata $file .nocolor)" = "true" ]; then
 		<$file md_strip_yaml | md_strip_venus_hidden \
 			| pandoc --from markdown --to html $pandoc_options \
 			| activate_double_template http/templates/blog-post.shtml >$out_file

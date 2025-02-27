@@ -9,7 +9,7 @@ blog_sort_color() {
 blog_apply_color_to() {
 
 	sorted_posts="$(while read post; do
-		echo "$(md_get_metadata "$post" createdAt)	$post"
+		echo "$(md_get_metadata "$post" .createdAt)	$post"
 	done)"
 
 	# get color cycle
