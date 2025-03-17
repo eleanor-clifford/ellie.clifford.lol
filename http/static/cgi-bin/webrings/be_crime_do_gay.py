@@ -38,7 +38,7 @@ except TypeError:
 	print()
 	print("Query parameters 'side' and 'site' must be given")
 except ValueError:
-	print("Status: 400 Bad Request")
+	print("Status: 422 Unprocessable Content")
 	print()
 	print(f"{site} is not (yet?) in the webring")
 except requests.exceptions.Timeout:
