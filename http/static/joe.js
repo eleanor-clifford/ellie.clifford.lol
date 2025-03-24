@@ -15,5 +15,5 @@ const sheets = document.querySelectorAll('link[rel="stylesheet"]');
 const joe = ('; '+document.cookie).split(`; joemode=`).pop().split(';')[0];
 if (joe === "on") {
 	Array.from(sheets).find(sheet => sheet.href && sheet.href.includes("light.css")).media = '';
-	Array.from(sheets).find(sheet => sheet.href && sheet.href.includes("main.css")).media = 'none';
+	Array.from(sheets).find(sheet => sheet.href && sheet.href.includes("main.css")).media = 'not all';
 }

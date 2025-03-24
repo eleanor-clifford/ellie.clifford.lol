@@ -18,7 +18,8 @@ css: |
   }
   .column-right {
     display: flex;
-    justify-content: center
+    flex-direction: column;
+    justify-content: center;
     max-width: 100%;
   }
 
@@ -161,14 +162,17 @@ help run some other ones for members of the University of Cambridge over at
 
 :::
 ::: column-right
-<figure class="motd">
-  <figcaption aria-hidden="true">Meme of the now:</figcaption>
+<div class="motd">
+<figure>
+  <figcaption>Meme of the now:</figcaption>
   <a class="nounderline" href="/memes/06_stem.jpg">
     <img class="main-img"
          alt="YEAH I'm a STEM girl. Stopped friendship with Testosterone, now Estrogen is My best friend!!1!"
          src="/memes/06_stem.jpg">
   </a>
-  <figcaption aria-hidden="true">Historical:</figcaption>
+</figure>
+<figure>
+  <figcaption>Historical:</figcaption>
   <div class="thumbs">
    <a class="nounderline" href="/memes/05_sysadmin_cat.jpg">
      <img alt="[picture of a cat inside a server cabinet]. Her ass is NOT sysadmin certified!!"
@@ -197,6 +201,7 @@ help run some other ones for members of the University of Cambridge over at
    </a>
   </div>
 </figure>
+</div>
 :::
 :::
 
