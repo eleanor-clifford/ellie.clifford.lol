@@ -32,7 +32,7 @@ echo "Built and deployed for gemini and http"
 
 recipients="$(ssh pip srcf-mailman-list ecc73-blog | sed -z 's/\n$//;s/\n/ /g')"
 
-<$f_eml msmtp-dkim -- test@clifford.lol
+<$f_eml msmtp-dkim -a blog -- test@clifford.lol ecc73-test@srcf.net
 
 echo -n "Sent test email. "
 echo "Press enter to send to: "

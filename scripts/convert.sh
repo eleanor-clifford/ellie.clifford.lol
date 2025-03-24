@@ -62,6 +62,7 @@ convert_to_html_email() { # args -> stdout
 	txtfile="$4"
 	url="$5"
 	gemurl="$(echo "$5" | sed 's/^https\?/gemini/')"
+	md_extensions="$6"
 
 	echo "\
 From: Ellie's blog <blog@clifford.lol>
@@ -69,6 +70,7 @@ To: $recipient
 Subject: $subject
 MIME-Version: 1.0
 Content-Type: multipart/alternative; boundary=proprietarysoftwareismalware
+Content-Transfer-Encoding: 8bit
 
 --proprietarysoftwareismalware
 Content-Type: text/html; charset=utf-8
@@ -80,7 +82,7 @@ Content-Type: text/html; charset=utf-8
   <a href=\"$gemurl\">Or on Gemini</a>
 </p>
 
-$(pandoc "$mdfile" --from markdown --to html)
+$(pandoc "$mdfile" --from markdown${md_extensions} --to html)
 
 --proprietarysoftwareismalware
 Content-Type: text/plain; charset=utf-8
@@ -102,15 +104,16 @@ To unsubscribe, email ecc73-blog-request@srcf.net with subject line
 convert_blog_to_bliz_txt_eml() { # $1: filename, writes to files
 
 	# get header yaml
-	stripped_md="$(<$1 md_strip_yaml | md_strip_venus_hidden)"
+	stripped_md="$(<"$1" md_strip_yaml | md_strip_venus_hidden)"
 
 	# yaml vars
-	title="$(md_get_metadata $1 .title)"
-	date="$(md_get_metadata $1 .createdAt)"
-	excerpt="$(md_get_metadata $1 .excerpt)"
+	title="$(md_get_metadata "$1" .title)"
+	date="$(md_get_metadata "$1" .createdAt)"
+	excerpt="$(md_get_metadata "$1" .excerpt)"
+	md_extensions="$(md_get_metadata "$1" '(.md_extensions // []) | join("")')"
 
 	# yaml-derived
-	name="$(echo $1 | perl -pe 's|.*/([^/]*)/index.md$|\1|')"
+	name="$(echo "$1" | perl -pe 's|.*/([^/]*)/index.md$|\1|')"
 	httpurl="https://ellie.clifford.lol/blog/$name"
 
 	# filenames
@@ -132,8 +135,14 @@ convert_blog_to_bliz_txt_eml() { # $1: filename, writes to files
 
 	if ! test -f $f_eml; then
 		mkdir -p "$(dirname $f_eml)"
-		echo "$stripped_md" | convert_to_html_email ecc73-blog@srcf.net \
-			"Blog | $title" /dev/stdin $f_txt $httpurl >$f_eml
+		echo "$stripped_md" | convert_to_html_email \
+			ecc73-blog@srcf.net \
+			"Blog | $title" \
+			/dev/stdin \
+			$f_txt \
+			$httpurl \
+			"$md_extensions" \
+		>$f_eml
 	fi
 }
 

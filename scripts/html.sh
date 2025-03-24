@@ -152,8 +152,11 @@ html_build_blog_post() { # reads tsv color, date, file
 		export CW="<div class=\"content-warning\"><p>$cw</p></div>"
 	fi
 
-	pandoc_options="$(md_get_metadata $file .pandoc_options)"
-	[ "$pandoc_options" = null ] && pandoc_options=
+	pandoc_options="$(md_get_metadata $file '.pandoc_options // ""')"
+	test -n "$pandoc_options" && echo "options: $pandoc_options" >&2
+
+	md_extensions="$(md_get_metadata $file '(.md_extensions // []) | join("")')"
+	test -n "$md_extensions" && echo "extensions: $md_extensions" >&2
 
 	css="$(md_get_metadata "$file" .css)"
 
@@ -162,14 +165,14 @@ html_build_blog_post() { # reads tsv color, date, file
 	fi
 
 	if [ "$(md_get_metadata $file .nocolor)" = "true" ]; then
-		<$file md_strip_yaml | md_strip_venus_hidden \
-			| pandoc --from markdown --to html $pandoc_options \
-			| activate_double_template http/templates/blog-post.shtml >$out_file
+		colorpipe="cat"
 	else
-		<$file md_strip_yaml | md_strip_venus_hidden | md_color_headings $COLOR \
-			| pandoc --from markdown --to html $pandoc_options \
-			| activate_double_template http/templates/blog-post.shtml >$out_file
+		colorpipe="md_color_headings $COLOR"
 	fi
+
+	<$file md_strip_yaml | md_strip_venus_hidden | eval "$colorpipe" \
+		| pandoc --from markdown${md_extensions} --to html $pandoc_options \
+		| activate_double_template http/templates/blog-post.shtml >$out_file
 
 	find "$(dirname "$file")" -mindepth 1 ! -name index.md \
 		| xargs -I% cp -r % "$(dirname $out_file)"
