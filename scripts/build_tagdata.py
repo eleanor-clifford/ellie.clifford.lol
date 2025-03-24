@@ -17,9 +17,8 @@ for p in posts:
 
     if 'tags' not in y:
         print(f"WARNING: {p} does not have tags")
-        continue
 
-    for t in y['tags']:
+    for t in y.get('tags', []) + ["all"]:
         tag_data[t] = tag_data.get(t) or {}
         tag_data[t]["posts"] = (tag_data[t].get("posts") or {}) | {p: {
             "title": y.get("title"),
