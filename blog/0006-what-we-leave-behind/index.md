@@ -5,7 +5,6 @@ createdAt: "2022-08-18"
 tags:
   - favourites
   - phil-pol
-  - queer
 ---
 
 One day, we will all die. What can we hope for as consolation? Where is our
@@ -32,5 +31,3 @@ silly? You have no idea how much I want to just sit down with you, grab some
 coffee, and chat.
 
 Is coffee still around?
-
-<!-- vi: set sts=2 sw=2 et :-->
