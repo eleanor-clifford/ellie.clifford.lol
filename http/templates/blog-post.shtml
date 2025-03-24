@@ -10,7 +10,7 @@
           <span class="blog-author-separator">/</span>
           <time datetime="${DATE}">${DATE}</time>
         </div>
-        <div class="tags">
+        <div class="tags post-tags">
           ${TAGS}
         </div>
       </div>

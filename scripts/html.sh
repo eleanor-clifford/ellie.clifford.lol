@@ -119,7 +119,7 @@ html_build_blog_post() { # reads tsv color, date, file
 	out_file="$(echo "$file" | sed 's|^|out/http/|; s|.md$|.shtml|')"
 	mkdir -p "$(dirname "$out_file")"
 
-	hs="$(md5sum "$file" "http/templates/blog-index.html" "http/templates/tag.html" "http/templates/outer.html" "scripts/html.sh")"
+	hs="$(md5sum "$file" "http/templates/blog-post.shtml" "http/templates/tag.html" "http/templates/outer.html" "scripts/html.sh")"
 	regen="$(echo "$hs" | check_hash_change "$out_file")"
 
 	if $regen; then
@@ -132,7 +132,7 @@ html_build_blog_post() { # reads tsv color, date, file
 	export TAGS="$({
 		md_get_metadata $file '.tags[]?' | while read -r tag; do
 			export TAG="$tag"
-			export COLOR="$(<blog/tags.yaml yq -cr '.["'"$tag"'"].color')"
+			export COLOR="$(<blog/tags.yaml yq -cr '.tags.["'"$tag"'"].color')"
 			tw=$((9*$(echo "$tag" | wc -c)))
 			export W=$((15 + $tw))
 			export Wm1=$(($W-1))

@@ -27,7 +27,7 @@ body {
   flex: 1 1 auto;
 }
 
-.page h1, .page h2 {
+h1, .page h2 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -1091,7 +1091,7 @@ blockquote p {
 }
 
 .blog-item {
-  margin: 40px 0px;
+  margin: 30px 0px;
 }
 
 .blog-item a {
@@ -1105,19 +1105,19 @@ blockquote p {
 
 .blog .blog-item-title {
   transition: color .3s linear;
-  font-size: 32px;
+  font-size: 26px;
   font-family: "Source Sans Pro";
   font-weight: 700;
   margin-bottom: 10px;
   line-height: 1.2em;
+  width: 100%;
 }
 
 .blog-item-date {
   opacity: .7;
-  margin-bottom: 10px;
   width: 170px;
   text-align: right;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .blog-item-excerpt {
@@ -1543,8 +1543,16 @@ details.dropdown {
 
 .tags {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 10px;
-	/*margin: 10px 0px;*/
+}
+
+.all-tags {
+	margin: 30px 0px;
+}
+
+.post-tags {
+	margin-left: 20px;
 }
 
 .blog-tag-return {

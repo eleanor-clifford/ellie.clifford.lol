@@ -21,9 +21,11 @@ build_rss() {
 	{
 		envsubst <http/templates/rss-outer-start.xml
 		echo "$posts" | while read -r post; do # too big to use variables
+			md_extensions="$(md_get_metadata "$post" '(.md_extensions // []) | join("")')"
+			export TITLE="$(md_get_metadata "$post" .title)"
 			export TITLE="$(md_get_metadata "$post" .title)"
 			export URL="https://ellie.clifford.lol/$(echo "$post" | sed -E 's/\.md$/.html/;s/index.html$//')"
-			export DESCRIPTION="$(md_strip_yaml <$post | md_strip_venus_hidden | pandoc -f markdown -t html \
+			export DESCRIPTION="$(md_strip_yaml <$post | md_strip_venus_hidden | pandoc -f markdown${md_extensions} -t html \
 				| perl -pe "$(cat << 'EOF'
 BEGIN{undef $/;}
 
