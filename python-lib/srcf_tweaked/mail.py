@@ -20,7 +20,7 @@ def send_mail(recipient, subject, body,
     if isinstance(recipient, tuple):
         recipient = [recipient]
 
-    message = email.mime.text.MIMEText(body, _charset='us-ascii')
+    message = email.mime.text.MIMEText(body, _charset='utf-8')
     message["Message-Id"] = make_msgid("srcf-mailto")
     message["Date"] = formatdate(localtime=True)
     message["From"] = formataddr(sender)
@@ -42,6 +42,12 @@ def send_mail(recipient, subject, body,
         message_str = sig + message.as_string().encode()
     else:
         message_str = message.as_string().encode()
+
+    open("/home/ecc73/logs/blog_comment_SMTP", "a").write(f"""\
+-------------------------------------------------------------------------------
+Envelope-To: {", ".join(all_emails)}
+{message_str.decode()}
+""")
 
     s = smtplib.SMTP('localhost')
     s.sendmail(sender[1], all_emails, message_str)

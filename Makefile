@@ -11,7 +11,7 @@ all:
 	make build && make deploy
 
 check:
-	make clean
+	#make clean
 	./scripts/build.sh --http
 	./scripts/check.sh
 

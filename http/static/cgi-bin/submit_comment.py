@@ -65,34 +65,34 @@ def get_inner_html():  # side effects!
 	for x in raw_data.split("&"):
 		s = x.split("=")
 		if len(s) != 2:
-			return (400, error("Invalid input (0)</div>"))
+			return (400, error("Invalid input (malformed query parameters)</div>"))
 
 		post_data[s[0]] = url_unquote(s[1].replace("+", " "))  # why
 
 	if not sorted(post_data.keys()) == ['antispam', 'comment', 'email', 'name', 'post']:
-		return (400, error("Invalid input (1)"))
+		return (400, error("Invalid input (wrong query parameters provided)"))
 
 	if post_data["antispam"] == open(f"{blog_comments_upper_dir}/secret_antispam").read():
 		is_me = True
 	else:
 		is_me = False
 		if post_data["antispam"] != "lethologica":
-			return (401, error('Possible spam detected. Did you type the antispam word wrong?'))
+			return (401, error('Possible spam detected. Remember, the antispam field must be exactly "lethologica"'))
 
 	if "." in post_data['post'] or "/" in post_data['post']:
-		return (403, error("Invalid input (2). Stop pentesting, you do not have consent."))
+		return (403, error("Invalid input (invalid post parameter). If you are pentesting, stop. You do not have consent."))
 
 	blog_dir = f"{webroot}/blog/{post_data['post']}"
 
 	post_comments_dir = f"{blog_comments_upper_dir}/{post_data['post']}"
 
 	if not isdir(blog_dir):
-		return (400, error("Invalid input (3)"))
+		return (400, error("Invalid input (post does not exist)"))
 
 	# now we should be happy {post_data['post']} is safe
 
 	if "\n" in post_data['name'] or "\t" in post_data['name']:
-		return (400, error("Invalid name (4)"))
+		return (400, error("Invalid name (contains newline or tab character)"))
 
 	if post_data["name"] == "":
 		post_data["name"] = "Anonymous"
@@ -106,17 +106,17 @@ def get_inner_html():  # side effects!
 			"clifford" in post_data["name"].lower()
 		)
 	):
-		return (401, error("Please don\'t impersonate me"))
+		return (401, error("Please don\'t impersonate me (if this is a misfire, sorry!)"))
 
 	if post_data["comment"] == "":
-		return (400, error("Comment cannot be blank"))
+		return (400, error("Please write something into the comment box to comment :)"))
 
 	if post_data['email'] != "":
 		try:
 			v = validate_email(post_data['email'], check_deliverability=False)
 			post_data['email'] = v['email']
 		except EmailNotValidError:
-			return (400, error("Invalid input (5)"))
+			return (400, error("Invalid input (email didn't validate)"))
 
 	post_comment_dir = f"{post_comments_dir}/{now.timestamp()}"
 
@@ -140,13 +140,26 @@ def get_inner_html():  # side effects!
 			f"{post_data['name']}\t{post_data['email']}\n"
 		)
 
-	return (200, "Successfully added your comment")
+	return (
+		200,
+		(
+			'Successfully added your comment. '
+			f'<a href="/blog/{post_data["post"]}/">Go back to post</a>'
+		)
+	)
 
 
 try:
 	inner = get_inner_html()
 except Exception:
-	inner = (500, f"An internal error occured\n{traceback.format_exc()}")
+	inner = (
+		500,
+		error(
+			'An internal error occured. Please copy the traceback below into an '
+			'email to <a href="mailto:ellie@clifford.lol">ellie@clifford.lol</a> '
+			'so I can fix it :)'
+		) + f"\n<pre>{traceback.format_exc()}</pre>"
+	)
 
 
 print("Content-Type: text/html")

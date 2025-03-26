@@ -4,9 +4,12 @@ path.append("/home/ecc73/python-lib")
 import srcf_tweaked.mail as mail
 
 
-def send_mail(blog_comment_dir):
+def strip_end(s, strip):
+	return s[:-len(strip)] if s.endswith(strip) else s
 
-	blog_comments_dir = "/".join([x for x in blog_comment_dir.split("/") if x != ""][:-1])
+
+def send_mail(blog_comment_dir):
+	blog_comments_dir = "/".join([x for x in strip_end(blog_comment_dir, "/").split("/")][:-1])
 
 	post_data = dict()
 	post_data['name'] = open(f"{blog_comment_dir}/name").read()
