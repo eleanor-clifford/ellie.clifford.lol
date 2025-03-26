@@ -28,21 +28,28 @@
       <form class="noborder" action="/cgi-bin/submit_comment.py" method="post" accept-charset="utf-8">
         <input type="hidden" id="post" name="post" value="${URL_PART}"/>
         <table>
-          <tr>
-            <td>Name:</td>
-            <td><input type="text" id="name" name="name" placeholder="Anonymous"/></td>
-          </tr>
-          <tr>
-            <td>Email (optional)<br>(for notifications):</td>
-            <td><input type="email" id="email" name="email" /></td>
-          </tr>
-          <tr>
-            <td>Comment:</td>
-            <td><textarea id="comment" name="comment"></textarea></td>
-          </tr>
-          <tr>
-            <td>Write 'lethologica'<br>(anti-spam):</td>
-            <td><input type="text" id="antispam" name="antispam"/></td>
+          <colgroup>
+            <col span="1" style="width: 140px">
+            <col span="1">
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>Name:</td>
+              <td><input type="text" id="name" name="name" placeholder="Anonymous"/></td>
+            </tr>
+            <tr>
+              <td>Email (optional)<br>(for notifications):</td>
+              <td><input type="email" id="email" name="email" /></td>
+            </tr>
+            <tr>
+              <td>Comment:</td>
+              <td><textarea id="comment" name="comment" style="height: 100px;"></textarea></td>
+            </tr>
+            <tr>
+              <td>Write 'lethologica'<br>(anti-spam):</td>
+              <td><input type="text" id="antispam" name="antispam"/></td>
+            </tr>
+          </tbody>
         </table>
         <div>
           <input type="submit" value="Submit comment"/>

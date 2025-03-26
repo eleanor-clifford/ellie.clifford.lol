@@ -3,6 +3,10 @@
 title: "Ellie Clifford"
 ssi: false
 css: |
+  h1 {
+    margin-bottom: 0px !important;
+  }
+
   .columns {
     display: flex;
     flex-wrap: wrap;
@@ -96,6 +100,7 @@ css: |
   .overlay p {
     font-size: 30px;
     font-weight: 700;
+    margin: 0px;
   }
 
   @media screen and (max-width: 600px) {
@@ -119,7 +124,8 @@ css: |
 
 _~killed by the woke mind virus~_
 
-<div class="blog-updates-small">
+``` {=html}
+<div class="blog-updates">
  <form method="post" action="/cgi-bin/subscribe.py" class="form">
   <input type="email" name="email" placeholder="Your email"/>
   <input type="text"  name="antispam" placeholder="'ataraxia' (antispam)"/>
@@ -129,6 +135,7 @@ _~killed by the woke mind virus~_
   <img class="rss" src="/_icons/rss.svg" alt="RSS feed icon"/>
  </a>
 </div>
+```
 
 Armchair philosopher, musician, [cypherpunk](/documents/cypherpunks-manifesto.html).
 

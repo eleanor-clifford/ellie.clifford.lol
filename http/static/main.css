@@ -386,6 +386,14 @@ th, td {
   border: 0px solid;
 }
 
+form table {
+	width: 100%;
+}
+
+table input, table textarea {
+	width: 100%;
+}
+
 .views {
   float: right;
   margin-top: 30px;
@@ -652,8 +660,6 @@ th, td {
   font-size: 15px;
   line-height: 100%;
   font-family: "Source Sans Pro";
-  height: 40px !important;
-  width: 35% !important;
 }
 
 img.rss {
@@ -688,7 +694,7 @@ img.rss {
 
 .single p {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0px;
 }
 
 .cyan .single a {
@@ -1019,50 +1025,48 @@ blockquote p {
   cursor: pointer;
 }
 
-.blog-updates {
-	justify-content: center;
-	align-items: center;
-}
-
-.blog-updates form,
-.blog-updates-small form {
+.blog-updates form {
   display: flex;
   margin-top: 0px;
   overflow: auto;
 }
 
-.blog-updates,
-.blog-updates-small {
+.blog-updates {
   margin: 0px;
   display: flex;
+  justify-content: center;
   max-width: 100%;
 }
 
-.blog-updates-small input {
+.blog-updates input {
 	border-collapse: collapse;
 }
 
-.cyan .blog-updates-small input { border: 2px solid #8be9fd; }
-.green .blog-updates-small input { border: 2px solid #50fa7b; }
-.orange .blog-updates-small input { border: 2px solid #ffb86c; }
-.red .blog-updates-small input { border: 2px solid #ff5555; }
-.pink .blog-updates-small input { border: 2px solid #ff79c6; }
-.purple .blog-updates-small input { border: 2px solid #bd93f9; }
-.yellow .blog-updates-small input { border: 2px solid #f1fa8c; }
+.cyan    .blog-updates input { border: 2px solid #8be9fd; }
+.green   .blog-updates input { border: 2px solid #50fa7b; }
+.orange  .blog-updates input { border: 2px solid #ffb86c; }
+.red     .blog-updates input { border: 2px solid #ff5555; }
+.pink    .blog-updates input { border: 2px solid #ff79c6; }
+.purple  .blog-updates input { border: 2px solid #bd93f9; }
+.yellow  .blog-updates input { border: 2px solid #f1fa8c; }
 
+.blog-updates form {
+	flex-grow: 1;
+}
 
-.blog-updates-small input[type="text"] {
+.blog-updates input[name="email"] {
+	min-width: 100px;
+	width: 100%; /* minus width of everything else */
+}
+
+.blog-updates input[name="antispam"] {
 	border-radius: 0px;
 	border-left: 0px;
-	width: 160px
+	width: 160px;
 }
 
-.blog-updates-small .form input[type="email"] {
-  width: 100px;
-}
-
-.blog-updates-small .form input[type="submit"] {
-  min-width: 100px !important;
+.blog-updates input[type="submit"] {
+	width: 100px;
 }
 
 .blog-metadata {
