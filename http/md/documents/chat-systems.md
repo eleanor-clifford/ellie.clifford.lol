@@ -74,7 +74,7 @@ title: "Chat systems explained"
                                     |  probably)  |
                                     +-------------+
 
-* Because Alice and Bob cannot verify the code that is running. There is a significant possibility that Signal is an NSA metadata honeypot.
+* Because Alice and Bob cannot verify the code that is running, and there is significant probability that it is an NSA metadata honeypot.
 ```
 
 ## Matrix (ideally)
@@ -124,7 +124,7 @@ title: "Chat systems explained"
 
 * Because Ellie is running her own server, and can verify its code. But is Ellie's server backdoored in a way she can't detect? Who knows.
 
-** Because neither Ellie nor Alice can verify the code that is running on the matrix.org server.
+** Because neither Ellie nor Alice can verify the code that is running on the matrix.org server, and there is significant probability that it is a GCHQ metadata honeypot.
 ```
 
 Despite this currently being functionally identical to the Signal threat model,
@@ -132,5 +132,5 @@ there is potential for the whole chain to be trusted in the future. (This might
 become possible soon in Cambridge circles when I get around to running a SRCF
 matrix server, which people should trust if they trust me :)).
 
-In addition, it is less likely that the matrix.org server is an NSA honeypot
-than that the Signal server is an NSA honeypot.
+It is difficult to predict which of the Signal or matrix.org servers are more
+likely to be an NSA (/Five Eyes) metadata honeypot.
