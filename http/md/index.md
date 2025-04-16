@@ -172,15 +172,19 @@ help run some other ones for members of the University of Cambridge over at
 <div class="motd">
 <figure>
   <figcaption>Meme of the now:</figcaption>
-  <a class="nounderline" href="/memes/06_stem.jpg">
+  <a class="nounderline" href="/memes/07_terf_island.jpg">
     <img class="main-img"
-         alt="YEAH I'm a STEM girl. Stopped friendship with Testosterone, now Estrogen is My best friend!!1!"
-         src="/memes/06_stem.jpg">
+         alt="Meme with cat in the centre and infinite loop between &quot;I wake up&quot; and &quot;there is something wronger with Britain&quot;"
+         src="/memes/07_terf_island.jpg">
   </a>
 </figure>
 <figure>
   <figcaption>Historical:</figcaption>
   <div class="thumbs">
+   <a class="nounderline" href="/memes/06_stem.jpg">
+     <img alt="YEAH I'm a STEM girl. Stopped friendship with Testosterone, now Estrogen is My best friend!!1!"
+          src="/memes/thumbs/06_stem.jpg">
+   </a>
    <a class="nounderline" href="/memes/05_sysadmin_cat.jpg">
      <img alt="[picture of a cat inside a server cabinet]. Her ass is NOT sysadmin certified!!"
           src="/memes/thumbs/05_sysadmin_cat.jpg">
