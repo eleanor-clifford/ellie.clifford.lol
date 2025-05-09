@@ -90,13 +90,17 @@ html_build_md_page() { # $1: filename, writes to out/http/
 		export BANNER="<div class=\"banner\"><img src=\"$src\" alt=\"$alt\"/></div>"
 	fi
 
+	md_extensions="$(md_get_metadata $file '(.md_extensions // []) | join("")')"
+	test -n "$md_extensions" && echo "extensions: $md_extensions" >&2
+
 	css="$(md_get_metadata "$file" .css)"
 
 	if [ "$css" != "null" ]; then
 		export CSS="$css"
 	fi
+	test -n "$CSS" && echo "css: $css" >&2
 
-	<$file md_color_headings $COLOR | envsubst | pandoc --from markdown --to html \
+	<$file md_color_headings $COLOR | envsubst | pandoc --from markdown${md_extensions} --to html \
 		| activate_double_template http/templates/default.html >$out_file
 }
 

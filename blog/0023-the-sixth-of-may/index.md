@@ -1,0 +1,39 @@
+---
+title: "The 6th of May"
+excerpt: "To me, the 6th of May will always be a day of conflicting emotions."
+#md_extensions:
+#  - "+foo"
+#  - "-bar"
+#pandoc_options: --option
+createdAt: "2025-05-06"
+tags:
+  - queer
+css: |
+  .poem {
+    white-space: pre-wrap;
+  }
+---
+
+To me, the 6th of May will always be a day of conflicting emotions.
+
+On the 6th of May 1933, the Nazis raided and destroyed the Institut für
+Sexualwissenschaft in Berlin, a home of pioneering queer and trans research,
+medicine, art, and culture. Four days later, they burned its entire
+collection---including countless irreplacable items and over a decade of
+research into the same gender affirming care that today's fascists now claim is
+"new". When the Allies finally came promising liberation, they did not liberate
+my queer siblings.
+
+They left them to rot.
+
+["A Story of Trans Genocide, Now and Then, in a Single
+Photo"](https://collectivecontext.substack.com/p/a-story-of-trans-genocide-now-and)
+
+On the 6th of May 2001, I took my first breath.
+
+On the 6th of May 2025, as I watch my country's politicians clamber over each
+other in a race to see who can destroy my remaining human rights the quickest,
+more than ever I think of 1933, and not of 2001.
+
+> First they came for the queers---<br>
+> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and the world soon forgot, for we were too hated to be in the poem.
