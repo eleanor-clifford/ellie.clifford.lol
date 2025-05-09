@@ -506,6 +506,14 @@ table input, table textarea {
   color: #000000;
 }
 
+a { /*default*/
+  color: rgba(189, 147, 249, 1);
+}
+
+a:hover { /*default*/
+  color: rgba(189, 147, 249, .7);
+}
+
 .purple .title,
 .purple .subtitle a,
 .purple .page a,
