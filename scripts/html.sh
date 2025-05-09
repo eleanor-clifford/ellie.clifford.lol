@@ -53,7 +53,7 @@ html_build_md_page() { # $1: filename, writes to out/http/
 		) | perl -pe 's|.*?md/?|/|;s|[/.-]|_|g;')"
 
 	export SSI="$(md_get_metadata "$file" .ssi)"
-	[ "$SSI" = null ] && SSI=false
+	( test -z "$SSI" || [ "$SSI" = null ] ) && SSI=false || SSI=true
 
 	$SSI && ext=shtml || ext=html
 	out_file="$(echo "$file" | sed 's|^http/md/|out/http/|; s|.md$|.'$ext'|')"

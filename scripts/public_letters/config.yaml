@@ -1,0 +1,72 @@
+me:
+  name: Eleanor Clifford
+  name_regex: (Ms )?Eleanor Clifford
+  email: "@clifford.lol"
+
+people:
+  - id: daniel-zeichner-mp
+    name: Daniel Zeichner MP
+    name_regex: (Mr )?Daniel Zeichner( MP)?
+    emails:
+      - daniel.zeichner.mp@parliament.uk
+      - daniel@danielzeichner.co.uk
+
+  - id: beccy-cooper-mp
+    name: Dr Beccy Cooper MP
+    name_regex: (Dr )?Beccy Cooper( MP)?
+    emails:
+      - beccy.cooper.mp@parliament.uk
+      - casework@drbeccycooper.co.uk
+
+  - id: joe-powell-mp
+    name: Joe Powell MP
+    name_regex: (Mr )?Joe Powell( MP)?
+    emails:
+      - joe.powell.mp@parliament.uk
+
+rules:
+  days_assume_related: 2  # within which assume emails with different subjects are related
+  subject_filters:
+    '\(case ref: \w*\)$': ''
+    'automat(ed|ic) reply:': ''
+    '^re: *': ''
+  ignore_messages_with_patterns:
+    - 'automat(ed|ic) reply:'
+  dont_subject_combine:
+    - "thank you for your email"
+
+format:
+  between: <hr>
+
+  format: |
+    <p style="white-space: pre-wrap;">Date: ${Date}
+    From: ${From}
+    To: ${To}${MaybeSubject}${Body}
+
+  plain_body: |
+
+
+    ${CONTENT}</p>
+
+  html_body: |
+    </p><p>
+    ${CONTENT}
+    </p>
+
+  filters:
+    plain_body:
+      '^-- ?\n.*': ''
+      '\n> ?(.*?)\n\n?': '</p><blockquote><p style="white-space: pre-wrap;">\1</p></blockquote><p style="white-space: pre-wrap;">'
+      '(?:^$\n)?^(${name})$.*': '\1'
+
+    html_body:
+      '_________.*': ''
+      '<([^<>]*)style="[^"]*"': '<\1'
+      "<([^<>]*)style='[^']*'": '<\1'
+      #'<div class="signature-container">([^<]*).*': '\1'
+      '</?div[^>]*>': ''
+      '&nbsp;$': ''
+      '^&nbsp;': ''
+      '^(?:<[^>]*>)*(${name})(?:<[^>]*>)*$.*': '\1'
+
+
