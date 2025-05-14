@@ -47,9 +47,13 @@ format:
   between: <hr>
 
   format: |
+    ${NOTE}
     <p style="white-space: pre-wrap;">Date: ${Date}
     From: ${From}
     To: ${To}${MaybeSubject}${Body}
+
+  note: |
+    <p><em>${CONTENT}</em></p>
 
   plain_body: |
 
@@ -78,3 +82,6 @@ format:
       '^(?:<[^>]*>)*(${name})(?:<[^>]*>)*$.*': '\1'
 
 
+notes:
+  rnu5khsogbfzl4zxm7rhgdogjjemkbiz6prtb4q2lubwsr24vs@3jkyrk6w2rer: |
+    NB: brevity is due to 2000 character limit in web form

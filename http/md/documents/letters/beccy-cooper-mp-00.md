@@ -1,4 +1,5 @@
 ```{=html}
+
 <p style="white-space: pre-wrap;">Date: Wed, 7 May 2025 23:19:37 +0100
 From: Eleanor Clifford
 To: Dr Beccy Cooper MP
@@ -29,7 +30,8 @@ I hope you will take the right path, because my life and my future may well depe
 Yours sincerely,
 Eleanor Clifford</p>
 
-<hr><p style="white-space: pre-wrap;">Date: Fri, 09 May 2025 14:05:13 +0000 (UTC)
+<hr>
+<p style="white-space: pre-wrap;">Date: Fri, 09 May 2025 14:05:13 +0000 (UTC)
 From: Dr Beccy Cooper MP
 To: Eleanor Clifford
 Subject: Concern around the Supreme Court Ruling implications on Transgender rights</p><p>

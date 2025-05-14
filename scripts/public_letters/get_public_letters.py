@@ -92,8 +92,8 @@ def subject_close_enough(t1, t2):
 
 for person in config["people"]:
 	threads = set()
-	for email in person["emails"]:
-		threads |= set(x for x in db.threads(f"to:{email} or from:{email}") if not ignore_thread(x))
+	for e in person["emails"]:
+		threads |= set(x for x in db.threads(f"to:{e} or from:{e}") if not ignore_thread(x))
 
 	thread_pools = []
 	for thread in sorted(threads, key = lambda t: t.first):
@@ -143,8 +143,16 @@ for person in config["people"]:
 					else ""
 				)
 
+				note = config["notes"].get(m.messageid)
+				MaybeNote = (
+					Template(config["format"]["note"]).substitute(
+						CONTENT=note,
+					) if note else ""
+				)
+
 				fp.write(
 					Template(config["format"]["format"]).substitute(
+						NOTE=MaybeNote,
 						Date=m.header("date"),
 						From=From,
 						To=To,
