@@ -1,7 +1,6 @@
 me:
   name: Eleanor Clifford
   name_regex: (Ms )?Eleanor Clifford
-  email: "@clifford.lol"
 
 people:
   - id: daniel-zeichner-mp
@@ -24,6 +23,14 @@ people:
     emails:
       - joe.powell.mp@parliament.uk
 
+  - id: lord-mark-pack
+    name: Lord Mark Pack
+    name_regex: (Lord |Dr\.? )?Mark Pack
+    emails:
+      - mark.pack@gmail.com
+      - fake-mark-pack@clifford.lol
+
+
 rules:
   days_assume_related: 2  # within which assume emails with different subjects are related
   subject_filters:
@@ -32,6 +39,7 @@ rules:
     '^re: *': ''
   ignore_messages_with_patterns:
     - 'automat(ed|ic) reply:'
+    - '^Thank you$'
   dont_subject_combine:
     - "thank you for your email"
 

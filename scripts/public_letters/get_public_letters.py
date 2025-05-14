@@ -5,7 +5,7 @@ import re
 from datetime import datetime, timedelta, timezone
 from string import Template
 
-from notmuch2 import Database
+from notmuch2 import Database, Message
 
 config = yaml.safe_load(open("scripts/public_letters/config.yaml").read())
 
@@ -59,9 +59,9 @@ def ignore_thread(thread):
 	return False
 
 
-def ignore_message(message):
+def ignore_message(message: Message):
 	return any(
-		re.search(pattern, message.header("subject"), flags=re.I)
+		re.search(pattern, subject(message), flags=re.I)
 		for pattern in config["rules"]["ignore_messages_with_patterns"]
 	)
 
@@ -77,7 +77,10 @@ def time_close_enough(t1, t2):
 
 
 def subject(m_or_t):
-	return getattr(m_or_t, "subject", None) or m_or_t.header("subject")
+	try:
+		return getattr(m_or_t, "subject", None) or m_or_t.header("subject")
+	except LookupError:
+		return ""
 
 
 def subject_close_enough(t1, t2):
@@ -122,20 +125,22 @@ for person in config["people"]:
 
 				def _name(h):
 					return (
-						config["me"]["name"] if config["me"]["email"] in m.header(h)
-						else person["name"]
+						person["name"] if any([x.lower() in m.header(h).lower() for x in person["emails"]])
+						else config["me"]["name"]
 					)
 
 				From = _name("from")
 				To = _name("to")
 				assert sum(int(x == config["me"]["name"]) for x in (From, To)) == 1
 
-				from_me = config["me"]["email"] in m.header("from")
+				from_me = From == config["me"]["name"]
 				name_regex = config["me"]["name_regex"] if from_me else person["name_regex"]
 
+				would_be_subject = subject_filter(subject(m))
 				MaybeSubject = (
 					f"\nSubject: {subject_filter(subject(m))}"
-					if i == 0 or not subject_close_enough(m, msgs[0]) else ""
+					if would_be_subject and (i == 0 or not subject_close_enough(m, msgs[0]))
+					else ""
 				)
 
 				fp.write(
