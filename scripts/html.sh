@@ -73,7 +73,7 @@ html_build_md_page() { # $1: filename, writes to out/http/
 	export COLOR="$(<config.yaml yq -rc ".page_colors.$escaped_name")"
 	export TITLE="$(md_get_metadata "$file" .title)"
 
-	banner="$(md_get_metadata "$file" .banner)"
+	banner="$(md_get_metadata "$file" '.banner // ""')"
 
 	vars="$(md_get_metadata "$file" '.vars | to_entries[] | "\(.key)\t\(.value)"' 2>/dev/null)"
 	IFS="
@@ -84,7 +84,7 @@ html_build_md_page() { # $1: filename, writes to out/http/
 		export $var="$(eval "$value")"
 	done
 
-	if [ "$banner" != "null" ]; then
+	if test -n "$banner"; then
 		src="$(echo "$banner" | cut -d':' -f1)"
 		alt="$(echo "$banner" | cut -d':' -f2- | sed 's/^ *//')"
 		export BANNER="<div class=\"banner\"><img src=\"$src\" alt=\"$alt\"/></div>"
