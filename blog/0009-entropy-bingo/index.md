@@ -15,12 +15,14 @@ counting up the bits of Shannon entropy they can determine. If it reaches 33
 bits (corresponding to the >8 billion people on the planet), you lose, and you
 have been deanonymised. If not, you win. For simplicity, we assume each piece
 of information is uncorrelated with the others. This isn't really true, but
-it's napkin maths anyway.
+it's napkin maths anyway.[^disc]
 
-*Disclaimer 1: I should point out that I do not claim to be an expert on
-anonymisation and deanonymisation, though it is a fascination of mine. Make
-your own decisions, and consider my suggestions carefully. Maybe one day I will
-be an expert, if that happens I'll remove this disclaimer :)*
+[^disc]: 2025-05-25: There used to be a disclaimer here about how I'm not an
+expert on anonymity. Nowadays, I know enough experts that if this post were
+completely wrong I'd probably have found out by now. Really I should have
+removed the disclaimer years ago, when someone told me the legendary [Ross
+Anderson](https://www.cl.cam.ac.uk/archive/rja14/) had once told them a very
+similar example...
 
 ## Example 1: convenience store
 
