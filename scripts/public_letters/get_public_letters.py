@@ -28,15 +28,19 @@ def subject_filter(s):
 	return filter_string(s, config["rules"]["subject_filters"], flags=re.I).strip()
 
 
-def get_wrapped_body(message, filter_sub={}):
+def get_wrapped_body(message, filter_sub={}, msgid=None):
+	if not isinstance(message, email.message.EmailMessage):
+		msgid = msgid or message.messageid
+		message = email_parser.parsebytes(message.path.open('rb').read())
+
 	t = message.get_content_type()
 	if t.startswith("multipart/"):
-		return get_wrapped_body(message.get_body(), filter_sub=filter_sub)
+		return get_wrapped_body(message.get_body(), filter_sub=filter_sub, msgid=msgid)
 	elif t == "text/plain":
 		return Template(config["format"]["plain_body"]).substitute(
 			CONTENT=filter_string(
 				message.get_content(),
-				config["format"]["filters"]["plain_body"],
+				config["format"]["filters"]["plain_body"] | config["format"]["filters"]["per_message"].get(msgid, {}),
 				flags=re.M | re.S,
 				sub=filter_sub,
 			).strip(),
@@ -45,7 +49,7 @@ def get_wrapped_body(message, filter_sub={}):
 		return Template(config["format"]["html_body"]).substitute(
 			CONTENT=filter_string(
 				message.get_content(),
-				config["format"]["filters"]["html_body"],
+				config["format"]["filters"]["html_body"] | config["format"]["filters"]["per_message"].get(msgid, {}),
 				flags=re.M | re.S,
 				sub=filter_sub,
 			).strip(),
@@ -79,7 +83,7 @@ def time_close_enough(t1, t2):
 def subject(m_or_t):
 	try:
 		return getattr(m_or_t, "subject", None) or m_or_t.header("subject")
-	except LookupError:
+	except (LookupError, AttributeError):
 		return ""
 
 
@@ -121,8 +125,6 @@ for person in config["people"]:
 		with open(f'http/md/documents/letters/{person["id"]}-{i:02d}.md', "w") as fp:
 			fp.write('```{=html}\n')
 			for i, m in enumerate(msgs):
-				msg = email_parser.parsebytes(m.path.open('rb').read())
-
 				def _name(h):
 					return (
 						person["name"] if any([x.lower() in m.header(h).lower() for x in person["emails"]])
@@ -157,7 +159,7 @@ for person in config["people"]:
 						From=From,
 						To=To,
 						MaybeSubject=MaybeSubject,
-						Body=get_wrapped_body(msg, filter_sub={"name": name_regex}),
+						Body=get_wrapped_body(m, filter_sub={"name": name_regex}),
 					)
 				)
 				if i < len(msgs) - 1:

@@ -1,6 +1,6 @@
 ```{=html}
 <p><em>NB: brevity is due to 2000 character limit in web form
-</em><p>
+</em></p>
 
 <p style="white-space: pre-wrap;">Date: Wed, 14 May 2025 16:51:36 +0100
 From: Eleanor Clifford
@@ -21,5 +21,12 @@ I will leave you with a comment that I do not make lightly, but with the full we
 
 I look forward to your reply,
 Eleanor</p>
+
+<hr>
+<p style="white-space: pre-wrap;">Date: Fri, 23 May 2025 17:57:33 +0100
+From: Lord Mark Pack
+To: Eleanor Clifford</p><p>
+Dear Eleanor,<br><br>Thank you for taking the time to get in touch and setting out your concerns so clearly.<br><br>I hope it is reassuring to explain that had the measure come to a vote again in the Lords, our group would have been whipped to join the government in voting it down. That did not happen because the proposers of the amendment saw defeat coming and decided not to push it again.<br><br>I can appreciate a little, I hope, how the party&#39;s approach on earlier stages could have caused you and other people concerns. They were though the necessary part of getting to being ready to officially oppose it at what would have been the crunch vote, which I hope is therefore reassuring.<br><br>Best wishes,<br><br>Mark
+</p>
 
 ```

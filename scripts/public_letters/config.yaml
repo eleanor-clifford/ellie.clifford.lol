@@ -25,18 +25,19 @@ people:
 
   - id: lord-mark-pack
     name: Lord Mark Pack
-    name_regex: (Lord |Dr\.? )?Mark Pack
+    name_regex: (Lord |Dr\.? )?Mark( Pack)?
     emails:
       - mark.pack@gmail.com
       - fake-mark-pack@clifford.lol
 
 
 rules:
-  days_assume_related: 2  # within which assume emails with different subjects are related
+  days_assume_related: 14  # within which assume emails with different subjects are related
   subject_filters:
     '\(case ref: \w*\)$': ''
     'automat(ed|ic) reply:': ''
     '^re: *': ''
+    'New submission from President form on website': ''
   ignore_messages_with_patterns:
     - 'automat(ed|ic) reply:'
     - '^Thank you$'
@@ -79,7 +80,11 @@ format:
       '</?div[^>]*>': ''
       '&nbsp;$': ''
       '^&nbsp;': ''
-      '^(?:<[^>]*>)*(${name})(?:<[^>]*>)*$.*': '\1'
+      '(^|<br>)(?:<[^>]*>)*(${name})(?:<[^>]*>)*(?:$|<br>).*': '\1\2'
+
+    per_message:
+      CAKGS-Z-=W5iZxgGLeSGiSwYBY81LroU0xbCZc-9JZTz7sy4M5A@mail.gmail.com:
+        "(?<!<br>)<br>(?!<br>)": "<br><br>"
 
 
 notes:
