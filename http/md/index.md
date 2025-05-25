@@ -1,30 +1,30 @@
 ---
 # vi: set et ts=2 sw=2 sts=2 :
-title: "Ellie Clifford"
 ssi: false
 css: |
-  h1 {
-    margin-bottom: 0px !important;
-  }
-
   .columns {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     max-width: 100%;
+    margin-bottom: -20px; /* to deal with margins not collapsing */
   }
 
   .column-left {
-    padding-right: 20px;
-    width: 420px;
+    width: 410px;
     max-width: 100%;
-    margin-bottom: -20px;
+    margin-right: 20px;
   }
+
   .column-right {
+    width: 410px;
+    max-width: 100%;
+  }
+
+  .flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 100%;
   }
 
   .webring h2 {
@@ -51,9 +51,13 @@ css: |
     margin: 0px 20px;
   }
 
-  figure.motd {
+  div.motd {
+    width: fit-content;
+    margin-top: 20px;
+  }
+
+  .motd figure {
     margin: auto;
-    padding: 20px;
   }
 
   .motd img.main-img {
@@ -70,6 +74,7 @@ css: |
     display: flex;
     flex-wrap: wrap;
     max-width: 300px;
+    margin: auto auto 20px auto;
   }
 
   .motd .thumbs a {
@@ -113,31 +118,43 @@ css: |
     }
   }
 
----
+  .indent p {
+    margin-top: 5px;
+    margin-left: 20px;
+  }
 
-::: {.overlay .orange-override}
-[Now shitposting on Bluesky](https://app.bsky.transgirl.fr/profile/ellie.clifford.lol)
-:::
+  p:has(.blog-summary) {
+    margin-bottom: 5px;
+  }
+
+  img.bsky {
+    margin: 0px;
+    height: 38px;
+  }
+---
 
 ::: columns
 ::: column-left
 
-_~killed by the woke mind virus~_
-
 ``` {=html}
+<h1>Ellie Clifford</h1>
+
 <div class="blog-updates">
  <form method="post" action="/cgi-bin/subscribe.py" class="form">
   <input type="email" name="email" placeholder="Your email"/>
-  <input type="text"  name="antispam" placeholder="'ataraxia' (antispam)"/>
+  <input type="text"  name="antispam" placeholder="1+1="/>
   <input type="submit" value="Subscribe"/>
  </form>
  <a class="nounderline" href="/blog/rss.xml">
   <img class="rss" src="/_icons/rss.svg" alt="RSS feed icon"/>
  </a>
+ <a class="nounderline" href="https://bsky.app/profile/ellie.clifford.lol">
+  <img class="bsky" src="/_icons/bluesky.svg" alt="Bluesky icon"/>
+ </a>
 </div>
 ```
 
-Armchair philosopher, musician, [cypherpunk](/documents/cypherpunks-manifesto.html).
+Armchair philosopher, musician, cypherpunk.
 
 ::: webring
 
@@ -157,18 +174,8 @@ Apparently some people who visit this site don't notice that there are buttons
 in the top right that take you to other parts of the site. If that's you,
 here's your PSA: click them and be taken to cool places!!!
 
-Here are some other miscellaneous links:
-
-<p><a class="red-override" href="/documents/technology-usage-manifesto.html">My Technology Usage Manifesto</a></p>
-<p><a class="yellow-override" href="https://sr.ht/~ecc/">Some of my projects</a></p>
-<p><a class="cyan-override" href="https://files.clifford.lol/">Some funny stuff and random other files</a></p>
-
-I also run some free services over at [transgirl.fr](https://transgirl.fr) and
-help run some other ones for members of the University of Cambridge over at
-[srcf.net](https://www.srcf.net) :3
-
 :::
-::: column-right
+::: {.column-right .flex}
 <div class="motd">
 <figure>
   <figcaption>Meme of the now:</figcaption>
@@ -179,7 +186,7 @@ help run some other ones for members of the University of Cambridge over at
   </a>
 </figure>
 <figure>
-  <figcaption>Historical:</figcaption>
+  <figcaption>Previously:</figcaption>
   <div class="thumbs">
    <a class="nounderline" href="/memes/06_stem.jpg">
      <img alt="YEAH I'm a STEM girl. Stopped friendship with Testosterone, now Estrogen is My best friend!!1!"
@@ -216,9 +223,54 @@ help run some other ones for members of the University of Cambridge over at
 :::
 :::
 
-## Dracula Themes
+::: columns
+::: column-left
 
-Dracula is unequivocally the best theme. Dark themes are a no brainer -
-I like my eyeballs intact, thank you very much. And Dracula's
-colorscheme is simply gorgeous. With that in mind, [I've contributed
-several implementations of the theme...](/dracula/)
+
+## A few of my favourite works
+
+[What we leave behind](/blog/0006-what-we-leave-behind/){.blog-summary}
+
+::: indent
+On humanity, legacy, and why I write at all
+:::
+
+[Chains of Flesh](/blog/0022-chains-of-flesh/){.blog-summary}
+
+::: indent
+A trans and transhumanist ballad
+:::
+
+[Cloud Service Shenanigans](/blog/0014-cloud-service-shenanigans/){.blog-summary}
+
+::: indent
+A silly one about nearly losing all my data
+:::
+
+[Taking back control (part 5)](/blog/0021-taking-back-control-5/){.blog-summary}
+
+::: indent
+On technology, power, and tentacled monsters
+:::
+
+[more...](/blog/)
+
+:::
+::: column-right
+
+## Links for tech people
+
+[Services for all at `transgirl.fr`](https://transgirl.fr/){.green-override}
+
+[Services for UniOfCam people at `srcf.net`](https://www.srcf.net/){.cyan-override}
+
+[Dracula theme gallery](/dracula/){.purple-override}
+
+[Miscellaneous projects](https://sr.ht/~ecc/){.pink-override}
+
+[My Technology Usage Manifesto](/documents/technology-usage-manifesto.html){.orange-override}
+
+[A Cypherpunk's Manifesto (by Eric Hughes)](/documents/cypherpunks-manifesto.html){.yellow-override}
+
+:::
+:::

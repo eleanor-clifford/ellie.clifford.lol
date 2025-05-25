@@ -71,7 +71,11 @@ html_build_md_page() { # $1: filename, writes to out/http/
 
 	export HASH="$hs"
 	export COLOR="$(<config.yaml yq -rc ".page_colors.$escaped_name")"
-	export TITLE="$(md_get_metadata "$file" .title)"
+	export TITLE="$(md_get_metadata "$file" '.title // ""')"
+
+	if test -n "$TITLE"; then
+		export INNERTITLE="<h1>${TITLE}</h1>"
+	fi
 
 	banner="$(md_get_metadata "$file" '.banner // ""')"
 

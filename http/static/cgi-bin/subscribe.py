@@ -47,8 +47,8 @@ def get_inner_html():  # side effects!
 	except EmailNotValidError:
 		return (400, error("Invalid email address. If you're trying to hack me I'll be mad 😠"))
 
-	if post_data["antispam"] != "ataraxia":
-		return (401, error('Possible spam detected. Did you type the antispam word wrong?'))
+	if post_data["antispam"] != "2":
+		return (401, error('Possible spam detected. Did you get 1+1 wrong?'))
 
 	try:
 		email = post_data["email"].replace("'", """'"'"'""")

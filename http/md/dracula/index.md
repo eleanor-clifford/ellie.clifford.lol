@@ -2,6 +2,12 @@
 title: "Dracula Theme Gallery"
 ---
 
+<p>
+Dracula is unequivocally the best colorscheme. Dark themes are a no brainer---I
+like my eyeballs intact, thank you very much. And Dracula is simply gorgeous.
+With that in mind, I've contributed several implementations...
+</p>
+
 <div class="noborder">
 <table>
   <tr>

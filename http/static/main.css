@@ -432,6 +432,7 @@ table input, table textarea {
 .orange .subtitle a:hover,
 .orange .page a:hover {
   color: rgba(255, 184, 108, .7);
+  border-color: rgba(255, 184, 108, .7);
 }
 
 .orange .form input[type="submit"] {
@@ -453,6 +454,7 @@ table input, table textarea {
 .red .subtitle a:hover,
 .red .page a:hover {
   color: rgba(255, 85, 85, .7);
+  border-color: rgba(255, 85, 85, .7);
 }
 
 .red .form input[type="submit"] {
@@ -474,6 +476,7 @@ table input, table textarea {
 .pink .subtitle a:hover,
 .pink .page a:hover {
   color: rgba(255, 121, 198, .7);
+  border-color: rgba(255, 121, 198, .7);
 }
 
 .pink .form input[type="submit"] {
@@ -495,6 +498,7 @@ table input, table textarea {
 .cyan .subtitle a:hover,
 .cyan .page a:hover {
   color: rgba(139, 233, 253, .7);
+  border-color: rgba(139, 233, 253, .7);
 }
 
 .cyan .form input[type="submit"] {
@@ -512,6 +516,7 @@ a { /*default*/
 
 a:hover { /*default*/
   color: rgba(189, 147, 249, .7);
+  border-color: rgba(189, 147, 249, .7);
 }
 
 .purple .title,
@@ -524,6 +529,7 @@ a:hover { /*default*/
 .purple .subtitle a:hover,
 .purple .page a:hover {
   color: rgba(189, 147, 249, .7);
+  border-color: rgba(189, 147, 249, .7);
 }
 
 .purple .form input[type="submit"] {
@@ -545,6 +551,7 @@ a:hover { /*default*/
 .yellow .subtitle a:hover,
 .yellow .page a:hover {
   color: rgba(241, 250, 140, .7);
+  border-color: rgba(241, 250, 140, .7);
 }
 
 .yellow .form input[type="submit"] {
@@ -570,6 +577,7 @@ a:hover { /*default*/
 .green .subtitle a:hover,
 .green .page a:hover {
   color: rgba(80, 250, 123, .7);
+  border-color: rgba(80, 250, 123, .7);
 }
 
 .green .form input[type="submit"] {
@@ -796,6 +804,14 @@ img.rss {
 .purple-override  a, a.purple-override  { border-bottom: 2px solid #bd93f9 !important;}
 .yellow-override  a, a.yellow-override  { border-bottom: 2px solid #f1fa8c !important;}
 
+.cyan-override    a:hover, a.cyan-override:hover    { color: rgba(139, 233, 253, 0.7) !important;border-color: rgba(139, 233, 253, 0.7) !important;}
+.green-override   a:hover, a.green-override:hover   { color: rgba(80, 250, 123, 0.7)  !important;border-color: rgba(80, 250, 123, 0.7)  !important;}
+.orange-override  a:hover, a.orange-override:hover  { color: rgba(255, 184, 108, 0.7) !important;border-color: rgba(255, 184, 108, 0.7) !important;}
+.red-override     a:hover, a.red-override:hover     { color: rgba(255, 85, 85, 0.7)   !important;border-color: rgba(255, 85, 85, 0.7)   !important;}
+.pink-override    a:hover, a.pink-override:hover    { color: rgba(255, 121, 198, 0.7) !important;border-color: rgba(255, 121, 198, 0.7) !important;}
+.purple-override  a:hover, a.purple-override:hover  { color: rgba(189, 147, 249, 0.7) !important;border-color: rgba(189, 147, 249, 0.7) !important;}
+.yellow-override  a:hover, a.yellow-override:hover  { color: rgba(241, 250, 140, 0.7) !important;border-color: rgba(241, 250, 140, 0.7) !important;}
+
 svg.cyan-override     text, .cyan-override    svg text { fill: #8be9fd !important;}
 svg.green-override    text, .green-override   svg text { fill: #50fa7b !important;}
 svg.orange-override   text, .orange-override  svg text { fill: #ffb86c !important;}
@@ -811,41 +827,6 @@ svg.red-override      polygon, .red-override     svg polygon { stroke: #ff5555 !
 svg.pink-override     polygon, .pink-override    svg polygon { stroke: #ff79c6 !important;}
 svg.purple-override   polygon, .purple-override  svg polygon { stroke: #bd93f9 !important;}
 svg.yellow-override   polygon, .yellow-override  svg polygon { stroke: #f1fa8c !important;}
-
-.green-override a {
-  color: rgba(80, 250, 123, 1) !important;
-  border-bottom: 2px solid rgba(80, 250, 123, 1) !important;
-}
-
-.cyan-override a {
-  color: rgba(139, 233, 253, 1) !important;
-  border-bottom: 2px solid rgba(139, 233, 253, 1) !important;
-}
-
-.purple-override a {
-  color: rgba(189, 147, 249, 1) !important;
-  border-bottom: 2px solid rgba(189, 147, 249, 1) !important;
-}
-
-.pink-override a {
-  color: rgba(255, 121, 198, 1) !important;
-  border-bottom: 2px solid rgba(255, 121, 198, 1) !important;
-}
-
-.orange-override a {
-  color: rgba(255, 184, 108, 1) !important;
-  border-bottom: 2px solid rgba(255, 184, 108, 1) !important;
-}
-
-.red-override a {
-  color: #ff5555 !important;
-  border-bottom: 2px solid #ff5555 !important;
-}
-
-.yellow-override a {
-  color: rgba(241, 250, 140, 1) !important;
-  border-bottom: 2px solid rgba(241, 250, 140, 1) !important;
-}
 
 .green h1 {
   color: rgba(80, 250, 123, 1)
@@ -1070,7 +1051,7 @@ blockquote p {
 .blog-updates input[name="antispam"] {
 	border-radius: 0px;
 	border-left: 0px;
-	width: 160px;
+	width: 80px;
 }
 
 .blog-updates input[type="submit"] {
