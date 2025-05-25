@@ -11,7 +11,7 @@ tags:
 
 Almost three years ago, [I decided to write a
 manifesto](https://ellie.clifford.lol/blog/0003-taking-back-control-1/)
-detailing how I did -- and didn't -- want to use technology. Thus began a
+detailing how I did---and didn't---want to use technology. Thus began a
 series of blog posts; by [Part
 3](https://ellie.clifford.lol/blog/0007-taking-back-control-3/) a rosy picture
 was being painted of how well I was doing. [Part
@@ -53,15 +53,15 @@ called "depressive hedonia", a state of mind
 
 > constituted not by an inability to get pleasure so much as it is by an
 inability to do anything else *except* pursue pleasure. There is a sense that
-'something is missing' -- but no appreciation that this mysterious, missing
+'something is missing'---but no appreciation that this mysterious, missing
 enjoyment can only be accessed *beyond* the pleasure principle.
 
 But while Fisher's thesis that depressive hedonia is primarily caused by a
 rampantly individualistic, consumerist, fatalistic and yet ironically detached
 society is still true, today's enablers of depressive hedonia are far more
 sophisticated in their attention theft than the "Playstation, all-night TV and
-marijuana" of 2008. Modern attention-stealing mechanisms can learn -- and they
-do so effectively -- to do whatever maximises "engagement", leaving you bored
+marijuana" of 2008. Modern attention-stealing mechanisms can learn---and they
+do so effectively---to do whatever maximises "engagement", leaving you bored
 but still paying attention, unable to leave without missing out on what
 everyone else is seeing, placated but never satisfied.
 
@@ -69,7 +69,7 @@ There is a sense now, too, that just as anti-capitalists must still earn
 and spend money to eat, those against YouTube (for instance) must still post
 their video essays on YouTube if they want to reach anyone. Some try, many do
 reach people, but the power of a platform is that even those against the system
-work within it and prop it up -- just as t-shirts of Che Guevara are made in
+work within it and prop it up---just as t-shirts of Che Guevara are made in
 sweatshops and sold on Amazon.[^che]
 
 [^che]: This should not be taken as an endorsement of Che Guevara.
@@ -99,7 +99,7 @@ Farrell](https://conversationalist.org/2019/09/13/feminism-explains-our-toxic-re
 likens our use of smartphones to an abusive relationship:
 
 > They isolate us from deeper, competing relationships in favour of
-> superficial contact -- 'user engagement' -- that keeps their hold on us
+> superficial contact---'user engagement'---that keeps their hold on us
 > strong. [...] They tell us the onus is on us to manage their behavior. It's our job to
 > tiptoe around them and limit their harms. Spending too much time on a
 > literally-designed-to-be-behaviorally-addictive phone? [...] We just need
@@ -137,7 +137,7 @@ paragraph:
 
 > I would love to throw Mind Flayer in the River Cam. I won't, because that
 > would be environmentally hazardous littering, but I've done what I hope is
-> the next best thing -- wiped it clean, and put it at the bottom of a deep
+> the next best thing---wiped it clean, and put it at the bottom of a deep
 > drawer where maybe it will finally die.
 
 I wrote those lines before actually _taking_ that step, assuming that in a
@@ -153,7 +153,7 @@ I stuck in a gothic horror book?
 <hr>
 
 But at last, a stroke of luck, Mind Flayer has partially broken on it's own.
-It's broken in a very convenient way, too -- it's still usable, but only
+It's broken in a very convenient way, too---it's still usable, but only
 awkwardly: the touchscreen doesn't work, so i have to plug in a mouse to do
 anything. This should be enough incentive to stop using it (without losing all
 the data), but simultaneously, I partially broke Flumph at the software level

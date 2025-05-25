@@ -89,8 +89,8 @@ Would you expect anything less? Here are some highlights:
 
 Also, ground loops suck (and analog electronics in general sucks). I wanted to
 record the guitar both directly and through a physical amp, but without an
-isolated buffer splitter on the guitar output -- which is expensive to buy or
-time consuming to build -- connecting to two outputs creates a horrible ground
+isolated buffer splitter on the guitar output---which is expensive to buy or
+time consuming to build---connecting to two outputs creates a horrible ground
 loop between between the two devices, which just kills the audio quality. Oh
 well.
 

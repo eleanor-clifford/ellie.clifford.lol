@@ -28,7 +28,7 @@ Serano.](https://juliaserano.substack.com/p/lgbtq-people-are-not-going-back)_
 
 The tides really are turning against us queer people, huh? Across the world,
 the far-right is gaining power. Even here in the UK, one of the only countries
-to supposedly shift left recently, it hardly matters -- the new Labour
+to supposedly shift left recently, it hardly matters---the new Labour
 government [continues to uphold attacks on trans
 rights](https://www.scientificamerican.com/article/the-u-k-s-cass-review-badly-fails-trans-children/)
 and pander to transphobes.
@@ -154,7 +154,7 @@ reality the vote between your favourite and preferred-major parties is unlikely
 to be exactly 50/50 split.
 
 5. (Pushing down) Voters don't swing overnight. If you're not hardcore
-short-term rationalist, you should adjust the threshold lower -- by voting
+short-term rationalist, you should adjust the threshold lower---by voting
 third-party, you also increase the credibility of that party for future
 elections.
 

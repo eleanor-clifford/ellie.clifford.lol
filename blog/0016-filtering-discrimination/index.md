@@ -28,7 +28,7 @@ A sizable fraction of web content filtering systems have classified
 transgirl.fr as porn and blocked it.
 
 Oops, my bad, I forgot, us trans women can't have nice things, all we're good
-for is being degradingly fetishized -- oh except of course when we're to blame
+for is being degradingly fetishized---oh except of course when we're to blame
 for [*checks notes*]{.small} everything from misogyny to child
 abuse<a href="#fn2" class="footnote-ref" id="fnref2"
 role="doc-noteref"><sup>2</sup></a>. ~~Scapegoating is straight out of the
@@ -45,7 +45,7 @@ captitalising on fetishisation win*.
 <div class="content">
 
 But I really didn't think that it would be this bad. As is, there is a strong
-argument that this filtering is actually illegal in the UK -- the filter has no
+argument that this filtering is actually illegal in the UK---the filter has no
 evidence that transgirl.fr should be blocked other than the reference to a
 trans person, and "Gender reassignment" is a protected characteristic under the
 Equality Act 2010.
@@ -53,7 +53,7 @@ Equality Act 2010.
 Even the argument that these filters are just statistical systems, and in the
 real world "trans girl" is a phrase commonly associated with porn (and the
 further stretch that this somehow absolves the designers of the system) falls
-flat -- the Equality Act 2010 further protects against "indirect
+flat---the Equality Act 2010 further protects against "indirect
 discrimination", i.e. discrimination caused by systems that are applied equally
 but put some people at a disadvantage based on a protected characteristic.
 
