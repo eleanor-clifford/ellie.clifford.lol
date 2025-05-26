@@ -7,18 +7,15 @@ css: |
     flex-wrap: wrap;
     flex-direction: row;
     max-width: 100%;
-    margin-bottom: -20px; /* to deal with margins not collapsing */
+    column-gap: 20px;
+    row-gap: 0px;
+    margin-bottom: 20px /* counters -20px at the bottom of each column */
   }
 
-  .column-left {
+  .column {
     width: 410px;
     max-width: 100%;
-    margin-right: 20px;
-  }
-
-  .column-right {
-    width: 410px;
-    max-width: 100%;
+    margin-bottom: -20px;
   }
 
   .flex {
@@ -126,15 +123,10 @@ css: |
   p:has(.blog-summary) {
     margin-bottom: 5px;
   }
-
-  img.bsky {
-    margin: 0px;
-    height: 38px;
-  }
 ---
 
 ::: columns
-::: column-left
+::: column
 
 ``` {=html}
 <h1>Ellie Clifford</h1>
@@ -175,7 +167,7 @@ in the top right that take you to other parts of the site. If that's you,
 here's your PSA: click them and be taken to cool places!!!
 
 :::
-::: {.column-right .flex}
+::: {.column .flex}
 <div class="motd">
 <figure>
   <figcaption>Meme of the now:</figcaption>
@@ -221,11 +213,8 @@ here's your PSA: click them and be taken to cool places!!!
 </figure>
 </div>
 :::
-:::
 
-::: columns
-::: column-left
-
+::: column
 
 ## A few of my favourite works
 
@@ -256,7 +245,7 @@ On technology, power, and tentacled monsters
 [more...](/blog/)
 
 :::
-::: column-right
+::: column
 
 ## Links for tech people
 

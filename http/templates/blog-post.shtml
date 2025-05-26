@@ -1,61 +1,63 @@
 <!-- vi: set ts=2 sts=2 sw=2 et: -->
 <div class="blog-wrapper">
   <div class="blog-content">
-    <div class="wrap"><div class="blog">
-      <h1>${TITLE}</h1>
-      <div class="blog-metadata">
-        <div class="blog-metadata-left">
-          <img class="blog-author-avatar" src="/avatar_48.jpg" alt="Ellie Clifford">
-          <span class="blog-author-name">Ellie Clifford</span>
-          <span class="blog-author-separator">/</span>
-          <time datetime="${DATE}">${DATE}</time>
+    <div class="wrap">
+      <div class="blog">
+        <h1>${TITLE}</h1>
+        <div class="blog-metadata">
+          <div class="blog-metadata-left">
+            <img class="blog-author-avatar" src="/avatar_48.jpg" alt="Ellie Clifford">
+            <span class="blog-author-name">Ellie Clifford</span>
+            <span class="blog-author-separator">/</span>
+            <time datetime="${DATE}">${DATE}</time>
+          </div>
+          <div class="tags post-tags">
+            ${TAGS}
+          </div>
         </div>
-        <div class="tags post-tags">
-          ${TAGS}
-        </div>
-      </div>
-      ${CW}
-      <div>
-        ${CONTENT}
-      </div>
-    </div>
-    <div class="comments">
-      <h2>Comments</h2>
-      <!--#include virtual="./comments.html" -->
-    </div>
-    <div class="comment-submit">
-      <h2>New comment</h2>
-      <form class="noborder" action="/cgi-bin/submit_comment.py" method="post" accept-charset="utf-8">
-        <input type="hidden" id="post" name="post" value="${URL_PART}"/>
-        <table>
-          <colgroup>
-            <col span="1" style="width: 140px">
-            <col span="1">
-          </colgroup>
-          <tbody>
-            <tr>
-              <td>Name:</td>
-              <td><input type="text" id="name" name="name" placeholder="Anonymous"/></td>
-            </tr>
-            <tr>
-              <td>Email (optional)<br>(for notifications):</td>
-              <td><input type="email" id="email" name="email" /></td>
-            </tr>
-            <tr>
-              <td>Comment:</td>
-              <td><textarea id="comment" name="comment" style="height: 100px;"></textarea></td>
-            </tr>
-            <tr>
-              <td>Write 'lethologica'<br>(anti-spam):</td>
-              <td><input type="text" id="antispam" name="antispam"/></td>
-            </tr>
-          </tbody>
-        </table>
+        ${CW}
         <div>
-          <input type="submit" value="Submit comment"/>
+          ${CONTENT}
         </div>
-      </form>
-    </div></div>
+      </div>
+      <div class="comments">
+        <h2>Comments</h2>
+        <!--#include virtual="./comments.html" -->
+      </div>
+      <div class="comment-submit">
+        <h2>New comment</h2>
+        <form class="noborder" action="/cgi-bin/submit_comment.py" method="post" accept-charset="utf-8">
+          <input type="hidden" id="post" name="post" value="${URL_PART}"/>
+          <table>
+            <colgroup>
+              <col span="1" style="width: 140px">
+              <col span="1">
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>Name:</td>
+                <td><input type="text" id="name" name="name" placeholder="Anonymous"/></td>
+              </tr>
+              <tr>
+                <td>Email (optional)<br>(for notifications):</td>
+                <td><input type="email" id="email" name="email" /></td>
+              </tr>
+              <tr>
+                <td>Comment:</td>
+                <td><textarea id="comment" name="comment" style="height: 100px;"></textarea></td>
+              </tr>
+              <tr>
+                <td>Write 'lethologica'<br>(anti-spam):</td>
+                <td><input type="text" id="antispam" name="antispam"/></td>
+              </tr>
+            </tbody>
+          </table>
+          <div>
+            <input type="submit" value="Submit comment"/>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
 </div>
 
