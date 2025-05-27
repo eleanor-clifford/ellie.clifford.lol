@@ -216,7 +216,7 @@ here's your PSA: click them and be taken to cool places!!!
 
 ::: column
 
-## A few of my favourite works
+## A few of my favourite written works
 
 [What we leave behind](/blog/0006-what-we-leave-behind/){.blog-summary}
 
