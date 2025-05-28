@@ -1,9 +1,12 @@
-<div class="banner">
-</div>
-
 ---
 title: "Music"
 banner: "/banner.jpg: Ellie playing guitar for a crowd at a Student Windsurfing Association event"
+css: |
+  @media (max-width: 480px) {
+    h2.service-header {
+      display: none;
+    }
+  }
 ---
 
 I make music :]
@@ -43,9 +46,11 @@ _Noodles Vol. 0: reflections and phantoms_[^1]
 improvise on an instrument in an informal or desultory manner_
 
 <div class="music-item">
- <img class="music-art"
+ <a href="noodles/vol_0/" class="nounderline" style="margin: auto;">
+  <img class="music-art"
        src="/music/art/noodles_vol_0_512.jpg"
        alt="Cover art for Noodles Vol. 0" />
+ </a>
  <div class="music-links">
   <a href="/music/noodles/vol_0.zip">
    <img src="/_icons/download.svg" alt="Download icon" />
@@ -55,11 +60,11 @@ improvise on an instrument in an informal or desultory manner_
    <img src="/_icons/stream.svg" alt="Stream icon" />
    <p>Stream</p>
   </a>
-  <a href="https://tube.clifford.lol/w/p/6KJepmLw95EcRuKECvJYSV?playlistPosition=1">
+  <a href="https://tube.transgirl.fr/w/p/6KJepmLw95EcRuKECvJYSV?playlistPosition=1">
    <img src="/_icons/peertube.svg" alt="PeerTube logo" />
    <p>Stream</p>
   </a>
-  <h2>Proprietary platforms</h2>
+  <h2 class="service-header">Other platforms</h2>
   <div class="predatory-services">
    <a href="https://ellie-clifford.bandcamp.com/album/noodles-vol-0-reflections-and-phantoms">
     <img src="/_icons/bandcamp.png" alt="Bandcamp logo" />
@@ -97,11 +102,11 @@ _Autumn Wind_
    <img src="/_icons/download.svg" alt="Download icon" />
    <p>Download</p>
   </a>
-  <a href="https://tube.clifford.lol/w/amffnnQAkGZPvJZyzKVzDS">
+  <a href="https://tube.transgirl.fr/w/amffnnQAkGZPvJZyzKVzDS">
    <img src="/_icons/peertube.svg" alt="PeerTube logo" />
    <p>Stream</p>
   </a>
-  <h2>Proprietary platforms</h2>
+  <h2 class="service-header">Other platforms</h2>
   <div class="predatory-services">
    <a href="https://ellie-clifford.bandcamp.com/track/autumn-wind/">
     <img src="/_icons/bandcamp.png" alt="Bandcamp logo" />

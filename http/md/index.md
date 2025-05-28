@@ -1,5 +1,6 @@
 ---
 # vi: set et ts=2 sw=2 sts=2 :
+pagetitle: Ellie Clifford
 ssi: false
 css: |
   .columns {

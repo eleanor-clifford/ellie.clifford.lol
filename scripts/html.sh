@@ -70,14 +70,9 @@ html_build_md_page() { # $1: filename, writes to out/http/
 	fi
 
 	export HASH="$hs"
-	export COLOR="$(<config.yaml yq -rc ".page_colors.$escaped_name")"
-	export TITLE="$(md_get_metadata "$file" '.title // ""')"
-
-	if test -n "$TITLE"; then
-		export INNERTITLE="<h1>${TITLE}</h1>"
-	fi
-
-	banner="$(md_get_metadata "$file" '.banner // ""')"
+	export COLOR="$(md_get_metadata "$file" '.color // "'"$(<config.yaml yq -rc ".page_colors.$escaped_name")"'"')"
+	export INNERTITLE="$(md_get_metadata "$file" 'if .title then "<h1>\(.title)</h1>" else "" end')"
+	export PAGETITLE="$(md_get_metadata "$file" '.pagetitle // .title // ""')"
 
 	vars="$(md_get_metadata "$file" '.vars | to_entries[] | "\(.key)\t\(.value)"' 2>/dev/null)"
 	IFS="
@@ -88,10 +83,13 @@ html_build_md_page() { # $1: filename, writes to out/http/
 		export $var="$(eval "$value")"
 	done
 
+	banner="$(md_get_metadata "$file" '.banner // ""')"
 	if test -n "$banner"; then
 		src="$(echo "$banner" | cut -d':' -f1)"
 		alt="$(echo "$banner" | cut -d':' -f2- | sed 's/^ *//')"
 		export BANNER="<div class=\"banner\"><img src=\"$src\" alt=\"$alt\"/></div>"
+	else
+		export BANNER=
 	fi
 
 	md_extensions="$(md_get_metadata $file '(.md_extensions // []) | join("")')"

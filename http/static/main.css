@@ -1360,7 +1360,7 @@ div.music-art {
   justify-content: center;
 }
 
-.music-art img {
+.music-art img, img.music-art {
   max-width: 100%;
   align-self: center;
 }
@@ -1423,10 +1423,8 @@ p.music-art-caption {
 
 .music-links p {
   font-size: 24px;
-  /*height: 36px;*/
-  /*min-width: 128px;*/
-  /*margin-top: 8px;*/
-  margin-bottom: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
   vertical-align: middle;
 }
 
