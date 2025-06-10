@@ -5,7 +5,6 @@ createdAt: "2024-05-03"
 tags:
   - favourites
   - tech
-  - queer
 css: |
   img {
     width: 100%;

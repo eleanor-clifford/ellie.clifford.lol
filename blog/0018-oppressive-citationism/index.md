@@ -5,7 +5,6 @@ createdAt: "2024-07-28"
 tags:
   - favourites
   - phil-pol
-  - queer
 ---
 
 Whether writing on science, philosophy, or culture, society demands of us
