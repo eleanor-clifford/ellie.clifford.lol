@@ -1,4 +1,6 @@
 ```{=html}
+<p><em>NB: Based on <a href="https://action.goodlawproject.org/decriminalise-abortion">The Good Law Project's template</a>
+</em></p>
 
 <p style="white-space: pre-wrap;">Date: Wed, 11 Jun 2025 23:51:46 +0100
 From: Eleanor Clifford

@@ -18,7 +18,7 @@ Thank you for your time, I hope to hear back from you.
 Yours sincerely,
 Eleanor
 
-[1]: https://goodlawproject.org/rise-of-deaths-young-trans-people/</p>
+[1]: <a href="https://goodlawproject.org/rise-of-deaths-young-trans-people/">https://goodlawproject.org/rise-of-deaths-young-trans-people/</a></p>
 
 <hr>
 <p style="white-space: pre-wrap;">Date: Tue, 30 Jul 2024 13:46:41 +0000 (UTC)
@@ -50,7 +50,7 @@ To: Daniel Zeichner MP
 
 Dear Rt Hon Zeichner,
 
-Thank you for your time and your response. With respect to the Cass Review, I would like to further draw your attention to the damning concerns raised in the briefing by Trans Actual, which you can find here: https://transactual.org.uk/wp-content/uploads/TransActual-Briefing-on-Cass-Review.pdf
+Thank you for your time and your response. With respect to the Cass Review, I would like to further draw your attention to the damning concerns raised in the briefing by Trans Actual, which you can find here: <a href="https://transactual.org.uk/wp-content/uploads/TransActual-Briefing-on-Cass-Review.pdf">https://transactual.org.uk/wp-content/uploads/TransActual-Briefing-on-Cass-Review.pdf</a>
 
 The following two paragraphs, for instance, may be of interest:
 

@@ -95,6 +95,8 @@ format:
       '^-- ?\n.*': ''
       '\n> ?(.*?)\n\n?': '</p><blockquote><p style="white-space: pre-wrap;">\1</p></blockquote><p style="white-space: pre-wrap;">'
       '(?:^$\n)?^(${name})$.*': '\1'
+      '(https?:\/\/[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*))(?<![])])': '<a href="\1">\1</a>'  # https://stackoverflow.com/a/3809435
+
 
     html_body:
       '_________.*': ''
@@ -121,3 +123,7 @@ overrides:
       filters:
         html_body:
           "(?<!<br>)<br>(?!<br>)": "<br><br>"
+
+  njv3bfwwgejogoimuouramof7obzfgqyvmcptkaj54jn6omvii@7cvicg7bv27i:
+    notes: |
+      NB: Based on <a href="https://action.goodlawproject.org/decriminalise-abortion">The Good Law Project's template</a>
