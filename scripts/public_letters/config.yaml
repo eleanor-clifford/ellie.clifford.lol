@@ -45,7 +45,31 @@ rules:
     - "thank you for your email"
 
 format:
-  between: <hr>
+  separator: <hr>
+
+  index:
+    format: |
+      <a href="${href}">
+        <div class="email-item">
+          <div class="email-header">
+            <div class="email-to">${To}</div>
+            <div class="email-date">${Date}</div>
+          </div>
+          <div class="email-subject">${Subject}</div>
+        </div>
+      </a>
+
+    css: |
+      .page { max-width: 600px !important; margin: auto !important; }
+      .page a { color: #f8f8f2 !important; }
+      .page a:hover { color: #bd93f9 !important; }
+
+      .email-item { margin: 20px 0px; }
+      .email-header { display: flex; }
+      .email-date { margin-left: auto }
+      .email-subject { font-weight: 200; font-size: 1.3em; margin-left: 20px; }
+
+    separator: <hr>
 
   format: |
     ${NOTE}
@@ -82,11 +106,18 @@ format:
       '^&nbsp;': ''
       '(^|<br>)(?:<[^>]*>)*(${name})(?:<[^>]*>)*(?:$|<br>).*': '\1\2'
 
-    per_message:
-      CAKGS-Z-=W5iZxgGLeSGiSwYBY81LroU0xbCZc-9JZTz7sy4M5A@mail.gmail.com:
-        "(?<!<br>)<br>(?!<br>)": "<br><br>"
+overrides:
+  rnu5khsogbfzl4zxm7rhgdogjjemkbiz6prtb4q2lubwsr24vs@3jkyrk6w2rer:
+    notes: |
+      NB: brevity was due to 2000 character limit in web form
+    index_subject: On the Data Bill "sex" and "acquired gender" amendment
 
+  lppsxmjdl2e6ngtl6c363eu3qqsaa4ncp5xhvgkioobd3ydvhn@pqvrxbve3hix:
+    notes: |
+      NB: I can't recommend you write like this to your MP, they will just ignore you. But I was angry.
 
-notes:
-  rnu5khsogbfzl4zxm7rhgdogjjemkbiz6prtb4q2lubwsr24vs@3jkyrk6w2rer: |
-    NB: brevity is due to 2000 character limit in web form
+  CAKGS-Z-=W5iZxgGLeSGiSwYBY81LroU0xbCZc-9JZTz7sy4M5A@mail.gmail.com:
+    format:
+      filters:
+        html_body:
+          "(?<!<br>)<br>(?!<br>)": "<br><br>"

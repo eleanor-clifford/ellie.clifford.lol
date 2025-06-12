@@ -43,7 +43,9 @@ Yours sincerely,&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;<br>
 Daniel Zeichner
 </p>
 
-<hr>
+<hr><p><em>NB: I can't recommend you write like this to your MP, they will just ignore you. But I was angry.
+</em></p>
+
 <p style="white-space: pre-wrap;">Date: Wed, 11 Dec 2024 23:30:35 +0000
 From: Eleanor Clifford
 To: Daniel Zeichner MP

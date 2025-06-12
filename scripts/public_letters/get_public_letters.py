@@ -24,6 +24,13 @@ def filter_string(string, filters, flags=0, sub={}):
 	return string
 
 
+def deep_get(d, ks, e=None):
+	ks = list(ks)
+	while len(ks) > 1:
+		d = d.get(ks.pop(0), {})
+	return d.get(ks.pop(), e)
+
+
 def subject_filter(s):
 	return filter_string(s, config["rules"]["subject_filters"], flags=re.I).strip()
 
@@ -40,7 +47,7 @@ def get_wrapped_body(message, filter_sub={}, msgid=None):
 		return Template(config["format"]["plain_body"]).substitute(
 			CONTENT=filter_string(
 				message.get_content(),
-				config["format"]["filters"]["plain_body"] | config["format"]["filters"]["per_message"].get(msgid, {}),
+				config["format"]["filters"]["plain_body"] | deep_get(config, ("overrides", msgid, "format", "filters", "plain_body"), {}),
 				flags=re.M | re.S,
 				sub=filter_sub,
 			).strip(),
@@ -49,7 +56,7 @@ def get_wrapped_body(message, filter_sub={}, msgid=None):
 		return Template(config["format"]["html_body"]).substitute(
 			CONTENT=filter_string(
 				message.get_content(),
-				config["format"]["filters"]["html_body"] | config["format"]["filters"]["per_message"].get(msgid, {}),
+				config["format"]["filters"]["html_body"] | deep_get(config, ("overrides", msgid, "format", "filters", "html_body"), {}),
 				flags=re.M | re.S,
 				sub=filter_sub,
 			).strip(),
@@ -94,6 +101,7 @@ def subject_close_enough(t1, t2):
 	return s1 == s2 and s1.lower() not in config["rules"]["dont_subject_combine"]
 
 
+index = []
 for person in config["people"]:
 	threads = set()
 	for e in person["emails"]:
@@ -124,7 +132,7 @@ for person in config["people"]:
 	for i, msgs in enumerate(msgss):
 		with open(f'http/md/documents/letters/{person["id"]}-{i:02d}.md', "w") as fp:
 			fp.write('```{=html}\n')
-			for i, m in enumerate(msgs):
+			for j, m in enumerate(msgs):
 				def _name(h):
 					return (
 						person["name"] if any([x.lower() in m.header(h).lower() for x in person["emails"]])
@@ -140,12 +148,16 @@ for person in config["people"]:
 
 				would_be_subject = subject_filter(subject(m))
 				MaybeSubject = (
-					f"\nSubject: {subject_filter(subject(m))}"
-					if would_be_subject and (i == 0 or not subject_close_enough(m, msgs[0]))
+					f"\nSubject: {would_be_subject}"
+					if would_be_subject and (j == 0 or not subject_close_enough(m, msgs[0]))
 					else ""
 				)
 
-				note = config["notes"].get(m.messageid)
+				if j == 0:
+					index_subject = deep_get(config, ("overrides", m.messageid, "index_subject")) or would_be_subject
+					index.append((m.date, m.header("date"), To, index_subject, f'{person["id"]}-{i:02d}.html'))
+
+				note = deep_get(config, ("overrides", m.messageid, "notes"))
 				MaybeNote = (
 					Template(config["format"]["note"]).substitute(
 						CONTENT=note,
@@ -162,6 +174,24 @@ for person in config["people"]:
 						Body=get_wrapped_body(m, filter_sub={"name": name_regex}),
 					)
 				)
-				if i < len(msgs) - 1:
-					fp.write(config["format"]["between"])
+				if j < len(msgs) - 1:
+					fp.write(config["format"]["separator"])
 			fp.write('```\n')
+
+with open('http/md/documents/letters/index.md', "w") as fp:
+	fp.write('```{=html}\n')
+	fp.write("<style>" + config["format"]["index"]["css"] + "</style>")
+	for i, (ts, date, to, subject, href) in enumerate(sorted(
+		index,
+		key=lambda t: datetime.fromtimestamp(t[0], timezone.utc),
+		reverse=True,
+	)):
+		fp.write(Template(config["format"]["index"]["format"]).substitute(
+			Date=date,
+			To=to,
+			Subject=subject,
+			href=href,
+		))
+		if i < len(index) - 1:
+			fp.write(config["format"]["index"]["separator"])
+	fp.write('```\n')

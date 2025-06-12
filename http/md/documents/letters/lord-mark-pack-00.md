@@ -1,5 +1,5 @@
 ```{=html}
-<p><em>NB: brevity is due to 2000 character limit in web form
+<p><em>NB: brevity was due to 2000 character limit in web form
 </em></p>
 
 <p style="white-space: pre-wrap;">Date: Wed, 14 May 2025 16:51:36 +0100
