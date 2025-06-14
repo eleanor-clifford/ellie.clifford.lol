@@ -147,7 +147,7 @@ css: |
 </div>
 ```
 
-Armchair philosopher, musician, cypherpunk.
+Armchair philosopher, musician, [cypherpunk](/documents/cypherpunks-manifesto.html).
 
 ::: webring
 
@@ -248,19 +248,22 @@ On technology, power, and tentacled monsters
 :::
 ::: column
 
+## Politics
+
+If you live in the UK, it can be effective to write to politicians,
+particularly your MP. Whenever I do so, [I publish my letter and their
+response(s)](/documents/letters/), which I hope can be useful to you as a
+starting point.
+
 ## Links for tech people
 
-[Services for all at `transgirl.fr`](https://transgirl.fr/){.green-override}
+Services at [`transgirl.fr`](https://transgirl.fr/){.green-override} and [`srcf.net`](https://www.srcf.net/){.cyan-override}
 
-[Services for UniOfCam people at `srcf.net`](https://www.srcf.net/){.cyan-override}
+[Dracula Theme Gallery](/dracula/){.purple-override}
 
-[Dracula theme gallery](/dracula/){.purple-override}
-
-[Miscellaneous projects](https://sr.ht/~ecc/){.pink-override}
+[Miscellaneous Projects](https://sr.ht/~ecc/){.pink-override}
 
 [My Technology Usage Manifesto](/documents/technology-usage-manifesto.html){.orange-override}
-
-[A Cypherpunk's Manifesto (by Eric Hughes)](/documents/cypherpunks-manifesto.html){.yellow-override}
 
 :::
 :::

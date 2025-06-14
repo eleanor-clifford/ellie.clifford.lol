@@ -1,13 +1,26 @@
+This is an archive of every letter/email I have written to politicians
+and the responses to them. You are free to use any of my works as a
+starting point for your own letters, without attribution.
+
+[If you live in the UK, you can find the contact details of your MP here.](https://members.parliament.uk/FindYourMP)
+
+_Please note: although I have published the responses to my letters as a
+matter of public interest, the authors retain all copyright rights over
+them._
+
 ```{=html}
+<div class="emails">
+<hr>
 <style>.page { max-width: 600px !important; margin: auto !important; }
-.page a { color: #f8f8f2 !important; }
-.page a:hover { color: #bd93f9 !important; }
+.emails a { color: #f8f8f2 !important; }
+.emails a:hover { color: #bd93f9 !important; }
 
 .email-item { margin: 20px 0px; }
 .email-header { display: flex; }
 .email-date { margin-left: auto }
 .email-subject { font-weight: 200; font-size: 1.3em; margin-left: 20px; }
-</style><a href="daniel-zeichner-mp-03.html">
+</style>
+<a href="daniel-zeichner-mp-03.html">
   <div class="email-item">
     <div class="email-header">
       <div class="email-to">Daniel Zeichner MP</div>
@@ -30,15 +43,6 @@
     <div class="email-header">
       <div class="email-to">Dr Beccy Cooper MP</div>
       <div class="email-date">Wed, 7 May 2025 23:19:37 +0100</div>
-    </div>
-    <div class="email-subject">My human rights under the ECHR have been violated. As my MP, will you stand up for me?</div>
-  </div>
-</a>
-<hr><a href="joe-powell-mp-00.html">
-  <div class="email-item">
-    <div class="email-header">
-      <div class="email-to">Joe Powell MP</div>
-      <div class="email-date">Wed, 7 May 2025 23:09:45 +0100</div>
     </div>
     <div class="email-subject">My human rights under the ECHR have been violated. As my MP, will you stand up for me?</div>
   </div>
@@ -70,4 +74,7 @@
     <div class="email-subject">I urge you to oppose the ban on puberty blockers</div>
   </div>
 </a>
+
+<hr>
+</div>
 ```

@@ -17,11 +17,11 @@ people:
       - beccy.cooper.mp@parliament.uk
       - casework@drbeccycooper.co.uk
 
-  - id: joe-powell-mp
-    name: Joe Powell MP
-    name_regex: (Mr )?Joe Powell( MP)?
-    emails:
-      - joe.powell.mp@parliament.uk
+  #- id: joe-powell-mp
+    #name: Joe Powell MP
+    #name_regex: (Mr )?Joe Powell( MP)?
+    #emails:
+      #- joe.powell.mp@parliament.uk
 
   - id: lord-mark-pack
     name: Lord Mark Pack
@@ -48,6 +48,34 @@ format:
   separator: <hr>
 
   index:
+    outer: |
+      This is an archive of every letter/email I have written to politicians
+      and the responses to them. You are free to use any of my works as a
+      starting point for your own letters, without attribution.
+
+      [If you live in the UK, you can find the contact details of your MP here.](https://members.parliament.uk/FindYourMP)
+
+      _Please note: although I have published the responses to my letters as a
+      matter of public interest, the authors retain all copyright rights over
+      them._
+
+      ```{=html}
+      <div class="emails">
+      <hr>
+      ${CONTENT}
+      <hr>
+      </div>
+      ```
+    css: |
+      .page { max-width: 600px !important; margin: auto !important; }
+      .emails a { color: #f8f8f2 !important; }
+      .emails a:hover { color: #bd93f9 !important; }
+
+      .email-item { margin: 20px 0px; }
+      .email-header { display: flex; }
+      .email-date { margin-left: auto }
+      .email-subject { font-weight: 200; font-size: 1.3em; margin-left: 20px; }
+
     format: |
       <a href="${href}">
         <div class="email-item">
@@ -58,16 +86,6 @@ format:
           <div class="email-subject">${Subject}</div>
         </div>
       </a>
-
-    css: |
-      .page { max-width: 600px !important; margin: auto !important; }
-      .page a { color: #f8f8f2 !important; }
-      .page a:hover { color: #bd93f9 !important; }
-
-      .email-item { margin: 20px 0px; }
-      .email-header { display: flex; }
-      .email-date { margin-left: auto }
-      .email-subject { font-weight: 200; font-size: 1.3em; margin-left: 20px; }
 
     separator: <hr>
 

@@ -178,20 +178,22 @@ for person in config["people"]:
 					fp.write(config["format"]["separator"])
 			fp.write('```\n')
 
+inner = "<style>" + config["format"]["index"]["css"] + "</style>\n"
+for i, (ts, date, to, subject, href) in enumerate(sorted(
+	index,
+	key=lambda t: datetime.fromtimestamp(t[0], timezone.utc),
+	reverse=True,
+)):
+	inner += Template(config["format"]["index"]["format"]).substitute(
+		Date=date,
+		To=to,
+		Subject=subject,
+		href=href,
+	)
+	if i < len(index) - 1:
+		inner += config["format"]["index"]["separator"]
+
 with open('http/md/documents/letters/index.md', "w") as fp:
-	fp.write('```{=html}\n')
-	fp.write("<style>" + config["format"]["index"]["css"] + "</style>")
-	for i, (ts, date, to, subject, href) in enumerate(sorted(
-		index,
-		key=lambda t: datetime.fromtimestamp(t[0], timezone.utc),
-		reverse=True,
-	)):
-		fp.write(Template(config["format"]["index"]["format"]).substitute(
-			Date=date,
-			To=to,
-			Subject=subject,
-			href=href,
-		))
-		if i < len(index) - 1:
-			fp.write(config["format"]["index"]["separator"])
-	fp.write('```\n')
+	fp.write(Template(config["format"]["index"]["outer"]).substitute(
+		CONTENT=inner,
+	))
