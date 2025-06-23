@@ -154,8 +154,8 @@ Armchair philosopher, musician, [cypherpunk](/documents/cypherpunks-manifesto.ht
 ## <span>🏳️‍🌈</span><span style="margin: 0 0.5em">Be crime do gay webring</span><span>🏳️‍⚧️</span>
 
 ::: webring-links
-<a href="/cgi-bin/webrings/be_crime_do_gay.py?side=left">← Go left</a>
-<a href="/cgi-bin/webrings/be_crime_do_gay.py?side=right">Go right →</a>
+<a id="bcdg-left"  href="/cgi-bin/webrings/be_crime_do_gay.py?side=left">← Go left</a>
+<a id="bcdg-right" href="/cgi-bin/webrings/be_crime_do_gay.py?side=right">Go right →</a>
 :::
 
 ::: webring-disclaimer
