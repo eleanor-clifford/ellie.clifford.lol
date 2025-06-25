@@ -18,7 +18,7 @@ Eleanor</p>
 <p style="white-space: pre-wrap;">Date: Wed, 11 Dec 2024 16:31:59 +0000 (UTC)
 From: Daniel Zeichner MP
 To: Eleanor Clifford</p><p>
-Dear Eleanor,&nbsp;<br>
+Dear Eleanor,<br>
 <br>
 Thank you for contacting me about puberty blockers. I understand your concerns and I thank you for sharing your views.<br>
 <br>

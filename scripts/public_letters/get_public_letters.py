@@ -101,6 +101,16 @@ def subject_close_enough(t1, t2):
 	return s1 == s2 and s1.lower() not in config["rules"]["dont_subject_combine"]
 
 
+def manually_linked(t1, t2):
+	for related in config["related"]:
+		for m1 in t1:
+			for m2 in t2:
+				if m1.messageid in related and m2.messageid in related:
+					return True
+
+	return False
+
+
 index = []
 for person in config["people"]:
 	threads = set()
@@ -113,7 +123,8 @@ for person in config["people"]:
 			for other_thread in other_threads:
 				if (
 					time_close_enough(thread, other_thread) or
-					subject_close_enough(thread, other_thread)
+					subject_close_enough(thread, other_thread) or
+					manually_linked(thread, other_thread)
 				):
 					thread_pools[i].append(thread)
 					break

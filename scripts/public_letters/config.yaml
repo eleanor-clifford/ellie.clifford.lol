@@ -17,11 +17,11 @@ people:
       - beccy.cooper.mp@parliament.uk
       - casework@drbeccycooper.co.uk
 
-  #- id: joe-powell-mp
-    #name: Joe Powell MP
-    #name_regex: (Mr )?Joe Powell( MP)?
-    #emails:
-      #- joe.powell.mp@parliament.uk
+  - id: joe-powell-mp
+    name: Joe Powell MP
+    name_regex: (Mr )?Joe Powell( MP)?
+    emails:
+      - joe.powell.mp@parliament.uk
 
   - id: lord-mark-pack
     name: Lord Mark Pack
@@ -121,8 +121,8 @@ format:
       '<([^<>]*)style="[^"]*"': '<\1'
       "<([^<>]*)style='[^']*'": '<\1'
       #'<div class="signature-container">([^<]*).*': '\1'
-      '</?div[^>]*>': ''
-      '&nbsp;$': ''
+      '</?(div|img)[^>]*>': ''
+      '&nbsp;(?=$|<br)': ''
       '^&nbsp;': ''
       '(^|<br>)(?:<[^>]*>)*(${name})(?:<[^>]*>)*(?:$|<br>).*': '\1\2'
 
@@ -145,3 +145,13 @@ overrides:
   njv3bfwwgejogoimuouramof7obzfgqyvmcptkaj54jn6omvii@7cvicg7bv27i:
     notes: |
       NB: Based on <a href="https://action.goodlawproject.org/decriminalise-abortion">The Good Law Project's template</a>
+
+  l75xGoxMRteDWvKvdn5I5Q@geopod-ismtpd-13:
+    format:
+      filters:
+        html_body:
+          '(<em>Joe</em>).*': '\1'
+
+related:
+  - - okiiclswbfv3xgedmbrm3mv4oiby7kmbv75wrr2hixnk52niuf@itret26teu7g
+    - l75xGoxMRteDWvKvdn5I5Q@geopod-ismtpd-13

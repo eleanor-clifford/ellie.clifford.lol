@@ -24,19 +24,19 @@ Eleanor
 <p style="white-space: pre-wrap;">Date: Tue, 30 Jul 2024 13:46:41 +0000 (UTC)
 From: Daniel Zeichner MP
 To: Eleanor Clifford</p><p>
-Dear Eleanor,&nbsp;<br>
+Dear Eleanor,<br>
 <br>
-Thank you for contacting me about puberty blockers.&nbsp;<br>
+Thank you for contacting me about puberty blockers.<br>
 <br>
-The Health Secretary has acknowledged anxieties about the decision to continue the ban on the prescription of puberty blockers for the treatment of gender dysphoria, as well as reaffirming his commitment to improve the quality of, and access to, healthcare for trans people.&nbsp;<br>
+The Health Secretary has acknowledged anxieties about the decision to continue the ban on the prescription of puberty blockers for the treatment of gender dysphoria, as well as reaffirming his commitment to improve the quality of, and access to, healthcare for trans people.<br>
 <br>
 He laid out that the decision was taken as the Cass Review found there was not enough evidence&nbsp;about the long-term impact of puberty blockers for gender incongruence to know whether they are safe or not, nor which children might benefit from them.<br>
 <br>
-The Health Secretary has said that he is treading cautiously in this area, as he believe the safety of children must come first.&nbsp;<br>
+The Health Secretary has said that he is treading cautiously in this area, as he believe the safety of children must come first.<br>
 <br>
-I assure you I will take into account the points you have raised and pass them along to colleagues.&nbsp;<br>
+I assure you I will take into account the points you have raised and pass them along to colleagues.<br>
 <br>
-Thank you again for contacting me.&nbsp;<br>
+Thank you again for contacting me.<br>
 <br>
 Best wishes,<br>
 

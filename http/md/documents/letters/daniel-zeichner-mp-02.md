@@ -27,7 +27,7 @@ Dear Eleanor,<br>
 <br>
 I hope you are keeping well. Thank you for getting in touch with me regarding your detailed views regarding the recent Supreme Court ruling and trans rights.&nbsp;I take all feedback received from my constituents very seriously, and I am grateful to you for taking the time to share your views with me, especially as a trans woman.<br>
 <br>
-I deeply appreciate the time which you have taken to express your perspective on the current law and guidance. As you are aware, on 16 April, the Supreme Court ruled that sex in the Equality Act means biological sex, meaning a person will be considered as their biological sex for the purposes of the Act, whether they have a Gender Recognition Certificate or not. While the Supreme Court was clear about the importance of biological sex, it also stressed that trans people do retain clear protections in law and should be able to live their lives free of harassment and discrimination.&nbsp;<br>
+I deeply appreciate the time which you have taken to express your perspective on the current law and guidance. As you are aware, on 16 April, the Supreme Court ruled that sex in the Equality Act means biological sex, meaning a person will be considered as their biological sex for the purposes of the Act, whether they have a Gender Recognition Certificate or not. While the Supreme Court was clear about the importance of biological sex, it also stressed that trans people do retain clear protections in law and should be able to live their lives free of harassment and discrimination.<br>
 <br>
 You will also know that the EHRC has since issued interim guidance.&nbsp;The EHRC is a non-departmental public body independent from the Government. I understand that the guidance has caused concern and certainty, especially to members of the trans community. The guidance remains under review by the Government and a consultation is expected to be launched in May.&nbsp;While I await further clarification over this, I would like to reassure you of my ongoing commitment to supporting the rights of&nbsp;trans people, women, people with protected characteristics, and the most vulnerable in our society.<br>
 <br>
@@ -76,7 +76,7 @@ Thank you very much for taking the time to reply to my message. I am grateful to
 <br>
 Please do not hesitate to get back in touch if I can be of assistance with any other matter.<br>
 <br>
-Best wishes,&nbsp;<br>
+Best wishes,<br>
 
 Daniel Zeichner
 </p>

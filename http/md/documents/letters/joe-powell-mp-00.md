@@ -1,11 +1,11 @@
 ```{=html}
 
-<p style="white-space: pre-wrap;">Date: Wed, 7 May 2025 23:19:37 +0100
+<p style="white-space: pre-wrap;">Date: Wed, 7 May 2025 23:09:45 +0100
 From: Eleanor Clifford
-To: Dr Beccy Cooper MP
+To: Joe Powell MP
 Subject: My human rights under the ECHR have been violated. As my MP, will you stand up for me?
 
-Dear Dr Beccy Cooper,
+Dear Joe Powell,
 
 I write to you as your constituent, but also as a woman who is shocked and afraid, a woman who has been forced to watch as her fundamental human rights are steadily dismantled. Our continuing trajectory as a country has now become so bleak that I have had to begin preparing contingency plans to flee elsewhere in Europe.
 
@@ -31,32 +31,28 @@ Yours sincerely,
 Eleanor Clifford</p>
 
 <hr>
-<p style="white-space: pre-wrap;">Date: Fri, 09 May 2025 14:05:13 +0000 (UTC)
-From: Dr Beccy Cooper MP
+<p style="white-space: pre-wrap;">Date: Tue, 24 Jun 2025 14:24:14 +0000 (UTC)
+From: Joe Powell MP
 To: Eleanor Clifford
-Subject: Concern around the Supreme Court Ruling implications on Transgender rights</p><p>
-Dear Eleanor,<br />
+Subject: Response from Office of Joe Powell MP</p><p>
+<span >Dear Eleanor Clifford,</span><br />
+<span ><br />
+Thank you for writing to me about this important and sensitive issue.<br />
 <br />
-Thank you much for getting in touch with me about the recent Supreme Court ruling on transgender rights. I really appreciate you taking the time to share your thoughts.<br />
+The Data (Use and Access) Bill sets out a framework for digital verification services, allowing people to securely share trusted information online. New Clause 21, proposed by the Opposition, would have required public bodies to record sex as biological sex where such data is collected.<br />
 <br />
-This judgement has understandably caused a great deal of concern. I want to say very clearly to our trans, non-binary and intersex community that I hear your anxiety and distress. I know this ruling has thrown many parts of daily life into uncertainty, particularly around access to safe and inclusive services and spaces.<br />
+I did not support this amendment, and it was not added to the Bill. The Government also opposed it, expressing concern that it would go beyond the scope of a recent Supreme Court ruling by allowing the Secretary of State to define sex as biological in all contexts.<br />
 <br />
-Although the judgement clarified the legal interpretation of certain wording in the Equality Act, it has also highlighted the need for greater clarity and protection for trans people. The Equality Act is there to safeguard people from discrimination and harassment, and that principle must be upheld. However, I am deeply concerned that the update issued by the Equality and Human Rights Commission could make it harder for trans people to access the services and support they need to live safely and with dignity.<br />
+During the debate, Ministers made clear that the Bill does not change how sex or gender can be evidenced. It simply allows people to present the same information digitally that they can already present physically. These services are expected to be used mainly for things like proving age, address, or qualifications&mdash;areas where sex or gender is generally not relevant.<br />
 <br />
-I completely oppose any policy that excludes people from public spaces based on their gender identity. These approaches do not make anyone safer. Instead, they create fear and division, and can do serious harm to trans people as well as to others who do not conform to traditional gender expectations.<br />
+The Government has also confirmed that it does not intend to bring forward similar legislation in the future.<br />
+I want to be clear that I believe trans people deserve to be treated with dignity, compassion, and respect. While the Supreme Court ruling emphasized the legal importance of biological sex in certain contexts, it also reaffirmed that trans people are protected under the law and should be able to live free from discrimination and harassment.<br />
 <br />
-On Wednesday, I voted <strong>against </strong>an amendment to the Data Protection and Digital Information Bill which would have required all public bodies to record individuals&rsquo; sex based solely on &ldquo;biological sex&rdquo; or &ldquo;sex assigned at birth.&rdquo;<br />
+Thank you again for taking the time to share your views. I appreciate hearing from you.<br />
 <br />
-For me, this is about dignity, respect and basic safety. Everyone should be able to go about their daily lives without fear of being excluded or singled out. I will always speak up for inclusive policies, and support any steps that strengthen rights and protections for trans people. I would be keen to see new legislation brought forward which enshrines these rights in a clearer way.<br />
+With best wishes,<br />
 <br />
-If you or someone you know has faced discrimination or exclusion as a result of gender identity, please do get in touch with my office. My team and I will do everything we can to support you. I would also encourage local trans people to connect with organisations such as <a href="https://sussextranscendence.co.uk/">Sussex Transcendence</a> and The <a href="https://clareproject.org.uk/">Clare Project</a>, who do excellent work in this area.<br />
-<br />
-As your MP, I will continue listening closely to the experiences of trans people and I will keep pushing for a fairer, more compassionate approach. I&rsquo;ll also push for conversations at government level that reflect values of compassion, equality and respect.<br />
-<br />
-Thank you again for writing to me about this incredibly important issue.<br />
-
-Best wishes,<br />
-Dr Beccy Cooper MP
+<em>Joe</em>
 </p>
 
 ```
