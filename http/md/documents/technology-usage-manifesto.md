@@ -195,15 +195,15 @@ similar goals to their internal practices.
 
 ## Addendum: current changes that need to be made
 
-| Software                        | Replacement                                  |
-|---------------------------------|----------------------------------------------|
-| ✅ Audio Consumption (Spotify)  | Torrents? CD ripping? mp3 purchasing?        |
-| ✅ YouTube                      | ~~Selfhosted~~ Invidious or CloudTube        |
-| Traditional TV/movies           | Torrents? Blu-ray ripping?                   |
-| ✅ Cloud Storage (backup)       | Borg + Backblaze and local storage           |
-| ✅ Cloud Storage (continuous)   | VPS/equivalent + E2E encryption + SFTP       |
-| Gaming                          | Public metadata + containerised Steam? Hmm.  |
-| ✅ MessageEase keyboard         | ~~Build my own~~ use qwerty and be sad       |
-| DnD beyond                      | Find alternative? Build my own? Use paper?   |
-| ✅ Google Photos                | Just use SFTP-backed folders lol             |
-| Social media                    | Just don't use? Fediverse stuff? Probably empty account and use FOSS frontend selfhosted with authentication of my account (is this possible? probably...) |
+| Software                     | Solved      | Current Replacement                                                       |
+|------------------------------|-------------|---------------------------------------------------------------------------|
+| Audio Consumption (Spotify)  | ✅ 2022-12  | ~~CD ripping? direct purchasing?~~ Rip from Spotify into custom system    |
+| Traditional TV/movies        | ✅ 2024-08  | Rip from various places into custom system                                |
+| YouTube                      | ✅ 2024-08  | Selfhosted CloudTube plus rip from YouTube and Nebula into custom system  |
+| Cloud Storage (backup)       | ✅ 2022-04  | Borg + NAS + replication to Backblaze                                     |
+| Cloud Storage (continuous)   | ✅ 2023-01  | ~~VPS/equivalent + E2E encryption +~~ NAS + SFTP/NFS                      |
+| Gaming                       |             | Public metadata + containerised Steam? Hmm.                               |
+| MessageEase keyboard         | ✅ 2023-01  | ~~Build my own~~ use qwerty and be sad                                    |
+| DnD beyond                   | ✅ 2022-04  | ~~Find alternative? Build my own?~~ Use paper                             |
+| Google Photos                | ✅ 2022-04  | just folders on NAS lol                                                   |
+| Social media                 | ✅ 2025-01  | ~~Just don't use? Fediverse stuff? Selfhosted FOSS frontend?~~ Minimise use for consumption, make all posts public |
