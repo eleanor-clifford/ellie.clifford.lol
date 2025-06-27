@@ -45,10 +45,12 @@ rules:
     - "thank you for your email"
 
 format:
-  separator: <hr>
-
   index:
     outer: |
+      ---
+      color: purple
+      ---
+
       This is an archive of every letter/email I have written to politicians
       and the responses to them. You are free to use any of my works as a
       starting point for your own letters, without attribution.
@@ -60,23 +62,14 @@ format:
       them._
 
       ```{=html}
+      <style>${CSS}</style>
       <div class="emails">
       <hr>
       ${CONTENT}
       <hr>
       </div>
       ```
-    css: |
-      .page { max-width: 600px !important; margin: auto !important; }
-      .emails a { color: #f8f8f2 !important; }
-      .emails a:hover { color: #bd93f9 !important; }
-
-      .email-item { margin: 20px 0px; }
-      .email-header { display: flex; }
-      .email-date { margin-left: auto }
-      .email-subject { font-weight: 200; font-size: 1.3em; margin-left: 20px; }
-
-    format: |
+    item: |
       <a href="${href}">
         <div class="email-item">
           <div class="email-header">
@@ -89,42 +82,72 @@ format:
 
     separator: <hr>
 
-  format: |
-    ${NOTE}
-    <p style="white-space: pre-wrap;">Date: ${Date}
-    From: ${From}
-    To: ${To}${MaybeSubject}${Body}
+    css: |
+      .page { max-width: 600px !important; margin: auto !important; }
+      .emails a { color: #f8f8f2 !important; }
+      .emails a:hover { color: #bd93f9 !important; }
 
-  note: |
-    <p><em>${CONTENT}</em></p>
+      .email-item { margin: 20px 0px; }
+      .email-header { display: flex; }
+      .email-date { margin-left: auto }
+      .email-subject { font-weight: 200; font-size: 1.3em; margin-left: 20px; }
 
-  plain_body: |
+  letter:
+    outer: |
+      ---
+      color: purple
+      ---
+
+      ```{=html}
+      <style>${CSS}</style>
+      <div class="letters-return">
+        <h2><a href="/documents/letters/">↩︎ Other letters</a></h2>
+      </div>
+      ${CONTENT}
+      ```
+
+    item: |
+      ${NOTE}
+      <p style="white-space: pre-wrap;">Date: ${Date}
+      From: ${From}
+      To: ${To}${MaybeSubject}${Body}
+
+    note: |
+      <p><em>${CONTENT}</em></p>
+
+    separator: <hr>
+
+    css: |
+      .letters-return { margin: 20px 0px; }
+
+    plain_body: |
 
 
-    ${CONTENT}</p>
+      ${CONTENT}</p>
 
-  html_body: |
-    </p><p>
-    ${CONTENT}
-    </p>
+    html_body: |
+      </p><p>
+      ${CONTENT}
+      </p>
 
-  filters:
-    plain_body:
-      '^-- ?\n.*': ''
-      '\n> ?(.*?)\n\n?': '</p><blockquote><p style="white-space: pre-wrap;">\1</p></blockquote><p style="white-space: pre-wrap;">'
-      '(?:^$\n)?^(${name})$.*': '\1'
-      '(https?:\/\/[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*))(?<![])])': '<a href="\1">\1</a>'  # https://stackoverflow.com/a/3809435
+    filters:
+      plain_body:
+        '^-- ?\n.*': ''
+        '\n> ?(.*?)\n\n?': '</p><blockquote><p style="white-space: pre-wrap;">\1</p></blockquote><p style="white-space: pre-wrap;">'
+        '(?:^$\n)?^(${name})$.*': '\1'
+        '(https?:\/\/[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*))(?<![])])': '<a href="\1">\1</a>'  # https://stackoverflow.com/a/3809435
 
 
-    html_body:
-      '_________.*': ''
-      '<([^<>]*)style="[^"]*"': '<\1'
-      "<([^<>]*)style='[^']*'": '<\1'
-      #'<div class="signature-container">([^<]*).*': '\1'
-      '</?(div|img)[^>]*>': ''
-      '&nbsp;(?=$|<br)': ''
-      '^&nbsp;': ''
-      '(^|<br>)(?:<[^>]*>)*(${name})(?:<[^>]*>)*(?:$|<br>).*': '\1\2'
+      html_body:
+        '_________.*': ''
+        '<([^<>]*)style="[^"]*"': '<\1'
+        "<([^<>]*)style='[^']*'": '<\1'
+        #'<div class="signature-container">([^<]*).*': '\1'
+        '</?(div|img)[^>]*>': ''
+        '&nbsp;(?=$|<br)': ''
+        '^&nbsp;': ''
+        '(^|<br>)(?:<[^>]*>)*(${name})(?:<[^>]*>)*(?:$|<br>).*': '\1\2'
+
 
 overrides:
   rnu5khsogbfzl4zxm7rhgdogjjemkbiz6prtb4q2lubwsr24vs@3jkyrk6w2rer:
@@ -138,9 +161,10 @@ overrides:
 
   CAKGS-Z-=W5iZxgGLeSGiSwYBY81LroU0xbCZc-9JZTz7sy4M5A@mail.gmail.com:
     format:
-      filters:
-        html_body:
-          "(?<!<br>)<br>(?!<br>)": "<br><br>"
+      letter:
+        filters:
+          html_body:
+            "(?<!<br>)<br>(?!<br>)": "<br><br>"
 
   njv3bfwwgejogoimuouramof7obzfgqyvmcptkaj54jn6omvii@7cvicg7bv27i:
     notes: |
@@ -148,9 +172,10 @@ overrides:
 
   l75xGoxMRteDWvKvdn5I5Q@geopod-ismtpd-13:
     format:
-      filters:
-        html_body:
-          '(<em>Joe</em>).*': '\1'
+      letter:
+        filters:
+          html_body:
+            '(<em>Joe</em>).*': '\1'
 
 related:
   - - okiiclswbfv3xgedmbrm3mv4oiby7kmbv75wrr2hixnk52niuf@itret26teu7g

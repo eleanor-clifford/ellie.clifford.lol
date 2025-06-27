@@ -1,4 +1,13 @@
+---
+color: purple
+---
+
 ```{=html}
+<style>.letters-return { margin: 20px 0px; }
+</style>
+<div class="letters-return">
+  <h2><a href="/documents/letters/">↩︎ Other letters</a></h2>
+</div>
 <p><em>NB: brevity was due to 2000 character limit in web form
 </em></p>
 
@@ -28,5 +37,6 @@ From: Lord Mark Pack
 To: Eleanor Clifford</p><p>
 Dear Eleanor,<br><br>Thank you for taking the time to get in touch and setting out your concerns so clearly.<br><br>I hope it is reassuring to explain that had the measure come to a vote again in the Lords, our group would have been whipped to join the government in voting it down. That did not happen because the proposers of the amendment saw defeat coming and decided not to push it again.<br><br>I can appreciate a little, I hope, how the party&#39;s approach on earlier stages could have caused you and other people concerns. They were though the necessary part of getting to being ready to officially oppose it at what would have been the crunch vote, which I hope is therefore reassuring.<br><br>Best wishes,<br><br>Mark
 </p>
+
 
 ```

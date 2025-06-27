@@ -1,4 +1,13 @@
+---
+color: purple
+---
+
 ```{=html}
+<style>.letters-return { margin: 20px 0px; }
+</style>
+<div class="letters-return">
+  <h2><a href="/documents/letters/">↩︎ Other letters</a></h2>
+</div>
 
 <p style="white-space: pre-wrap;">Date: Wed, 11 Dec 2024 14:28:20 +0000
 From: Eleanor Clifford
@@ -62,5 +71,6 @@ I take issue with several specific points in your reply, which I will respond to
 
 Yours Sincerely,
 Eleanor</p>
+
 
 ```

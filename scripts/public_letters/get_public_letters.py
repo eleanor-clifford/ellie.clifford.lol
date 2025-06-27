@@ -44,19 +44,25 @@ def get_wrapped_body(message, filter_sub={}, msgid=None):
 	if t.startswith("multipart/"):
 		return get_wrapped_body(message.get_body(), filter_sub=filter_sub, msgid=msgid)
 	elif t == "text/plain":
-		return Template(config["format"]["plain_body"]).substitute(
+		return Template(config["format"]["letter"]["plain_body"]).substitute(
 			CONTENT=filter_string(
 				message.get_content(),
-				config["format"]["filters"]["plain_body"] | deep_get(config, ("overrides", msgid, "format", "filters", "plain_body"), {}),
+				(
+					config["format"]["letter"]["filters"]["plain_body"]
+					| deep_get(config, ("overrides", msgid, "format", "letter", "filters", "plain_body"), {})
+				),
 				flags=re.M | re.S,
 				sub=filter_sub,
 			).strip(),
 		)
 	elif t == "text/html":
-		return Template(config["format"]["html_body"]).substitute(
+		return Template(config["format"]["letter"]["html_body"]).substitute(
 			CONTENT=filter_string(
 				message.get_content(),
-				config["format"]["filters"]["html_body"] | deep_get(config, ("overrides", msgid, "format", "filters", "html_body"), {}),
+				(
+					config["format"]["letter"]["filters"]["html_body"]
+					| deep_get(config, ("overrides", msgid, "format", "letter", "filters", "html_body"), {})
+				),
 				flags=re.M | re.S,
 				sub=filter_sub,
 			).strip(),
@@ -141,70 +147,73 @@ for person in config["people"]:
 	msgss = [m for m in msgss if len(m) > 0]
 
 	for i, msgs in enumerate(msgss):
+		content = ""
+		for j, m in enumerate(msgs):
+			def _name(h):
+				return (
+					person["name"] if any([x.lower() in m.header(h).lower() for x in person["emails"]])
+					else config["me"]["name"]
+				)
+
+			From = _name("from")
+			To = _name("to")
+			assert sum(int(x == config["me"]["name"]) for x in (From, To)) == 1
+
+			from_me = From == config["me"]["name"]
+			name_regex = config["me"]["name_regex"] if from_me else person["name_regex"]
+
+			would_be_subject = subject_filter(subject(m))
+			MaybeSubject = (
+				f"\nSubject: {would_be_subject}"
+				if would_be_subject and (j == 0 or not subject_close_enough(m, msgs[0]))
+				else ""
+			)
+
+			if j == 0:
+				index_subject = deep_get(config, ("overrides", m.messageid, "index_subject")) or would_be_subject
+				index.append((m.date, m.header("date"), To, index_subject, f'{person["id"]}-{i:02d}.html'))
+
+			note = deep_get(config, ("overrides", m.messageid, "notes"))
+			MaybeNote = (
+				Template(config["format"]["letter"]["note"]).substitute(
+					CONTENT=note,
+				) if note else ""
+			)
+
+			content += Template(config["format"]["letter"]["item"]).substitute(
+				NOTE=MaybeNote,
+				Date=m.header("date"),
+				From=From,
+				To=To,
+				MaybeSubject=MaybeSubject,
+				Body=get_wrapped_body(m, filter_sub={"name": name_regex}),
+			)
+			if j < len(msgs) - 1:
+				content += config["format"]["letter"]["separator"]
+
 		with open(f'http/md/documents/letters/{person["id"]}-{i:02d}.md', "w") as fp:
-			fp.write('```{=html}\n')
-			for j, m in enumerate(msgs):
-				def _name(h):
-					return (
-						person["name"] if any([x.lower() in m.header(h).lower() for x in person["emails"]])
-						else config["me"]["name"]
-					)
+			fp.write(Template(config["format"]["letter"]["outer"]).substitute(
+				CONTENT=content,
+				CSS=config["format"]["letter"]["css"],
+			))
 
-				From = _name("from")
-				To = _name("to")
-				assert sum(int(x == config["me"]["name"]) for x in (From, To)) == 1
-
-				from_me = From == config["me"]["name"]
-				name_regex = config["me"]["name_regex"] if from_me else person["name_regex"]
-
-				would_be_subject = subject_filter(subject(m))
-				MaybeSubject = (
-					f"\nSubject: {would_be_subject}"
-					if would_be_subject and (j == 0 or not subject_close_enough(m, msgs[0]))
-					else ""
-				)
-
-				if j == 0:
-					index_subject = deep_get(config, ("overrides", m.messageid, "index_subject")) or would_be_subject
-					index.append((m.date, m.header("date"), To, index_subject, f'{person["id"]}-{i:02d}.html'))
-
-				note = deep_get(config, ("overrides", m.messageid, "notes"))
-				MaybeNote = (
-					Template(config["format"]["note"]).substitute(
-						CONTENT=note,
-					) if note else ""
-				)
-
-				fp.write(
-					Template(config["format"]["format"]).substitute(
-						NOTE=MaybeNote,
-						Date=m.header("date"),
-						From=From,
-						To=To,
-						MaybeSubject=MaybeSubject,
-						Body=get_wrapped_body(m, filter_sub={"name": name_regex}),
-					)
-				)
-				if j < len(msgs) - 1:
-					fp.write(config["format"]["separator"])
-			fp.write('```\n')
-
-inner = "<style>" + config["format"]["index"]["css"] + "</style>\n"
+content = ""
 for i, (ts, date, to, subject, href) in enumerate(sorted(
 	index,
 	key=lambda t: datetime.fromtimestamp(t[0], timezone.utc),
 	reverse=True,
 )):
-	inner += Template(config["format"]["index"]["format"]).substitute(
+	content += Template(config["format"]["index"]["item"]).substitute(
 		Date=date,
 		To=to,
 		Subject=subject,
 		href=href,
 	)
 	if i < len(index) - 1:
-		inner += config["format"]["index"]["separator"]
+		content += config["format"]["index"]["separator"]
 
 with open('http/md/documents/letters/index.md', "w") as fp:
 	fp.write(Template(config["format"]["index"]["outer"]).substitute(
-		CONTENT=inner,
+		CONTENT=content,
+		CSS=config["format"]["index"]["css"],
 	))

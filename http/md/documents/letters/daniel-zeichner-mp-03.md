@@ -1,4 +1,13 @@
+---
+color: purple
+---
+
 ```{=html}
+<style>.letters-return { margin: 20px 0px; }
+</style>
+<div class="letters-return">
+  <h2><a href="/documents/letters/">↩︎ Other letters</a></h2>
+</div>
 <p><em>NB: Based on <a href="https://action.goodlawproject.org/decriminalise-abortion">The Good Law Project's template</a>
 </em></p>
 
@@ -47,5 +56,6 @@ Yours sincerely,<br />
 
 Daniel Zeichner
 </p>
+
 
 ```

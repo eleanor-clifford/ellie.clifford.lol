@@ -1,4 +1,13 @@
+---
+color: purple
+---
+
 ```{=html}
+<style>.letters-return { margin: 20px 0px; }
+</style>
+<div class="letters-return">
+  <h2><a href="/documents/letters/">↩︎ Other letters</a></h2>
+</div>
 
 <p style="white-space: pre-wrap;">Date: Wed, 7 May 2025 23:19:37 +0100
 From: Eleanor Clifford
@@ -58,5 +67,6 @@ Thank you again for writing to me about this incredibly important issue.<br />
 Best wishes,<br />
 Dr Beccy Cooper MP
 </p>
+
 
 ```

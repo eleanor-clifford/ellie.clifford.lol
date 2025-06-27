@@ -1,4 +1,13 @@
+---
+color: purple
+---
+
 ```{=html}
+<style>.letters-return { margin: 20px 0px; }
+</style>
+<div class="letters-return">
+  <h2><a href="/documents/letters/">↩︎ Other letters</a></h2>
+</div>
 
 <p style="white-space: pre-wrap;">Date: Wed, 17 Jul 2024 19:58:51 +0100
 From: Eleanor Clifford
@@ -62,5 +71,6 @@ The full briefing contains yet more strong evidence that the Cass Review simply 
 
 Yours sincerely,
 Eleanor</p>
+
 
 ```

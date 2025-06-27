@@ -1,4 +1,13 @@
+---
+color: purple
+---
+
 ```{=html}
+<style>.letters-return { margin: 20px 0px; }
+</style>
+<div class="letters-return">
+  <h2><a href="/documents/letters/">↩︎ Other letters</a></h2>
+</div>
 
 <p style="white-space: pre-wrap;">Date: Wed, 7 May 2025 23:09:45 +0100
 From: Eleanor Clifford
@@ -54,5 +63,6 @@ With best wishes,<br />
 <br />
 <em>Joe</em>
 </p>
+
 
 ```

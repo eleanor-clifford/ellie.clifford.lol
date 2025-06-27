@@ -1,3 +1,7 @@
+---
+color: purple
+---
+
 This is an archive of every letter/email I have written to politicians
 and the responses to them. You are free to use any of my works as a
 starting point for your own letters, without attribution.
@@ -9,8 +13,6 @@ matter of public interest, the authors retain all copyright rights over
 them._
 
 ```{=html}
-<div class="emails">
-<hr>
 <style>.page { max-width: 600px !important; margin: auto !important; }
 .emails a { color: #f8f8f2 !important; }
 .emails a:hover { color: #bd93f9 !important; }
@@ -20,6 +22,8 @@ them._
 .email-date { margin-left: auto }
 .email-subject { font-weight: 200; font-size: 1.3em; margin-left: 20px; }
 </style>
+<div class="emails">
+<hr>
 <a href="daniel-zeichner-mp-03.html">
   <div class="email-item">
     <div class="email-header">
