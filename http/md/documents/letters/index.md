@@ -24,7 +24,16 @@ them._
 </style>
 <div class="emails">
 <hr>
-<a href="daniel-zeichner-mp-03.html">
+<a href="ehrc-consultation.html">
+  <div class="email-item">
+    <div class="email-header">
+      <div class="email-to">Equality and Human Rights Commission</div>
+      <div class="email-date">Wed, 30 Jun 2025 22:44:10 +0100</div>
+    </div>
+    <div class="email-subject">Response to EHRC consultation on updates to services Code of Practice</div>
+  </div>
+</a>
+<hr><a href="daniel-zeichner-mp-03.html">
   <div class="email-item">
     <div class="email-header">
       <div class="email-to">Daniel Zeichner MP</div>
@@ -78,7 +87,7 @@ them._
     <div class="email-subject">I urge you to oppose this senseless political ban on puberty blockers</div>
   </div>
 </a>
-<hr><a href="daniel-zeichner-mp-00.html">
+<a href="daniel-zeichner-mp-00.html">
   <div class="email-item">
     <div class="email-header">
       <div class="email-to">Daniel Zeichner MP</div>

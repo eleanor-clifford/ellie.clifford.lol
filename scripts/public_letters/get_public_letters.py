@@ -197,9 +197,14 @@ for person in config["people"]:
 				CSS=config["format"]["letter"]["css"],
 			))
 
+manual_index = [
+	(datetime.fromisoformat(l["ts"]).timestamp(), l["date"], l["to"], l["subject"], l["href"])
+	for l in config["manual_letters"]
+]
+
 content = ""
 for i, (ts, date, to, subject, href) in enumerate(sorted(
-	index,
+	index + manual_index,
 	key=lambda t: datetime.fromtimestamp(t[0], timezone.utc),
 	reverse=True,
 )):

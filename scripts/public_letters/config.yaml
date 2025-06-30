@@ -31,6 +31,14 @@ people:
       - fake-mark-pack@clifford.lol
 
 
+manual_letters:
+  - ts: 2025-06-30T22:44
+    date: Wed, 30 Jun 2025 22:44:10 +0100
+    to: Equality and Human Rights Commission
+    subject: Response to EHRC consultation on updates to services Code of Practice
+    href: ehrc-consultation.html
+
+
 rules:
   days_assume_related: 14  # within which assume emails with different subjects are related
   subject_filters:
