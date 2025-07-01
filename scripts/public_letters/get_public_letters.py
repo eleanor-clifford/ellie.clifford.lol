@@ -199,7 +199,7 @@ for person in config["people"]:
 
 manual_index = [
 	(datetime.fromisoformat(l["ts"]).timestamp(), l["date"], l["to"], l["subject"], l["href"])
-	for l in config["manual_letters"]
+	for l in config["manual"]
 ]
 
 content = ""
