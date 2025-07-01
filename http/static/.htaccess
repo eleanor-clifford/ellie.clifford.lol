@@ -18,6 +18,9 @@ RewriteRule ^pgp$ https://ellie.clifford.lol/ellie_clifford.asc [L,R=301]
 RewriteRule ^gpg$ https://ellie.clifford.lol/ellie_clifford.asc [L,R=301]
 RewriteRule ^ellie_clifford.gpg$ https://ellie.clifford.lol/ellie_clifford.asc [L,R=301]
 
+# Moved to eleanor.clifford.lol because not silly
+RewriteRule ^documents/letters(/.*)?$ https://eleanor.clifford.lol/outbox$1 [L,R=301]
+
 ## This was the url in my email footer for a bit
 RewriteRule ^why_pgp$ https://ellie.clifford.lol/why-pgp [L,R=301]
 

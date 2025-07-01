@@ -248,12 +248,12 @@ On technology, power, and tentacled monsters
 :::
 ::: column
 
-## Politics
+## Public Outbox
 
 If you live in the UK, it can be effective to write to politicians,
-particularly your MP. Whenever I do so, [I publish my letter and their
-response(s)](/documents/letters/), which I hope can be useful to you as a
-starting point.
+particularly your MP. Whenever I do so, [I publish my letter and any
+responses](https://eleanor.clifford.lol/outbox/), which I hope can be useful
+to you as a starting point.
 
 ## Links for tech people
 
