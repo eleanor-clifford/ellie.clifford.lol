@@ -75,6 +75,11 @@ overrides:
           plain_body:
             '^(Many Thanks,)$': '\1<br>'
 
+    endnotes: >
+      The person responsible for this proposal responded, thanking me for my
+      honesty and the level of detail in my response, and saying that it was
+      very valuable feedback.
+
   kk5c2mf57kfcaxxrs4lkd6dpmidsufbewmnlchu4s2ri3qnqxp@cfsaxgnw2a5d:
     format:
       letter:
@@ -84,12 +89,12 @@ overrides:
             '<a href="\[redacted link\]">([^<>]*)</a>': '\1'
 
   rnu5khsogbfzl4zxm7rhgdogjjemkbiz6prtb4q2lubwsr24vs@3jkyrk6w2rer:
-    notes: |
+    notes: >
       NB: brevity was due to 2000 character limit in web form
     index_subject: On the Data Bill "sex" and "acquired gender" amendment
 
   lppsxmjdl2e6ngtl6c363eu3qqsaa4ncp5xhvgkioobd3ydvhn@pqvrxbve3hix:
-    notes: |
+    notes: >
       NB: I can't recommend you write like this to your MP, they will just ignore you. But I was angry.
 
   CAKGS-Z-=W5iZxgGLeSGiSwYBY81LroU0xbCZc-9JZTz7sy4M5A@mail.gmail.com:
@@ -117,12 +122,11 @@ format:
       color: purple
       ---
 
-      This is an archive of political or otherwise important letters, emails,
-      and similar that I have written, including to Members of Parliament
-      (MPs), other politicians, and institutions, and including their responses
-      where appropriate. You are free to use any of my works here as a starting
-      point for your own letters. Please _do not_ credit me without asking me
-      first.
+      This is a public archive of important letters, emails, and similar that I
+      have written, including to Members of Parliament (MPs), other
+      politicians, and institutions. Responses are included where appropriate.
+      You are free to use any of my works here as a starting point for your own
+      letters, but please _do not_ credit me without asking me first.
 
       [If you live in the UK, you can find the contact details of your MP
       here.](https://members.parliament.uk/FindYourMP)
@@ -130,7 +134,7 @@ format:
       _Please note: I have published the responses to my letters only when the
       author is responding in their capacity as a public official, as it is
       overwhelmingly in the public interest. However, please remember that such
-      authors retain the legal rights to their work._
+      authors still retain the legal rights to their work._
 
       ```{=html}
       <style>${CSS}</style>
@@ -181,9 +185,13 @@ format:
       ${NOTE}
       <p style="white-space: pre-wrap;">Date: ${Date}
       From: ${From}
-      To: ${To}${MaybeSubject}${Body}
+      To: ${To}${MaybeSubject}${Body}${ENDNOTE}
 
     note: |
+      <p><em>${CONTENT}</em></p>
+
+    endnote: |
+      <hr>
       <p><em>${CONTENT}</em></p>
 
     separator: <hr>

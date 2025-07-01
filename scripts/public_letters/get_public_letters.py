@@ -216,6 +216,13 @@ for person in config["people"]:
 				) if note else ""
 			)
 
+			endnote = message_config.get("endnotes")
+			MaybeEndNote = (
+				Template(message_config["format"]["letter"]["endnote"]).substitute(
+					CONTENT=endnote,
+				) if endnote else ""
+			)
+
 			content += Template(message_config["format"]["letter"]["item"]).substitute(
 				NOTE=MaybeNote,
 				Date=m.header("date"),
@@ -223,6 +230,7 @@ for person in config["people"]:
 				To=To,
 				MaybeSubject=MaybeSubject,
 				Body=get_wrapped_body(m, filter_sub={"name": name_regex}),
+				ENDNOTE=MaybeEndNote,
 			)
 			if j < len(msgs) - 1:
 				content += message_config["format"]["letter"]["separator"]

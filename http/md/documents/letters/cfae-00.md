@@ -63,6 +63,9 @@ Expanding the personalised training to anyone who wants it is fantastic.
 But I firmly believe that no part of this should be a requirement.</p>
 <p>Many Thanks,<br> Eleanor Clifford, 2nd year PhD student in EEE</p>
 
+<hr>
+<p><em>The person responsible for this proposal responded, thanking me for my honesty and the level of detail in my response, and saying that it was very valuable feedback.
+</em></p>
 
 
 ```

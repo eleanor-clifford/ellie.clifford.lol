@@ -2,12 +2,11 @@
 color: purple
 ---
 
-This is an archive of political or otherwise important letters, emails,
-and similar that I have written, including to Members of Parliament
-(MPs), other politicians, and institutions, and including their responses
-where appropriate. You are free to use any of my works here as a starting
-point for your own letters. Please _do not_ credit me without asking me
-first.
+This is a public archive of important letters, emails, and similar that I
+have written, including to Members of Parliament (MPs), other
+politicians, and institutions. Responses are included where appropriate.
+You are free to use any of my works here as a starting point for your own
+letters, but please _do not_ credit me without asking me first.
 
 [If you live in the UK, you can find the contact details of your MP
 here.](https://members.parliament.uk/FindYourMP)
@@ -15,7 +14,7 @@ here.](https://members.parliament.uk/FindYourMP)
 _Please note: I have published the responses to my letters only when the
 author is responding in their capacity as a public official, as it is
 overwhelmingly in the public interest. However, please remember that such
-authors retain the legal rights to their work._
+authors still retain the legal rights to their work._
 
 ```{=html}
 <style>.page { max-width: 600px !important; margin: auto !important; }
