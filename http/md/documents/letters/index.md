@@ -2,15 +2,20 @@
 color: purple
 ---
 
-This is an archive of every letter/email I have written to politicians
-and the responses to them. You are free to use any of my works as a
-starting point for your own letters, without attribution.
+This is an archive of political or otherwise important letters, emails,
+and similar that I have written, including to Members of Parliament
+(MPs), other politicians, and institutions, and including their responses
+where appropriate. You are free to use any of my works here as a starting
+point for your own letters. Please _do not_ credit me without asking me
+first.
 
-[If you live in the UK, you can find the contact details of your MP here.](https://members.parliament.uk/FindYourMP)
+[If you live in the UK, you can find the contact details of your MP
+here.](https://members.parliament.uk/FindYourMP)
 
-_Please note: although I have published the responses to my letters as a
-matter of public interest, the authors retain all copyright rights over
-them._
+_Please note: I have published the responses to my letters only when the
+author is responding in their capacity as a public official, as it is
+overwhelmingly in the public interest. However, please remember that such
+authors retain the legal rights to their work._
 
 ```{=html}
 <style>.page { max-width: 600px !important; margin: auto !important; }
@@ -87,6 +92,15 @@ them._
     <div class="email-subject">My rights under the ECHR have been violated. As my MP, will you stand up for me?</div>
   </div>
 </a>
+<hr><a href="cfae-00.html">
+  <div class="email-item">
+    <div class="email-header">
+      <div class="email-to">Imperial College Centre for Academic English (CfAE)</div>
+      <div class="email-date">Sat, 5 Apr 2025 17:33:28 +0100</div>
+    </div>
+    <div class="email-subject">On the proposed changes to the academic english training requirements of doctoral students</div>
+  </div>
+</a>
 <hr><a href="daniel-zeichner-mp-01.html">
   <div class="email-item">
     <div class="email-header">
@@ -96,7 +110,7 @@ them._
     <div class="email-subject">I urge you to oppose this senseless political ban on puberty blockers</div>
   </div>
 </a>
-<a href="daniel-zeichner-mp-00.html">
+<hr><a href="daniel-zeichner-mp-00.html">
   <div class="email-item">
     <div class="email-header">
       <div class="email-to">Daniel Zeichner MP</div>

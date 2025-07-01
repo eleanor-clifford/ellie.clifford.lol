@@ -32,9 +32,15 @@ people:
 
   - id: ukri
     name: UK Research and Innovation
-    name_regex: UK Research and Innovation|UKRI
+    name_regex: null
     emails:
       - talent@ukri.org
+
+  - id: cfae
+    name: Imperial College Centre for Academic English (CfAE)
+    name_regex: null
+    emails:
+      - fake-cfae@clifford.lol
 
 rules:
   days_assume_related: 14  # within which assume emails with different subjects are related
@@ -61,6 +67,14 @@ related:
     - l75xGoxMRteDWvKvdn5I5Q@geopod-ismtpd-13
 
 overrides:
+  ii36ljh4bmj4kgnavlvqwy7nustq5hazxdamsdzz3l3nummelo@dwnhdzamyff6:
+    markdown: true
+    format:
+      letter:
+        filters:
+          plain_body:
+            '^(Many Thanks,)$': '\1<br>'
+
   kk5c2mf57kfcaxxrs4lkd6dpmidsufbewmnlchu4s2ri3qnqxp@cfsaxgnw2a5d:
     format:
       letter:
@@ -103,15 +117,20 @@ format:
       color: purple
       ---
 
-      This is an archive of every letter/email I have written to politicians
-      and the responses to them. You are free to use any of my works as a
-      starting point for your own letters, without attribution.
+      This is an archive of political or otherwise important letters, emails,
+      and similar that I have written, including to Members of Parliament
+      (MPs), other politicians, and institutions, and including their responses
+      where appropriate. You are free to use any of my works here as a starting
+      point for your own letters. Please _do not_ credit me without asking me
+      first.
 
-      [If you live in the UK, you can find the contact details of your MP here.](https://members.parliament.uk/FindYourMP)
+      [If you live in the UK, you can find the contact details of your MP
+      here.](https://members.parliament.uk/FindYourMP)
 
-      _Please note: although I have published the responses to my letters as a
-      matter of public interest, the authors retain all copyright rights over
-      them._
+      _Please note: I have published the responses to my letters only when the
+      author is responding in their capacity as a public official, as it is
+      overwhelmingly in the public interest. However, please remember that such
+      authors retain the legal rights to their work._
 
       ```{=html}
       <style>${CSS}</style>
@@ -176,6 +195,10 @@ format:
 
 
       ${CONTENT}</p>
+
+    md_body: |
+      </p>
+      ${CONTENT}
 
     html_body: |
       </p><p>

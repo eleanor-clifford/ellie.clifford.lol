@@ -2,8 +2,11 @@ import yaml
 import email.policy
 import email.parser
 import re
+import tempfile
+import subprocess
 from datetime import datetime, timedelta, timezone
 from string import Template
+from typing import Sequence, Mapping
 
 from notmuch2 import Database, Message
 
@@ -31,7 +34,25 @@ def deep_get(d, ks, e=None):
 	return d.get(ks.pop(), e)
 
 
-def subject_filter(s):
+def deep_override(a, b):
+	if isinstance(a, Sequence) and isinstance(b, Sequence):
+		return list(a) + list(b)
+
+	elif isinstance(a, Mapping) and isinstance(b, Mapping):
+		r = {}
+		for k in list(a.keys()) + list(b.keys()):
+			r[k] = deep_override(a.get(k), b.get(k))
+
+		return r
+
+	elif b is None:
+		return a
+
+	else:
+		return b
+
+
+def subject_filter(s, config=config):
 	return filter_string(s, config["rules"]["subject_filters"], flags=re.I).strip()
 
 
@@ -40,29 +61,33 @@ def get_wrapped_body(message, filter_sub={}, msgid=None):
 		msgid = msgid or message.messageid
 		message = email_parser.parsebytes(message.path.open('rb').read())
 
+	message_config = deep_override(config, config["overrides"].get(msgid))
+
 	t = message.get_content_type()
 	if t.startswith("multipart/"):
 		return get_wrapped_body(message.get_body(), filter_sub=filter_sub, msgid=msgid)
 	elif t == "text/plain":
-		return Template(config["format"]["letter"]["plain_body"]).substitute(
-			CONTENT=filter_string(
-				message.get_content(),
-				(
-					config["format"]["letter"]["filters"]["plain_body"]
-					| deep_get(config, ("overrides", msgid, "format", "letter", "filters", "plain_body"), {})
-				),
-				flags=re.M | re.S,
-				sub=filter_sub,
-			).strip(),
-		)
+
+		content = filter_string(
+			message.get_content(),
+			message_config["format"]["letter"]["filters"]["plain_body"],
+			flags=re.M | re.S,
+			sub=filter_sub,
+		).strip()
+
+		if message_config.get("markdown"):
+			return Template(message_config["format"]["letter"]["md_body"]).substitute(
+				CONTENT=pandoc(content),
+			)
+		else:
+			return Template(message_config["format"]["letter"]["plain_body"]).substitute(
+				CONTENT=content,
+			)
 	elif t == "text/html":
-		return Template(config["format"]["letter"]["html_body"]).substitute(
+		return Template(message_config["format"]["letter"]["html_body"]).substitute(
 			CONTENT=filter_string(
 				message.get_content(),
-				(
-					config["format"]["letter"]["filters"]["html_body"]
-					| deep_get(config, ("overrides", msgid, "format", "letter", "filters", "html_body"), {})
-				),
+				message_config["format"]["letter"]["filters"]["html_body"],
 				flags=re.M | re.S,
 				sub=filter_sub,
 			).strip(),
@@ -77,13 +102,14 @@ def ignore_thread(thread):
 
 
 def ignore_message(message: Message):
+	message_config = deep_override(config, config["overrides"].get(message.messageid))
 	return any(
 		re.search(pattern, subject(message), flags=re.I)
-		for pattern in config["rules"]["ignore_messages_with_patterns"]
+		for pattern in message_config["rules"]["ignore_messages_with_patterns"]
 	)
 
 
-def time_close_enough(t1, t2):
+def time_close_enough(t1, t2, config=config):
 	first1 = datetime.fromtimestamp(t1.first, timezone.utc)
 	first2 = datetime.fromtimestamp(t2.first, timezone.utc)
 	last1 = datetime.fromtimestamp(t1.last, timezone.utc)
@@ -100,14 +126,14 @@ def subject(m_or_t):
 		return ""
 
 
-def subject_close_enough(t1, t2):
+def subject_close_enough(t1, t2, config=config):
 	s1 = subject_filter(subject(t1))
 	s2 = subject_filter(subject(t2))
 
 	return s1 == s2 and s1.lower() not in config["rules"]["dont_subject_combine"]
 
 
-def manually_linked(t1, t2):
+def manually_linked(t1, t2, config=config):
 	for related in config["related"]:
 		for m1 in t1:
 			for m2 in t2:
@@ -115,6 +141,13 @@ def manually_linked(t1, t2):
 					return True
 
 	return False
+
+
+def pandoc(text, flags=("-f", "markdown", "-t", "html")):
+	with tempfile.NamedTemporaryFile() as tmpfile:
+		tmpfile.write(text.encode())
+		tmpfile.flush()
+		return subprocess.check_output(["pandoc", *flags, tmpfile.name], text=True)
 
 
 index = []
@@ -149,6 +182,9 @@ for person in config["people"]:
 	for i, msgs in enumerate(msgss):
 		content = ""
 		for j, m in enumerate(msgs):
+
+			message_config = deep_override(config, config["overrides"].get(m.messageid))
+
 			def _name(h):
 				return (
 					person["name"] if any([x.lower() in m.header(h).lower() for x in person["emails"]])
@@ -170,17 +206,17 @@ for person in config["people"]:
 			)
 
 			if j == 0:
-				index_subject = deep_get(config, ("overrides", m.messageid, "index_subject")) or would_be_subject
+				index_subject = message_config.get("index_subject") or would_be_subject
 				index.append((m.date, m.header("date"), To, index_subject, f'{person["id"]}-{i:02d}.html'))
 
-			note = deep_get(config, ("overrides", m.messageid, "notes"))
+			note = message_config.get("notes")
 			MaybeNote = (
-				Template(config["format"]["letter"]["note"]).substitute(
+				Template(message_config["format"]["letter"]["note"]).substitute(
 					CONTENT=note,
 				) if note else ""
 			)
 
-			content += Template(config["format"]["letter"]["item"]).substitute(
+			content += Template(message_config["format"]["letter"]["item"]).substitute(
 				NOTE=MaybeNote,
 				Date=m.header("date"),
 				From=From,
@@ -189,12 +225,12 @@ for person in config["people"]:
 				Body=get_wrapped_body(m, filter_sub={"name": name_regex}),
 			)
 			if j < len(msgs) - 1:
-				content += config["format"]["letter"]["separator"]
+				content += message_config["format"]["letter"]["separator"]
 
 		with open(f'http/md/documents/letters/{person["id"]}-{i:02d}.md', "w") as fp:
-			fp.write(Template(config["format"]["letter"]["outer"]).substitute(
+			fp.write(Template(message_config["format"]["letter"]["outer"]).substitute(
 				CONTENT=content,
-				CSS=config["format"]["letter"]["css"],
+				CSS=message_config["format"]["letter"]["css"],
 			))
 
 manual_index = [
@@ -214,7 +250,7 @@ for i, (ts, date, to, subject, href) in enumerate(sorted(
 		Subject=subject,
 		href=href,
 	)
-	if i < len(index) - 1:
+	if i < len(index + manual_index) - 1:
 		content += config["format"]["index"]["separator"]
 
 with open('http/md/documents/letters/index.md', "w") as fp:
