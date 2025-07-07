@@ -62,6 +62,16 @@ build_blog_alts() {
 }
 
 build_http() {
+	echo "Compiling python..." >/dev/stderr
+	find http/ssg secrets/http/ssg -type f -name '*.py' | while read file; do
+		html_compile_python "$file"
+	done
+
+	echo "Building main pages..." >/dev/stderr
+	find http/ssg secrets/http/ssg build/ssg -type f -name '*.md' | while read file; do
+		html_build_md_page "$file"
+	done
+
 	echo "Building blog pages..." >/dev/stderr
 	mkdir -p out/http
 
@@ -70,11 +80,6 @@ build_http() {
 	done
 
 	html_build_blog_indices
-
-	echo "Building main pages..." >/dev/stderr
-	find http/md/ -type f | while read file; do
-		html_build_md_page "$file"
-	done
 
 	echo "Building RSS..." >/dev/stderr
 	build_rss
@@ -86,10 +91,14 @@ build_http() {
 
 	cp -r static/* out/http/
 	cp -r http/static/* out/http/
+	cp -r secrets/static/* out/http/
+	cp -r secrets/http/static/* out/http/
 
 	# dotfiles too
 	cp -r static/.[!.]* out/http/
 	cp -r http/static/.[!.]* out/http/
+	cp -r secrets/static/.[!.]* out/http/
+	cp -r secrets/http/static/.[!.]* out/http/
 
 	echo "Handling joemode..." >/dev/stderr
 	./scripts/joemode.sh
@@ -131,7 +140,7 @@ elif [ "$1" = "--bliz" ]; then
 elif [ "$1" = "--http" ]; then
 	build_http
 elif [ "$1" = "--test" ]; then
-	rsync -a blog_staging/staging/ blog/staging/
+	rsync -a secrets/blog/staging/ blog/staging/
 	build_http
 	rm -rf blog/staging
 fi

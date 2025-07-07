@@ -44,19 +44,33 @@ check_hash_change() {
 	echo false
 }
 
+html_compile_python() { # $1: filename, writes to build/http/ or out/http/
+	file="$1"
+
+	if echo "$file" | grep -Eq '\.include\.py$'; then
+		dir="out/http"
+		ext="html"
+		compile="pandoc -f markdown -t html"
+	else
+		dir="build/http"
+		ext="md"
+		compile="cat"
+	fi
+
+	out_file="$(echo "$file" | sed -E 's!^(secrets/)?http/ssg/!'"$dir"'/!; s!.py$!.'"$ext"'!')"
+
+	mkdir -p "$(dirname "$out_file")"
+	python3 "$file" | eval "$compile" > "$out_file"
+}
+
 html_build_md_page() { # $1: filename, writes to out/http/
 	file="$1"
-	escaped_name="$(
-		((echo "$file" | grep -Eq 'index.md$') \
-			&& dirname "$file" \
-			|| echo "$file" \
-		) | perl -pe 's|.*?md/?|/|;s|[/.-]|_|g;')"
 
 	export SSI="$(md_get_metadata "$file" .ssi)"
 	( test -z "$SSI" || [ "$SSI" = null ] ) && SSI=false || SSI=true
 
 	$SSI && ext=shtml || ext=html
-	out_file="$(echo "$file" | sed 's|^http/md/|out/http/|; s|.md$|.'$ext'|')"
+	out_file="$(echo "$file" | sed -E 's!^((secrets/)?http/ssg|build/http)/!out/http/!; s!.md$!.'$ext'!')"
 	mkdir -p "$(dirname "$out_file")"
 
 	hs="$(md5sum "$file" "http/templates/default.html" "http/templates/outer.html" "scripts/html.sh")"
@@ -70,9 +84,14 @@ html_build_md_page() { # $1: filename, writes to out/http/
 	fi
 
 	export HASH="$hs"
-	export COLOR="$(md_get_metadata "$file" '.color // "'"$(<config.yaml yq -rc ".page_colors.$escaped_name")"'"')"
+	export COLOR="$(md_get_metadata "$file" '.color // ""')"
 	export INNERTITLE="$(md_get_metadata "$file" 'if .title then "<h1>\(.title)</h1>" else "" end')"
 	export PAGETITLE="$(md_get_metadata "$file" '.pagetitle // .title // ""')"
+
+	if test -z "$COLOR"; then
+		echo "WARNING: $1 has no color set, defaulting to purple..."
+		export COLOR=purple
+	fi
 
 	vars="$(md_get_metadata "$file" '.vars | to_entries[] | "\(.key)\t\(.value)"' 2>/dev/null)"
 	IFS="

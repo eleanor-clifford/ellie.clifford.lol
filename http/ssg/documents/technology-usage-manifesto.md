@@ -1,5 +1,6 @@
 ---
 title: "Technology Usage Manifesto"
+color: red
 ---
 
 This document lays out a set of rules that I will follow in order to protect

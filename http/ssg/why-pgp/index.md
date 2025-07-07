@@ -1,5 +1,6 @@
 ---
 title: "Why use PGP?"
+color: yellow
 ---
 
 Blog post on this coming soon. [Phil's GPG

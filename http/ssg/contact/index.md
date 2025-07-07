@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+color: green
 ---
 
 <p>

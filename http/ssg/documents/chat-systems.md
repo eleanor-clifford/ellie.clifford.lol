@@ -1,5 +1,6 @@
 ---
 title: "Chat systems explained"
+color: pink
 ---
 
 ## Facebook Messenger

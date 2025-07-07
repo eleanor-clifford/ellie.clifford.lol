@@ -1,5 +1,6 @@
 ---
 title: "A Cypherpunk's Manifesto"
+color: purple
 ---
 
 _by Eric Hughes, 9 March 1993_

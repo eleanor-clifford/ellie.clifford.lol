@@ -1,5 +1,6 @@
 ---
 title: "Music"
+color: cyan
 banner: "/banner.jpg: Ellie playing guitar for a crowd at a Student Windsurfing Association event"
 css: |
   @media (max-width: 480px) {

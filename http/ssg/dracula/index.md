@@ -1,5 +1,6 @@
 ---
 title: "Dracula Theme Gallery"
+color: pink
 ---
 
 <p>
