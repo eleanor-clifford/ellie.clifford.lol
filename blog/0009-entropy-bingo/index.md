@@ -20,9 +20,9 @@ it's napkin maths anyway.[^disc]
 [^disc]: 2025-05-25: There used to be a disclaimer here about how I'm not an
 expert on anonymity. Nowadays, I know enough experts that if this post were
 completely wrong I'd probably have found out by now. Really I should have
-removed the disclaimer years ago, when someone told me the legendary [Ross
-Anderson](https://www.cl.cam.ac.uk/archive/rja14/) had once told them a very
-similar example...
+removed the disclaimer years ago, when someone remarked that the legendary
+[Ross Anderson](https://www.cl.cam.ac.uk/archive/rja14/) had once told them a
+very similar example...
 
 ## Example 1: convenience store
 

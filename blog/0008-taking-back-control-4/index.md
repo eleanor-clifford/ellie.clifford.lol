@@ -7,7 +7,7 @@ tags:
   - projects
 ---
 
-*This post was minorly edited on 2025-01-29*
+*This post was minorly edited for clarity on 2025-01-29*
 
 There are (approximately) two types of people who will read this post: my
 regular readers (hi!) and people who I've sent this link to, presumably after
