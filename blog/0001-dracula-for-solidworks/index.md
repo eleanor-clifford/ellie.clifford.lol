@@ -24,7 +24,8 @@ is SolidWorks, a 3D Computer Aided Design program used extensively in many
 engineering teams.
 
 I have spent many hours late at night using SolidWorks, and having a dark theme
-really does help prevent eye strain. As for why Dracula, that much is obvious.
+really does help prevent eye strain. As for why Dracula, [that much is
+obvious.](/dracula)
 
 ## How?!?
 
