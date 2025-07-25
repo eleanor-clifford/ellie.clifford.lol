@@ -35,7 +35,7 @@ license too!". I expect to use a text editor for decades to come, and I simply
 refuse to rely on the whim of a company to do that. Don't even get me
 started on operating systems...
 
-## 2: Adaptability and Maintainability
+## 2: Adaptability and maintainability
 
 You simply cannot rely on a company to solve your problems for you or implement
 the features you want. Why should they? Unless you have a problem that will
