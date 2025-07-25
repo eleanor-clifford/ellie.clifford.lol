@@ -146,5 +146,3 @@ of the different timbre etc.
 
 You'll notice that my recording is a little quieter than other music if you
 listen to them side by side. That's because I'm bad at mastering :P
-
-<!-- vi: set sts=2 sw=2 et :-->

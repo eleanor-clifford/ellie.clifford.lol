@@ -1,3 +1,4 @@
+/* vi: set ts=2 sts=2 sw=2 et :*/
 * {
   margin: 0;
   padding: 0;
@@ -380,11 +381,11 @@ th, td {
 }
 
 form table {
-	width: 100%;
+  width: 100%;
 }
 
 table input, table textarea {
-	width: 100%;
+  width: 100%;
 }
 
 .views {
@@ -661,8 +662,8 @@ a:hover { /*default*/
 }
 
 img.rss {
-	margin: 0px 8px;
-	height: 40px;
+  margin: 0px 8px;
+  height: 40px;
 }
 
 img.bsky {
@@ -771,8 +772,8 @@ img.bsky {
    ========================================================================== */
 
 .inner-div {
-	float: left;
-	margin-right: 10px;
+  float: left;
+  margin-right: 10px;
 }
 
 .cyan-override    { color: #8be9fd !important;}
@@ -912,37 +913,37 @@ blockquote p {
 .cyan .comment-submit input[type="text"],
 .cyan .comment-submit input[type="email"],
 .cyan .comment-submit textarea
-	{ color: #8be9fd; }
+  { color: #8be9fd; }
 .green h2,
 .green .comment-submit input[type="text"],
 .green .comment-submit input[type="email"],
 .green .comment-submit textarea
-	{ color: #50fa7b; }
+  { color: #50fa7b; }
 .orange h2,
 .orange .comment-submit input[type="text"],
 .orange .comment-submit input[type="email"],
 .orange .comment-submit textarea
-	{ color: #ffb86c; }
+  { color: #ffb86c; }
 .red h2,
 .red .comment-submit input[type="text"],
 .red .comment-submit input[type="email"],
 .red .comment-submit textarea
-	{ color: #ff5555; }
+  { color: #ff5555; }
 .pink h2,
 .pink .comment-submit input[type="text"],
 .pink .comment-submit input[type="email"],
 .pink .comment-submit textarea
-	{ color: #ff79c6; }
+  { color: #ff79c6; }
 .purple h2,
 .purple .comment-submit input[type="text"],
 .purple .comment-submit input[type="email"],
 .purple .comment-submit textarea
-	{ color: #bd93f9; }
+  { color: #bd93f9; }
 .yellow h2,
 .yellow .comment-submit input[type="text"],
 .yellow .comment-submit input[type="email"],
 .yellow .comment-submit textarea
-	{ color: #f1fa8c; }
+  { color: #f1fa8c; }
 
 .cyan .comment-submit input[type="submit"] { background: #8be9fd; }
 .green .comment-submit input[type="submit"] { background: #50fa7b; }
@@ -959,7 +960,7 @@ blockquote p {
 }
 
 .comments h4 {
-	margin: 0;
+  margin: 0;
 }
 
 .comment-header {
@@ -1015,7 +1016,7 @@ blockquote p {
 }
 
 .blog-updates input {
-	border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 .cyan    .blog-updates input { border: 2px solid #8be9fd; }
@@ -1027,22 +1028,22 @@ blockquote p {
 .yellow  .blog-updates input { border: 2px solid #f1fa8c; }
 
 .blog-updates form {
-	flex-grow: 1;
+  flex-grow: 1;
 }
 
 .blog-updates input[name="email"] {
-	min-width: 100px;
-	width: 100%; /* minus width of everything else */
+  min-width: 100px;
+  width: 100%; /* minus width of everything else */
 }
 
 .blog-updates input[name="antispam"] {
-	border-radius: 0px;
-	border-left: 0px;
-	width: 80px;
+  border-radius: 0px;
+  border-left: 0px;
+  width: 80px;
 }
 
 .blog-updates input[type="submit"] {
-	width: 100px;
+  width: 100px;
 }
 
 .blog-metadata {
@@ -1295,51 +1296,51 @@ blockquote p {
 }
 
 .topbar div {
-	position:fixed;
-	width:100%;
-	z-index:1
+  position:fixed;
+  width:100%;
+  z-index:1
 }
 
 .topbar-button {
-	transition:all .3s ease-in-out;
-	margin-left:5px;
-	margin-right:5px;
-	display:inline-block;
-	border-radius:4px;
-	text-align:center;
-	color:#000000;
-	font-weight:400;
-	padding:10px 18px;
-	font-size:18px;
-	border:0
+  transition:all .3s ease-in-out;
+  margin-left:5px;
+  margin-right:5px;
+  display:inline-block;
+  border-radius:4px;
+  text-align:center;
+  color:#000000;
+  font-weight:400;
+  padding:10px 18px;
+  font-size:18px;
+  border:0
 }
 
 .topbar-button.left {
-	background: #8be9fd;
+  background: #8be9fd;
 }
 
 .topbar-button.middle {
-	background: #ff79c6;
+  background: #ff79c6;
 }
 
 .topbar-button.right {
-	background: #f8f8f2;
+  background: #f8f8f2;
 }
 
 .topbar-button:focus,.topbar-button:hover{
-	color: #000000 !important;
+  color: #000000 !important;
 }
 
 .topbar-button.left:focus,.topbar-button.left:hover{
-	background: rgba(139, 233, 253, .8);
+  background: rgba(139, 233, 253, .8);
 }
 
 .topbar-button.middle:focus,.topbar-button.middle:hover{
-	background: rgba(255, 121, 198, .8);
+  background: rgba(255, 121, 198, .8);
 }
 
 .topbar-button.right:focus,.topbar-button.right:hover{
-	background: rgba(248, 248, 242, .8);
+  background: rgba(248, 248, 242, .8);
 }
 
 .music-item {
@@ -1429,81 +1430,81 @@ p.music-art-caption {
 }
 
 .banner img {
-	width: 100vw;
-	margin: -20px 0 0 0;
+  width: 100vw;
+  margin: -20px 0 0 0;
 }
 
 .blog-categories {
-	margin-top: 60px;
+  margin-top: 60px;
 }
 
 .blog-category {
-	min-width: 40px;
-	min-height: 80px;
-	background: rgb(26, 27, 34);
-	border-radius: 20px;
-	margin: 20px;
-	text-align: center;
+  min-width: 40px;
+  min-height: 80px;
+  background: rgb(26, 27, 34);
+  border-radius: 20px;
+  margin: 20px;
+  text-align: center;
 }
 
 .blog-category:hover {
-	background: #282a36;
+  background: #282a36;
 }
 
 .blog-category h2 {
-	margin: 25px;
-	display: inline-block;
+  margin: 25px;
+  display: inline-block;
 }
 
 .content-warning {
-	padding: 10px;
-	margin: 10px 0px;
-	border-radius: 10px;
-	color: #ffb86c;
-	border: 2px solid #ffb86c;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  color: #ffb86c;
+  border: 2px solid #ffb86c;
 }
 
 .content-warning p {
-	margin: 0px;
-	text-align: center;
+  margin: 0px;
+  text-align: center;
 }
 
 details.dropdown {
-	border: 3px solid #44475a;
-	border-radius: 5px;
-	margin-bottom: 20px;
+  border: 3px solid #44475a;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .dropdown summary {
-	background: #44475a;
-	padding: 10px;
+  background: #44475a;
+  padding: 10px;
 }
 
 .dropdown summary:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .dropdown .content {
-	padding: 10px;
-	margin-bottom: -20px;
+  padding: 10px;
+  margin-bottom: -20px;
 }
 
 .tags {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .all-tags {
-	margin: 30px 0px;
+  margin: 30px 0px;
 }
 
 .post-tags {
-	margin-left: 20px;
+  margin-left: 20px;
 }
 
 .blog-tag-return {
-	margin: 20px 0px;
+  margin: 20px 0px;
 }
 
 /* should go at the end, after everything it applies to */
@@ -1561,9 +1562,24 @@ details.dropdown {
 }
 
 @media (max-width: 480px) {
-	.topbar-button {
-		margin-right: 2px;
-		margin-left: 2px;
-		padding: 8px 10px;
-	}
+  .topbar-button {
+    margin-right: 2px;
+    margin-left: 2px;
+    padding: 8px 10px;
+  }
+}
+
+.blog .series-links p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog .series-links .next {
+  margin-left: auto;
+  display: block;
+}
+
+.blog .series-links .prev {
+  margin-right: auto;
+  display: block;
 }

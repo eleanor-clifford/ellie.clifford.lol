@@ -7,6 +7,11 @@ tags:
   - projects
 ---
 
+::: series-links
+[← Part 2](/blog/0004-taking-back-control-2/){.prev}
+[Part 4 →](/blog/0008-taking-back-control-4/){.next}
+:::
+
 PS: this blog is now also accessible over RSS [here](https://ellie.clifford.lol/blog/rss.xml).
 
 From my [manifesto](/documents/technology-usage-manifesto.html):
@@ -84,3 +89,8 @@ the screen is locked because the network devices get turned off when it goes to
 sleep >:, but overall yes, it's very usable, and I barely ever have to go back
 to Mind Flayer! So that's put me one step closer to fully following my
 manifesto...
+
+::: series-links
+[← Part 2](/blog/0004-taking-back-control-2/){.prev}
+[Part 4 →](/blog/0008-taking-back-control-4/){.next}
+:::

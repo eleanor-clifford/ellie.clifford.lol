@@ -101,5 +101,3 @@ data. It's a contradiction in terms.
 
 There is a very clear ulterior motive: the government wants to spy on their own
 citizens. They will go far further than protecting children with this data.
-
-<!-- vi: set sts=2 sw=2 et :-->

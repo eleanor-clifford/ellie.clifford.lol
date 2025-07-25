@@ -7,6 +7,11 @@ tags:
   - projects
 ---
 
+::: series-links
+[← Part 3](/blog/0007-taking-back-control-3/){.prev}
+[Part 5 →](/blog/0021-taking-back-control-5/){.next}
+:::
+
 *This post was minorly edited for clarity on 2025-01-29*
 
 There are (approximately) two types of people who will read this post: my
@@ -285,3 +290,8 @@ Whatsapp
 ### I will not use
 
 Facebook Messenger, Discord, Telegram, SMS, Snapchat, Instagram DMs, ...
+
+::: series-links
+[← Part 3](/blog/0007-taking-back-control-3/){.prev}
+[Part 5 →](/blog/0021-taking-back-control-5/){.next}
+:::

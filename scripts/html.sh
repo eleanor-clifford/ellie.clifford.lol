@@ -73,7 +73,7 @@ html_build_md_page() { # $1: filename, writes to out/http/
 	out_file="$(echo "$file" | sed -E 's!^((secrets/)?http/ssg|build/http)/!out/http/!; s!.md$!.'$ext'!')"
 	mkdir -p "$(dirname "$out_file")"
 
-	hs="$(md5sum "$file" "http/templates/default.html" "http/templates/outer.html" "scripts/html.sh")"
+	hs="$(md5sum "$file" "http/templates/default.html" "http/templates/outer.html" "scripts/html.sh" "scripts/yaml.sh")"
 	regen="$(echo "$hs" | check_hash_change "$out_file")"
 
 	if $regen; then
@@ -119,7 +119,7 @@ html_build_md_page() { # $1: filename, writes to out/http/
 	if [ "$css" != "null" ]; then
 		export CSS="$css"
 	fi
-	test -n "$CSS" && echo "css: $css" >&2
+	#test -n "$CSS" && echo "css: $css" >&2
 
 	<$file md_color_headings $COLOR | envsubst | pandoc --from markdown${md_extensions} --to html \
 		| activate_double_template http/templates/default.html >$out_file
@@ -144,7 +144,7 @@ html_build_blog_post() { # reads tsv color, date, file
 	out_file="$(echo "$file" | sed 's|^|out/http/|; s|.md$|.shtml|')"
 	mkdir -p "$(dirname "$out_file")"
 
-	hs="$(md5sum "$file" "http/templates/blog-post.shtml" "http/templates/tag.html" "http/templates/outer.html" "scripts/html.sh")"
+	hs="$(md5sum "$file" "http/templates/blog-post.shtml" "http/templates/tag.html" "http/templates/outer.html" "scripts/html.sh" "scripts/yaml.sh")"
 	regen="$(echo "$hs" | check_hash_change "$out_file")"
 
 	if $regen; then

@@ -7,6 +7,10 @@ tags:
   - projects
 ---
 
+::: series-links
+[Part 2 →](/blog/0004-taking-back-control-2/){.next}
+:::
+
 Like many young people, I've been around technology my entire life. But until
 very recently, I'd never really taken the time to take a step back and consider
 its effects, both on my own life and on society at large.
@@ -35,4 +39,6 @@ I'm expecting to start following it around summertime (northern hemisphere),
 and I'll definitely be making changes to the manifesto before then, so I'd
 really appreciate any comments people have!
 
-<!-- vi: set sts=2 sw=2 et :-->
+::: series-links
+[Part 2 →](/blog/0004-taking-back-control-2/){.next}
+:::

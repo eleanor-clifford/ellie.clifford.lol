@@ -15,5 +15,3 @@ I just want my music-making to feel more purposeful than when I'm playing to
 myself :]
 
 If you're interested, [check out my first upload](/music/never_knew.flac)!
-
-<!-- vi: set sts=2 sw=2 et :-->
