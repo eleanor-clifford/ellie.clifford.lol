@@ -2,7 +2,7 @@
 
 cd $(dirname $0)/..
 
-. ./scripts/md_yaml.sh
+. ./scripts/yaml.sh
 
 convert_md_to_bliz() { # $1: title, $2: date, stdin -> stdout
 	echo "\

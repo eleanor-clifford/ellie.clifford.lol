@@ -9,6 +9,10 @@ tags:
   - projects
 ---
 
+::: series-links
+[← Part 4](/blog/0008-taking-back-control-4/){.prev}
+:::
+
 Almost three years ago, [I decided to write a
 manifesto](https://ellie.clifford.lol/blog/0003-taking-back-control-1/)
 detailing how I did---and didn't---want to use technology. Thus began a
@@ -130,7 +134,7 @@ deadly serious: attention algorithms are _already_ a threat to our cognitive
 freedom, and this situation is likely to get orders of magnitude worse in the
 coming decades.
 
-<hr>
+---
 
 When I wrote the first draft of this post, I planned to end it with this
 paragraph:
@@ -150,7 +154,7 @@ I still haven't wiped it. A full export of the data isn't as easy as it should
 be. The tentacles whisper in my ear, telling me I'll regret it, I _need_ it. Am
 I stuck in a gothic horror book?
 
-<hr>
+---
 
 But at last, a stroke of luck, Mind Flayer has partially broken on it's own.
 It's broken in a very convenient way, too---it's still usable, but only
@@ -166,3 +170,7 @@ dealt; its tentacles writhe feebly, unable to keep their hold on my brain,
 cursed to limp on forever, a parasite without a host.
 
 Hopefully Part 6 won't take another two years.
+
+::: series-links
+[← Part 4](/blog/0008-taking-back-control-4/){.prev}
+:::

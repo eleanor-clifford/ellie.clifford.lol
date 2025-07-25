@@ -87,5 +87,3 @@ Anyway, naturally, I then wrote a script to change the colors and voilà,
 Dracula for Solidworks. But the story's not over. Have you been wondering why
 there are still ugly grey bits in the screenshot? Yeah. I found the variables
 for that, and tried to change them. SolidWorks refused to start.
-
-<!-- vi: set sts=2 sw=2 et :-->

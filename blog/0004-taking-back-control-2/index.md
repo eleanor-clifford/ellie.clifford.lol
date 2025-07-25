@@ -7,6 +7,11 @@ tags:
   - projects
 ---
 
+::: series-links
+[← Part 1](/blog/0003-taking-back-control-1/){.prev}
+[Part 3 →](/blog/0007-taking-back-control-3/){.next}
+:::
+
 Currently in my manifesto it says:
 
 > 4.2) When transferring data to a person who does not comply with this
@@ -85,4 +90,7 @@ way to formulate good ones. Even if what you're gonna say is "you're stupid, I
 love Apple and Facebook, please violate my personal data, Daddy Zuck.", I wanna
 hear it. I don't kink-shame.
 
-<!-- vi: set sts=2 sw=2 et :-->
+::: series-links
+[← Part 1](/blog/0003-taking-back-control-1/){.prev}
+[Part 3 →](/blog/0007-taking-back-control-3/){.next}
+:::
