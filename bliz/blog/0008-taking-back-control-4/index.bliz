@@ -157,3 +157,6 @@ Facebook Messenger, Discord, Telegram, SMS, Snapchat, Instagram DMs, ...
 [2]: 2025-01-29: The solution to this instability is the following optimal strategy: accept a 50/50 split with 100% probability, and accept with decreasing probability as the proposal becomes more unfair, such that the expected value to the proposer is maximised at the fair split.
 
 [3]: 2025-01-29: Arguably, Signal's data security is stronger than Matrix's (it forgoes some features and is more mature), and whether its metadata security is better than Matrix's depends heavily on your threat model. This doesn't change the conclusions of the post, and I still strongly prefer Matrix.
+
+=> /blog/0007-taking-back-control-3/ ← Part 3
+=> /blog/0021-taking-back-control-5/ → Part 5
