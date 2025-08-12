@@ -12,7 +12,7 @@ tags:
 [Part 5 →](/blog/0021-taking-back-control-5/){.next}
 :::
 
-*This post was minorly edited for clarity on 2025-01-29*
+_2025-08-12: I'm not quite as rigid on this as I was in 2022. Read on for more._
 
 There are (approximately) two types of people who will read this post: my
 regular readers (hi!) and people who I've sent this link to, presumably after
@@ -53,7 +53,13 @@ do we really trust that this is and will always be the only reason? This is a
 [Chekhov's gun](https://en.wikipedia.org/wiki/Chekhov%27s_gun), and it must go
 off by Act III. By letting the government see our private messages, we are
 enabling a future government to use them as evidence against us. Is that
-something you want to risk?
+something you want to risk?[^authoritarianism]
+
+[^authoritarianism]: 2025-08-12: Today it's less of a "risk" and more the stark
+reality of authoritarianism faced by queer and particularly trans people in
+Western "democracies". For example, in February the US government fired over
+100 officials because they had discussed queer topics on an internal government
+messaging system.
 
 ## What makes a good messaging system?
 
@@ -67,7 +73,7 @@ So, what do we need from a messaging system in order to fight our adversaries?
 shouldn't just take a company's word for it, we should be able to verify that
 they *cannot* access our information under reasonable threat models.
 
-3. Freedom: Privacy and Security cannot be practically achieved in a zero-trust
+3. Freedom: Privacy and Security of metadata cannot be practically achieved in a zero-trust
 setting, some other parties must occasionally be trusted (e.g. server
 operators). Users of a messaging system should have the freedom to decide who
 to trust, and should not be locked in to trusting any specific party.
@@ -234,10 +240,11 @@ choice. I'll certainly be careful to watch what I say, at least.
 Ok so like, there's no way if someone I don't know tries to message me on
 Whatsapp or something I can just reply with "Install this other app and then
 I'll reply". They'd just think I'm weird and then ignore me probably. Or it
-would at least be awkward. As the [old
-adage](https://files.clifford.lol/copypastas/free-virgin.txt) goes:
+would at least be awkward.
 
-> I can't ever seem to get girls to come over to my place and I can't text them
+_2025-01-29: As the [old adage](https://files.clifford.lol/copypastas/free-virgin.txt) goes:_
+
+> _I can't ever seem to get girls to come over to my place and I can't text them
 > either. Once I get their numbers since I've added customs roms to my phone
 > and refuse to use sms since it's a security concern I require all of my
 > friends to download a free and open source messaging app and I share with
@@ -245,11 +252,19 @@ adage](https://files.clifford.lol/copypastas/free-virgin.txt) goes:
 > secure. None of my friends are willing to do this. And I can't use sites like
 > tinder since it's not only proprietary software but a major privacy
 > vulnerability. How come it is so hard to find a girl concerned about software
-> freedom. I feel like I'm going to be a virgin forever.
+> freedom. I feel like I'm going to be a virgin forever._
 
 I think what I'll do is finish the initial conversation (watching what I say)
 and then tell them I don't actually use Whatsapp, and ask them to select from a
 list of secure apps. That seems reasonable, but it's subject to change.
+
+_2025-08-12: I'm much more lax on this factor now, i.e. I have to be quite
+close with someone before I push them to switch messaging systems. This was
+more out of necessity than anything else --- I discovered there are
+surprisingly many people who will start texting you less without explaining why
+if you switch to a platform they're unfamiliar with. My desire for better forms
+of communication clearly extends beyond the realm of the technical and into the
+realm of the interpersonal..._
 
 ## Complicating factor 6: Edge cases
 
@@ -290,6 +305,11 @@ Whatsapp
 ### I will not use
 
 Facebook Messenger, Discord, Telegram, SMS, Snapchat, Instagram DMs, ...
+
+_2025-08-12: The above now only strictly applies to people I'm close with, feel
+able to ask to move to a better system, and have got around to doing so with.
+But if you currently use a messaging system with me that I don't like, I would
+love it if you asked me how we could switch to a better one!_
 
 ::: series-links
 [← Part 3](/blog/0007-taking-back-control-3/){.prev}
