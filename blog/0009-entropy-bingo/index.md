@@ -118,7 +118,7 @@ that you can use it entirely over Tor without giving up personal information
 without identity verification). Make your search area as broad as possible,
 perhaps even take a train into another city and do the transaction there (try
 to avoid cameras as you do). Cover as many of your distinguishing features as
-you can, but do it in a boring way---don't wear a balaclava, wear a mask, a
+you can, but do it in a boring way --- don't wear a balaclava, wear a mask, a
 beanie, and large sunglasses if it's sunny.
 
 Additionally, you should try to segment the information such that no party has

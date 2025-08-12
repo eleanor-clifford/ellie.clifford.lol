@@ -77,11 +77,11 @@ large. Nobody has nothing to hide (a friend of mine has a good test to
 illustrate this: ask people increasingly personal questions until they refuse
 to answer). Even if you genuinely *did* have nothing to hide, you don't know
 what laws will change in the future, and what data can be used to "prove" your
-guilt---just look at the case of Ben John, who was [convicted simply for
+guilt --- just look at the case of Ben John, who was [convicted simply for
 owning a book](https://www.bbc.co.uk/news/uk-england-lincolnshire-58397088).
 
 This is all besides the fact that if *anyone* has backdoor access to your data,
-then so do the bad guys---governmental agencies in particular have a horrific
+then so do the bad guys --- governmental agencies in particular have a horrific
 record of data breaches.
 
 ## Whose responsibility are children anyway?

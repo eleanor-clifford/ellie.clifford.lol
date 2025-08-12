@@ -19,7 +19,7 @@ To me, the 6th of May will always be a day of conflicting emotions.
 On the 6th of May 1933, the Nazis raided and destroyed the Institut für
 Sexualwissenschaft in Berlin, a home of pioneering queer and trans research,
 medicine, art, and culture. Four days later, they burned its entire
-collection---including countless irreplacable items and over a decade of
+collection --- including countless irreplacable items and over a decade of
 research into the same gender affirming care that today's fascists now claim is
 "new". When the Allies finally came promising liberation, they did not liberate
 my queer siblings.

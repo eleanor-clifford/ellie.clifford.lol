@@ -40,12 +40,12 @@ of the full category of possible sports.[^social] This assumption is hard to
 justify, partly because "sport" is an extremely broad and ill-defined category
 and partly because there are sociopolitical reasons to think this might not be
 the case. I contest a new hypothesis: commonly popular sports are only
-representative of sports which were designed and popularised by men---and they
+representative of sports which were designed and popularised by men --- and they
 were designed for men to win.
 
 [^social]: And, of course, if we disregard social influences. There are many
     examples of sports in which there is next to no physiological difference
-    and yet there are few women at the top levels---snooker, motorsports,
+    and yet there are few women at the top levels --- snooker, motorsports,
     target rifle shooting, etc. Some of this may be attributed to
     physiologically-driven differences in interest, but another limiting factor
     on the talent pool of women is social pressure.
@@ -76,7 +76,7 @@ If what you want is the simplest and most elegant show of physical ability,
 I'll wager that it is simply "who can stay alive the longest", which, last time
 I checked, women were winning by a huge margin. This doesn't do so well as
 entertainment, but there are other simple sports already in contention in which
-women hold the title---for instance certain forms of gymnastics. Even in
+women hold the title --- for instance certain forms of gymnastics. Even in
 running, there are indications that for ultra-long marathons (200 miles or
 more), women may have [an advantage](https://runrepeat.com/state-of-ultra-running).
 

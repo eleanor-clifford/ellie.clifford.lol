@@ -18,7 +18,7 @@ entirely) hinged on the assertion that sexual orientation is not a choice, but
 innate.
 
 Now, this seems to be true for most people, but it's clear that this was chosen
-as the narrative not for reasons of science, but for reasons of rhetoric---if
+as the narrative not for reasons of science, but for reasons of rhetoric --- if
 true, denying gay people their rights would be denying them any hope of ever
 finding love. That rhetoric worked pretty well on social conservatives.
 
@@ -66,7 +66,7 @@ to stop anyone ever pressing it against my will.
 In other words, the reason that gender affirmation is the only valid route is
 not (just) because the science says so, but because (most) trans people don't
 _want_ to be turned cis, and any attempt to do so, no matter how
-well-intentioned or successful, would be psychological violence---worse even
+well-intentioned or successful, would be psychological violence --- worse even
 than physical violence; it would necessarily destroy the subject to build someone else.
 
 ## Further Reading

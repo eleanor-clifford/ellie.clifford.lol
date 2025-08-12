@@ -9,7 +9,7 @@ tags:
 ---
 
 I think my feelings on analytics collected by companies about their users have
-been made clear---they are usually misused by automated systems to maximise
+been made clear --- they are usually misused by automated systems to maximise
 the time those users spend within their walled garden. But this post isn't
 about that. It's about the analytics that might be collected by someone like
 me, who posts content online and hopes for people to enjoy and interact with
