@@ -3,11 +3,14 @@ title: "Taking back control (part 5): the tentacles of the attention industry"
 excerpt: "Was control ever mine to take?"
 createdAt: "2025-01-16"
 cw: "Content Warning: addiction"
+pandoc_options: --reference-location=section
 tags:
   - favourites
   - tech
   - projects
 ---
+
+::: section
 
 ::: series-links
 [← Part 4](/blog/0008-taking-back-control-4/){.prev}
@@ -169,7 +172,15 @@ Still, although I still use Mind Flayer somewhat, the killing blow has been
 dealt; its tentacles writhe feebly, unable to keep their hold on my brain,
 cursed to limp on forever, a parasite without a host.
 
-Hopefully Part 6 won't take another two years.
+:::
+
+## Epilogue, 2025-08-12
+
+Quite soon after this post I fixed Flumph (some shenanigans were required), and
+now I use it quite regularly. To fill in for some of it's failings, I also
+started using a Nokia 2730c --- the same phone I had back in 2011, when I was
+only 10! I've named it Pseudodragon (after DnD's tiny dragons) since it punches
+far above its weight.
 
 ::: series-links
 [← Part 4](/blog/0008-taking-back-control-4/){.prev}
